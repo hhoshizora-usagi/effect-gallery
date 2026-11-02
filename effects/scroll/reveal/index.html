@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スクロールで登場（Scroll Reveal）| EFFECT GALLERY</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<!-- demo.css は見本ページの土台（背景・中央寄せ）だけ。エフェクト本体は style.css / script.js -->
+<link rel="stylesheet" href="../../_shared/demo.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="demo scroll">
+<section class="demo-block">SCROLL ↓</section>
+
+<div class="fx-reveal-list">
+  <div class="fx-reveal-card" data-fx="reveal" data-reveal="up">下から</div>
+  <div class="fx-reveal-card" data-fx="reveal" data-reveal="left">左から</div>
+  <div class="fx-reveal-card" data-fx="reveal" data-reveal="right">右から</div>
+  <div class="fx-reveal-card" data-fx="reveal" data-reveal="zoom">ズーム</div>
+  <div class="fx-reveal-card" data-fx="reveal" data-reveal="spin">くるっと</div>
+  <div class="fx-reveal-card" data-fx="reveal" data-reveal="flip">めくる</div>
+</div>
+
+<section class="demo-block">THE END</section>
+<script src="script.js"></script>
+</body>
+</html>

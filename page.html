@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ページ演出（PAGE）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="画面の切り替えや読み込み、ポップアップなど、ページ全体の見せ方のエフェクト。">
+<meta property="og:title" content="ページ演出（PAGE）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="画面の切り替えや読み込み、ポップアップなど、ページ全体の見せ方のエフェクト。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-page">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill" href="scroll.html" style="--cat:#00c2ff;--on:#111"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill" href="background.html" style="--cat:#7cff4f;--on:#111"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill is-current" href="page.html" style="--cat:#ff2e4d;--on:#fff" aria-current="page"><span>07</span>ページ演出</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#ff2e4d;--on:#fff">
+    <p class="g-hero__no">07 <span>/ 07</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:4">PAGE</span><span class="g-hero__jp">ページ演出</span></h1>
+    <p class="g-hero__desc">画面の切り替えや読み込み、ポップアップなど、ページ全体の見せ方のエフェクト。</p>
+    <p class="g-hero__count" aria-label="6種類"><b>6</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#ff2e4d;--on:#fff">
+    <div class="g-tape__track"><span>STRIPE TRANSITION ✦ LOADING SCREEN ✦ BOUNCY MODAL ✦ CROSSING TAPES ✦ STAGGER POP ✦ DRAGGABLE STICKERS ✦ STRIPE TRANSITION ✦ LOADING SCREEN ✦ BOUNCY MODAL ✦ CROSSING TAPES ✦ STAGGER POP ✦ DRAGGABLE STICKERS ✦ </span><span>STRIPE TRANSITION ✦ LOADING SCREEN ✦ BOUNCY MODAL ✦ CROSSING TAPES ✦ STAGGER POP ✦ DRAGGABLE STICKERS ✦ STRIPE TRANSITION ✦ LOADING SCREEN ✦ BOUNCY MODAL ✦ CROSSING TAPES ✦ STAGGER POP ✦ DRAGGABLE STICKERS ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#stripe-transition">しましま画面切り替え</a></li><li><a href="#loader">ローディング画面</a></li><li><a href="#modal">びよーんモーダル</a></li><li><a href="#tape">交差するテープ</a></li><li><a href="#stagger">順番にポンポン登場</a></li><li><a href="#sticker">ドラッグできるステッカー</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="stripe-transition">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">しましま画面切り替え</h2>
+            <p class="g-card__en">Stripe Transition</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/page/stripe-transition/index.html" title="しましま画面切り替えの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">7色の縦じまが画面をおおい、大きな文字が出てから次のページへ切り替わる。</p>
+          <p class="g-card__use"><b>使いどころ</b>ページ移動・タブ切り替え・ステップ進行</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/page/stripe-transition/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="しましま画面切り替えのコード">
+            <button class="g-tab" role="tab" id="code-page-stripe-transition-html-tab" aria-controls="code-page-stripe-transition-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-page-stripe-transition-css-tab" aria-controls="code-page-stripe-transition-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-page-stripe-transition-js-tab" aria-controls="code-page-stripe-transition-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-page-stripe-transition-html" aria-labelledby="code-page-stripe-transition-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;main class=&quot;fx-st-page&quot; data-page=&quot;1&quot;&gt;
+  &lt;p class=&quot;fx-st-page__no&quot;&gt;PAGE 1&lt;/p&gt;
+  &lt;button class=&quot;fx-st-btn&quot; data-fx=&quot;stripe-transition&quot; data-word=&quot;NEXT!!&quot;&gt;次のページへ →&lt;/button&gt;
+&lt;/main&gt;
+
+&lt;div class=&quot;fx-st&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;
+  &lt;b class=&quot;fx-st__word&quot;&gt;&lt;/b&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-page-stripe-transition-css" aria-labelledby="code-page-stripe-transition-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-st-page { display: grid; gap: 24px; place-items: center; }
+.fx-st-page__no { margin: 0; font-size: clamp(56px, 15vw, 120px); line-height: 1; color: #fff; }
+.fx-st-page[data-page=&quot;2&quot;] .fx-st-page__no { color: #ffd400; }
+.fx-st-btn {
+  padding: .9em 1.8em;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: #ff3d7f;
+  color: #fff;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #111;
+}
+
+.fx-st {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  pointer-events: none;
+}
+.fx-st i {
+  flex: 1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform .45s cubic-bezier(.7, 0, .3, 1);
+}
+.fx-st i:nth-child(1) { background: #ff3d7f; transition-delay: 0s; }
+.fx-st i:nth-child(2) { background: #ff7a00; transition-delay: .04s; }
+.fx-st i:nth-child(3) { background: #ffd400; transition-delay: .08s; }
+.fx-st i:nth-child(4) { background: #7cff4f; transition-delay: .12s; }
+.fx-st i:nth-child(5) { background: #00c2ff; transition-delay: .16s; }
+.fx-st i:nth-child(6) { background: #a259ff; transition-delay: .20s; }
+.fx-st i:nth-child(7) { background: #111;    transition-delay: .24s; }
+.fx-st.is-in i { transform: scaleY(1); }
+.fx-st.is-out i { transform: scaleY(0); transform-origin: bottom; }
+.fx-st__word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: clamp(56px, 16vw, 140px);
+  font-weight: normal;
+  color: #fff;
+  -webkit-text-stroke: 3px #111;
+  text-shadow: 8px 8px 0 #111;
+  white-space: nowrap;
+  transform: translate(-50%, -50%) scale(0) rotate(-12deg);
+  transition: transform .4s cubic-bezier(.2, 1.6, .4, 1);
+}
+.fx-st.is-in .fx-st__word { transform: translate(-50%, -50%) scale(1) rotate(-6deg); transition-delay: .35s; }
+.fx-st.is-out .fx-st__word { transform: translate(-50%, -50%) scale(0); transition-delay: 0s; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-page-stripe-transition-js" aria-labelledby="code-page-stripe-transition-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// ①しまで隠す → ②中身を差しかえる → ③しまを開ける</span>
+<span class="c">// 本番で別ページへ移動するときは、②で location.href = &#x27;next.html&#x27; にする</span>
+(() =&gt; {
+  const cover = document.querySelector(&#x27;.fx-st&#x27;);
+  const word = cover.querySelector(&#x27;.fx-st__word&#x27;);
+  const wait = (ms) =&gt; new Promise((r) =&gt; setTimeout(r, ms));
+  let busy = false;
+
+  document.querySelectorAll(&#x27;[data-fx=&quot;stripe-transition&quot;]&#x27;).forEach((btn) =&gt; {
+    btn.addEventListener(&#x27;click&#x27;, async () =&gt; {
+      if (busy) return;
+      busy = true;
+      word.textContent = btn.dataset.word || &#x27;GO!!&#x27;;
+      cover.classList.remove(&#x27;is-out&#x27;);
+      cover.classList.add(&#x27;is-in&#x27;);
+      await wait(1100);
+
+      <span class="c">// ② 中身の差しかえ（見本では PAGE 1 ⇔ PAGE 2）</span>
+      const page = document.querySelector(&#x27;.fx-st-page&#x27;);
+      const next = page.dataset.page === &#x27;1&#x27; ? &#x27;2&#x27; : &#x27;1&#x27;;
+      page.dataset.page = next;
+      page.querySelector(&#x27;.fx-st-page__no&#x27;).textContent = `PAGE ${next}`;
+
+      cover.classList.add(&#x27;is-out&#x27;);
+      await wait(700);
+      cover.classList.remove(&#x27;is-in&#x27;, &#x27;is-out&#x27;);
+      busy = false;
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/page/stripe-transition/</p>
+        </div>
+      </article>
+      <article class="g-card" id="loader">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ローディング画面</h2>
+            <p class="g-card__en">Loading Screen</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/page/loader/index.html" title="ローディング画面の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">0〜100%の数字とバーが進んで、終わると画面が上下にパカッと割れて中身が出てくる。</p>
+          <p class="g-card__use"><b>使いどころ</b>サイトを開いた最初・重い画像の読み込み待ち</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/page/loader/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ローディング画面のコード">
+            <button class="g-tab" role="tab" id="code-page-loader-html-tab" aria-controls="code-page-loader-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-page-loader-css-tab" aria-controls="code-page-loader-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-page-loader-js-tab" aria-controls="code-page-loader-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-page-loader-html" aria-labelledby="code-page-loader-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-loader&quot; data-fx=&quot;loader&quot; aria-live=&quot;polite&quot;&gt;
+  &lt;div class=&quot;fx-loader__half fx-loader__half--top&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;fx-loader__half fx-loader__half--bottom&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;fx-loader__body&quot;&gt;
+    &lt;b class=&quot;fx-loader__num&quot;&gt;0%&lt;/b&gt;
+    &lt;div class=&quot;fx-loader__bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;main class=&quot;fx-loader-content&quot;&gt;
+  &lt;h1&gt;WELCOME!&lt;/h1&gt;
+&lt;/main&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-page-loader-css" aria-labelledby="code-page-loader-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+}
+.fx-loader__half {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50.5%;
+  background: #ffd400;
+  transition: transform .8s cubic-bezier(.8, 0, .2, 1);
+}
+.fx-loader__half--top    { top: 0; }
+.fx-loader__half--bottom { bottom: 0; background: #ff3d7f; }
+.fx-loader__body { position: relative; width: min(70vw, 320px); text-align: center; transition: opacity .3s; }
+.fx-loader__num {
+  display: block;
+  font-size: clamp(56px, 14vw, 110px);
+  font-weight: normal;
+  font-variant-numeric: tabular-nums;
+  color: #111;
+}
+.fx-loader__bar { height: 14px; border: 3px solid #111; border-radius: 99px; overflow: hidden; background: #fff; }
+.fx-loader__bar span { display: block; height: 100%; width: var(--p, 0%); background: #111; }
+.fx-loader.is-done .fx-loader__body { opacity: 0; }
+.fx-loader.is-done .fx-loader__half--top    { transform: translateY(-101%); }
+.fx-loader.is-done .fx-loader__half--bottom { transform: translateY(101%); }
+.fx-loader.is-gone { display: none; }
+
+.fx-loader-content h1 {
+  margin: 0;
+  font-size: clamp(48px, 13vw, 110px);
+  color: #fff;
+  text-shadow: 6px 6px 0 #00c2ff;
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-page-loader-js" aria-labelledby="code-page-loader-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 見本では2秒で 0→100%。本番では画像の読み込み数などに合わせて p を進める</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;loader&quot;]&#x27;).forEach((el) =&gt; {
+    const num = el.querySelector(&#x27;.fx-loader__num&#x27;);
+    const dur = 2000, start = performance.now();
+    const tick = (now) =&gt; {
+      const t = Math.min(1, (now - start) / dur);
+      const p = Math.round((1 - Math.pow(1 - t, 2)) * 100);
+      num.textContent = `${p}%`;
+      el.style.setProperty(&#x27;--p&#x27;, `${p}%`);
+      if (t &lt; 1) return requestAnimationFrame(tick);
+      setTimeout(() =&gt; el.classList.add(&#x27;is-done&#x27;), 250);
+      setTimeout(() =&gt; el.classList.add(&#x27;is-gone&#x27;), 1200);
+    };
+    requestAnimationFrame(tick);
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/page/loader/</p>
+        </div>
+      </article>
+      <article class="g-card" id="modal">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">びよーんモーダル</h2>
+            <p class="g-card__en">Bouncy Modal</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/page/modal/index.html" title="びよーんモーダルの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">ボタンを押すと、後ろがぼやけて、小窓がびよーんと弾みながら出てくる。Escキーでも閉じる。</p>
+          <p class="g-card__use"><b>使いどころ</b>お知らせ・確認画面・クーポン配布・ログイン</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/page/modal/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="びよーんモーダルのコード">
+            <button class="g-tab" role="tab" id="code-page-modal-html-tab" aria-controls="code-page-modal-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-page-modal-css-tab" aria-controls="code-page-modal-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-page-modal-js-tab" aria-controls="code-page-modal-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-page-modal-html" aria-labelledby="code-page-modal-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;button class=&quot;fx-modal-open&quot; data-fx=&quot;modal&quot; data-target=&quot;fx-dialog&quot;&gt;🎁 プレゼントを開ける&lt;/button&gt;
+
+&lt;dialog class=&quot;fx-modal&quot; id=&quot;fx-dialog&quot;&gt;
+  &lt;p class=&quot;fx-modal__emoji&quot;&gt;🎉&lt;/p&gt;
+  &lt;h2 class=&quot;fx-modal__title&quot;&gt;あたり！&lt;/h2&gt;
+  &lt;p class=&quot;fx-modal__text&quot;&gt;ドリンク1杯無料クーポン&lt;/p&gt;
+  &lt;button class=&quot;fx-modal__close&quot; data-close&gt;とじる&lt;/button&gt;
+&lt;/dialog&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-page-modal-css" aria-labelledby="code-page-modal-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-modal-open {
+  padding: 1em 1.8em;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #ffd400;
+  color: #111;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-modal {
+  width: min(86vw, 340px);
+  padding: 28px 24px;
+  border: 4px solid #111;
+  border-radius: 24px;
+  background: #fff;
+  color: #111;
+  text-align: center;
+  box-shadow: 10px 10px 0 #111;
+}
+.fx-modal[open] { animation: fx-modal-in .6s cubic-bezier(.2, 1.6, .4, 1); }
+.fx-modal.is-closing { animation: fx-modal-out .25s ease-in forwards; }
+.fx-modal::backdrop { background: rgba(20, 10, 40, .55); backdrop-filter: blur(6px); }
+.fx-modal[open]::backdrop { animation: fx-modal-fade .3s ease-out; }
+.fx-modal__emoji { margin: 0; font-size: 56px; }
+.fx-modal__title { margin: .1em 0; font-size: 40px; color: #ff3d7f; }
+.fx-modal__text  { margin: 0 0 1.2em; font-family: system-ui, sans-serif; }
+.fx-modal__close {
+  padding: .6em 1.6em;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: #00c2ff;
+  font: inherit;
+  cursor: pointer;
+}
+@keyframes fx-modal-in   { from { transform: scale(.3) rotate(-8deg); opacity: 0; } }
+@keyframes fx-modal-out  { to   { transform: scale(.6); opacity: 0; } }
+@keyframes fx-modal-fade { from { opacity: 0; } }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-page-modal-js" aria-labelledby="code-page-modal-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// &lt;dialog&gt; の showModal() で開く（Esc やフォーカス管理はブラウザがやってくれる）</span>
+(() =&gt; {
+  const close = (dlg) =&gt; {
+    dlg.classList.add(&#x27;is-closing&#x27;);
+    dlg.addEventListener(&#x27;animationend&#x27;, () =&gt; {
+      dlg.classList.remove(&#x27;is-closing&#x27;);
+      dlg.close();
+    }, { once: true });
+  };
+  document.querySelectorAll(&#x27;[data-fx=&quot;modal&quot;]&#x27;).forEach((btn) =&gt; {
+    const dlg = document.getElementById(btn.dataset.target);
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; dlg.showModal());
+    dlg.querySelectorAll(&#x27;[data-close]&#x27;).forEach((b) =&gt; b.addEventListener(&#x27;click&#x27;, () =&gt; close(dlg)));
+    dlg.addEventListener(&#x27;click&#x27;, (e) =&gt; { if (e.target === dlg) close(dlg); });   <span class="c">// 外側クリックで閉じる</span>
+    dlg.addEventListener(&#x27;cancel&#x27;, (e) =&gt; { e.preventDefault(); close(dlg); });     <span class="c">// Esc でもアニメ付きで</span>
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/page/modal/</p>
+        </div>
+      </article>
+      <article class="g-card" id="tape">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">交差するテープ</h2>
+            <p class="g-card__en">Crossing Tapes</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/page/tape/index.html" title="交差するテープの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">斜めに傾いた2本のテープが、反対向きにずっと流れ続ける。CSSだけで動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>セクションの区切り・お知らせ帯・イベント感の演出</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/page/tape/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="交差するテープのコード">
+            <button class="g-tab" role="tab" id="code-page-tape-html-tab" aria-controls="code-page-tape-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-page-tape-css-tab" aria-controls="code-page-tape-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-page-tape-html" aria-labelledby="code-page-tape-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-tape-wrap&quot;&gt;
+  &lt;div class=&quot;fx-tape fx-tape--a&quot;&gt;
+    &lt;div class=&quot;fx-tape__track&quot;&gt;
+      &lt;span&gt;EPIC DAY 2026 ★ 11.23 SAT ★ TICKET ON SALE ★ &lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;EPIC DAY 2026 ★ 11.23 SAT ★ TICKET ON SALE ★ &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;fx-tape fx-tape--b&quot;&gt;
+    &lt;div class=&quot;fx-tape__track&quot;&gt;
+      &lt;span&gt;今年いちばんの1日を ● 今年いちばんの1日を ● &lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;今年いちばんの1日を ● 今年いちばんの1日を ● &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-page-tape-css" aria-labelledby="code-page-tape-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-tape-wrap {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+.fx-tape {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 120%;
+  padding: 12px 0;
+  overflow: hidden;
+  border-block: 4px solid #111;
+}
+.fx-tape--a { background: #ffd400; color: #111; transform: translateY(-50%) rotate(-6deg); z-index: 1; }
+.fx-tape--b { background: #ff3d7f; color: #fff; transform: translateY(-50%) rotate(5deg); }
+.fx-tape__track {
+  display: flex;
+  width: max-content;
+  font-size: clamp(22px, 5vw, 36px);
+  white-space: nowrap;
+  animation: fx-tape 18s linear infinite;
+}
+.fx-tape--b .fx-tape__track { animation-direction: reverse; animation-duration: 22s; }
+<span class="c">/* 同じ中身を2つ並べて、半分ずれたら最初に戻す → つなぎ目なしでループ */</span>
+@keyframes fx-tape { to { transform: translateX(-50%); } }</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/page/tape/</p>
+        </div>
+      </article>
+      <article class="g-card" id="stagger">
+        <header class="g-card__head">
+          <span class="g-card__no">05</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">順番にポンポン登場</h2>
+            <p class="g-card__en">Stagger Pop</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/page/stagger/index.html" title="順番にポンポン登場の見本" loading="lazy" style="height:400px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">リストの項目が、少しずつ時間をずらして順番にポンポン飛び出してくる。CSSだけで動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>メニュー・ランキング・特徴の一覧・ページを開いた瞬間</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/page/stagger/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="順番にポンポン登場のコード">
+            <button class="g-tab" role="tab" id="code-page-stagger-html-tab" aria-controls="code-page-stagger-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-page-stagger-css-tab" aria-controls="code-page-stagger-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-page-stagger-html" aria-labelledby="code-page-stagger-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;ol class=&quot;fx-stagger&quot;&gt;
+  &lt;li style=&quot;--i: 0&quot;&gt;🥇 DJ NOVA&lt;/li&gt;
+  &lt;li style=&quot;--i: 1&quot;&gt;🥈 LUNA&lt;/li&gt;
+  &lt;li style=&quot;--i: 2&quot;&gt;🥉 THE PEACH&lt;/li&gt;
+  &lt;li style=&quot;--i: 3&quot;&gt;4. MOCHI BOYS&lt;/li&gt;
+  &lt;li style=&quot;--i: 4&quot;&gt;5. SORA&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-page-stagger-css" aria-labelledby="code-page-stagger-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-stagger {
+  display: grid;
+  gap: 10px;
+  width: min(86vw, 360px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fx-stagger li {
+  padding: 12px 18px;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #fff;
+  color: #111;
+  font-size: 20px;
+  box-shadow: 5px 5px 0 #a259ff;
+  animation: fx-stagger .6s cubic-bezier(.2, 1.5, .4, 1) both;
+  animation-delay: calc(var(--i) * .12s + .2s);   <span class="c">/* 0.12秒ずつずらす */</span>
+}
+.fx-stagger li:nth-child(1) { background: #ffd400; }
+@keyframes fx-stagger {
+  from { opacity: 0; transform: translateX(-60px) scale(.6) rotate(-6deg); }
+}</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/page/stagger/</p>
+        </div>
+      </article>
+      <article class="g-card" id="sticker">
+        <header class="g-card__head">
+          <span class="g-card__no">06</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ドラッグできるステッカー</h2>
+            <p class="g-card__en">Draggable Stickers</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/page/sticker/index.html" title="ドラッグできるステッカーの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">ステッカーをつまんで好きな場所に動かせる。つまむと傾いて浮き上がる。</p>
+          <p class="g-card__use"><b>使いどころ</b>トップページの遊び要素・キャンペーン・寄せ書き風</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/page/sticker/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ドラッグできるステッカーのコード">
+            <button class="g-tab" role="tab" id="code-page-sticker-html-tab" aria-controls="code-page-sticker-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-page-sticker-css-tab" aria-controls="code-page-sticker-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-page-sticker-js-tab" aria-controls="code-page-sticker-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-page-sticker-html" aria-labelledby="code-page-sticker-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-sticker-area&quot; data-fx=&quot;sticker&quot;&gt;
+  &lt;span class=&quot;fx-sticker&quot; style=&quot;left: 18%; top: 26%; --r: -10deg; --c: #ffd400&quot;&gt;NEW!&lt;/span&gt;
+  &lt;span class=&quot;fx-sticker fx-sticker--round&quot; style=&quot;left: 58%; top: 18%; --r: 8deg; --c: #ff3d7f&quot;&gt;SALE&lt;br&gt;50%&lt;/span&gt;
+  &lt;span class=&quot;fx-sticker&quot; style=&quot;left: 30%; top: 62%; --r: 6deg; --c: #7cff4f&quot;&gt;★ HOT ★&lt;/span&gt;
+  &lt;span class=&quot;fx-sticker fx-sticker--round&quot; style=&quot;left: 68%; top: 58%; --r: -6deg; --c: #00c2ff&quot;&gt;🍡&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-page-sticker-css" aria-labelledby="code-page-sticker-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-sticker-area {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  touch-action: none;   <span class="c">/* スマホでドラッグ中に画面がスクロールしないように */</span>
+}
+.fx-sticker {
+  position: absolute;
+  padding: .5em .9em;
+  border: 3px solid #111;
+  border-radius: 12px;
+  background: var(--c);
+  color: #111;
+  font-size: 24px;
+  line-height: 1.1;
+  text-align: center;
+  user-select: none;
+  cursor: grab;
+  transform: rotate(var(--r));
+  box-shadow: 4px 4px 0 #111;
+  transition: transform .2s cubic-bezier(.2, 1.5, .4, 1), box-shadow .2s;
+}
+.fx-sticker--round {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  padding: 0;
+  border-radius: 50%;
+}
+.fx-sticker.is-dragging {
+  cursor: grabbing;
+  transform: rotate(calc(var(--r) * -1.5)) scale(1.15);
+  box-shadow: 14px 14px 0 rgba(0, 0, 0, .6);
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-page-sticker-js" aria-labelledby="code-page-sticker-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// pointer イベントでつまんだ位置を覚えて、動かした分だけ left / top を変える</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;sticker&quot;]&#x27;).forEach((area) =&gt; {
+    let z = 10;
+    area.querySelectorAll(&#x27;.fx-sticker&#x27;).forEach((st) =&gt; {
+      st.addEventListener(&#x27;pointerdown&#x27;, (e) =&gt; {
+        st.setPointerCapture(e.pointerId);
+        st.classList.add(&#x27;is-dragging&#x27;);
+        st.style.zIndex = ++z;                       <span class="c">// つまんだものを一番上に</span>
+        const a = area.getBoundingClientRect();
+        const offX = e.clientX - a.left - st.offsetLeft;   <span class="c">// つまんだ位置のずれ</span>
+        const offY = e.clientY - a.top - st.offsetTop;
+        const move = (ev) =&gt; {
+          const x = Math.max(0, Math.min(a.width - st.offsetWidth, ev.clientX - a.left - offX));
+          const y = Math.max(0, Math.min(a.height - st.offsetHeight, ev.clientY - a.top - offY));
+          st.style.left = `${x}px`;
+          st.style.top = `${y}px`;
+        };
+        const up = () =&gt; {
+          st.classList.remove(&#x27;is-dragging&#x27;);
+          st.removeEventListener(&#x27;pointermove&#x27;, move);
+          st.removeEventListener(&#x27;pointerup&#x27;, up);
+          st.removeEventListener(&#x27;pointercancel&#x27;, up);
+        };
+        st.addEventListener(&#x27;pointermove&#x27;, move);
+        st.addEventListener(&#x27;pointerup&#x27;, up);
+        st.addEventListener(&#x27;pointercancel&#x27;, up);
+      });
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/page/sticker/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="card.html" style="--cat:#a259ff;--on:#fff"><small>← 前の種類</small>カード・ホバー</a><a class="g-pager__link g-pager__link--next" href="index.html"><small>トップへ →</small>ぜんぶの種類</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 41 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* ============================================================
+   見本ページの土台（背景・中央寄せ・ヒント表示）
+   エフェクト本体ではないので、自分のページにコピーする必要はありません
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+
+body.demo {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #16121f;
+  color: #fff;
+  font-family: "Dela Gothic One", "Zen Kaku Gothic New", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body.demo.light  { background: #fff4e0; color: #111; }
+body.demo.scroll { display: block; overflow-x: hidden; overflow-y: auto; }
+
+.demo-hint {
+  position: fixed;
+  left: 50%;
+  bottom: 12px;
+  z-index: 10000;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .14);
+  color: rgba(255, 255, 255, .9);
+  font: 700 12px/1.4 "Zen Kaku Gothic New", system-ui, sans-serif;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  pointer-events: none;
+  backdrop-filter: blur(4px);
+}
+body.light .demo-hint { background: rgba(0, 0, 0, .08); color: #333; }
+
+/* スクロール見本のダミーの中身 */
+.demo-block {
+  display: grid;
+  place-items: center;
+  min-height: 75vh;
+  font-size: clamp(34px, 10vw, 72px);
+  color: #fff;
+}
+.demo-block--pink   { background: #ff3d7f; }
+.demo-block--yellow { background: #ffd400; color: #111; }
+.demo-block--cyan   { background: #00c2ff; color: #111; }

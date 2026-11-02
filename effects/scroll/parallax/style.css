@@ -1,0 +1,25 @@
+.fx-para {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 130vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #2b1055 0%, #7597de 100%);
+}
+[data-fx="parallax"] { will-change: transform; }
+.fx-para__title {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-size: clamp(48px, 13vw, 110px);
+  line-height: .95;
+  text-align: center;
+  color: #fff;
+  text-shadow: 6px 6px 0 #ff3d7f;
+}
+.fx-para__item { position: absolute; display: block; }
+.fx-para__sun    { top: 12%; left: 10%; width: 140px; height: 140px; border-radius: 50%; background: #ffd400; }
+.fx-para__ring   { top: 55%; right: 8%; width: 120px; height: 120px; border-radius: 50%; border: 16px solid #7cff4f; }
+.fx-para__star   { top: 22%; right: 20%; width: 80px; height: 80px; background: #ff7a00;
+                   clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+.fx-para__square { top: 70%; left: 16%; width: 70px; height: 70px; background: #00c2ff; transform: rotate(20deg); }

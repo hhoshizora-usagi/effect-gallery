@@ -1,0 +1,21 @@
+.fx-mag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  justify-content: center;
+}
+.fx-mag {
+  padding: 1.1em 2em;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: #ffd400;
+  color: #111;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #111;
+  transition: transform .25s cubic-bezier(.2, .9, .3, 1.4), box-shadow .2s;
+}
+.fx-mag span { display: inline-block; transition: transform .25s ease-out; }
+.fx-mag--pink { background: #ff3d7f; color: #fff; }
+.fx-mag.is-near { box-shadow: 10px 10px 0 #111; }

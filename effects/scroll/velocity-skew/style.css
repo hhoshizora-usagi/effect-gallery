@@ -1,0 +1,20 @@
+.fx-skew {
+  margin: 4vh 0;
+  padding: 14px 0;
+  overflow: hidden;
+  background: #ffd400;
+  color: #111;
+  border-block: 4px solid #111;
+  transform: skewY(var(--skew, 0deg));
+  will-change: transform;
+}
+.fx-skew--b { background: #ff3d7f; color: #fff; }
+.fx-skew__track {
+  display: flex;
+  width: max-content;
+  font-size: clamp(30px, 7vw, 60px);
+  white-space: nowrap;
+  animation: fx-skew-loop 14s linear infinite;
+}
+.fx-skew--b .fx-skew__track { animation-direction: reverse; }
+@keyframes fx-skew-loop { to { transform: translateX(-50%); } }

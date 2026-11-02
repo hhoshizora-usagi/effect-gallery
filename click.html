@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>クリック・ボタン（CLICK）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="押した瞬間に気持ちよく反応して、押したくなるボタンにするエフェクト。">
+<meta property="og:title" content="クリック・ボタン（CLICK）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="押した瞬間に気持ちよく反応して、押したくなるボタンにするエフェクト。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-click">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill" href="scroll.html" style="--cat:#00c2ff;--on:#111"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill" href="background.html" style="--cat:#7cff4f;--on:#111"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill is-current" href="click.html" style="--cat:#ff7a00;--on:#111" aria-current="page"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#ff7a00;--on:#111">
+    <p class="g-hero__no">05 <span>/ 07</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:5">CLICK</span><span class="g-hero__jp">クリック・ボタン</span></h1>
+    <p class="g-hero__desc">押した瞬間に気持ちよく反応して、押したくなるボタンにするエフェクト。</p>
+    <p class="g-hero__count" aria-label="6種類"><b>6</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#ff7a00;--on:#111">
+    <div class="g-tape__track"><span>CONFETTI BURST ✦ RIPPLE ✦ JELLY BUTTON ✦ SPARKLE BURST ✦ LIKE HEART ✦ SHOCKWAVE ✦ CONFETTI BURST ✦ RIPPLE ✦ JELLY BUTTON ✦ SPARKLE BURST ✦ LIKE HEART ✦ SHOCKWAVE ✦ </span><span>CONFETTI BURST ✦ RIPPLE ✦ JELLY BUTTON ✦ SPARKLE BURST ✦ LIKE HEART ✦ SHOCKWAVE ✦ CONFETTI BURST ✦ RIPPLE ✦ JELLY BUTTON ✦ SPARKLE BURST ✦ LIKE HEART ✦ SHOCKWAVE ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#confetti-burst">紙吹雪クラッカー</a></li><li><a href="#ripple">波紋ボタン</a></li><li><a href="#jelly">ぷるぷるボタン</a></li><li><a href="#sparkle">キラキラ星</a></li><li><a href="#like">いいねハート</a></li><li><a href="#shockwave">衝撃波リング</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="confetti-burst">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">紙吹雪クラッカー</h2>
+            <p class="g-card__en">Confetti Burst</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/click/confetti-burst/index.html" title="紙吹雪クラッカーの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">クリックした場所から、紙吹雪がパーンとはじけて重力で落ちていく。ボタンを押すと特大。</p>
+          <p class="g-card__use"><b>使いどころ</b>購入完了・応募ボタン・ゲームのクリア演出</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/click/confetti-burst/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="紙吹雪クラッカーのコード">
+            <button class="g-tab" role="tab" id="code-click-confetti-burst-html-tab" aria-controls="code-click-confetti-burst-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-click-confetti-burst-css-tab" aria-controls="code-click-confetti-burst-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-click-confetti-burst-js-tab" aria-controls="code-click-confetti-burst-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-click-confetti-burst-html" aria-labelledby="code-click-confetti-burst-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;canvas class=&quot;fx-burstcv&quot; data-fx=&quot;confetti-burst&quot; aria-hidden=&quot;true&quot;&gt;&lt;/canvas&gt;
+&lt;button class=&quot;fx-burst-btn&quot; data-burst=&quot;big&quot;&gt;🎉 おめでとう！&lt;/button&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-confetti-burst-css" aria-labelledby="code-click-confetti-burst-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-burstcv {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+.fx-burst-btn {
+  padding: 1em 1.8em;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #7cff4f;
+  color: #111;
+  font: inherit;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-burst-btn:active { transform: translate(3px, 3px); box-shadow: 3px 3px 0 #111; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-confetti-burst-js" aria-labelledby="code-click-confetti-burst-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// クリックした点から、ランダムな方向・速さで紙を飛ばす（重力と空気抵抗つき）</span>
+(() =&gt; {
+  const colors = [&#x27;#ff3d7f&#x27;, &#x27;#ffd400&#x27;, &#x27;#00c2ff&#x27;, &#x27;#7cff4f&#x27;, &#x27;#ff7a00&#x27;, &#x27;#a259ff&#x27;];
+  const cv = document.querySelector(&#x27;[data-fx=&quot;confetti-burst&quot;]&#x27;);
+  if (!cv) return;
+  const ctx = cv.getContext(&#x27;2d&#x27;);
+  const bits = [];
+  const resize = () =&gt; {
+    const d = window.devicePixelRatio || 1;
+    cv.width = innerWidth * d; cv.height = innerHeight * d;
+    ctx.setTransform(d, 0, 0, d, 0, 0);
+  };
+  resize();
+  addEventListener(&#x27;resize&#x27;, resize);
+
+  const burst = (x, y, n) =&gt; {
+    for (let i = 0; i &lt; n; i++) {
+      const a = Math.random() * Math.PI * 2;
+      const s = 4 + Math.random() * (n &gt; 60 ? 12 : 7);
+      bits.push({
+        x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s - 4,
+        w: 5 + Math.random() * 6, h: 8 + Math.random() * 8,
+        rot: Math.random() * 6, vr: (Math.random() - .5) * .4,
+        life: 1, c: colors[i % colors.length],
+      });
+    }
+  };
+  addEventListener(&#x27;pointerdown&#x27;, (e) =&gt; {
+    const big = e.target.closest(&#x27;[data-burst=&quot;big&quot;]&#x27;);
+    burst(e.clientX, e.clientY, big ? 120 : 40);
+  });
+
+  (function loop() {
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+    for (let i = bits.length - 1; i &gt;= 0; i--) {
+      const b = bits[i];
+      b.vy += .25; b.vx *= .985; b.vy *= .985;   <span class="c">// 重力と空気抵抗</span>
+      b.x += b.vx; b.y += b.vy; b.rot += b.vr; b.life -= .008;
+      if (b.life &lt;= 0 || b.y &gt; innerHeight + 40) { bits.splice(i, 1); continue; }
+      ctx.save();
+      ctx.globalAlpha = Math.min(1, b.life * 2);
+      ctx.translate(b.x, b.y); ctx.rotate(b.rot);
+      ctx.fillStyle = b.c;
+      ctx.fillRect(-b.w / 2, -b.h / 2, b.w, b.h);
+      ctx.restore();
+    }
+    requestAnimationFrame(loop);
+  })();
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/click/confetti-burst/</p>
+        </div>
+      </article>
+      <article class="g-card" id="ripple">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">波紋ボタン</h2>
+            <p class="g-card__en">Ripple</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/click/ripple/index.html" title="波紋ボタンの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">押した場所から丸い波紋が広がるボタン。どこを押したかが気持ちよく伝わる。</p>
+          <p class="g-card__use"><b>使いどころ</b>フォームの送信・メニュー・あらゆるボタン</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/click/ripple/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="波紋ボタンのコード">
+            <button class="g-tab" role="tab" id="code-click-ripple-html-tab" aria-controls="code-click-ripple-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-click-ripple-css-tab" aria-controls="code-click-ripple-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-click-ripple-js-tab" aria-controls="code-click-ripple-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-click-ripple-html" aria-labelledby="code-click-ripple-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-ripple-row&quot;&gt;
+  &lt;button class=&quot;fx-ripple&quot; data-fx=&quot;ripple&quot;&gt;SUBMIT&lt;/button&gt;
+  &lt;button class=&quot;fx-ripple fx-ripple--cyan&quot; data-fx=&quot;ripple&quot;&gt;MENU&lt;/button&gt;
+  &lt;button class=&quot;fx-ripple fx-ripple--yellow&quot; data-fx=&quot;ripple&quot;&gt;LIKE&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-ripple-css" aria-labelledby="code-click-ripple-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-ripple-row { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.fx-ripple {
+  position: relative;
+  overflow: hidden;          <span class="c">/* 波紋をボタンの中だけに */</span>
+  padding: 1em 2.2em;
+  border: 0;
+  border-radius: 12px;
+  background: #ff3d7f;
+  color: #fff;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+.fx-ripple--cyan   { background: #00c2ff; color: #111; }
+.fx-ripple--yellow { background: #ffd400; color: #111; }
+.fx-ripple__wave {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .7);
+  pointer-events: none;
+  animation: fx-ripple .7s ease-out forwards;
+}
+@keyframes fx-ripple {
+  to { transform: scale(var(--scale, 20)); opacity: 0; }
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-ripple-js" aria-labelledby="code-click-ripple-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 押した位置に丸を置いて、ボタン全体をおおう大きさまで広げてから消す</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;ripple&quot;]&#x27;).forEach((btn) =&gt; {
+    btn.addEventListener(&#x27;pointerdown&#x27;, (e) =&gt; {
+      const r = btn.getBoundingClientRect();
+      const wave = document.createElement(&#x27;span&#x27;);
+      wave.className = &#x27;fx-ripple__wave&#x27;;
+      wave.style.left = `${e.clientX - r.left}px`;
+      wave.style.top = `${e.clientY - r.top}px`;
+      wave.style.setProperty(&#x27;--scale&#x27;, (Math.hypot(r.width, r.height) * 2) / 20);
+      btn.appendChild(wave);
+      wave.addEventListener(&#x27;animationend&#x27;, () =&gt; wave.remove());
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/click/ripple/</p>
+        </div>
+      </article>
+      <article class="g-card" id="jelly">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ぷるぷるボタン</h2>
+            <p class="g-card__en">Jelly Button</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/click/jelly/index.html" title="ぷるぷるボタンの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">押すとゼリーみたいにぷるんと弾む。マウスを乗せると少しふくらむ。</p>
+          <p class="g-card__use"><b>使いどころ</b>ゲーム・キッズ・ポップなお店のボタン</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/click/jelly/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ぷるぷるボタンのコード">
+            <button class="g-tab" role="tab" id="code-click-jelly-html-tab" aria-controls="code-click-jelly-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-click-jelly-css-tab" aria-controls="code-click-jelly-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-click-jelly-js-tab" aria-controls="code-click-jelly-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-click-jelly-html" aria-labelledby="code-click-jelly-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-jelly-row&quot;&gt;
+  &lt;button class=&quot;fx-jelly&quot; data-fx=&quot;jelly&quot;&gt;PUSH!&lt;/button&gt;
+  &lt;button class=&quot;fx-jelly fx-jelly--purple&quot; data-fx=&quot;jelly&quot;&gt;ぷるん&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-jelly-css" aria-labelledby="code-click-jelly-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-jelly-row { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; }
+.fx-jelly {
+  padding: .9em 2em;
+  border: 4px solid #111;
+  border-radius: 999px;
+  background: #ffd400;
+  color: #111;
+  font: inherit;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 8px 0 #111;
+  transition: transform .2s;
+}
+.fx-jelly--purple { background: #a259ff; color: #fff; }
+.fx-jelly:hover { transform: scale(1.06); }
+.fx-jelly.is-boing { animation: fx-jelly .7s both; }
+@keyframes fx-jelly {
+  0%   { transform: scale(1, 1); }
+  25%  { transform: scale(1.25, .75); }
+  40%  { transform: scale(.8, 1.2); }
+  55%  { transform: scale(1.12, .9); }
+  70%  { transform: scale(.95, 1.05); }
+  85%  { transform: scale(1.03, .98); }
+  100% { transform: scale(1, 1); }
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-jelly-js" aria-labelledby="code-click-jelly-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// クリックのたびにクラスをつけ直して、アニメーションを最初から再生する</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;jelly&quot;]&#x27;).forEach((btn) =&gt; {
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; {
+      btn.classList.remove(&#x27;is-boing&#x27;);
+      void btn.offsetWidth;            <span class="c">// つけ直すための小ワザ（再描画させる）</span>
+      btn.classList.add(&#x27;is-boing&#x27;);
+    });
+    btn.addEventListener(&#x27;animationend&#x27;, () =&gt; btn.classList.remove(&#x27;is-boing&#x27;));
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/click/jelly/</p>
+        </div>
+      </article>
+      <article class="g-card" id="sparkle">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">キラキラ星</h2>
+            <p class="g-card__en">Sparkle Burst</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/click/sparkle/index.html" title="キラキラ星の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">押すとボタンのまわりに星がキラッと飛び散る。何度でも押したくなる。</p>
+          <p class="g-card__use"><b>使いどころ</b>お気に入り・保存・「いいね」・ポイント獲得</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/click/sparkle/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="キラキラ星のコード">
+            <button class="g-tab" role="tab" id="code-click-sparkle-html-tab" aria-controls="code-click-sparkle-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-click-sparkle-css-tab" aria-controls="code-click-sparkle-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-click-sparkle-js-tab" aria-controls="code-click-sparkle-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-click-sparkle-html" aria-labelledby="code-click-sparkle-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;button class=&quot;fx-sparkle&quot; data-fx=&quot;sparkle&quot;&gt;★ FAVORITE&lt;/button&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-sparkle-css" aria-labelledby="code-click-sparkle-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-sparkle {
+  position: relative;
+  padding: 1em 2em;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #00c2ff;
+  color: #111;
+  font: inherit;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-sparkle__star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--s);
+  height: var(--s);
+  margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2);
+  background: var(--c);
+  pointer-events: none;
+  clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: fx-sparkle .8s cubic-bezier(.2, .8, .3, 1) forwards;
+}
+@keyframes fx-sparkle {
+  0%   { transform: translate(0, 0) scale(0) rotate(0); opacity: 1; }
+  60%  { opacity: 1; }
+  100% { transform: translate(var(--x), var(--y)) scale(1) rotate(var(--r)); opacity: 0; }
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-sparkle-js" aria-labelledby="code-click-sparkle-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 星を14個作って、円形にばらけた方向へ飛ばす（飛んだら消す）</span>
+(() =&gt; {
+  const colors = [&#x27;#ffd400&#x27;, &#x27;#ff3d7f&#x27;, &#x27;#7cff4f&#x27;, &#x27;#ffffff&#x27;, &#x27;#ff7a00&#x27;, &#x27;#a259ff&#x27;];
+  document.querySelectorAll(&#x27;[data-fx=&quot;sparkle&quot;]&#x27;).forEach((btn) =&gt; {
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; {
+      const n = 14;
+      for (let i = 0; i &lt; n; i++) {
+        const star = document.createElement(&#x27;i&#x27;);
+        star.className = &#x27;fx-sparkle__star&#x27;;
+        const a = (i / n) * Math.PI * 2 + Math.random() * .4;
+        const dist = 70 + Math.random() * 70;
+        star.style.setProperty(&#x27;--x&#x27;, `${Math.cos(a) * dist}px`);
+        star.style.setProperty(&#x27;--y&#x27;, `${Math.sin(a) * dist}px`);
+        star.style.setProperty(&#x27;--r&#x27;, `${Math.random() * 360}deg`);
+        star.style.setProperty(&#x27;--s&#x27;, `${12 + Math.random() * 16}px`);
+        star.style.setProperty(&#x27;--c&#x27;, colors[i % colors.length]);
+        btn.appendChild(star);
+        star.addEventListener(&#x27;animationend&#x27;, () =&gt; star.remove());
+      }
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/click/sparkle/</p>
+        </div>
+      </article>
+      <article class="g-card" id="like">
+        <header class="g-card__head">
+          <span class="g-card__no">05</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">いいねハート</h2>
+            <p class="g-card__en">Like Heart</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/click/like/index.html" title="いいねハートの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">押すとハートがポンッとふくらんで、まわりに輪と小さな丸がはじける。数もカウント。</p>
+          <p class="g-card__use"><b>使いどころ</b>SNS風の「いいね」・お気に入り・投票</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/click/like/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="いいねハートのコード">
+            <button class="g-tab" role="tab" id="code-click-like-html-tab" aria-controls="code-click-like-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-click-like-css-tab" aria-controls="code-click-like-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-click-like-js-tab" aria-controls="code-click-like-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-click-like-html" aria-labelledby="code-click-like-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;button class=&quot;fx-like&quot; data-fx=&quot;like&quot; aria-pressed=&quot;false&quot; aria-label=&quot;いいね&quot;&gt;
+  &lt;span class=&quot;fx-like__heart&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;svg viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M12 21s-7.5-4.6-10-9.3C.4 8.4 2.3 4 6.4 4c2.2 0 3.7 1.3 4.6 2.6.9-1.3 2.4-2.6 4.6-2.6 4.1 0 6 4.4 4.4 7.7C19.5 16.4 12 21 12 21z&quot;/&gt;&lt;/svg&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;fx-like__count&quot;&gt;128&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-like-css" aria-labelledby="code-click-like-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-like {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 26px 14px 18px;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-like__heart { position: relative; width: 44px; height: 44px; }
+.fx-like__heart svg {
+  width: 100%;
+  height: 100%;
+  fill: #ddd;
+  stroke: #111;
+  stroke-width: 1.5;
+  transition: fill .2s;
+}
+.fx-like[aria-pressed=&quot;true&quot;] svg { fill: #ff3d7f; animation: fx-like-pop .5s cubic-bezier(.2, 1.6, .4, 1); }
+<span class="c">/* 輪っか */</span>
+.fx-like__heart::before {
+  content: &quot;&quot;;
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 0 solid #ffd400;
+  transform: scale(0);
+}
+.fx-like[aria-pressed=&quot;true&quot;] .fx-like__heart::before { animation: fx-like-ring .5s ease-out; }
+<span class="c">/* はじける小さな丸（JS で追加） */</span>
+.fx-like__dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  border-radius: 50%;
+  background: var(--c);
+  animation: fx-like-dot .6s ease-out forwards;
+}
+@keyframes fx-like-pop  { 0% { transform: scale(.2); } 100% { transform: scale(1); } }
+@keyframes fx-like-ring {
+  0%   { transform: scale(.2); border-width: 22px; }
+  100% { transform: scale(1.5); border-width: 0; }
+}
+@keyframes fx-like-dot {
+  to { transform: translate(var(--x), var(--y)) scale(.2); opacity: 0; }
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-like-js" aria-labelledby="code-click-like-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 押すたびに オン/オフ を切りかえて、数字を ±1。オンのときだけ丸を飛ばす</span>
+(() =&gt; {
+  const colors = [&#x27;#ff3d7f&#x27;, &#x27;#ffd400&#x27;, &#x27;#00c2ff&#x27;, &#x27;#7cff4f&#x27;, &#x27;#a259ff&#x27;];
+  document.querySelectorAll(&#x27;[data-fx=&quot;like&quot;]&#x27;).forEach((btn) =&gt; {
+    const count = btn.querySelector(&#x27;.fx-like__count&#x27;);
+    const heart = btn.querySelector(&#x27;.fx-like__heart&#x27;);
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; {
+      const on = btn.getAttribute(&#x27;aria-pressed&#x27;) !== &#x27;true&#x27;;
+      btn.setAttribute(&#x27;aria-pressed&#x27;, String(on));
+      count.textContent = +count.textContent + (on ? 1 : -1);
+      if (!on) return;
+      for (let i = 0; i &lt; 10; i++) {
+        const dot = document.createElement(&#x27;i&#x27;);
+        dot.className = &#x27;fx-like__dot&#x27;;
+        const a = (i / 10) * Math.PI * 2;
+        dot.style.setProperty(&#x27;--x&#x27;, `${Math.cos(a) * 42}px`);
+        dot.style.setProperty(&#x27;--y&#x27;, `${Math.sin(a) * 42}px`);
+        dot.style.setProperty(&#x27;--c&#x27;, colors[i % colors.length]);
+        heart.appendChild(dot);
+        dot.addEventListener(&#x27;animationend&#x27;, () =&gt; dot.remove());
+      }
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/click/like/</p>
+        </div>
+      </article>
+      <article class="g-card" id="shockwave">
+        <header class="g-card__head">
+          <span class="g-card__no">06</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">衝撃波リング</h2>
+            <p class="g-card__en">Shockwave</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/click/shockwave/index.html" title="衝撃波リングの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">クリックした場所から、色ちがいの輪が3重にドンッと広がる。</p>
+          <p class="g-card__use"><b>使いどころ</b>ゲーム・ヒーロー画面・ここを押して！の演出</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/click/shockwave/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="衝撃波リングのコード">
+            <button class="g-tab" role="tab" id="code-click-shockwave-html-tab" aria-controls="code-click-shockwave-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-click-shockwave-css-tab" aria-controls="code-click-shockwave-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-click-shockwave-js-tab" aria-controls="code-click-shockwave-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-click-shockwave-html" aria-labelledby="code-click-shockwave-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-shock-area&quot; data-fx=&quot;shockwave&quot;&gt;
+  &lt;p class=&quot;fx-shock-area__text&quot;&gt;TAP&lt;br&gt;ANYWHERE&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-shockwave-css" aria-labelledby="code-click-shockwave-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-shock-area {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  cursor: crosshair;
+  touch-action: manipulation;
+}
+.fx-shock-area__text {
+  margin: 0;
+  font-size: clamp(40px, 11vw, 90px);
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  pointer-events: none;
+}
+.fx-shock__ring {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border: 6px solid var(--c);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fx-shock .8s cubic-bezier(.1, .7, .3, 1) var(--delay) both;
+}
+@keyframes fx-shock {
+  0%   { transform: scale(0); opacity: 1; border-width: 14px; }
+  100% { transform: scale(8); opacity: 0; border-width: 1px; }
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-click-shockwave-js" aria-labelledby="code-click-shockwave-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// クリック位置に、少しずつ遅らせた輪を3つ置く</span>
+(() =&gt; {
+  const set = [&#x27;#ff3d7f&#x27;, &#x27;#ffd400&#x27;, &#x27;#00c2ff&#x27;];
+  document.querySelectorAll(&#x27;[data-fx=&quot;shockwave&quot;]&#x27;).forEach((area) =&gt; {
+    area.addEventListener(&#x27;pointerdown&#x27;, (e) =&gt; {
+      const r = area.getBoundingClientRect();
+      set.forEach((c, i) =&gt; {
+        const ring = document.createElement(&#x27;i&#x27;);
+        ring.className = &#x27;fx-shock__ring&#x27;;
+        ring.style.left = `${e.clientX - r.left}px`;
+        ring.style.top = `${e.clientY - r.top}px`;
+        ring.style.setProperty(&#x27;--c&#x27;, c);
+        ring.style.setProperty(&#x27;--delay&#x27;, `${i * .08}s`);
+        area.appendChild(ring);
+        ring.addEventListener(&#x27;animationend&#x27;, () =&gt; ring.remove());
+      });
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/click/shockwave/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="background.html" style="--cat:#7cff4f;--on:#111"><small>← 前の種類</small>背景・図形</a><a class="g-pager__link g-pager__link--next" href="card.html" style="--cat:#a259ff;--on:#fff"><small>次の種類 →</small>カード・ホバー</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 41 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

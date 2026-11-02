@@ -1,0 +1,23 @@
+.fx-stagger {
+  display: grid;
+  gap: 10px;
+  width: min(86vw, 360px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fx-stagger li {
+  padding: 12px 18px;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #fff;
+  color: #111;
+  font-size: 20px;
+  box-shadow: 5px 5px 0 #a259ff;
+  animation: fx-stagger .6s cubic-bezier(.2, 1.5, .4, 1) both;
+  animation-delay: calc(var(--i) * .12s + .2s);   /* 0.12秒ずつずらす */
+}
+.fx-stagger li:nth-child(1) { background: #ffd400; }
+@keyframes fx-stagger {
+  from { opacity: 0; transform: translateX(-60px) scale(.6) rotate(-6deg); }
+}

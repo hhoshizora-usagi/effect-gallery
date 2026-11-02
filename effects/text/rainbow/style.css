@@ -1,0 +1,17 @@
+.fx-rainbow {
+  margin: 0;
+  font-size: clamp(52px, 14vw, 120px);
+  line-height: .95;
+  text-align: center;
+  background: linear-gradient(90deg,
+    #ff3d7f, #ff7a00, #ffd400, #7cff4f, #00c2ff, #a259ff, #ff3d7f);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  animation: fx-rainbow 4s linear infinite;
+  filter: drop-shadow(5px 5px 0 #000);
+}
+@keyframes fx-rainbow {
+  to { background-position: 300% 0; }
+}

@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スクロール連動（SCROLL）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="スクロールに合わせて出たり動いたりする、読み進めたくなるエフェクト。">
+<meta property="og:title" content="スクロール連動（SCROLL）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="スクロールに合わせて出たり動いたりする、読み進めたくなるエフェクト。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-scroll">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill is-current" href="scroll.html" style="--cat:#00c2ff;--on:#111" aria-current="page"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill" href="background.html" style="--cat:#7cff4f;--on:#111"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#00c2ff;--on:#111">
+    <p class="g-hero__no">03 <span>/ 07</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:6">SCROLL</span><span class="g-hero__jp">スクロール連動</span></h1>
+    <p class="g-hero__desc">スクロールに合わせて出たり動いたりする、読み進めたくなるエフェクト。</p>
+    <p class="g-hero__count" aria-label="6種類"><b>6</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#00c2ff;--on:#111">
+    <div class="g-tape__track"><span>PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ </span><span>PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#progress">スクロール進み具合バー</a></li><li><a href="#reveal">スクロールで登場</a></li><li><a href="#parallax">パララックス</a></li><li><a href="#scroll-marquee">巨大文字スライド</a></li><li><a href="#velocity-skew">勢いで傾く</a></li><li><a href="#counter">カウントアップ</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="progress">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">スクロール進み具合バー</h2>
+            <p class="g-card__en">Progress Bar</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/scroll/progress/index.html" title="スクロール進み具合バーの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">画面のいちばん上に虹色のバー。ページをどこまで読んだか、スクロールに合わせて伸びる。</p>
+          <p class="g-card__use"><b>使いどころ</b>長い記事・ブログ・ランディングページ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/scroll/progress/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="スクロール進み具合バーのコード">
+            <button class="g-tab" role="tab" id="code-scroll-progress-html-tab" aria-controls="code-scroll-progress-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-scroll-progress-css-tab" aria-controls="code-scroll-progress-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-scroll-progress-js-tab" aria-controls="code-scroll-progress-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-scroll-progress-html" aria-labelledby="code-scroll-progress-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-progress&quot; data-fx=&quot;progress&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+
+<span class="c">&lt;!-- ↓ スクロールを試すためのダミーの中身 --&gt;</span>
+&lt;section class=&quot;demo-block&quot;&gt;SCROLL ↓&lt;/section&gt;
+&lt;section class=&quot;demo-block demo-block--pink&quot;&gt;LINEUP&lt;/section&gt;
+&lt;section class=&quot;demo-block demo-block--yellow&quot;&gt;TIMETABLE&lt;/section&gt;
+&lt;section class=&quot;demo-block demo-block--cyan&quot;&gt;TICKET&lt;/section&gt;
+&lt;section class=&quot;demo-block&quot;&gt;THE END&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-progress-css" aria-labelledby="code-scroll-progress-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #ff3d7f, #ff7a00, #ffd400, #7cff4f, #00c2ff, #a259ff);
+  transform: scaleX(var(--p, 0));
+  transform-origin: left;
+  box-shadow: 0 2px 0 #111;
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-progress-js" aria-labelledby="code-scroll-progress-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// スクロールした割合（0〜1）を CSS 変数 --p に入れる</span>
+(() =&gt; {
+  const bars = document.querySelectorAll(&#x27;[data-fx=&quot;progress&quot;]&#x27;);
+  const update = () =&gt; {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    const p = max &gt; 0 ? scrollY / max : 0;
+    bars.forEach((b) =&gt; b.style.setProperty(&#x27;--p&#x27;, p.toFixed(4)));
+  };
+  addEventListener(&#x27;scroll&#x27;, update, { passive: true });
+  addEventListener(&#x27;resize&#x27;, update);
+  update();
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/scroll/progress/</p>
+        </div>
+      </article>
+      <article class="g-card" id="reveal">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">スクロールで登場</h2>
+            <p class="g-card__en">Scroll Reveal</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/scroll/reveal/index.html" title="スクロールで登場の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">画面に入ったときに、下から・横から・回転しながら、などいろんな出方で現れる。</p>
+          <p class="g-card__use"><b>使いどころ</b>あらゆるページの見出し・カード・画像</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/scroll/reveal/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="スクロールで登場のコード">
+            <button class="g-tab" role="tab" id="code-scroll-reveal-html-tab" aria-controls="code-scroll-reveal-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-scroll-reveal-css-tab" aria-controls="code-scroll-reveal-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-scroll-reveal-js-tab" aria-controls="code-scroll-reveal-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-scroll-reveal-html" aria-labelledby="code-scroll-reveal-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;demo-block&quot;&gt;SCROLL ↓&lt;/section&gt;
+
+&lt;div class=&quot;fx-reveal-list&quot;&gt;
+  &lt;div class=&quot;fx-reveal-card&quot; data-fx=&quot;reveal&quot; data-reveal=&quot;up&quot;&gt;下から&lt;/div&gt;
+  &lt;div class=&quot;fx-reveal-card&quot; data-fx=&quot;reveal&quot; data-reveal=&quot;left&quot;&gt;左から&lt;/div&gt;
+  &lt;div class=&quot;fx-reveal-card&quot; data-fx=&quot;reveal&quot; data-reveal=&quot;right&quot;&gt;右から&lt;/div&gt;
+  &lt;div class=&quot;fx-reveal-card&quot; data-fx=&quot;reveal&quot; data-reveal=&quot;zoom&quot;&gt;ズーム&lt;/div&gt;
+  &lt;div class=&quot;fx-reveal-card&quot; data-fx=&quot;reveal&quot; data-reveal=&quot;spin&quot;&gt;くるっと&lt;/div&gt;
+  &lt;div class=&quot;fx-reveal-card&quot; data-fx=&quot;reveal&quot; data-reveal=&quot;flip&quot;&gt;めくる&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;section class=&quot;demo-block&quot;&gt;THE END&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-reveal-css" aria-labelledby="code-scroll-reveal-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>[data-fx=&quot;reveal&quot;] {
+  opacity: 0;
+  transition: opacity .6s, transform .8s cubic-bezier(.2, .9, .3, 1.3);
+}
+[data-reveal=&quot;up&quot;]    { transform: translateY(80px); }
+[data-reveal=&quot;left&quot;]  { transform: translateX(-120px); }
+[data-reveal=&quot;right&quot;] { transform: translateX(120px); }
+[data-reveal=&quot;zoom&quot;]  { transform: scale(.3); }
+[data-reveal=&quot;spin&quot;]  { transform: rotate(-200deg) scale(.4); }
+[data-reveal=&quot;flip&quot;]  { transform: perspective(600px) rotateX(85deg); transform-origin: top; }
+[data-fx=&quot;reveal&quot;].is-in { opacity: 1; transform: none; }
+
+<span class="c">/* 見本用のカード */</span>
+.fx-reveal-list { display: grid; gap: 28px; padding: 40px 24px; max-width: 520px; margin: 0 auto; }
+.fx-reveal-card {
+  padding: 34px 24px;
+  border: 3px solid #111;
+  border-radius: 18px;
+  background: #ffd400;
+  color: #111;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 8px 8px 0 #111;
+}
+.fx-reveal-card:nth-child(3n+2) { background: #ff3d7f; color: #fff; }
+.fx-reveal-card:nth-child(3n)   { background: #00c2ff; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-reveal-js" aria-labelledby="code-scroll-reveal-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 画面に入った要素に .is-in をつける（一度出たらそのまま）</span>
+(() =&gt; {
+  const io = new IntersectionObserver((entries) =&gt; {
+    entries.forEach((en) =&gt; {
+      if (en.isIntersecting) {
+        en.target.classList.add(&#x27;is-in&#x27;);
+        io.unobserve(en.target);
+      }
+    });
+  }, { threshold: .25 });
+  document.querySelectorAll(&#x27;[data-fx=&quot;reveal&quot;]&#x27;).forEach((el) =&gt; io.observe(el));
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/scroll/reveal/</p>
+        </div>
+      </article>
+      <article class="g-card" id="parallax">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">パララックス</h2>
+            <p class="g-card__en">Parallax Layers</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/scroll/parallax/index.html" title="パララックスの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">スクロールすると、文字や図形がそれぞれ違う速さで動いて、奥行きが出る。</p>
+          <p class="g-card__use"><b>使いどころ</b>トップのヒーロー・ストーリー紹介</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/scroll/parallax/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="パララックスのコード">
+            <button class="g-tab" role="tab" id="code-scroll-parallax-html-tab" aria-controls="code-scroll-parallax-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-scroll-parallax-css-tab" aria-controls="code-scroll-parallax-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-scroll-parallax-js-tab" aria-controls="code-scroll-parallax-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-scroll-parallax-html" aria-labelledby="code-scroll-parallax-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;fx-para&quot;&gt;
+  &lt;span class=&quot;fx-para__item fx-para__sun&quot;    data-fx=&quot;parallax&quot; data-speed=&quot;-0.5&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;fx-para__item fx-para__ring&quot;   data-fx=&quot;parallax&quot; data-speed=&quot;0.6&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;fx-para__item fx-para__star&quot;   data-fx=&quot;parallax&quot; data-speed=&quot;-0.9&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;fx-para__item fx-para__square&quot; data-fx=&quot;parallax&quot; data-speed=&quot;1.1&quot;&gt;&lt;/span&gt;
+  &lt;h2 class=&quot;fx-para__title&quot; data-fx=&quot;parallax&quot; data-speed=&quot;0.35&quot;&gt;DEPTH&lt;br&gt;MOTION&lt;/h2&gt;
+&lt;/section&gt;
+&lt;section class=&quot;demo-block demo-block--pink&quot;&gt;KEEP SCROLLING&lt;/section&gt;
+&lt;section class=&quot;demo-block&quot;&gt;THE END&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-parallax-css" aria-labelledby="code-scroll-parallax-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-para {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 130vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #2b1055 0%, #7597de 100%);
+}
+[data-fx=&quot;parallax&quot;] { will-change: transform; }
+.fx-para__title {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-size: clamp(48px, 13vw, 110px);
+  line-height: .95;
+  text-align: center;
+  color: #fff;
+  text-shadow: 6px 6px 0 #ff3d7f;
+}
+.fx-para__item { position: absolute; display: block; }
+.fx-para__sun    { top: 12%; left: 10%; width: 140px; height: 140px; border-radius: 50%; background: #ffd400; }
+.fx-para__ring   { top: 55%; right: 8%; width: 120px; height: 120px; border-radius: 50%; border: 16px solid #7cff4f; }
+.fx-para__star   { top: 22%; right: 20%; width: 80px; height: 80px; background: #ff7a00;
+                   clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+.fx-para__square { top: 70%; left: 16%; width: 70px; height: 70px; background: #00c2ff; transform: rotate(20deg); }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-parallax-js" aria-labelledby="code-scroll-parallax-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// data-speed の値 × スクロール量 だけ、上下にずらす（マイナスなら逆向き）</span>
+(() =&gt; {
+  const els = [...document.querySelectorAll(&#x27;[data-fx=&quot;parallax&quot;]&#x27;)];
+  let ticking = false;
+  const update = () =&gt; {
+    els.forEach((el) =&gt; {
+      const speed = parseFloat(el.dataset.speed) || 0;
+      el.style.transform = `translate3d(0, ${scrollY * speed}px, 0)`;
+    });
+    ticking = false;
+  };
+  addEventListener(&#x27;scroll&#x27;, () =&gt; {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+  update();
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/scroll/parallax/</p>
+        </div>
+      </article>
+      <article class="g-card" id="scroll-marquee">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">巨大文字スライド</h2>
+            <p class="g-card__en">Scroll Marquee</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/scroll/scroll-marquee/index.html" title="巨大文字スライドの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">スクロールに合わせて、大きな文字の帯が左右反対向きに流れる。</p>
+          <p class="g-card__use"><b>使いどころ</b>セクションの区切り・ブランド名・キャッチコピー</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/scroll/scroll-marquee/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="巨大文字スライドのコード">
+            <button class="g-tab" role="tab" id="code-scroll-scroll-marquee-html-tab" aria-controls="code-scroll-scroll-marquee-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-scroll-scroll-marquee-css-tab" aria-controls="code-scroll-scroll-marquee-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-scroll-scroll-marquee-js-tab" aria-controls="code-scroll-scroll-marquee-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-scroll-scroll-marquee-html" aria-labelledby="code-scroll-scroll-marquee-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;demo-block&quot;&gt;SCROLL ↓&lt;/section&gt;
+
+&lt;div class=&quot;fx-smq&quot;&gt;
+  &lt;div class=&quot;fx-smq__row&quot; data-fx=&quot;scroll-marquee&quot; data-speed=&quot;0.6&quot;&gt;
+    EPIC DAY ★ EPIC DAY ★ EPIC DAY ★ EPIC DAY ★
+  &lt;/div&gt;
+  &lt;div class=&quot;fx-smq__row fx-smq__row--outline&quot; data-fx=&quot;scroll-marquee&quot; data-speed=&quot;-0.6&quot;&gt;
+    MUSIC ● FOOD ● ART ● MUSIC ● FOOD ● ART ●
+  &lt;/div&gt;
+  &lt;div class=&quot;fx-smq__row fx-smq__row--pink&quot; data-fx=&quot;scroll-marquee&quot; data-speed=&quot;0.9&quot;&gt;
+    ド派手に行こう ド派手に行こう ド派手に行こう
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;section class=&quot;demo-block&quot;&gt;THE END&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-scroll-marquee-css" aria-labelledby="code-scroll-scroll-marquee-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-smq { overflow: hidden; padding: 6vh 0; }
+.fx-smq__row {
+  white-space: nowrap;
+  font-size: clamp(56px, 14vw, 140px);
+  line-height: 1.05;
+  color: #ffd400;
+  will-change: transform;
+}
+.fx-smq__row--outline { color: transparent; -webkit-text-stroke: 2px #fff; }
+.fx-smq__row--pink    { color: #ff3d7f; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-scroll-marquee-js" aria-labelledby="code-scroll-scroll-marquee-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 帯が画面の中を通るあいだ、スクロール量に合わせて横へずらす</span>
+(() =&gt; {
+  const rows = [...document.querySelectorAll(&#x27;[data-fx=&quot;scroll-marquee&quot;]&#x27;)];
+  const update = () =&gt; {
+    rows.forEach((row) =&gt; {
+      const r = row.getBoundingClientRect();
+      const progress = innerHeight - r.top;          <span class="c">// 画面に入ってから進んだ量</span>
+      const speed = parseFloat(row.dataset.speed) || .5;
+      const start = speed &gt; 0 ? 0 : -row.scrollWidth * .3;   <span class="c">// 右へ流す帯は左に余白を持たせる</span>
+      row.style.transform = `translate3d(${start + progress * -speed}px, 0, 0)`;
+    });
+  };
+  addEventListener(&#x27;scroll&#x27;, () =&gt; requestAnimationFrame(update), { passive: true });
+  addEventListener(&#x27;resize&#x27;, update);
+  update();
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/scroll/scroll-marquee/</p>
+        </div>
+      </article>
+      <article class="g-card" id="velocity-skew">
+        <header class="g-card__head">
+          <span class="g-card__no">05</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">勢いで傾く</h2>
+            <p class="g-card__en">Velocity Skew</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/scroll/velocity-skew/index.html" title="勢いで傾くの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">流れ続けるテープが、速くスクロールするほどグイッと斜めに傾いて、止まると戻る。</p>
+          <p class="g-card__use"><b>使いどころ</b>イベント・スポーツ・音楽系のテンションを上げたいページ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/scroll/velocity-skew/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="勢いで傾くのコード">
+            <button class="g-tab" role="tab" id="code-scroll-velocity-skew-html-tab" aria-controls="code-scroll-velocity-skew-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-scroll-velocity-skew-css-tab" aria-controls="code-scroll-velocity-skew-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-scroll-velocity-skew-js-tab" aria-controls="code-scroll-velocity-skew-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-scroll-velocity-skew-html" aria-labelledby="code-scroll-velocity-skew-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;demo-block&quot;&gt;はやくスクロール ↓&lt;/section&gt;
+
+&lt;div class=&quot;fx-skew&quot; data-fx=&quot;velocity-skew&quot;&gt;
+  &lt;div class=&quot;fx-skew__track&quot;&gt;
+    &lt;span&gt;SPEED ⚡ POWER ⚡ ENERGY ⚡ SPEED ⚡ POWER ⚡ ENERGY ⚡ &lt;/span&gt;
+    &lt;span aria-hidden=&quot;true&quot;&gt;SPEED ⚡ POWER ⚡ ENERGY ⚡ SPEED ⚡ POWER ⚡ ENERGY ⚡ &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;fx-skew fx-skew--b&quot; data-fx=&quot;velocity-skew&quot;&gt;
+  &lt;div class=&quot;fx-skew__track&quot;&gt;
+    &lt;span&gt;ノンストップ！ ノンストップ！ ノンストップ！ &lt;/span&gt;
+    &lt;span aria-hidden=&quot;true&quot;&gt;ノンストップ！ ノンストップ！ ノンストップ！ &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;section class=&quot;demo-block demo-block--cyan&quot;&gt;MORE ↓&lt;/section&gt;
+&lt;section class=&quot;demo-block&quot;&gt;THE END&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-velocity-skew-css" aria-labelledby="code-scroll-velocity-skew-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-skew {
+  margin: 4vh 0;
+  padding: 14px 0;
+  overflow: hidden;
+  background: #ffd400;
+  color: #111;
+  border-block: 4px solid #111;
+  transform: skewY(var(--skew, 0deg));
+  will-change: transform;
+}
+.fx-skew--b { background: #ff3d7f; color: #fff; }
+.fx-skew__track {
+  display: flex;
+  width: max-content;
+  font-size: clamp(30px, 7vw, 60px);
+  white-space: nowrap;
+  animation: fx-skew-loop 14s linear infinite;
+}
+.fx-skew--b .fx-skew__track { animation-direction: reverse; }
+@keyframes fx-skew-loop { to { transform: translateX(-50%); } }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-velocity-skew-js" aria-labelledby="code-scroll-velocity-skew-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 1フレームあたりのスクロール量（速さ）を傾きの角度に変える</span>
+(() =&gt; {
+  const els = document.querySelectorAll(&#x27;[data-fx=&quot;velocity-skew&quot;]&#x27;);
+  let lastY = scrollY, skew = 0;
+  (function loop() {
+    const v = scrollY - lastY;            <span class="c">// スクロールの速さ</span>
+    lastY = scrollY;
+    const target = Math.max(-12, Math.min(12, v * .6));
+    skew += (target - skew) * .12;        <span class="c">// なめらかに追いかける</span>
+    els.forEach((el) =&gt; el.style.setProperty(&#x27;--skew&#x27;, `${skew.toFixed(2)}deg`));
+    requestAnimationFrame(loop);
+  })();
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/scroll/velocity-skew/</p>
+        </div>
+      </article>
+      <article class="g-card" id="counter">
+        <header class="g-card__head">
+          <span class="g-card__no">06</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">カウントアップ</h2>
+            <p class="g-card__en">Count Up</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/scroll/counter/index.html" title="カウントアップの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">数字が画面に入ると、0からぐんぐん増えて目標の数字で止まる。</p>
+          <p class="g-card__use"><b>使いどころ</b>実績・来場者数・会員数・スペック紹介</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/scroll/counter/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="カウントアップのコード">
+            <button class="g-tab" role="tab" id="code-scroll-counter-html-tab" aria-controls="code-scroll-counter-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-scroll-counter-css-tab" aria-controls="code-scroll-counter-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-scroll-counter-js-tab" aria-controls="code-scroll-counter-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-scroll-counter-html" aria-labelledby="code-scroll-counter-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;demo-block&quot;&gt;SCROLL ↓&lt;/section&gt;
+
+&lt;div class=&quot;fx-count-grid&quot;&gt;
+  &lt;div class=&quot;fx-count&quot;&gt;
+    &lt;b data-fx=&quot;counter&quot; data-to=&quot;30000&quot; data-suffix=&quot;+&quot;&gt;0&lt;/b&gt;
+    &lt;span&gt;来場者&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;fx-count&quot;&gt;
+    &lt;b data-fx=&quot;counter&quot; data-to=&quot;48&quot;&gt;0&lt;/b&gt;
+    &lt;span&gt;出演アーティスト&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;fx-count&quot;&gt;
+    &lt;b data-fx=&quot;counter&quot; data-to=&quot;99.9&quot; data-decimals=&quot;1&quot; data-suffix=&quot;%&quot;&gt;0&lt;/b&gt;
+    &lt;span&gt;満足度&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;section class=&quot;demo-block&quot;&gt;THE END&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-counter-css" aria-labelledby="code-scroll-counter-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-count-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 10vh 24px;
+}
+.fx-count {
+  padding: 28px 16px;
+  border: 3px solid #111;
+  border-radius: 20px;
+  background: #fff;
+  color: #111;
+  text-align: center;
+  box-shadow: 8px 8px 0 #ff3d7f;
+}
+.fx-count b {
+  display: block;
+  font-size: clamp(40px, 8vw, 64px);
+  font-weight: normal;
+  font-variant-numeric: tabular-nums;
+  color: #ff3d7f;
+}
+.fx-count span { font-size: 15px; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-counter-js" aria-labelledby="code-scroll-counter-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 画面に入ったら、1.8秒かけて 0 → data-to まで数字を増やす</span>
+(() =&gt; {
+  const ease = (t) =&gt; 1 - Math.pow(1 - t, 3);      <span class="c">// 最後にゆっくり止まる</span>
+  const run = (el) =&gt; {
+    const to = parseFloat(el.dataset.to) || 0;
+    const dec = parseInt(el.dataset.decimals || &#x27;0&#x27;, 10);
+    const suffix = el.dataset.suffix || &#x27;&#x27;;
+    const dur = 1800, start = performance.now();
+    const tick = (now) =&gt; {
+      const t = Math.min(1, (now - start) / dur);
+      const val = to * ease(t);
+      el.textContent = val.toLocaleString(&#x27;ja-JP&#x27;, { minimumFractionDigits: dec, maximumFractionDigits: dec }) + suffix;
+      if (t &lt; 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  const io = new IntersectionObserver((entries) =&gt; {
+    entries.forEach((en) =&gt; {
+      if (en.isIntersecting) { run(en.target); io.unobserve(en.target); }
+    });
+  }, { threshold: .6 });
+  document.querySelectorAll(&#x27;[data-fx=&quot;counter&quot;]&#x27;).forEach((el) =&gt; io.observe(el));
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/scroll/counter/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="cursor.html" style="--cat:#ffd400;--on:#111"><small>← 前の種類</small>マウス・カーソル</a><a class="g-pager__link g-pager__link--next" href="background.html" style="--cat:#7cff4f;--on:#111"><small>次の種類 →</small>背景・図形</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 41 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

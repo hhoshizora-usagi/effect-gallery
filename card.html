@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>カード・ホバー（CARD）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="マウスを乗せたときに反応する、カードや一覧のためのエフェクト。">
+<meta property="og:title" content="カード・ホバー（CARD）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="マウスを乗せたときに反応する、カードや一覧のためのエフェクト。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-card">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill" href="scroll.html" style="--cat:#00c2ff;--on:#111"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill" href="background.html" style="--cat:#7cff4f;--on:#111"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill is-current" href="card.html" style="--cat:#a259ff;--on:#fff" aria-current="page"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#a259ff;--on:#fff">
+    <p class="g-hero__no">06 <span>/ 07</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:4">CARD</span><span class="g-hero__jp">カード・ホバー</span></h1>
+    <p class="g-hero__desc">マウスを乗せたときに反応する、カードや一覧のためのエフェクト。</p>
+    <p class="g-hero__count" aria-label="6種類"><b>6</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#a259ff;--on:#fff">
+    <div class="g-tape__track"><span>3D TILT &amp; GLARE ✦ GLOWING BORDER ✦ FLIP CARD ✦ POP LIFT ✦ HOVER REVEAL ✦ SPOTLIGHT BORDER ✦ 3D TILT &amp; GLARE ✦ GLOWING BORDER ✦ FLIP CARD ✦ POP LIFT ✦ HOVER REVEAL ✦ SPOTLIGHT BORDER ✦ </span><span>3D TILT &amp; GLARE ✦ GLOWING BORDER ✦ FLIP CARD ✦ POP LIFT ✦ HOVER REVEAL ✦ SPOTLIGHT BORDER ✦ 3D TILT &amp; GLARE ✦ GLOWING BORDER ✦ FLIP CARD ✦ POP LIFT ✦ HOVER REVEAL ✦ SPOTLIGHT BORDER ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#tilt">3Dチルト＋光沢</a></li><li><a href="#glow-border">光る回転フチ</a></li><li><a href="#flip">くるっとめくる</a></li><li><a href="#brutal-lift">ポップに浮く</a></li><li><a href="#reveal-info">めくれて情報</a></li><li><a href="#spotlight-border">なぞると光るフチ</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="tilt">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">3Dチルト＋光沢</h2>
+            <p class="g-card__en">3D Tilt &amp; Glare</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/card/tilt/index.html" title="3Dチルト＋光沢の見本" loading="lazy" style="height:400px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">マウスの位置に合わせてカードが立体的に傾き、表面に光がすべるように反射する。</p>
+          <p class="g-card__use"><b>使いどころ</b>商品カード・チケット・メンバーカード・作品一覧</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/card/tilt/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="3Dチルト＋光沢のコード">
+            <button class="g-tab" role="tab" id="code-card-tilt-html-tab" aria-controls="code-card-tilt-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-card-tilt-css-tab" aria-controls="code-card-tilt-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-card-tilt-js-tab" aria-controls="code-card-tilt-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-card-tilt-html" aria-labelledby="code-card-tilt-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-tilt&quot; data-fx=&quot;tilt&quot;&gt;
+  &lt;div class=&quot;fx-tilt__inner&quot;&gt;
+    &lt;p class=&quot;fx-tilt__label&quot;&gt;VIP PASS&lt;/p&gt;
+    &lt;h3 class=&quot;fx-tilt__title&quot;&gt;EPIC&lt;br&gt;DAY&lt;/h3&gt;
+    &lt;p class=&quot;fx-tilt__no&quot;&gt;No. 0001&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-card-tilt-css" aria-labelledby="code-card-tilt-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-tilt {
+  --rx: 0deg;
+  --ry: 0deg;
+  --gx: 50%;
+  --gy: 50%;
+  width: min(70vw, 250px);
+  aspect-ratio: 3 / 4;
+  perspective: 800px;
+}
+.fx-tilt__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px;
+  overflow: hidden;
+  border: 4px solid #111;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #ff3d7f, #a259ff 55%, #00c2ff);
+  color: #fff;
+  transform: rotateX(var(--rx)) rotateY(var(--ry));
+  transform-style: preserve-3d;
+  transition: transform .15s ease-out;
+  box-shadow: 0 30px 40px -20px rgba(0, 0, 0, .7);
+}
+.fx-tilt.is-leaving .fx-tilt__inner { transition: transform .6s cubic-bezier(.2, .9, .3, 1.3); }
+<span class="c">/* 光の反射 */</span>
+.fx-tilt__inner::after {
+  content: &quot;&quot;;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--gx) var(--gy), rgba(255, 255, 255, .55), transparent 55%);
+  mix-blend-mode: overlay;
+}
+.fx-tilt__label { margin: 0; font-size: 14px; letter-spacing: .3em; }
+.fx-tilt__title { margin: 0; font-size: 56px; line-height: .9; transform: translateZ(40px); text-shadow: 4px 4px 0 #111; }
+.fx-tilt__no { margin: 0; font-family: ui-monospace, monospace; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-card-tilt-js" aria-labelledby="code-card-tilt-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// カードの中のマウス位置（0〜1）から、傾きの角度と光の位置を決める</span>
+(() =&gt; {
+  const max = 18;   <span class="c">// いちばん傾いたときの角度</span>
+  document.querySelectorAll(&#x27;[data-fx=&quot;tilt&quot;]&#x27;).forEach((card) =&gt; {
+    card.addEventListener(&#x27;pointermove&#x27;, (e) =&gt; {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width;
+      const y = (e.clientY - r.top) / r.height;
+      card.classList.remove(&#x27;is-leaving&#x27;);
+      card.style.setProperty(&#x27;--ry&#x27;, `${(x - .5) * max * 2}deg`);
+      card.style.setProperty(&#x27;--rx&#x27;, `${(.5 - y) * max * 2}deg`);
+      card.style.setProperty(&#x27;--gx&#x27;, `${x * 100}%`);
+      card.style.setProperty(&#x27;--gy&#x27;, `${y * 100}%`);
+    });
+    card.addEventListener(&#x27;pointerleave&#x27;, () =&gt; {
+      card.classList.add(&#x27;is-leaving&#x27;);
+      card.style.setProperty(&#x27;--rx&#x27;, &#x27;0deg&#x27;);
+      card.style.setProperty(&#x27;--ry&#x27;, &#x27;0deg&#x27;);
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/card/tilt/</p>
+        </div>
+      </article>
+      <article class="g-card" id="glow-border">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">光る回転フチ</h2>
+            <p class="g-card__en">Glowing Border</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/card/glow-border/index.html" title="光る回転フチの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">カードのフチを虹色の光がぐるぐる回り続ける。CSSだけで動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>おすすめプラン・限定商品・注目のお知らせ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/card/glow-border/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="光る回転フチのコード">
+            <button class="g-tab" role="tab" id="code-card-glow-border-html-tab" aria-controls="code-card-glow-border-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-card-glow-border-css-tab" aria-controls="code-card-glow-border-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-card-glow-border-html" aria-labelledby="code-card-glow-border-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;article class=&quot;fx-glow&quot;&gt;
+  &lt;p class=&quot;fx-glow__tag&quot;&gt;RECOMMENDED&lt;/p&gt;
+  &lt;h3 class=&quot;fx-glow__title&quot;&gt;PREMIUM&lt;/h3&gt;
+  &lt;p class=&quot;fx-glow__price&quot;&gt;¥9,800&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-card-glow-border-css" aria-labelledby="code-card-glow-border-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>@property --fx-angle {
+  syntax: &quot;&lt;angle&gt;&quot;;
+  inherits: false;
+  initial-value: 0deg;
+}
+.fx-glow {
+  position: relative;
+  width: min(80vw, 300px);
+  padding: 34px 26px;
+  border-radius: 22px;
+  background: #16121f;
+  color: #fff;
+  text-align: center;
+  isolation: isolate;
+}
+.fx-glow::before,
+.fx-glow::after {
+  content: &quot;&quot;;
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border-radius: 26px;
+  background: conic-gradient(from var(--fx-angle),
+    #ff3d7f, #ffd400, #7cff4f, #00c2ff, #a259ff, #ff3d7f);
+  animation: fx-glow-spin 3s linear infinite;
+}
+.fx-glow::after { filter: blur(22px); opacity: .8; }   <span class="c">/* 外側のにじみ */</span>
+.fx-glow__tag {
+  display: inline-block;
+  margin: 0;
+  padding: .3em .8em;
+  border-radius: 999px;
+  background: #ffd400;
+  color: #111;
+  font-size: 13px;
+  letter-spacing: .15em;
+}
+.fx-glow__title { margin: .4em 0 .2em; font-size: 42px; }
+.fx-glow__price { margin: 0; font-size: 28px; color: #7cff4f; }
+@keyframes fx-glow-spin { to { --fx-angle: 360deg; } }</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/card/glow-border/</p>
+        </div>
+      </article>
+      <article class="g-card" id="flip">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">くるっとめくる</h2>
+            <p class="g-card__en">Flip Card</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/card/flip/index.html" title="くるっとめくるの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">マウスを乗せる（スマホはタップ）と、カードが裏返って裏面の情報が出てくる。</p>
+          <p class="g-card__use"><b>使いどころ</b>出演者紹介・クイズ・メニュー・スタッフ紹介</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/card/flip/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="くるっとめくるのコード">
+            <button class="g-tab" role="tab" id="code-card-flip-html-tab" aria-controls="code-card-flip-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-card-flip-css-tab" aria-controls="code-card-flip-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-card-flip-js-tab" aria-controls="code-card-flip-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-card-flip-html" aria-labelledby="code-card-flip-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-flip-row&quot;&gt;
+  &lt;button class=&quot;fx-flip&quot; data-fx=&quot;flip&quot; aria-label=&quot;カードを裏返す&quot;&gt;
+    &lt;span class=&quot;fx-flip__inner&quot;&gt;
+      &lt;span class=&quot;fx-flip__face fx-flip__front&quot;&gt;?&lt;/span&gt;
+      &lt;span class=&quot;fx-flip__face fx-flip__back&quot;&gt;DJ NOVA&lt;small&gt;MAIN STAGE 18:00&lt;/small&gt;&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;fx-flip fx-flip--b&quot; data-fx=&quot;flip&quot; aria-label=&quot;カードを裏返す&quot;&gt;
+    &lt;span class=&quot;fx-flip__inner&quot;&gt;
+      &lt;span class=&quot;fx-flip__face fx-flip__front&quot;&gt;?&lt;/span&gt;
+      &lt;span class=&quot;fx-flip__face fx-flip__back&quot;&gt;LUNA&lt;small&gt;NEON STAGE 20:30&lt;/small&gt;&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-card-flip-css" aria-labelledby="code-card-flip-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-flip-row { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
+.fx-flip {
+  width: 180px;
+  height: 240px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  perspective: 900px;
+}
+.fx-flip__inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(.3, 1.4, .5, 1);
+}
+.fx-flip:hover .fx-flip__inner,
+.fx-flip:focus-visible .fx-flip__inner,
+.fx-flip.is-flipped .fx-flip__inner { transform: rotateY(180deg); }
+.fx-flip__face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 6px;
+  border: 4px solid #111;
+  border-radius: 18px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.fx-flip__front { background: #ffd400; color: #111; font-size: 90px; box-shadow: 6px 6px 0 #111; }
+.fx-flip__back  { background: #ff3d7f; color: #fff; font-size: 26px; transform: rotateY(180deg); }
+.fx-flip--b .fx-flip__front { background: #00c2ff; }
+.fx-flip--b .fx-flip__back  { background: #a259ff; }
+.fx-flip__back small { font-size: 13px; letter-spacing: .05em; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-card-flip-js" aria-labelledby="code-card-flip-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// タッチ端末はホバーできないので、タップで裏表を切りかえる</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;flip&quot;]&#x27;).forEach((card) =&gt; {
+    card.addEventListener(&#x27;click&#x27;, () =&gt; card.classList.toggle(&#x27;is-flipped&#x27;));
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/card/flip/</p>
+        </div>
+      </article>
+      <article class="g-card" id="brutal-lift">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ポップに浮く</h2>
+            <p class="g-card__en">Pop Lift</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/card/brutal-lift/index.html" title="ポップに浮くの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">太いフチ＋ずらした影のカード。マウスを乗せると持ち上がり、押すとカチッと沈む。CSSだけで動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>ブログ記事一覧・サービス紹介・メニュー</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/card/brutal-lift/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ポップに浮くのコード">
+            <button class="g-tab" role="tab" id="code-card-brutal-lift-html-tab" aria-controls="code-card-brutal-lift-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-card-brutal-lift-css-tab" aria-controls="code-card-brutal-lift-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-card-brutal-lift-html" aria-labelledby="code-card-brutal-lift-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-lift-grid&quot;&gt;
+  &lt;a class=&quot;fx-lift&quot; href=&quot;#&quot;&gt;
+    &lt;span class=&quot;fx-lift__emoji&quot;&gt;🎸&lt;/span&gt;
+    &lt;strong&gt;MUSIC&lt;/strong&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;fx-lift fx-lift--pink&quot; href=&quot;#&quot;&gt;
+    &lt;span class=&quot;fx-lift__emoji&quot;&gt;🍔&lt;/span&gt;
+    &lt;strong&gt;FOOD&lt;/strong&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;fx-lift fx-lift--cyan&quot; href=&quot;#&quot;&gt;
+    &lt;span class=&quot;fx-lift__emoji&quot;&gt;🎨&lt;/span&gt;
+    &lt;strong&gt;ART&lt;/strong&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-card-brutal-lift-css" aria-labelledby="code-card-brutal-lift-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-lift-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 22px;
+  width: min(92vw, 560px);
+}
+.fx-lift {
+  display: grid;
+  place-items: center;
+  gap: 6px;
+  padding: 26px 12px;
+  border: 4px solid #111;
+  border-radius: 18px;
+  background: #ffd400;
+  color: #111;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 6px 6px 0 #111;
+  transition: transform .18s cubic-bezier(.2, .9, .3, 1.5), box-shadow .18s;
+}
+.fx-lift--pink { background: #ff3d7f; color: #fff; }
+.fx-lift--cyan { background: #00c2ff; }
+.fx-lift__emoji { font-size: 44px; transition: transform .3s cubic-bezier(.2, .9, .3, 1.6); }
+.fx-lift:hover,
+.fx-lift:focus-visible {
+  transform: translate(-6px, -6px) rotate(-2deg);
+  box-shadow: 14px 14px 0 #111;
+}
+.fx-lift:hover .fx-lift__emoji { transform: scale(1.3) rotate(12deg); }
+.fx-lift:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0 0 0 #111;
+}</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/card/brutal-lift/</p>
+        </div>
+      </article>
+      <article class="g-card" id="reveal-info">
+        <header class="g-card__head">
+          <span class="g-card__no">05</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">めくれて情報</h2>
+            <p class="g-card__en">Hover Reveal</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/card/reveal-info/index.html" title="めくれて情報の見本" loading="lazy" style="height:400px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">マウスを乗せると絵がズームして、下から色の帯と説明文がスッと出てくる。画像なしでも動く見本。</p>
+          <p class="g-card__use"><b>使いどころ</b>作品ギャラリー・商品一覧・ブログのサムネイル</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/card/reveal-info/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="めくれて情報のコード">
+            <button class="g-tab" role="tab" id="code-card-reveal-info-html-tab" aria-controls="code-card-reveal-info-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-card-reveal-info-css-tab" aria-controls="code-card-reveal-info-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-card-reveal-info-html" aria-labelledby="code-card-reveal-info-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;article class=&quot;fx-rcard&quot; tabindex=&quot;0&quot;&gt;
+  &lt;div class=&quot;fx-rcard__art&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;fx-rcard__info&quot;&gt;
+    &lt;h3&gt;SUNSET STAGE&lt;/h3&gt;
+    &lt;p&gt;夕焼けの中で聴く、いちばんエモい時間。&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-card-reveal-info-css" aria-labelledby="code-card-reveal-info-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-rcard {
+  position: relative;
+  width: min(80vw, 270px);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 4px solid #111;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 8px 8px 0 #111;
+}
+<span class="c">/* 画像のかわりの絵（本番は background-image: url(...) や &lt;img&gt; に） */</span>
+.fx-rcard__art {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 62%, #ffd400 0 18%, transparent 19%),
+    repeating-linear-gradient(0deg, #ff3d7f 0 14px, #ff7a00 14px 28px) bottom / 100% 38% no-repeat,
+    linear-gradient(180deg, #a259ff, #ff3d7f 70%);
+  transition: transform .6s cubic-bezier(.2, .8, .2, 1), filter .6s;
+}
+.fx-rcard__info {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 22px;
+  background: #111;
+  color: #fff;
+  transform: translateY(101%);
+  transition: transform .45s cubic-bezier(.2, .9, .3, 1.2);
+}
+.fx-rcard__info h3 { margin: 0 0 .3em; font-size: 24px; color: #ffd400; }
+.fx-rcard__info p  { margin: 0; font-family: system-ui, sans-serif; font-size: 14px; line-height: 1.6; }
+.fx-rcard:hover .fx-rcard__art,
+.fx-rcard:focus-visible .fx-rcard__art { transform: scale(1.15) rotate(3deg); filter: saturate(1.4); }
+.fx-rcard:hover .fx-rcard__info,
+.fx-rcard:focus-visible .fx-rcard__info { transform: none; }</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/card/reveal-info/</p>
+        </div>
+      </article>
+      <article class="g-card" id="spotlight-border">
+        <header class="g-card__head">
+          <span class="g-card__no">06</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">なぞると光るフチ</h2>
+            <p class="g-card__en">Spotlight Border</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/card/spotlight-border/index.html" title="なぞると光るフチの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">カードの上をマウスでなぞると、マウスの近くのフチと表面だけがぼんやり光る。</p>
+          <p class="g-card__use"><b>使いどころ</b>料金プラン・機能紹介・ダークなサイトのカード</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/card/spotlight-border/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="なぞると光るフチのコード">
+            <button class="g-tab" role="tab" id="code-card-spotlight-border-html-tab" aria-controls="code-card-spotlight-border-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-card-spotlight-border-css-tab" aria-controls="code-card-spotlight-border-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-card-spotlight-border-js-tab" aria-controls="code-card-spotlight-border-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-card-spotlight-border-html" aria-labelledby="code-card-spotlight-border-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-sb-grid&quot; data-fx=&quot;spotlight-border&quot;&gt;
+  &lt;article class=&quot;fx-sb&quot;&gt;&lt;h3&gt;⚡ FAST&lt;/h3&gt;&lt;p&gt;一瞬で表示。&lt;/p&gt;&lt;/article&gt;
+  &lt;article class=&quot;fx-sb&quot;&gt;&lt;h3&gt;🎨 COLOR&lt;/h3&gt;&lt;p&gt;色を自由に。&lt;/p&gt;&lt;/article&gt;
+  &lt;article class=&quot;fx-sb&quot;&gt;&lt;h3&gt;🔒 SAFE&lt;/h3&gt;&lt;p&gt;安心の仕組み。&lt;/p&gt;&lt;/article&gt;
+  &lt;article class=&quot;fx-sb&quot;&gt;&lt;h3&gt;🚀 BOOST&lt;/h3&gt;&lt;p&gt;もっと遠くへ。&lt;/p&gt;&lt;/article&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-card-spotlight-border-css" aria-labelledby="code-card-spotlight-border-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-sb-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  width: min(92vw, 520px);
+}
+.fx-sb {
+  --mx: -999px;
+  --my: -999px;
+  position: relative;
+  padding: 26px 20px;
+  border-radius: 16px;
+  background: #1d1830;
+  color: #fff;
+  isolation: isolate;
+}
+<span class="c">/* フチの光：グラデーションをフチの太さだけ残して切り抜く */</span>
+.fx-sb::before {
+  content: &quot;&quot;;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  padding: 2px;
+  border-radius: inherit;
+  background: radial-gradient(220px circle at var(--mx) var(--my), #ff3d7f, #ffd400 30%, transparent 60%), #2e2747;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+<span class="c">/* 表面のうっすらした光 */</span>
+.fx-sb::after {
+  content: &quot;&quot;;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: radial-gradient(260px circle at var(--mx) var(--my), rgba(255, 61, 127, .16), transparent 60%);
+}
+.fx-sb h3 { margin: 0 0 .3em; font-size: 22px; }
+.fx-sb p  { margin: 0; font-family: system-ui, sans-serif; font-size: 14px; color: #c9c3e6; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-card-spotlight-border-js" aria-labelledby="code-card-spotlight-border-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// グループ全体でマウスを見て、カードごとに「カードから見たマウスの位置」を入れる</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;spotlight-border&quot;]&#x27;).forEach((group) =&gt; {
+    const cards = [...group.children];
+    group.addEventListener(&#x27;pointermove&#x27;, (e) =&gt; {
+      cards.forEach((card) =&gt; {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty(&#x27;--mx&#x27;, `${e.clientX - r.left}px`);
+        card.style.setProperty(&#x27;--my&#x27;, `${e.clientY - r.top}px`);
+      });
+    });
+    group.addEventListener(&#x27;pointerleave&#x27;, () =&gt; {
+      cards.forEach((card) =&gt; {
+        card.style.setProperty(&#x27;--mx&#x27;, &#x27;-999px&#x27;);
+        card.style.setProperty(&#x27;--my&#x27;, &#x27;-999px&#x27;);
+      });
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/card/spotlight-border/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="click.html" style="--cat:#ff7a00;--on:#111"><small>← 前の種類</small>クリック・ボタン</a><a class="g-pager__link g-pager__link--next" href="page.html" style="--cat:#ff2e4d;--on:#fff"><small>次の種類 →</small>ページ演出</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 41 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.fx-float {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff4e0;
+}
+.fx-float__title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: clamp(48px, 13vw, 110px);
+  line-height: .95;
+  text-align: center;
+  color: #111;
+  text-shadow: 5px 5px 0 #ffd400;
+}
+.fx-float__shape {
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  background: var(--c);
+  animation: fx-float var(--d) ease-in-out var(--delay) infinite alternate;
+}
+.fx-float__shape.is-circle { border-radius: 50%; }
+.fx-float__shape.is-ring   { border-radius: 50%; background: none; border: 8px solid var(--c); }
+.fx-float__shape.is-tri    { clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+.fx-float__shape.is-star   { clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+.fx-float__shape.is-pill   { height: calc(var(--s) * .45); border-radius: 999px; }
+@keyframes fx-float {
+  from { transform: translate(0, 0) rotate(0deg); }
+  to   { transform: translate(var(--dx), var(--dy)) rotate(var(--r)); }
+}

@@ -1,0 +1,12 @@
+.fx-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #ff3d7f, #ff7a00, #ffd400, #7cff4f, #00c2ff, #a259ff);
+  transform: scaleX(var(--p, 0));
+  transform-origin: left;
+  box-shadow: 0 2px 0 #111;
+}

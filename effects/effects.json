@@ -1,0 +1,715 @@
+{
+  "categories": [
+    {
+      "id": "text",
+      "no": "01",
+      "name": "テキスト",
+      "en": "TEXT",
+      "color": "#ff3d7f",
+      "ink": "#fff",
+      "desc": "文字そのものを動かして、見出しやキャッチコピーを主役にするエフェクト。"
+    },
+    {
+      "id": "cursor",
+      "no": "02",
+      "name": "マウス・カーソル",
+      "en": "CURSOR",
+      "color": "#ffd400",
+      "ink": "#111",
+      "desc": "マウスやタッチの動きに反応して、さわるのが楽しくなるエフェクト。"
+    },
+    {
+      "id": "scroll",
+      "no": "03",
+      "name": "スクロール連動",
+      "en": "SCROLL",
+      "color": "#00c2ff",
+      "ink": "#111",
+      "desc": "スクロールに合わせて出たり動いたりする、読み進めたくなるエフェクト。"
+    },
+    {
+      "id": "background",
+      "no": "04",
+      "name": "背景・図形",
+      "en": "BACKGROUND",
+      "color": "#7cff4f",
+      "ink": "#111",
+      "desc": "ページの後ろでずっと動き続けて、画面全体のふんいきを作るエフェクト。"
+    },
+    {
+      "id": "click",
+      "no": "05",
+      "name": "クリック・ボタン",
+      "en": "CLICK",
+      "color": "#ff7a00",
+      "ink": "#111",
+      "desc": "押した瞬間に気持ちよく反応して、押したくなるボタンにするエフェクト。"
+    },
+    {
+      "id": "card",
+      "no": "06",
+      "name": "カード・ホバー",
+      "en": "CARD",
+      "color": "#a259ff",
+      "ink": "#fff",
+      "desc": "マウスを乗せたときに反応する、カードや一覧のためのエフェクト。"
+    },
+    {
+      "id": "page",
+      "no": "07",
+      "name": "ページ演出",
+      "en": "PAGE",
+      "color": "#ff2e4d",
+      "ink": "#fff",
+      "desc": "画面の切り替えや読み込み、ポップアップなど、ページ全体の見せ方のエフェクト。"
+    }
+  ],
+  "effects": [
+    {
+      "cat": "text",
+      "id": "wave",
+      "name": "波打つ文字",
+      "en": "Wave Letters",
+      "desc": "1文字ずつ時間差でぴょこぴょこ跳ねて、色もカラフルに変わる見出し。",
+      "use": "トップの大見出し・イベント名・セール告知",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "text",
+      "id": "typing",
+      "name": "タイピング",
+      "en": "Typewriter",
+      "desc": "言葉を1文字ずつ打って、消して、次の言葉へ。点滅するカーソル付き。",
+      "use": "キャッチコピー・サービス紹介・ヒーローの一言",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "text",
+      "id": "scramble",
+      "name": "スクランブル",
+      "en": "Text Scramble",
+      "desc": "カタカナや記号がパラパラ入れ替わって、最後に本当の文字が決まる。マウスを乗せるともう一度。",
+      "use": "セクション見出し・ローディング明け・SF/テック系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "text",
+      "id": "neon",
+      "name": "ネオンサイン",
+      "en": "Neon Flicker",
+      "desc": "光がにじんで、ときどきチカチカ点滅するネオン看板風の文字。CSSだけで動く。",
+      "use": "夜・ライブ・バー・ゲーム系のタイトル",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "text",
+      "id": "rainbow",
+      "name": "虹色グラデ文字",
+      "en": "Rainbow Text",
+      "desc": "文字の中を虹色のグラデーションがずっと流れ続ける。CSSだけで動く。",
+      "use": "ロゴ・キャンペーン名・強調したい一言",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "text",
+      "id": "glitch",
+      "name": "グリッチ",
+      "en": "Glitch",
+      "desc": "デジタルのノイズみたいに、文字がずれて赤と青に分かれる。CSSだけで動く。",
+      "use": "テック・ゲーム・ストリート系、エラーページ",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "cursor",
+      "id": "trail",
+      "name": "カラフル軌跡",
+      "en": "Color Trail",
+      "desc": "マウスやタッチの通ったあとに、カラフルな粒がふわっと残って消えていく。",
+      "use": "トップページ全体・遊び心を出したいページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "マウスやタッチで動かしてね"
+    },
+    {
+      "cat": "cursor",
+      "id": "spotlight",
+      "name": "スポットライト",
+      "en": "Spotlight",
+      "desc": "暗い画面の中で、マウスのまわりだけ丸く明るくなって、隠れた中身が見える。",
+      "use": "ティザー・シークレット告知・発表前のページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "暗いところを探ってみてね"
+    },
+    {
+      "cat": "cursor",
+      "id": "magnetic",
+      "name": "マグネットボタン",
+      "en": "Magnetic Button",
+      "desc": "マウスが近づくと、ボタンが磁石みたいに吸い寄せられてついてくる。",
+      "use": "購入・申し込み・CTA など押してほしいボタン",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "ボタンにマウスを近づけてね"
+    },
+    {
+      "cat": "cursor",
+      "id": "ring-cursor",
+      "name": "リングカーソル",
+      "en": "Ring Cursor",
+      "desc": "矢印のかわりに点と輪っかがついてくる。リンクの上では輪っかが大きく色づく。",
+      "use": "ポートフォリオ・ブランドサイト（パソコン向け）",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "メニューの上にマウスを乗せてね（パソコン向け）"
+    },
+    {
+      "cat": "cursor",
+      "id": "repel",
+      "name": "逃げる図形",
+      "en": "Repel Shapes",
+      "desc": "散らばった図形が、マウスが近づくとびよーんと逃げて、離れるとゆっくり戻る。",
+      "use": "ヒーローの背景・404ページ・キッズ向け",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "図形にマウスを近づけてね"
+    },
+    {
+      "cat": "scroll",
+      "id": "progress",
+      "name": "スクロール進み具合バー",
+      "en": "Progress Bar",
+      "desc": "画面のいちばん上に虹色のバー。ページをどこまで読んだか、スクロールに合わせて伸びる。",
+      "use": "長い記事・ブログ・ランディングページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "scroll",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "scroll",
+      "id": "reveal",
+      "name": "スクロールで登場",
+      "en": "Scroll Reveal",
+      "desc": "画面に入ったときに、下から・横から・回転しながら、などいろんな出方で現れる。",
+      "use": "あらゆるページの見出し・カード・画像",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "scroll",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "scroll",
+      "id": "parallax",
+      "name": "パララックス",
+      "en": "Parallax Layers",
+      "desc": "スクロールすると、文字や図形がそれぞれ違う速さで動いて、奥行きが出る。",
+      "use": "トップのヒーロー・ストーリー紹介",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "scroll",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "scroll",
+      "id": "scroll-marquee",
+      "name": "巨大文字スライド",
+      "en": "Scroll Marquee",
+      "desc": "スクロールに合わせて、大きな文字の帯が左右反対向きに流れる。",
+      "use": "セクションの区切り・ブランド名・キャッチコピー",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "scroll",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "scroll",
+      "id": "velocity-skew",
+      "name": "勢いで傾く",
+      "en": "Velocity Skew",
+      "desc": "流れ続けるテープが、速くスクロールするほどグイッと斜めに傾いて、止まると戻る。",
+      "use": "イベント・スポーツ・音楽系のテンションを上げたいページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "scroll",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "scroll",
+      "id": "counter",
+      "name": "カウントアップ",
+      "en": "Count Up",
+      "desc": "数字が画面に入ると、0からぐんぐん増えて目標の数字で止まる。",
+      "use": "実績・来場者数・会員数・スペック紹介",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "scroll",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "confetti-rain",
+      "name": "紙吹雪の雨",
+      "en": "Confetti Rain",
+      "desc": "カラフルな紙吹雪が、くるくる回りながら上からずっと降り続ける背景。",
+      "use": "お祝い・当選発表・イベント告知・誕生日",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "floating-shapes",
+      "name": "ふわふわ図形",
+      "en": "Floating Shapes",
+      "desc": "丸・三角・星・リングがゆらゆら浮かんで回る背景。数や色は自由に変えられる。",
+      "use": "ヒーローの背景・キッズ/ポップ系のページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "aurora",
+      "name": "オーロラグラデ",
+      "en": "Aurora Blobs",
+      "desc": "ぼかした色のかたまりが、ゆっくり混ざり合いながら動くグラデーション背景。CSSだけで動く。",
+      "use": "ブランドサイト・SaaS・アプリ紹介のヒーロー",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "particle-network",
+      "name": "つながる星",
+      "en": "Particle Network",
+      "desc": "点がふわふわ漂って、近い点どうしが線でつながる。マウスにも線が伸びてくる。",
+      "use": "テック・IT・コミュニティ系のヒーロー",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "マウスを動かすと線が伸びるよ"
+    },
+    {
+      "cat": "background",
+      "id": "sunburst",
+      "name": "サンバースト",
+      "en": "Sunburst",
+      "desc": "放射状のしましまがぐるぐる回る、昭和レトロ/アメコミ風の集中線背景。CSSだけで動く。",
+      "use": "セール・キャンペーン・新発売・当たり演出",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "dot-wave",
+      "name": "ドットの波",
+      "en": "Dot Wave",
+      "desc": "並んだ水玉の大きさと色が、波のようにうねって変わり続ける。",
+      "use": "ヒーローの背景・音楽/クラブ系・アート系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "click",
+      "id": "confetti-burst",
+      "name": "紙吹雪クラッカー",
+      "en": "Confetti Burst",
+      "desc": "クリックした場所から、紙吹雪がパーンとはじけて重力で落ちていく。ボタンを押すと特大。",
+      "use": "購入完了・応募ボタン・ゲームのクリア演出",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "どこでもクリックしてね"
+    },
+    {
+      "cat": "click",
+      "id": "ripple",
+      "name": "波紋ボタン",
+      "en": "Ripple",
+      "desc": "押した場所から丸い波紋が広がるボタン。どこを押したかが気持ちよく伝わる。",
+      "use": "フォームの送信・メニュー・あらゆるボタン",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "ボタンを押してね"
+    },
+    {
+      "cat": "click",
+      "id": "jelly",
+      "name": "ぷるぷるボタン",
+      "en": "Jelly Button",
+      "desc": "押すとゼリーみたいにぷるんと弾む。マウスを乗せると少しふくらむ。",
+      "use": "ゲーム・キッズ・ポップなお店のボタン",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "ボタンを押してね"
+    },
+    {
+      "cat": "click",
+      "id": "sparkle",
+      "name": "キラキラ星",
+      "en": "Sparkle Burst",
+      "desc": "押すとボタンのまわりに星がキラッと飛び散る。何度でも押したくなる。",
+      "use": "お気に入り・保存・「いいね」・ポイント獲得",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "ボタンを押してね"
+    },
+    {
+      "cat": "click",
+      "id": "like",
+      "name": "いいねハート",
+      "en": "Like Heart",
+      "desc": "押すとハートがポンッとふくらんで、まわりに輪と小さな丸がはじける。数もカウント。",
+      "use": "SNS風の「いいね」・お気に入り・投票",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "ハートを押してね"
+    },
+    {
+      "cat": "click",
+      "id": "shockwave",
+      "name": "衝撃波リング",
+      "en": "Shockwave",
+      "desc": "クリックした場所から、色ちがいの輪が3重にドンッと広がる。",
+      "use": "ゲーム・ヒーロー画面・ここを押して！の演出",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "card",
+      "id": "tilt",
+      "name": "3Dチルト＋光沢",
+      "en": "3D Tilt & Glare",
+      "desc": "マウスの位置に合わせてカードが立体的に傾き、表面に光がすべるように反射する。",
+      "use": "商品カード・チケット・メンバーカード・作品一覧",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 400,
+      "hint": "カードの上でマウスを動かしてね"
+    },
+    {
+      "cat": "card",
+      "id": "glow-border",
+      "name": "光る回転フチ",
+      "en": "Glowing Border",
+      "desc": "カードのフチを虹色の光がぐるぐる回り続ける。CSSだけで動く。",
+      "use": "おすすめプラン・限定商品・注目のお知らせ",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "card",
+      "id": "flip",
+      "name": "くるっとめくる",
+      "en": "Flip Card",
+      "desc": "マウスを乗せる（スマホはタップ）と、カードが裏返って裏面の情報が出てくる。",
+      "use": "出演者紹介・クイズ・メニュー・スタッフ紹介",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "カードにマウスを乗せるかタップしてね"
+    },
+    {
+      "cat": "card",
+      "id": "brutal-lift",
+      "name": "ポップに浮く",
+      "en": "Pop Lift",
+      "desc": "太いフチ＋ずらした影のカード。マウスを乗せると持ち上がり、押すとカチッと沈む。CSSだけで動く。",
+      "use": "ブログ記事一覧・サービス紹介・メニュー",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "light",
+      "height": 340,
+      "hint": "カードにマウスを乗せて、押してみてね"
+    },
+    {
+      "cat": "card",
+      "id": "reveal-info",
+      "name": "めくれて情報",
+      "en": "Hover Reveal",
+      "desc": "マウスを乗せると絵がズームして、下から色の帯と説明文がスッと出てくる。画像なしでも動く見本。",
+      "use": "作品ギャラリー・商品一覧・ブログのサムネイル",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 400,
+      "hint": "カードにマウスを乗せてね"
+    },
+    {
+      "cat": "card",
+      "id": "spotlight-border",
+      "name": "なぞると光るフチ",
+      "en": "Spotlight Border",
+      "desc": "カードの上をマウスでなぞると、マウスの近くのフチと表面だけがぼんやり光る。",
+      "use": "料金プラン・機能紹介・ダークなサイトのカード",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "カードの上をなぞってね"
+    },
+    {
+      "cat": "page",
+      "id": "stripe-transition",
+      "name": "しましま画面切り替え",
+      "en": "Stripe Transition",
+      "desc": "7色の縦じまが画面をおおい、大きな文字が出てから次のページへ切り替わる。",
+      "use": "ページ移動・タブ切り替え・ステップ進行",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "page",
+      "id": "loader",
+      "name": "ローディング画面",
+      "en": "Loading Screen",
+      "desc": "0〜100%の数字とバーが進んで、終わると画面が上下にパカッと割れて中身が出てくる。",
+      "use": "サイトを開いた最初・重い画像の読み込み待ち",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "page",
+      "id": "modal",
+      "name": "びよーんモーダル",
+      "en": "Bouncy Modal",
+      "desc": "ボタンを押すと、後ろがぼやけて、小窓がびよーんと弾みながら出てくる。Escキーでも閉じる。",
+      "use": "お知らせ・確認画面・クーポン配布・ログイン",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "page",
+      "id": "tape",
+      "name": "交差するテープ",
+      "en": "Crossing Tapes",
+      "desc": "斜めに傾いた2本のテープが、反対向きにずっと流れ続ける。CSSだけで動く。",
+      "use": "セクションの区切り・お知らせ帯・イベント感の演出",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "page",
+      "id": "stagger",
+      "name": "順番にポンポン登場",
+      "en": "Stagger Pop",
+      "desc": "リストの項目が、少しずつ時間をずらして順番にポンポン飛び出してくる。CSSだけで動く。",
+      "use": "メニュー・ランキング・特徴の一覧・ページを開いた瞬間",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 400,
+      "hint": "「もう一度」ボタンでくり返し見られるよ"
+    },
+    {
+      "cat": "page",
+      "id": "sticker",
+      "name": "ドラッグできるステッカー",
+      "en": "Draggable Stickers",
+      "desc": "ステッカーをつまんで好きな場所に動かせる。つまむと傾いて浮き上がる。",
+      "use": "トップページの遊び要素・キャンペーン・寄せ書き風",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "ステッカーをドラッグしてね"
+    }
+  ]
+}

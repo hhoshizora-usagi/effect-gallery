@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>背景・図形（BACKGROUND）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="ページの後ろでずっと動き続けて、画面全体のふんいきを作るエフェクト。">
+<meta property="og:title" content="背景・図形（BACKGROUND）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="ページの後ろでずっと動き続けて、画面全体のふんいきを作るエフェクト。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-background">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill" href="scroll.html" style="--cat:#00c2ff;--on:#111"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill is-current" href="background.html" style="--cat:#7cff4f;--on:#111" aria-current="page"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#7cff4f;--on:#111">
+    <p class="g-hero__no">04 <span>/ 07</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:10">BACKGROUND</span><span class="g-hero__jp">背景・図形</span></h1>
+    <p class="g-hero__desc">ページの後ろでずっと動き続けて、画面全体のふんいきを作るエフェクト。</p>
+    <p class="g-hero__count" aria-label="6種類"><b>6</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#7cff4f;--on:#111">
+    <div class="g-tape__track"><span>CONFETTI RAIN ✦ FLOATING SHAPES ✦ AURORA BLOBS ✦ PARTICLE NETWORK ✦ SUNBURST ✦ DOT WAVE ✦ CONFETTI RAIN ✦ FLOATING SHAPES ✦ AURORA BLOBS ✦ PARTICLE NETWORK ✦ SUNBURST ✦ DOT WAVE ✦ </span><span>CONFETTI RAIN ✦ FLOATING SHAPES ✦ AURORA BLOBS ✦ PARTICLE NETWORK ✦ SUNBURST ✦ DOT WAVE ✦ CONFETTI RAIN ✦ FLOATING SHAPES ✦ AURORA BLOBS ✦ PARTICLE NETWORK ✦ SUNBURST ✦ DOT WAVE ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#confetti-rain">紙吹雪の雨</a></li><li><a href="#floating-shapes">ふわふわ図形</a></li><li><a href="#aurora">オーロラグラデ</a></li><li><a href="#particle-network">つながる星</a></li><li><a href="#sunburst">サンバースト</a></li><li><a href="#dot-wave">ドットの波</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="confetti-rain">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">紙吹雪の雨</h2>
+            <p class="g-card__en">Confetti Rain</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/background/confetti-rain/index.html" title="紙吹雪の雨の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">カラフルな紙吹雪が、くるくる回りながら上からずっと降り続ける背景。</p>
+          <p class="g-card__use"><b>使いどころ</b>お祝い・当選発表・イベント告知・誕生日</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/background/confetti-rain/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="紙吹雪の雨のコード">
+            <button class="g-tab" role="tab" id="code-background-confetti-rain-html-tab" aria-controls="code-background-confetti-rain-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-background-confetti-rain-css-tab" aria-controls="code-background-confetti-rain-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-background-confetti-rain-js-tab" aria-controls="code-background-confetti-rain-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-background-confetti-rain-html" aria-labelledby="code-background-confetti-rain-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;fx-rain&quot;&gt;
+  &lt;canvas class=&quot;fx-rain__canvas&quot; data-fx=&quot;confetti-rain&quot; data-count=&quot;120&quot; aria-hidden=&quot;true&quot;&gt;&lt;/canvas&gt;
+  &lt;h2 class=&quot;fx-rain__title&quot;&gt;CONGRATS!&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-background-confetti-rain-css" aria-labelledby="code-background-confetti-rain-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-rain {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.fx-rain__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.fx-rain__title {
+  position: relative;
+  margin: 0;
+  font-size: clamp(44px, 12vw, 100px);
+  color: #fff;
+  text-shadow: 6px 6px 0 #a259ff;
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-background-confetti-rain-js" aria-labelledby="code-background-confetti-rain-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 紙を1枚ずつ「位置・速さ・回転」で管理して、下まで落ちたら上に戻す</span>
+(() =&gt; {
+  const colors = [&#x27;#ff3d7f&#x27;, &#x27;#ffd400&#x27;, &#x27;#00c2ff&#x27;, &#x27;#7cff4f&#x27;, &#x27;#ff7a00&#x27;, &#x27;#a259ff&#x27;, &#x27;#ffffff&#x27;];
+  document.querySelectorAll(&#x27;[data-fx=&quot;confetti-rain&quot;]&#x27;).forEach((cv) =&gt; {
+    const ctx = cv.getContext(&#x27;2d&#x27;);
+    let W = 0, H = 0;
+    const resize = () =&gt; {
+      const d = window.devicePixelRatio || 1;
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * d; cv.height = H * d;
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+    };
+    resize();
+    addEventListener(&#x27;resize&#x27;, resize);
+
+    const make = (anyY) =&gt; ({
+      x: Math.random() * W,
+      y: anyY ? Math.random() * H : -20,
+      w: 6 + Math.random() * 8,
+      h: 10 + Math.random() * 10,
+      vy: 1 + Math.random() * 2.2,
+      sway: Math.random() * Math.PI * 2,
+      rot: Math.random() * Math.PI,
+      vr: (Math.random() - .5) * .2,
+      c: colors[Math.floor(Math.random() * colors.length)],
+    });
+    const bits = Array.from({ length: +cv.dataset.count || 100 }, () =&gt; make(true));
+
+    (function loop() {
+      ctx.clearRect(0, 0, W, H);
+      bits.forEach((b, i) =&gt; {
+        b.y += b.vy; b.sway += .03; b.rot += b.vr;
+        b.x += Math.sin(b.sway) * .8;
+        if (b.y &gt; H + 20) bits[i] = make(false);
+        ctx.save();
+        ctx.translate(b.x, b.y);
+        ctx.rotate(b.rot);
+        ctx.scale(1, Math.cos(b.sway * 2));   <span class="c">// 裏返るようにひらひら</span>
+        ctx.fillStyle = b.c;
+        ctx.fillRect(-b.w / 2, -b.h / 2, b.w, b.h);
+        ctx.restore();
+      });
+      requestAnimationFrame(loop);
+    })();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/background/confetti-rain/</p>
+        </div>
+      </article>
+      <article class="g-card" id="floating-shapes">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ふわふわ図形</h2>
+            <p class="g-card__en">Floating Shapes</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/background/floating-shapes/index.html" title="ふわふわ図形の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">丸・三角・星・リングがゆらゆら浮かんで回る背景。数や色は自由に変えられる。</p>
+          <p class="g-card__use"><b>使いどころ</b>ヒーローの背景・キッズ/ポップ系のページ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/background/floating-shapes/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ふわふわ図形のコード">
+            <button class="g-tab" role="tab" id="code-background-floating-shapes-html-tab" aria-controls="code-background-floating-shapes-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-background-floating-shapes-css-tab" aria-controls="code-background-floating-shapes-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-background-floating-shapes-js-tab" aria-controls="code-background-floating-shapes-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-background-floating-shapes-html" aria-labelledby="code-background-floating-shapes-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;fx-float&quot; data-fx=&quot;floating-shapes&quot; data-count=&quot;18&quot;&gt;
+  &lt;h2 class=&quot;fx-float__title&quot;&gt;POP&lt;br&gt;WORLD&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-background-floating-shapes-css" aria-labelledby="code-background-floating-shapes-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-float {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff4e0;
+}
+.fx-float__title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: clamp(48px, 13vw, 110px);
+  line-height: .95;
+  text-align: center;
+  color: #111;
+  text-shadow: 5px 5px 0 #ffd400;
+}
+.fx-float__shape {
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  background: var(--c);
+  animation: fx-float var(--d) ease-in-out var(--delay) infinite alternate;
+}
+.fx-float__shape.is-circle { border-radius: 50%; }
+.fx-float__shape.is-ring   { border-radius: 50%; background: none; border: 8px solid var(--c); }
+.fx-float__shape.is-tri    { clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+.fx-float__shape.is-star   { clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+.fx-float__shape.is-pill   { height: calc(var(--s) * .45); border-radius: 999px; }
+@keyframes fx-float {
+  from { transform: translate(0, 0) rotate(0deg); }
+  to   { transform: translate(var(--dx), var(--dy)) rotate(var(--r)); }
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-background-floating-shapes-js" aria-labelledby="code-background-floating-shapes-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 図形を作って、大きさ・色・動く距離・速さをランダムに決める（動き自体は CSS）</span>
+(() =&gt; {
+  const colors = [&#x27;#ff3d7f&#x27;, &#x27;#ffd400&#x27;, &#x27;#00c2ff&#x27;, &#x27;#7cff4f&#x27;, &#x27;#ff7a00&#x27;, &#x27;#a259ff&#x27;];
+  const kinds = [&#x27;is-circle&#x27;, &#x27;is-ring&#x27;, &#x27;is-tri&#x27;, &#x27;is-star&#x27;, &#x27;is-pill&#x27;];
+  const rnd = (a, b) =&gt; a + Math.random() * (b - a);
+  document.querySelectorAll(&#x27;[data-fx=&quot;floating-shapes&quot;]&#x27;).forEach((root) =&gt; {
+    const count = +root.dataset.count || 16;
+    for (let i = 0; i &lt; count; i++) {
+      const el = document.createElement(&#x27;i&#x27;);
+      el.className = `fx-float__shape ${kinds[i % kinds.length]}`;
+      el.setAttribute(&#x27;aria-hidden&#x27;, &#x27;true&#x27;);
+      Object.entries({
+        &#x27;--s&#x27;: `${rnd(26, 80)}px`,
+        &#x27;--c&#x27;: colors[i % colors.length],
+        &#x27;--d&#x27;: `${rnd(3, 7)}s`,
+        &#x27;--delay&#x27;: `${-rnd(0, 6)}s`,
+        &#x27;--dx&#x27;: `${rnd(-60, 60)}px`,
+        &#x27;--dy&#x27;: `${rnd(-70, 70)}px`,
+        &#x27;--r&#x27;: `${rnd(-200, 200)}deg`,
+      }).forEach(([k, v]) =&gt; el.style.setProperty(k, v));
+      el.style.left = `${rnd(0, 95)}%`;
+      el.style.top = `${rnd(0, 92)}%`;
+      root.appendChild(el);
+    }
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/background/floating-shapes/</p>
+        </div>
+      </article>
+      <article class="g-card" id="aurora">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">オーロラグラデ</h2>
+            <p class="g-card__en">Aurora Blobs</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/background/aurora/index.html" title="オーロラグラデの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">ぼかした色のかたまりが、ゆっくり混ざり合いながら動くグラデーション背景。CSSだけで動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>ブランドサイト・SaaS・アプリ紹介のヒーロー</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/background/aurora/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="オーロラグラデのコード">
+            <button class="g-tab" role="tab" id="code-background-aurora-html-tab" aria-controls="code-background-aurora-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-background-aurora-css-tab" aria-controls="code-background-aurora-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-background-aurora-html" aria-labelledby="code-background-aurora-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;fx-aurora&quot;&gt;
+  &lt;div class=&quot;fx-aurora__blobs&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;fx-aurora__title&quot;&gt;Dream in&lt;br&gt;Color&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-background-aurora-css" aria-labelledby="code-background-aurora-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-aurora {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #0e0b1e;
+}
+.fx-aurora__blobs { position: absolute; inset: -20%; filter: blur(60px) saturate(1.4); }
+.fx-aurora__blobs i {
+  position: absolute;
+  width: 55%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  animation: fx-aurora 12s ease-in-out infinite alternate;
+}
+.fx-aurora__blobs i:nth-child(1) { background: #ff3d7f; top: 0;   left: 0;   }
+.fx-aurora__blobs i:nth-child(2) { background: #00c2ff; top: 10%; right: 0;  animation-duration: 15s; animation-direction: alternate-reverse; }
+.fx-aurora__blobs i:nth-child(3) { background: #ffd400; bottom: 0; left: 20%; animation-duration: 18s; }
+.fx-aurora__blobs i:nth-child(4) { background: #a259ff; bottom: 5%; right: 15%; animation-duration: 10s; animation-direction: alternate-reverse; }
+@keyframes fx-aurora {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(20%, 15%) scale(1.2); }
+  100% { transform: translate(-15%, 10%) scale(.85); }
+}
+.fx-aurora__title {
+  position: relative;
+  margin: 0;
+  font-size: clamp(46px, 12vw, 100px);
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  mix-blend-mode: overlay;
+}</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/background/aurora/</p>
+        </div>
+      </article>
+      <article class="g-card" id="particle-network">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">つながる星</h2>
+            <p class="g-card__en">Particle Network</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/background/particle-network/index.html" title="つながる星の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">点がふわふわ漂って、近い点どうしが線でつながる。マウスにも線が伸びてくる。</p>
+          <p class="g-card__use"><b>使いどころ</b>テック・IT・コミュニティ系のヒーロー</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/background/particle-network/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="つながる星のコード">
+            <button class="g-tab" role="tab" id="code-background-particle-network-html-tab" aria-controls="code-background-particle-network-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-background-particle-network-css-tab" aria-controls="code-background-particle-network-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-background-particle-network-js-tab" aria-controls="code-background-particle-network-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-background-particle-network-html" aria-labelledby="code-background-particle-network-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;fx-net&quot;&gt;
+  &lt;canvas class=&quot;fx-net__canvas&quot; data-fx=&quot;particle-network&quot; data-count=&quot;70&quot; aria-hidden=&quot;true&quot;&gt;&lt;/canvas&gt;
+  &lt;h2 class=&quot;fx-net__title&quot;&gt;CONNECT&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-background-particle-network-css" aria-labelledby="code-background-particle-network-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-net {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 40%, #2a1d5c, #0b0816 70%);
+}
+.fx-net__canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.fx-net__title {
+  position: relative;
+  margin: 0;
+  font-size: clamp(42px, 11vw, 96px);
+  letter-spacing: .08em;
+  color: #fff;
+  pointer-events: none;
+  text-shadow: 0 0 24px #00c2ff;
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-background-particle-network-js" aria-labelledby="code-background-particle-network-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 点を動かして、距離が近いペアだけ線を引く（遠いほど薄く）</span>
+(() =&gt; {
+  const colors = [&#x27;#ff3d7f&#x27;, &#x27;#ffd400&#x27;, &#x27;#00c2ff&#x27;, &#x27;#7cff4f&#x27;, &#x27;#a259ff&#x27;];
+  document.querySelectorAll(&#x27;[data-fx=&quot;particle-network&quot;]&#x27;).forEach((cv) =&gt; {
+    const ctx = cv.getContext(&#x27;2d&#x27;);
+    const LINK = 120;                        <span class="c">// この距離より近いとつながる</span>
+    let W = 0, H = 0, mouse = null;
+    const resize = () =&gt; {
+      const d = window.devicePixelRatio || 1;
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * d; cv.height = H * d;
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+    };
+    resize();
+    addEventListener(&#x27;resize&#x27;, resize);
+    const pts = Array.from({ length: +cv.dataset.count || 60 }, (_, i) =&gt; ({
+      x: Math.random() * W, y: Math.random() * H,
+      vx: (Math.random() - .5) * .8, vy: (Math.random() - .5) * .8,
+      c: colors[i % colors.length],
+    }));
+    const host = cv.parentElement;
+    host.addEventListener(&#x27;pointermove&#x27;, (e) =&gt; {
+      const r = cv.getBoundingClientRect();
+      mouse = { x: e.clientX - r.left, y: e.clientY - r.top };
+    });
+    host.addEventListener(&#x27;pointerleave&#x27;, () =&gt; { mouse = null; });
+
+    const line = (a, b, max, color) =&gt; {
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (d &gt; max) return;
+      ctx.globalAlpha = 1 - d / max;
+      ctx.strokeStyle = color;
+      ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+    };
+
+    (function loop() {
+      ctx.clearRect(0, 0, W, H);
+      ctx.lineWidth = 1;
+      pts.forEach((p) =&gt; {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x &lt; 0 || p.x &gt; W) p.vx *= -1;
+        if (p.y &lt; 0 || p.y &gt; H) p.vy *= -1;
+      });
+      for (let i = 0; i &lt; pts.length; i++) {
+        for (let j = i + 1; j &lt; pts.length; j++) line(pts[i], pts[j], LINK, &#x27;#8fa8ff&#x27;);
+        if (mouse) line(pts[i], mouse, LINK * 1.6, pts[i].c);
+      }
+      ctx.globalAlpha = 1;
+      pts.forEach((p) =&gt; {
+        ctx.fillStyle = p.c;
+        ctx.beginPath(); ctx.arc(p.x, p.y, 2.6, 0, Math.PI * 2); ctx.fill();
+      });
+      requestAnimationFrame(loop);
+    })();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/background/particle-network/</p>
+        </div>
+      </article>
+      <article class="g-card" id="sunburst">
+        <header class="g-card__head">
+          <span class="g-card__no">05</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">サンバースト</h2>
+            <p class="g-card__en">Sunburst</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/background/sunburst/index.html" title="サンバーストの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">放射状のしましまがぐるぐる回る、昭和レトロ/アメコミ風の集中線背景。CSSだけで動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>セール・キャンペーン・新発売・当たり演出</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/background/sunburst/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="サンバーストのコード">
+            <button class="g-tab" role="tab" id="code-background-sunburst-html-tab" aria-controls="code-background-sunburst-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-background-sunburst-css-tab" aria-controls="code-background-sunburst-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-background-sunburst-html" aria-labelledby="code-background-sunburst-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;fx-burst&quot;&gt;
+  &lt;div class=&quot;fx-burst__rays&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;fx-burst__badge&quot;&gt;
+    &lt;small&gt;今だけ&lt;/small&gt;
+    &lt;strong&gt;50%&lt;br&gt;OFF&lt;/strong&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-background-sunburst-css" aria-labelledby="code-background-sunburst-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-burst {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #ff7a00;
+}
+.fx-burst__rays {
+  position: absolute;
+  width: 250vmax;
+  height: 250vmax;
+  background: repeating-conic-gradient(#ffd400 0 7.5deg, #ff7a00 7.5deg 15deg);
+  animation: fx-burst-spin 24s linear infinite;
+}
+@keyframes fx-burst-spin { to { transform: rotate(360deg); } }
+.fx-burst__badge {
+  position: relative;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  width: min(62vmin, 240px);
+  aspect-ratio: 1;
+  border: 5px solid #111;
+  border-radius: 50%;
+  background: #ff3d7f;
+  color: #fff;
+  text-align: center;
+  box-shadow: 10px 10px 0 #111;
+  animation: fx-burst-pulse 1s ease-in-out infinite alternate;
+}
+.fx-burst__badge small { font-size: 18px; }
+.fx-burst__badge strong { font-size: clamp(36px, 9vmin, 56px); font-weight: normal; line-height: 1; }
+@keyframes fx-burst-pulse { to { transform: scale(1.08) rotate(-4deg); } }</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/background/sunburst/</p>
+        </div>
+      </article>
+      <article class="g-card" id="dot-wave">
+        <header class="g-card__head">
+          <span class="g-card__no">06</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ドットの波</h2>
+            <p class="g-card__en">Dot Wave</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/background/dot-wave/index.html" title="ドットの波の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">並んだ水玉の大きさと色が、波のようにうねって変わり続ける。</p>
+          <p class="g-card__use"><b>使いどころ</b>ヒーローの背景・音楽/クラブ系・アート系</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/background/dot-wave/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ドットの波のコード">
+            <button class="g-tab" role="tab" id="code-background-dot-wave-html-tab" aria-controls="code-background-dot-wave-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-background-dot-wave-css-tab" aria-controls="code-background-dot-wave-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-background-dot-wave-js-tab" aria-controls="code-background-dot-wave-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-background-dot-wave-html" aria-labelledby="code-background-dot-wave-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;fx-dots&quot;&gt;
+  &lt;canvas class=&quot;fx-dots__canvas&quot; data-fx=&quot;dot-wave&quot; aria-hidden=&quot;true&quot;&gt;&lt;/canvas&gt;
+  &lt;h2 class=&quot;fx-dots__title&quot;&gt;GOOD&lt;br&gt;VIBES&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-background-dot-wave-css" aria-labelledby="code-background-dot-wave-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-dots {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #111;
+}
+.fx-dots__canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.fx-dots__title {
+  position: relative;
+  margin: 0;
+  padding: .15em .4em;
+  background: #111;
+  color: #fff;
+  font-size: clamp(42px, 11vw, 92px);
+  line-height: 1;
+  text-align: center;
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-background-dot-wave-js" aria-labelledby="code-background-dot-wave-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 格子状の点を、中心からの距離と時間で sin 波にして大きさと色を変える</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;dot-wave&quot;]&#x27;).forEach((cv) =&gt; {
+    const ctx = cv.getContext(&#x27;2d&#x27;);
+    const GAP = 26;                          <span class="c">// 点の間隔</span>
+    let W = 0, H = 0;
+    const resize = () =&gt; {
+      const d = window.devicePixelRatio || 1;
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * d; cv.height = H * d;
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+    };
+    resize();
+    addEventListener(&#x27;resize&#x27;, resize);
+
+    (function loop(t) {
+      t = (t || 0) / 1000;
+      ctx.clearRect(0, 0, W, H);
+      for (let x = GAP / 2; x &lt; W; x += GAP) {
+        for (let y = GAP / 2; y &lt; H; y += GAP) {
+          const d = Math.hypot(x - W / 2, y - H / 2) / 60;
+          const wave = Math.sin(d - t * 3);          <span class="c">// -1〜1</span>
+          const r = 2 + (wave + 1) * 4.5;
+          ctx.fillStyle = `hsl(${(d * 30 + t * 60) % 360} 95% 60%)`;
+          ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
+        }
+      }
+      requestAnimationFrame(loop);
+    })();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/background/dot-wave/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="scroll.html" style="--cat:#00c2ff;--on:#111"><small>← 前の種類</small>スクロール連動</a><a class="g-pager__link g-pager__link--next" href="click.html" style="--cat:#ff7a00;--on:#111"><small>次の種類 →</small>クリック・ボタン</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 41 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

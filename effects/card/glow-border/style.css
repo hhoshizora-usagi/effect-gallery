@@ -1,0 +1,40 @@
+@property --fx-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+.fx-glow {
+  position: relative;
+  width: min(80vw, 300px);
+  padding: 34px 26px;
+  border-radius: 22px;
+  background: #16121f;
+  color: #fff;
+  text-align: center;
+  isolation: isolate;
+}
+.fx-glow::before,
+.fx-glow::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border-radius: 26px;
+  background: conic-gradient(from var(--fx-angle),
+    #ff3d7f, #ffd400, #7cff4f, #00c2ff, #a259ff, #ff3d7f);
+  animation: fx-glow-spin 3s linear infinite;
+}
+.fx-glow::after { filter: blur(22px); opacity: .8; }   /* 外側のにじみ */
+.fx-glow__tag {
+  display: inline-block;
+  margin: 0;
+  padding: .3em .8em;
+  border-radius: 999px;
+  background: #ffd400;
+  color: #111;
+  font-size: 13px;
+  letter-spacing: .15em;
+}
+.fx-glow__title { margin: .4em 0 .2em; font-size: 42px; }
+.fx-glow__price { margin: 0; font-size: 28px; color: #7cff4f; }
+@keyframes fx-glow-spin { to { --fx-angle: 360deg; } }

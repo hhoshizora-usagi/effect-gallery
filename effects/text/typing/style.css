@@ -1,0 +1,20 @@
+.fx-type {
+  margin: 0;
+  font-size: clamp(30px, 8vw, 64px);
+  line-height: 1.25;
+  text-align: center;
+}
+.fx-type__word {
+  color: #ffd400;
+  background: linear-gradient(transparent 70%, #ff3d7f 70%);
+}
+.fx-type__caret {
+  display: inline-block;
+  width: .08em;
+  height: 1em;
+  margin-left: .06em;
+  vertical-align: -.1em;
+  background: #00c2ff;
+  animation: fx-caret .8s steps(1) infinite;
+}
+@keyframes fx-caret { 50% { opacity: 0; } }

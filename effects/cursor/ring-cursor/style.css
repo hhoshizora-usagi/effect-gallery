@@ -1,0 +1,46 @@
+html.fx-cursor-on,
+html.fx-cursor-on * { cursor: none !important; }
+
+.fx-cursor__dot,
+.fx-cursor__ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.fx-cursor.is-visible .fx-cursor__dot,
+.fx-cursor.is-visible .fx-cursor__ring { opacity: 1; }
+.fx-cursor__dot {
+  width: 8px; height: 8px;
+  margin: -4px 0 0 -4px;
+  background: #ffd400;
+}
+.fx-cursor__ring {
+  width: 44px; height: 44px;
+  margin: -22px 0 0 -22px;
+  border: 2px solid #fff;
+  mix-blend-mode: difference;
+}
+.fx-cursor__ring::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: #ff3d7f;
+  transform: scale(var(--s, 1));
+  opacity: var(--o, 0);
+  transition: transform .3s cubic-bezier(.2, .9, .3, 1.4), opacity .2s;
+}
+.fx-cursor.is-hover .fx-cursor__ring { --s: 1.9; --o: .9; border-color: transparent; }
+.fx-cursor.is-down  .fx-cursor__ring { --s: .7; }
+
+.fx-cursor-menu { display: flex; gap: 8px 40px; flex-wrap: wrap; justify-content: center; }
+.fx-cursor-menu a {
+  color: #fff;
+  font-size: clamp(26px, 6vw, 44px);
+  text-decoration: none;
+}

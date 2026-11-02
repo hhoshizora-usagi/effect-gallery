@@ -1,0 +1,29 @@
+.fx-sparkle {
+  position: relative;
+  padding: 1em 2em;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #00c2ff;
+  color: #111;
+  font: inherit;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-sparkle__star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--s);
+  height: var(--s);
+  margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2);
+  background: var(--c);
+  pointer-events: none;
+  clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: fx-sparkle .8s cubic-bezier(.2, .8, .3, 1) forwards;
+}
+@keyframes fx-sparkle {
+  0%   { transform: translate(0, 0) scale(0) rotate(0); opacity: 1; }
+  60%  { opacity: 1; }
+  100% { transform: translate(var(--x), var(--y)) scale(1) rotate(var(--r)); opacity: 0; }
+}

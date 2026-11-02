@@ -1,0 +1,35 @@
+.fx-rcard {
+  position: relative;
+  width: min(80vw, 270px);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 4px solid #111;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 8px 8px 0 #111;
+}
+/* 画像のかわりの絵（本番は background-image: url(...) や <img> に） */
+.fx-rcard__art {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 62%, #ffd400 0 18%, transparent 19%),
+    repeating-linear-gradient(0deg, #ff3d7f 0 14px, #ff7a00 14px 28px) bottom / 100% 38% no-repeat,
+    linear-gradient(180deg, #a259ff, #ff3d7f 70%);
+  transition: transform .6s cubic-bezier(.2, .8, .2, 1), filter .6s;
+}
+.fx-rcard__info {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 22px;
+  background: #111;
+  color: #fff;
+  transform: translateY(101%);
+  transition: transform .45s cubic-bezier(.2, .9, .3, 1.2);
+}
+.fx-rcard__info h3 { margin: 0 0 .3em; font-size: 24px; color: #ffd400; }
+.fx-rcard__info p  { margin: 0; font-family: system-ui, sans-serif; font-size: 14px; line-height: 1.6; }
+.fx-rcard:hover .fx-rcard__art,
+.fx-rcard:focus-visible .fx-rcard__art { transform: scale(1.15) rotate(3deg); filter: saturate(1.4); }
+.fx-rcard:hover .fx-rcard__info,
+.fx-rcard:focus-visible .fx-rcard__info { transform: none; }

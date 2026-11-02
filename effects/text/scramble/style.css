@@ -1,0 +1,11 @@
+.fx-scramble-wrap { text-align: center; }
+.fx-scramble {
+  margin: .1em 0;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: clamp(26px, 7vw, 56px);
+  font-weight: 800;
+  color: #7cff4f;
+  cursor: default;
+}
+.fx-scramble--jp { color: #ff3d7f; font-family: inherit; }
+.fx-scramble .is-random { color: #00c2ff; opacity: .8; }

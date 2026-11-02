@@ -1,0 +1,28 @@
+.fx-ripple-row { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.fx-ripple {
+  position: relative;
+  overflow: hidden;          /* 波紋をボタンの中だけに */
+  padding: 1em 2.2em;
+  border: 0;
+  border-radius: 12px;
+  background: #ff3d7f;
+  color: #fff;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+.fx-ripple--cyan   { background: #00c2ff; color: #111; }
+.fx-ripple--yellow { background: #ffd400; color: #111; }
+.fx-ripple__wave {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .7);
+  pointer-events: none;
+  animation: fx-ripple .7s ease-out forwards;
+}
+@keyframes fx-ripple {
+  to { transform: scale(var(--scale, 20)); opacity: 0; }
+}

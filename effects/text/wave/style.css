@@ -1,0 +1,18 @@
+.fx-wave {
+  margin: 0;
+  font-size: clamp(44px, 12vw, 104px);
+  line-height: 1;
+  letter-spacing: .02em;
+}
+.fx-wave span {
+  display: inline-block;
+  color: var(--c);
+  text-shadow: .06em .06em 0 #000;
+  animation: fx-wave 1.4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * .08s);
+}
+@keyframes fx-wave {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  25%      { transform: translateY(-.28em) rotate(-8deg); }
+  50%      { transform: translateY(0) rotate(0); }
+}

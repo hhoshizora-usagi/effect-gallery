@@ -1,0 +1,54 @@
+.fx-like {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 26px 14px 18px;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-like__heart { position: relative; width: 44px; height: 44px; }
+.fx-like__heart svg {
+  width: 100%;
+  height: 100%;
+  fill: #ddd;
+  stroke: #111;
+  stroke-width: 1.5;
+  transition: fill .2s;
+}
+.fx-like[aria-pressed="true"] svg { fill: #ff3d7f; animation: fx-like-pop .5s cubic-bezier(.2, 1.6, .4, 1); }
+/* 輪っか */
+.fx-like__heart::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 0 solid #ffd400;
+  transform: scale(0);
+}
+.fx-like[aria-pressed="true"] .fx-like__heart::before { animation: fx-like-ring .5s ease-out; }
+/* はじける小さな丸（JS で追加） */
+.fx-like__dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  border-radius: 50%;
+  background: var(--c);
+  animation: fx-like-dot .6s ease-out forwards;
+}
+@keyframes fx-like-pop  { 0% { transform: scale(.2); } 100% { transform: scale(1); } }
+@keyframes fx-like-ring {
+  0%   { transform: scale(.2); border-width: 22px; }
+  100% { transform: scale(1.5); border-width: 0; }
+}
+@keyframes fx-like-dot {
+  to { transform: translate(var(--x), var(--y)) scale(.2); opacity: 0; }
+}

@@ -1,0 +1,20 @@
+.fx-dots {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #111;
+}
+.fx-dots__canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.fx-dots__title {
+  position: relative;
+  margin: 0;
+  padding: .15em .4em;
+  background: #111;
+  color: #fff;
+  font-size: clamp(42px, 11vw, 92px);
+  line-height: 1;
+  text-align: center;
+}

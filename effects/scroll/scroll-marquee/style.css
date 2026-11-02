@@ -1,0 +1,10 @@
+.fx-smq { overflow: hidden; padding: 6vh 0; }
+.fx-smq__row {
+  white-space: nowrap;
+  font-size: clamp(56px, 14vw, 140px);
+  line-height: 1.05;
+  color: #ffd400;
+  will-change: transform;
+}
+.fx-smq__row--outline { color: transparent; -webkit-text-stroke: 2px #fff; }
+.fx-smq__row--pink    { color: #ff3d7f; }
