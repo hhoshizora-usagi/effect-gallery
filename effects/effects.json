@@ -1194,6 +1194,198 @@
       "body": "",
       "height": 380,
       "hint": "ベルを押してね"
+    },
+    {
+      "cat": "background",
+      "id": "light-streaks",
+      "name": "流れる光の線",
+      "en": "Flowing Light Lines",
+      "desc": "暗い夜空を、光の筋がスーッと斜めに走って消えていく。サイバーで幻想的な背景。",
+      "use": "近未来・テック・ゲーム・音楽系ページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "cube-tiles",
+      "name": "3D立方体タイル",
+      "en": "3D Cube Tiles",
+      "desc": "遠くへずらっと並んだ立方体が、ゆっくりと旋回するワイヤーフレームの背景。",
+      "use": "テック・AR/VR風・ゲーム・アプリ紹介",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "particle-vortex",
+      "name": "粒子の渦",
+      "en": "Particle Vortex",
+      "desc": "無数の粒が渦を巻きながら中心へ吸い込まれ、消えるとまた外側から生まれ変わる。",
+      "use": "テック・SF・ダークなヒーローコーナー",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "perspective-grid",
+      "name": "グリッドの遠近",
+      "en": "Perspective Grid",
+      "desc": "地平線に向かって収束するネオンライン。奥行きのあるトロン風の背景。",
+      "use": "レトロSF・ゲーム・80s風・テック",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "cursor",
+      "id": "fireworks",
+      "name": "カーソルの花火",
+      "en": "Cursor Fireworks",
+      "desc": "クリックした場所で、パッと花火のような粒子がはじけて四方へ散る。",
+      "use": "ゲーム・イベント・お祝い・誕生日ページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "どこでもクリックしてみてね"
+    },
+    {
+      "cat": "scroll",
+      "id": "bg-color-shift",
+      "name": "スクロールで色が変わる背景",
+      "en": "Scroll Color Shift",
+      "desc": "読み進めるにつれて、背景の色がグラデーションでゆっくりと移り変わっていく。",
+      "use": "長い文章・ストーリー・ポートフォリオ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "scroll",
+      "height": 340,
+      "hint": "スクロールしてみてね"
+    },
+    {
+      "cat": "background",
+      "id": "water-ripples",
+      "name": "水面のさざなみ",
+      "en": "Water Ripples",
+      "desc": "静かな水面に、波紋が広がっては消えていく。ゆらぐ光の反射もあって、落ち着く背景。",
+      "use": "落ち着いた雰囲気・和風・瞑想・リゾート系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "soft-blobs",
+      "name": "もやもやブロブ",
+      "en": "Soft Blobs",
+      "desc": "大きなぼやけた色のかたまりが、ゆっくり漂っては重なり合う。やわらかい雰囲気の背景。",
+      "use": "やわらかい・夢かわいい・美容・クリエイティブ系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "sakura-petals",
+      "name": "桜の花びら",
+      "en": "Sakura Petals",
+      "desc": "ピンクの花びらが、ゆれながら回ってひらひら舞い落ちる。春らしいやさしい背景。",
+      "use": "春・和風・卒業/入学・イベント告知・やさしい系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "aurora-curtain",
+      "name": "オーロラカーテン",
+      "en": "Aurora Curtain",
+      "desc": "空に揺れる縦の光の帯。オーロラのカーテンがゆらゆらと波打つ幻想的な背景。",
+      "use": "幻想的・冬・宇宙・ファンタジー系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "twinkle-stars",
+      "name": "星がまたたく",
+      "en": "Twinkling Stars",
+      "desc": "たくさんの星がきらめき、近くの星どうしがうっすら線で結ばれて星座のようになる。",
+      "use": "夜・宇宙・幻想的・ロマンチック系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "code-rain",
+      "name": "英字コードの雨",
+      "en": "Code Rain",
+      "desc": "緑の英数字コードが画面を縦に流れ落ちる。ハッカーっぽい定番のマトリックス風。",
+      "use": "ハッカー・セキュリティ・SF・ゲーム系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
     }
   ]
 }

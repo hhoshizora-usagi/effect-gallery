@@ -45,13 +45,13 @@
     <p class="g-hero__no">02 <span>/ 12</span></p>
     <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:6">CURSOR</span><span class="g-hero__jp">マウス・カーソル</span></h1>
     <p class="g-hero__desc">マウスやタッチの動きに反応して、さわるのが楽しくなるエフェクト。</p>
-    <p class="g-hero__count" aria-label="5種類"><b>5</b>EFFECTS</p>
+    <p class="g-hero__count" aria-label="6種類"><b>6</b>EFFECTS</p>
   </section>
   <div class="g-tape" aria-hidden="true" style="--cat:#ffd400;--on:#111">
-    <div class="g-tape__track"><span>COLOR TRAIL ✦ SPOTLIGHT ✦ MAGNETIC BUTTON ✦ RING CURSOR ✦ REPEL SHAPES ✦ COLOR TRAIL ✦ SPOTLIGHT ✦ MAGNETIC BUTTON ✦ RING CURSOR ✦ REPEL SHAPES ✦ </span><span>COLOR TRAIL ✦ SPOTLIGHT ✦ MAGNETIC BUTTON ✦ RING CURSOR ✦ REPEL SHAPES ✦ COLOR TRAIL ✦ SPOTLIGHT ✦ MAGNETIC BUTTON ✦ RING CURSOR ✦ REPEL SHAPES ✦ </span></div>
+    <div class="g-tape__track"><span>COLOR TRAIL ✦ SPOTLIGHT ✦ MAGNETIC BUTTON ✦ RING CURSOR ✦ REPEL SHAPES ✦ CURSOR FIREWORKS ✦ COLOR TRAIL ✦ SPOTLIGHT ✦ MAGNETIC BUTTON ✦ RING CURSOR ✦ REPEL SHAPES ✦ CURSOR FIREWORKS ✦ </span><span>COLOR TRAIL ✦ SPOTLIGHT ✦ MAGNETIC BUTTON ✦ RING CURSOR ✦ REPEL SHAPES ✦ CURSOR FIREWORKS ✦ COLOR TRAIL ✦ SPOTLIGHT ✦ MAGNETIC BUTTON ✦ RING CURSOR ✦ REPEL SHAPES ✦ CURSOR FIREWORKS ✦ </span></div>
   </div>
   <nav class="g-jump" aria-label="この種類のエフェクト">
-    <ul><li><a href="#trail">カラフル軌跡</a></li><li><a href="#spotlight">スポットライト</a></li><li><a href="#magnetic">マグネットボタン</a></li><li><a href="#ring-cursor">リングカーソル</a></li><li><a href="#repel">逃げる図形</a></li></ul>
+    <ul><li><a href="#trail">カラフル軌跡</a></li><li><a href="#spotlight">スポットライト</a></li><li><a href="#magnetic">マグネットボタン</a></li><li><a href="#ring-cursor">リングカーソル</a></li><li><a href="#repel">逃げる図形</a></li><li><a href="#fireworks">カーソルの花火</a></li></ul>
   </nav>
   <div class="g-grid">
       <article class="g-card" id="trail">
@@ -562,12 +562,110 @@ html.fx-cursor-on * { cursor: none !important; }
           <p class="g-code__path">📁 effects/cursor/repel/</p>
         </div>
       </article>
+      <article class="g-card" id="fireworks">
+        <header class="g-card__head">
+          <span class="g-card__no">06</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">カーソルの花火</h2>
+            <p class="g-card__en">Cursor Fireworks</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/cursor/fireworks/index.html" title="カーソルの花火の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">クリックした場所で、パッと花火のような粒子がはじけて四方へ散る。</p>
+          <p class="g-card__use"><b>使いどころ</b>ゲーム・イベント・お祝い・誕生日ページ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/cursor/fireworks/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="カーソルの花火のコード">
+            <button class="g-tab" role="tab" id="code-cursor-fireworks-html-tab" aria-controls="code-cursor-fireworks-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-cursor-fireworks-css-tab" aria-controls="code-cursor-fireworks-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-cursor-fireworks-js-tab" aria-controls="code-cursor-fireworks-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-cursor-fireworks-html" aria-labelledby="code-cursor-fireworks-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;canvas class=&quot;fx-fire&quot; data-fx=&quot;fireworks&quot; aria-hidden=&quot;true&quot;&gt;&lt;/canvas&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-cursor-fireworks-css" aria-labelledby="code-cursor-fireworks-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-fire {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;   <span class="c">/* 下のボタンなどを押せるようにする */</span>
+  z-index: 9999;
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-cursor-fireworks-js" aria-labelledby="code-cursor-fireworks-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// クリックした場所から、花火のように粒子が放射状にはじける</span>
+(() =&gt; {
+  const colors = [&#x27;#ff3d7f&#x27;, &#x27;#ffd400&#x27;, &#x27;#00c2ff&#x27;, &#x27;#7cff4f&#x27;, &#x27;#a259ff&#x27;, &#x27;#ffffff&#x27;];
+  document.querySelectorAll(&#x27;[data-fx=&quot;fireworks&quot;]&#x27;).forEach((cv) =&gt; {
+    const ctx = cv.getContext(&#x27;2d&#x27;);
+    let W = 0, H = 0;
+    const resize = () =&gt; {
+      const d = window.devicePixelRatio || 1;
+      W = innerWidth; H = innerHeight;
+      cv.width = W * d; cv.height = H * d;
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+    };
+    resize();
+    addEventListener(&#x27;resize&#x27;, resize);
+
+    const parts = [];
+    const burst = (x, y) =&gt; {
+      const n = 28;
+      const base = colors[Math.floor(Math.random() * colors.length)];
+      for (let i = 0; i &lt; n; i++) {
+        const a = (Math.PI * 2 * i) / n + Math.random() * .25;
+        const sp = 2 + Math.random() * 4.5;
+        parts.push({
+          x, y,
+          vx: Math.cos(a) * sp,
+          vy: Math.sin(a) * sp,
+          r: 1.5 + Math.random() * 2.5,
+          life: 1,
+          c: Math.random() &lt; .55 ? base : colors[Math.floor(Math.random() * colors.length)],
+        });
+      }
+    };
+    addEventListener(&#x27;pointerdown&#x27;, (e) =&gt; burst(e.clientX, e.clientY));
+
+    (function loop() {
+      ctx.clearRect(0, 0, W, H);
+      for (let i = parts.length - 1; i &gt;= 0; i--) {
+        const p = parts[i];
+        p.life -= .018;
+        p.vy += .06;              <span class="c">// 重力</span>
+        p.vx *= .985; p.vy *= .985;
+        p.x += p.vx; p.y += p.vy; p.r *= .985;
+        if (p.life &lt;= 0) { parts.splice(i, 1); continue; }
+        ctx.globalAlpha = Math.max(0, p.life);
+        ctx.fillStyle = p.c;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+      requestAnimationFrame(loop);
+    })();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/cursor/fireworks/</p>
+        </div>
+      </article>
   </div>
   <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="text.html" style="--cat:#ff3d7f;--on:#fff"><small>← 前の種類</small>テキスト</a><a class="g-pager__link g-pager__link--next" href="scroll.html" style="--cat:#00c2ff;--on:#111"><small>次の種類 →</small>スクロール連動</a></nav>
 </main>
 <footer class="g-footer">
   <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
-  <p>EFFECT GALLERY — 69 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+  <p>EFFECT GALLERY — 81 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
 </footer>
 <script src="assets/js/gallery.js"></script>
 </body>

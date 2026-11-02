@@ -1,0 +1,18 @@
+.fx-ripple {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #04121c;
+}
+.fx-ripple__canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.fx-ripple__title {
+  position: relative;
+  margin: 0;
+  font-size: clamp(42px, 11vw, 96px);
+  letter-spacing: .14em;
+  color: #dffaff;
+  text-shadow: 0 0 22px #00c2ff;
+}

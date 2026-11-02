@@ -45,13 +45,13 @@
     <p class="g-hero__no">03 <span>/ 12</span></p>
     <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:6">SCROLL</span><span class="g-hero__jp">スクロール連動</span></h1>
     <p class="g-hero__desc">スクロールに合わせて出たり動いたりする、読み進めたくなるエフェクト。</p>
-    <p class="g-hero__count" aria-label="6種類"><b>6</b>EFFECTS</p>
+    <p class="g-hero__count" aria-label="7種類"><b>7</b>EFFECTS</p>
   </section>
   <div class="g-tape" aria-hidden="true" style="--cat:#00c2ff;--on:#111">
-    <div class="g-tape__track"><span>PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ </span><span>PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ </span></div>
+    <div class="g-tape__track"><span>PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ SCROLL COLOR SHIFT ✦ PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ SCROLL COLOR SHIFT ✦ </span><span>PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ SCROLL COLOR SHIFT ✦ PROGRESS BAR ✦ SCROLL REVEAL ✦ PARALLAX LAYERS ✦ SCROLL MARQUEE ✦ VELOCITY SKEW ✦ COUNT UP ✦ SCROLL COLOR SHIFT ✦ </span></div>
   </div>
   <nav class="g-jump" aria-label="この種類のエフェクト">
-    <ul><li><a href="#progress">スクロール進み具合バー</a></li><li><a href="#reveal">スクロールで登場</a></li><li><a href="#parallax">パララックス</a></li><li><a href="#scroll-marquee">巨大文字スライド</a></li><li><a href="#velocity-skew">勢いで傾く</a></li><li><a href="#counter">カウントアップ</a></li></ul>
+    <ul><li><a href="#progress">スクロール進み具合バー</a></li><li><a href="#reveal">スクロールで登場</a></li><li><a href="#parallax">パララックス</a></li><li><a href="#scroll-marquee">巨大文字スライド</a></li><li><a href="#velocity-skew">勢いで傾く</a></li><li><a href="#counter">カウントアップ</a></li><li><a href="#bg-color-shift">スクロールで色が変わる背景</a></li></ul>
   </nav>
   <div class="g-grid">
       <article class="g-card" id="progress">
@@ -553,12 +553,76 @@
           <p class="g-code__path">📁 effects/scroll/counter/</p>
         </div>
       </article>
+      <article class="g-card" id="bg-color-shift">
+        <header class="g-card__head">
+          <span class="g-card__no">07</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">スクロールで色が変わる背景</h2>
+            <p class="g-card__en">Scroll Color Shift</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/scroll/bg-color-shift/index.html" title="スクロールで色が変わる背景の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">読み進めるにつれて、背景の色がグラデーションでゆっくりと移り変わっていく。</p>
+          <p class="g-card__use"><b>使いどころ</b>長い文章・ストーリー・ポートフォリオ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/scroll/bg-color-shift/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="スクロールで色が変わる背景のコード">
+            <button class="g-tab" role="tab" id="code-scroll-bg-color-shift-html-tab" aria-controls="code-scroll-bg-color-shift-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-scroll-bg-color-shift-css-tab" aria-controls="code-scroll-bg-color-shift-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-scroll-bg-color-shift-js-tab" aria-controls="code-scroll-bg-color-shift-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-scroll-bg-color-shift-html" aria-labelledby="code-scroll-bg-color-shift-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-hue&quot; data-fx=&quot;bg-color-shift&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;main class=&quot;fx-hue-content&quot;&gt;
+  &lt;section class=&quot;demo-block&quot;&gt;SCROLL ↓&lt;/section&gt;
+  &lt;section class=&quot;demo-block&quot;&gt;SECTION 02&lt;/section&gt;
+  &lt;section class=&quot;demo-block&quot;&gt;SECTION 03&lt;/section&gt;
+  &lt;section class=&quot;demo-block&quot;&gt;SECTION 04&lt;/section&gt;
+  &lt;section class=&quot;demo-block&quot;&gt;THE END&lt;/section&gt;
+&lt;/main&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-bg-color-shift-css" aria-labelledby="code-scroll-bg-color-shift-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">/* 背景いっぱいに敷く1枚。スクロール量に合わせて色相（--hue）が変わる */</span>
+.fx-hue {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: hsl(var(--hue, 260) 72% 22%);
+}
+.fx-hue-content { position: relative; z-index: 1; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-scroll-bg-color-shift-js" aria-labelledby="code-scroll-bg-color-shift-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// スクロールの進み具合を0〜1で取り、色相（hue）を移り変わらせる</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;bg-color-shift&quot;]&#x27;).forEach(() =&gt; {
+    const update = () =&gt; {
+      const max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
+      const p = Math.min(1, Math.max(0, scrollY / max));
+      document.documentElement.style.setProperty(&#x27;--hue&#x27;, (260 + p * 220).toFixed(1));
+    };
+    addEventListener(&#x27;scroll&#x27;, update, { passive: true });
+    addEventListener(&#x27;resize&#x27;, update);
+    update();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/scroll/bg-color-shift/</p>
+        </div>
+      </article>
   </div>
   <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="cursor.html" style="--cat:#ffd400;--on:#111"><small>← 前の種類</small>マウス・カーソル</a><a class="g-pager__link g-pager__link--next" href="background.html" style="--cat:#7cff4f;--on:#111"><small>次の種類 →</small>背景・図形</a></nav>
 </main>
 <footer class="g-footer">
   <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
-  <p>EFFECT GALLERY — 69 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+  <p>EFFECT GALLERY — 81 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
 </footer>
 <script src="assets/js/gallery.js"></script>
 </body>
