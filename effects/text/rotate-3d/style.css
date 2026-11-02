@@ -1,0 +1,47 @@
+.fx-r3d {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .2em;
+  margin: 0;
+  font-size: clamp(30px, 8vw, 60px);
+  font-weight: normal;
+  color: #fff;
+}
+.fx-r3d__box {
+  display: inline-block;
+  width: 5.2em;
+  height: 1.4em;
+  perspective: 600px;
+}
+.fx-r3d__cube {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: fx-r3d 8s cubic-bezier(.7, 0, .2, 1.2) infinite;
+}
+/* 4つの面を、奥行き 0.7em の立方体の上下前後に置く */
+.fx-r3d__cube span {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border: 4px solid #111;
+  border-radius: 12px;
+  color: #111;
+  backface-visibility: hidden;
+}
+.fx-r3d__cube span:nth-child(1) { background: #ffd400; transform: rotateX(0deg)   translateZ(.7em); }
+.fx-r3d__cube span:nth-child(2) { background: #ff3d7f; transform: rotateX(-90deg) translateZ(.7em); color: #fff; }
+.fx-r3d__cube span:nth-child(3) { background: #00c2ff; transform: rotateX(-180deg) translateZ(.7em); }
+.fx-r3d__cube span:nth-child(4) { background: #7cff4f; transform: rotateX(-270deg) translateZ(.7em); }
+@keyframes fx-r3d {
+  0%, 20%   { transform: translateZ(-.7em) rotateX(0deg); }
+  25%, 45%  { transform: translateZ(-.7em) rotateX(90deg); }
+  50%, 70%  { transform: translateZ(-.7em) rotateX(180deg); }
+  75%, 95%  { transform: translateZ(-.7em) rotateX(270deg); }
+  100%      { transform: translateZ(-.7em) rotateX(360deg); }
+}

@@ -1,0 +1,51 @@
+.fx-badge-demo { display: flex; align-items: center; gap: 36px; flex-wrap: wrap; justify-content: center; }
+.fx-cart {
+  position: relative;
+  width: 86px;
+  height: 86px;
+  border: 4px solid #111;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #111;
+}
+.fx-cart__badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: grid;
+  place-items: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: #ff3d7f;
+  color: #fff;
+  font: 16px "Dela Gothic One", sans-serif;
+  transform: scale(0);
+  transition: transform .3s cubic-bezier(.2, 1.6, .4, 1);
+}
+.fx-cart.has-items .fx-cart__badge { transform: scale(1); }
+.fx-cart.is-pop .fx-cart__badge { animation: fx-badge-pop .5s cubic-bezier(.2, 1.6, .4, 1); }
+.fx-cart.is-pop { animation: fx-cart-shake .5s; }
+@keyframes fx-badge-pop { 40% { transform: scale(1.7) rotate(-12deg); } }
+@keyframes fx-cart-shake {
+  20% { transform: rotate(-14deg); }
+  40% { transform: rotate(12deg); }
+  60% { transform: rotate(-8deg); }
+  80% { transform: rotate(4deg); }
+}
+.fx-add {
+  padding: 1em 1.6em;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #ffd400;
+  color: #111;
+  font: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #111;
+}
+.fx-add:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 #111; }

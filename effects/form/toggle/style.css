@@ -1,0 +1,45 @@
+.fx-toggle { cursor: pointer; }
+.fx-toggle input { position: absolute; opacity: 0; }
+.fx-toggle__track {
+  position: relative;
+  display: block;
+  width: 180px;
+  height: 84px;
+  border: 4px solid #111;
+  border-radius: 999px;
+  background: linear-gradient(#7fd8ff, #c7f0ff);
+  box-shadow: 6px 6px 0 #111;
+  overflow: hidden;
+  transition: background .5s;
+}
+.fx-toggle__stars {
+  position: absolute;
+  left: 22px;
+  top: 22px;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 4px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .4s, transform .5s;
+}
+.fx-toggle__knob {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #111;
+  border-radius: 50%;
+  background: #ffd400;
+  box-shadow: inset -6px -6px 0 #ffb000;
+  transition: transform .5s cubic-bezier(.2, 1.4, .4, 1), background .4s, box-shadow .4s;
+}
+.fx-toggle input:checked + .fx-toggle__track { background: linear-gradient(#1b1340, #3a2a7a); }
+.fx-toggle input:checked + .fx-toggle__track .fx-toggle__stars { opacity: 1; transform: none; }
+.fx-toggle input:checked + .fx-toggle__track .fx-toggle__knob {
+  transform: translateX(96px) rotate(-30deg);
+  background: #f2f2ff;
+  box-shadow: inset 14px -4px 0 #c9c4f2;   /* 影をずらして三日月に */
+}
+.fx-toggle input:focus-visible + .fx-toggle__track { outline: 4px solid #00c2ff; outline-offset: 4px; }

@@ -260,6 +260,7 @@ def build_index(cats, effects):
         links = ''.join(f'<li><a href="{c["id"]}.html#{e["id"]}">{esc(e["name"])}<small>{esc(e["en"])}</small></a></li>' for e in items)
         all_list.append(f'<div class="g-index__col" style="--cat:{c["color"]};--on:{c["ink"]}"><h3><span>{c["no"]}</span>{esc(c["name"])}</h3><ul>{links}</ul></div>')
 
+    tape = ' ✦ '.join(c['en'] for c in cats) + ' ✦ '
     body = f'''{header(cats)}
 <main id="main">
   <section class="g-top">
@@ -277,7 +278,7 @@ def build_index(cats, effects):
   </section>
 
   <div class="g-tape g-tape--rainbow" aria-hidden="true">
-    <div class="g-tape__track"><span>TEXT ✦ CURSOR ✦ SCROLL ✦ BACKGROUND ✦ CLICK ✦ CARD ✦ PAGE ✦ TEXT ✦ CURSOR ✦ SCROLL ✦ BACKGROUND ✦ CLICK ✦ CARD ✦ PAGE ✦ </span><span>TEXT ✦ CURSOR ✦ SCROLL ✦ BACKGROUND ✦ CLICK ✦ CARD ✦ PAGE ✦ TEXT ✦ CURSOR ✦ SCROLL ✦ BACKGROUND ✦ CLICK ✦ CARD ✦ PAGE ✦ </span></div>
+    <div class="g-tape__track"><span>{tape * 2}</span><span>{tape * 2}</span></div>
   </div>
 
   <section class="g-section" id="categories">

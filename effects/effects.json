@@ -62,6 +62,51 @@
       "color": "#ff2e4d",
       "ink": "#fff",
       "desc": "画面の切り替えや読み込み、ポップアップなど、ページ全体の見せ方のエフェクト。"
+    },
+    {
+      "id": "nav",
+      "no": "08",
+      "name": "ナビゲーション",
+      "en": "NAV",
+      "color": "#2de2c4",
+      "ink": "#111",
+      "desc": "メニューボタンや下線、ヘッダーなど、ページの「道案内」を楽しくするエフェクト。"
+    },
+    {
+      "id": "form",
+      "no": "09",
+      "name": "フォーム",
+      "en": "FORM",
+      "color": "#ff9ecf",
+      "ink": "#111",
+      "desc": "入力欄やチェック、スイッチなど、入力するのが気持ちよくなるエフェクト。"
+    },
+    {
+      "id": "image",
+      "no": "10",
+      "name": "画像",
+      "en": "IMAGE",
+      "color": "#4f7dff",
+      "ink": "#fff",
+      "desc": "比べる・拡大する・スライドするなど、写真やイラストを引き立てるエフェクト。"
+    },
+    {
+      "id": "loading",
+      "no": "11",
+      "name": "読み込み",
+      "en": "LOADING",
+      "color": "#c6ff00",
+      "ink": "#111",
+      "desc": "待ち時間を楽しくする、くるくる・ぴょこぴょこの読み込み中エフェクト。"
+    },
+    {
+      "id": "toast",
+      "no": "12",
+      "name": "通知",
+      "en": "TOAST",
+      "color": "#ff6b4a",
+      "ink": "#111",
+      "desc": "トースト・バッジ・アラート・ベルなど、お知らせをしっかり届けるエフェクト。"
     }
   ],
   "effects": [
@@ -157,6 +202,37 @@
       "body": "",
       "height": 340,
       "hint": ""
+    },
+    {
+      "cat": "text",
+      "id": "rotate-3d",
+      "name": "3D回転ワード",
+      "en": "3D Word Flip",
+      "desc": "言葉が立方体の面みたいに、上へくるっと3Dで回転しながら次々に入れかわる。CSSだけで動く。",
+      "use": "キャッチコピー・「〇〇を、もっと〇〇に」の切りかえ",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "text",
+      "id": "marker",
+      "name": "蛍光マーカー",
+      "en": "Highlighter",
+      "desc": "文章が画面に入ると、大事なところに蛍光ペンでシャーッと線を引いたように色がつく。",
+      "use": "ブログ・説明文・料金プランの強調ポイント",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "light",
+      "height": 340,
+      "hint": "「もう一度」でくり返し見られるよ"
     },
     {
       "cat": "cursor",
@@ -419,6 +495,38 @@
       "en": "Dot Wave",
       "desc": "並んだ水玉の大きさと色が、波のようにうねって変わり続ける。",
       "use": "ヒーローの背景・音楽/クラブ系・アート系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "matrix",
+      "name": "カタカナの雨",
+      "en": "Matrix Rain",
+      "desc": "カタカナや数字が、虹色の雨みたいに上から次々と流れ落ちてくる、サイバーな背景。",
+      "use": "ゲーム・IT・サイバー系、ハッカソンの告知",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "shooting-stars",
+      "name": "流れ星",
+      "en": "Shooting Stars",
+      "desc": "キラキラまたたく星空に、ときどき光のしっぽをひいた流れ星がスーッと流れる。",
+      "use": "夜・宇宙・願いごと系のキャンペーン、ロマンチックなページ",
       "files": [
         "HTML",
         "CSS",
@@ -710,6 +818,382 @@
       "body": "",
       "height": 340,
       "hint": "ステッカーをドラッグしてね"
+    },
+    {
+      "cat": "nav",
+      "id": "hamburger",
+      "name": "ハンバーガー変形",
+      "en": "Hamburger Morph",
+      "desc": "三本線のメニューボタンが、押すと「×」や「←」にくるっと変形する。3種類入り。",
+      "use": "スマホ用メニューボタン・サイドバーの開閉",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "ボタンを押してね"
+    },
+    {
+      "cat": "nav",
+      "id": "underline",
+      "name": "のびる下線",
+      "en": "Stretch Underline",
+      "desc": "メニューにマウスを乗せると、下線が左から・真ん中から・太い帯でびよーんと伸びる。CSSだけで動く。",
+      "use": "ヘッダーのメニュー・文中のリンク",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "メニューにマウスを乗せてね"
+    },
+    {
+      "cat": "nav",
+      "id": "pill-indicator",
+      "name": "すべるピル",
+      "en": "Sliding Pill",
+      "desc": "メニューの後ろの丸い色の板が、マウスを乗せた項目へスーッとすべって移動する。",
+      "use": "タブ切り替え・ヘッダーメニュー・カテゴリー選択",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "light",
+      "height": 340,
+      "hint": "メニューにマウスを乗せてね"
+    },
+    {
+      "cat": "nav",
+      "id": "hide-header",
+      "name": "かくれるヘッダー",
+      "en": "Hide on Scroll",
+      "desc": "下にスクロールするとヘッダーがスッと隠れて、上に戻すとまた出てくる。画面を広く使える。",
+      "use": "スマホサイト・ブログ・長いページのヘッダー",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "scroll",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "nav",
+      "id": "overlay-menu",
+      "name": "全画面メニュー",
+      "en": "Fullscreen Menu",
+      "desc": "ボタンを押すと、丸い色がぶわっと画面いっぱいに広がって、大きなメニューが順番に飛び出す。",
+      "use": "ブランドサイト・イベントサイトのメニュー",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "MENU ボタンを押してね"
+    },
+    {
+      "cat": "form",
+      "id": "floating-label",
+      "name": "うきあがるラベル",
+      "en": "Floating Label",
+      "desc": "入力欄をクリックすると、中にあったラベルがふわっと上に移動して小さくなる。CSSだけで動く。",
+      "use": "お問い合わせ・会員登録・ログインフォーム",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "light",
+      "height": 340,
+      "hint": "入力欄をクリックしてね"
+    },
+    {
+      "cat": "form",
+      "id": "password",
+      "name": "パスワード表示＆強さ",
+      "en": "Password Meter",
+      "desc": "目のボタンでパスワードの表示・非表示を切りかえ。入力するとバーの色と長さで強さがわかる。",
+      "use": "会員登録・パスワード変更画面",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "何か入力してみてね"
+    },
+    {
+      "cat": "form",
+      "id": "checkbox",
+      "name": "ぷるんチェック",
+      "en": "Bouncy Checkbox",
+      "desc": "チェックを入れると、箱がぷるんと弾んで、チェックマークがスーッと描かれる。CSSだけで動く。",
+      "use": "利用規約の同意・TODOリスト・アンケート",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "light",
+      "height": 340,
+      "hint": "チェックしてみてね"
+    },
+    {
+      "cat": "form",
+      "id": "toggle",
+      "name": "昼夜トグル",
+      "en": "Day / Night Toggle",
+      "desc": "押すとつまみがスライドして、太陽が月に変身。背景も昼から夜に変わるスイッチ。CSSだけで動く。",
+      "use": "ダークモード切替・ON/OFF 設定",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "スイッチを押してね"
+    },
+    {
+      "cat": "form",
+      "id": "validate",
+      "name": "ぶるぶる入力チェック",
+      "en": "Shake & Success",
+      "desc": "まちがった入力で送るとフォームがぶるぶる震えて赤く光り、正しいとボタンが✓に変身する。",
+      "use": "メールマガジン登録・ログイン・申し込みフォーム",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "空のまま「登録」を押してみてね"
+    },
+    {
+      "cat": "image",
+      "id": "before-after",
+      "name": "ビフォーアフター",
+      "en": "Before / After",
+      "desc": "つまみを左右に動かすと、2枚の画像を境目で見くらべられる。キーボードの ← → でも動く。",
+      "use": "リフォーム・写真加工・美容・商品の比較",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "左右にドラッグしてね"
+    },
+    {
+      "cat": "image",
+      "id": "magnifier",
+      "name": "虫めがねズーム",
+      "en": "Magnifier Lens",
+      "desc": "画像の上にマウスを乗せると、丸いレンズの中だけ大きく拡大して見える。",
+      "use": "商品の細部・地図・作品の拡大",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "画像の上でマウスを動かしてね"
+    },
+    {
+      "cat": "image",
+      "id": "carousel",
+      "name": "くるくるカルーセル",
+      "en": "Carousel",
+      "desc": "画像がスライドして切りかわる。矢印・下の丸ボタン・スワイプで動かせて、自動でも進む。",
+      "use": "トップのメインビジュアル・作品紹介・お客様の声",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": ""
+    },
+    {
+      "cat": "image",
+      "id": "wipe-reveal",
+      "name": "色の幕でリビール",
+      "en": "Wipe Reveal",
+      "desc": "画面に入ると、カラフルな色の帯がシャッと横切って、その後ろから画像があらわれる。",
+      "use": "作品紹介・ブログのアイキャッチ・プロフィール写真",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "「もう一度」でくり返し見られるよ"
+    },
+    {
+      "cat": "image",
+      "id": "polaroid",
+      "name": "ちらばり写真",
+      "en": "Scattered Polaroids",
+      "desc": "バラバラに傾いて置かれた写真に、マウスを乗せるとまっすぐ立って手前に飛び出す。CSSだけで動く。",
+      "use": "思い出アルバム・イベントレポート・スタッフ紹介",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 360,
+      "hint": "写真にマウスを乗せてね"
+    },
+    {
+      "cat": "loading",
+      "id": "spinners",
+      "name": "スピナー3種",
+      "en": "Spinners",
+      "desc": "くるくる回る読み込みマーク。虹色リング・追いかけっこ・四角がパタパタの3種類。CSSだけで動く。",
+      "use": "ボタンを押したあとの待ち時間・データ読み込み中",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "loading",
+      "id": "skeleton",
+      "name": "スケルトン表示",
+      "en": "Skeleton Screen",
+      "desc": "中身が届くまで、灰色の仮の形に光がキラッと流れる。2秒後に本物のカードに入れかわる。",
+      "use": "SNSのタイムライン・ニュース一覧・商品リスト",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "light",
+      "height": 340,
+      "hint": "「もう一度」でくり返し見られるよ"
+    },
+    {
+      "cat": "loading",
+      "id": "dots",
+      "name": "ぴょこぴょこドット",
+      "en": "Bouncing Dots",
+      "desc": "3つの丸が順番にジャンプしたり、ふくらんだりする読み込みマーク。CSSだけで動く。",
+      "use": "チャットの「入力中…」・送信中・小さな待ち時間",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "loading",
+      "id": "progress-ring",
+      "name": "進み具合リング",
+      "en": "Progress Ring",
+      "desc": "丸いゲージが0%から100%までぐるっと塗られていき、真ん中の数字も一緒に増えていく。",
+      "use": "アップロード中・ダウンロード中・目標の達成率",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "「もう一度」でくり返し見られるよ"
+    },
+    {
+      "cat": "loading",
+      "id": "pacman",
+      "name": "パクパク",
+      "en": "Pac Loader",
+      "desc": "口をパクパクさせるキャラクターが、流れてくるカラフルなドットをどんどん食べていく。CSSだけで動く。",
+      "use": "ゲーム風サイト・遊び心のある待ち画面",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "toast",
+      "id": "toast",
+      "name": "トースト通知",
+      "en": "Toast Stack",
+      "desc": "ボタンを押すと、右下に小さな通知がポンッと飛び出して積み重なり、時間がたつと消える。",
+      "use": "保存しました・送信完了・エラーのお知らせ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "toast",
+      "id": "badge",
+      "name": "バッジがポン",
+      "en": "Badge Pop",
+      "desc": "「カートに入れる」を押すと、カートの数字バッジがポンッとはねて、アイコンがゆれる。",
+      "use": "ネットショップのカート・お気に入り数・未読数",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "「カートに入れる」を押してね"
+    },
+    {
+      "cat": "toast",
+      "id": "alert",
+      "name": "ドロップアラート",
+      "en": "Drop Alert",
+      "desc": "上からアラートがドンッと落ちてきて、はずんで止まる。✕で上に戻っていく。",
+      "use": "大事なお知らせ・メンテナンス予告・キャンペーン告知",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "toast",
+      "id": "bell",
+      "name": "ゆれるベル",
+      "en": "Ringing Bell",
+      "desc": "新しい通知が来るとベルがリンリンゆれて赤い点がつく。押すと通知の一覧がポップアップする。",
+      "use": "ヘッダーの通知アイコン・マイページ・管理画面",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "ベルを押してね"
     }
   ]
 }

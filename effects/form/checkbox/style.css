@@ -1,0 +1,45 @@
+.fx-check-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 18px 24px 22px;
+  border: 3px solid #111;
+  border-radius: 18px;
+  background: #fff;
+  color: #111;
+  font: 700 20px "Zen Kaku Gothic New", system-ui, sans-serif;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-check-list legend { padding: 0 8px; font-family: "Dela Gothic One", sans-serif; font-weight: normal; }
+.fx-check { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.fx-check input { position: absolute; opacity: 0; pointer-events: none; }   /* 本物は隠して、見た目だけ作る */
+.fx-check__box {
+  position: relative;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #111;
+  border-radius: 9px;
+  background: #fff;
+  transition: background .2s;
+}
+.fx-check__box::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 3px;
+  width: 9px;
+  height: 17px;
+  border: solid #111;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform .3s cubic-bezier(.2, 1.8, .4, 1) .05s;
+}
+.fx-check input:checked + .fx-check__box { background: #7cff4f; animation: fx-check-boing .5s; }
+.fx-check input:checked + .fx-check__box::after { transform: rotate(45deg) scale(1); }
+.fx-check input:focus-visible + .fx-check__box { box-shadow: 0 0 0 4px #00c2ff; }
+@keyframes fx-check-boing {
+  30% { transform: scale(1.3, .75); }
+  50% { transform: scale(.85, 1.2); }
+  70% { transform: scale(1.08, .95); }
+}

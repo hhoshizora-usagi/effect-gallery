@@ -1,0 +1,71 @@
+.fx-toast-btns { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.fx-toast-btn {
+  padding: .8em 1.4em;
+  border: 3px solid #111;
+  border-radius: 12px;
+  background: #7cff4f;
+  color: #111;
+  font: inherit;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #111;
+}
+.fx-toast-btn--err  { background: #ff3d7f; color: #fff; }
+.fx-toast-btn--info { background: #00c2ff; }
+.fx-toast-btn:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 #111; }
+
+.fx-toasts {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(320px, calc(100vw - 32px));
+}
+.fx-toast {
+  --c: #7cff4f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px 16px;
+  overflow: hidden;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #fff;
+  color: #111;
+  font: 700 15px "Zen Kaku Gothic New", system-ui, sans-serif;
+  box-shadow: 5px 5px 0 #111;
+  animation: fx-toast-in .5s cubic-bezier(.2, 1.5, .4, 1);
+}
+.fx-toast--error { --c: #ff3d7f; }
+.fx-toast--info  { --c: #00c2ff; }
+.fx-toast__icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #111;
+  border-radius: 50%;
+  background: var(--c);
+  font-size: 14px;
+}
+.fx-toast__text { flex: 1; }
+.fx-toast__close { border: 0; background: none; font-size: 18px; cursor: pointer; }
+.fx-toast__timer {                       /* 残り時間のバー */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  background: var(--c);
+  transform-origin: left;
+  animation: fx-toast-timer var(--life, 3s) linear forwards;
+}
+.fx-toast.is-leaving { animation: fx-toast-out .35s ease-in forwards; }
+@keyframes fx-toast-in  { from { transform: translateX(120%) rotate(6deg); } }
+@keyframes fx-toast-out { to { transform: translateX(120%); opacity: 0; } }
+@keyframes fx-toast-timer { to { transform: scaleX(0); } }

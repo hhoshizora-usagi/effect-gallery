@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ナビゲーション（NAV）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="メニューボタンや下線、ヘッダーなど、ページの「道案内」を楽しくするエフェクト。">
+<meta property="og:title" content="ナビゲーション（NAV）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="メニューボタンや下線、ヘッダーなど、ページの「道案内」を楽しくするエフェクト。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-nav">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill" href="scroll.html" style="--cat:#00c2ff;--on:#111"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill" href="background.html" style="--cat:#7cff4f;--on:#111"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+      <li><a class="g-pill is-current" href="nav.html" style="--cat:#2de2c4;--on:#111" aria-current="page"><span>08</span>ナビゲーション</a></li>
+      <li><a class="g-pill" href="form.html" style="--cat:#ff9ecf;--on:#111"><span>09</span>フォーム</a></li>
+      <li><a class="g-pill" href="image.html" style="--cat:#4f7dff;--on:#fff"><span>10</span>画像</a></li>
+      <li><a class="g-pill" href="loading.html" style="--cat:#c6ff00;--on:#111"><span>11</span>読み込み</a></li>
+      <li><a class="g-pill" href="toast.html" style="--cat:#ff6b4a;--on:#111"><span>12</span>通知</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#2de2c4;--on:#111">
+    <p class="g-hero__no">08 <span>/ 12</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:3">NAV</span><span class="g-hero__jp">ナビゲーション</span></h1>
+    <p class="g-hero__desc">メニューボタンや下線、ヘッダーなど、ページの「道案内」を楽しくするエフェクト。</p>
+    <p class="g-hero__count" aria-label="5種類"><b>5</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#2de2c4;--on:#111">
+    <div class="g-tape__track"><span>HAMBURGER MORPH ✦ STRETCH UNDERLINE ✦ SLIDING PILL ✦ HIDE ON SCROLL ✦ FULLSCREEN MENU ✦ HAMBURGER MORPH ✦ STRETCH UNDERLINE ✦ SLIDING PILL ✦ HIDE ON SCROLL ✦ FULLSCREEN MENU ✦ </span><span>HAMBURGER MORPH ✦ STRETCH UNDERLINE ✦ SLIDING PILL ✦ HIDE ON SCROLL ✦ FULLSCREEN MENU ✦ HAMBURGER MORPH ✦ STRETCH UNDERLINE ✦ SLIDING PILL ✦ HIDE ON SCROLL ✦ FULLSCREEN MENU ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#hamburger">ハンバーガー変形</a></li><li><a href="#underline">のびる下線</a></li><li><a href="#pill-indicator">すべるピル</a></li><li><a href="#hide-header">かくれるヘッダー</a></li><li><a href="#overlay-menu">全画面メニュー</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="hamburger">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ハンバーガー変形</h2>
+            <p class="g-card__en">Hamburger Morph</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/nav/hamburger/index.html" title="ハンバーガー変形の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">三本線のメニューボタンが、押すと「×」や「←」にくるっと変形する。3種類入り。</p>
+          <p class="g-card__use"><b>使いどころ</b>スマホ用メニューボタン・サイドバーの開閉</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/nav/hamburger/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ハンバーガー変形のコード">
+            <button class="g-tab" role="tab" id="code-nav-hamburger-html-tab" aria-controls="code-nav-hamburger-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-nav-hamburger-css-tab" aria-controls="code-nav-hamburger-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-nav-hamburger-js-tab" aria-controls="code-nav-hamburger-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-nav-hamburger-html" aria-labelledby="code-nav-hamburger-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-burger-row&quot;&gt;
+  &lt;button class=&quot;fx-burger fx-burger--x&quot; data-fx=&quot;hamburger&quot; aria-expanded=&quot;false&quot; aria-label=&quot;メニュー&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;fx-burger fx-burger--arrow&quot; data-fx=&quot;hamburger&quot; aria-expanded=&quot;false&quot; aria-label=&quot;メニュー&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;fx-burger fx-burger--spin&quot; data-fx=&quot;hamburger&quot; aria-expanded=&quot;false&quot; aria-label=&quot;メニュー&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-nav-hamburger-css" aria-labelledby="code-nav-hamburger-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-burger-row { display: flex; gap: 32px; flex-wrap: wrap; justify-content: center; }
+.fx-burger {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  border: 4px solid #111;
+  border-radius: 22px;
+  background: #ffd400;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #111;
+  transition: transform .5s cubic-bezier(.2, 1.4, .4, 1), background .3s;
+}
+.fx-burger--arrow { background: #00c2ff; }
+.fx-burger--spin  { background: #ff3d7f; }
+.fx-burger span {
+  position: absolute;
+  left: 20px;
+  width: 36px;
+  height: 5px;
+  border-radius: 9px;
+  background: #111;
+  transition: transform .4s cubic-bezier(.2, 1.4, .4, 1), opacity .2s, width .3s, top .3s;
+}
+.fx-burger span:nth-child(1) { top: 26px; }
+.fx-burger span:nth-child(2) { top: 37.5px; }
+.fx-burger span:nth-child(3) { top: 49px; }
+
+<span class="c">/* × に変形 */</span>
+.fx-burger--x[aria-expanded=&quot;true&quot;] span:nth-child(1) { top: 37.5px; transform: rotate(45deg); }
+.fx-burger--x[aria-expanded=&quot;true&quot;] span:nth-child(2) { opacity: 0; transform: translateX(-20px); }
+.fx-burger--x[aria-expanded=&quot;true&quot;] span:nth-child(3) { top: 37.5px; transform: rotate(-45deg); }
+
+<span class="c">/* ← に変形 */</span>
+.fx-burger--arrow[aria-expanded=&quot;true&quot;] span:nth-child(1) { width: 22px; transform: translate(-3px, 7px) rotate(-40deg); }
+.fx-burger--arrow[aria-expanded=&quot;true&quot;] span:nth-child(3) { width: 22px; transform: translate(-3px, -7px) rotate(40deg); }
+
+<span class="c">/* 回転しながら × に */</span>
+.fx-burger--spin[aria-expanded=&quot;true&quot;] { transform: rotate(180deg); background: #7cff4f; }
+.fx-burger--spin[aria-expanded=&quot;true&quot;] span:nth-child(1) { top: 37.5px; transform: rotate(45deg); }
+.fx-burger--spin[aria-expanded=&quot;true&quot;] span:nth-child(2) { transform: scaleX(0); }
+.fx-burger--spin[aria-expanded=&quot;true&quot;] span:nth-child(3) { top: 37.5px; transform: rotate(-45deg); }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-nav-hamburger-js" aria-labelledby="code-nav-hamburger-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 押すたびに aria-expanded を true / false に切りかえる（見た目は CSS が担当）</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;hamburger&quot;]&#x27;).forEach((btn) =&gt; {
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; {
+      const open = btn.getAttribute(&#x27;aria-expanded&#x27;) !== &#x27;true&#x27;;
+      btn.setAttribute(&#x27;aria-expanded&#x27;, String(open));
+      btn.setAttribute(&#x27;aria-label&#x27;, open ? &#x27;メニューを閉じる&#x27; : &#x27;メニュー&#x27;);
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/nav/hamburger/</p>
+        </div>
+      </article>
+      <article class="g-card" id="underline">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">のびる下線</h2>
+            <p class="g-card__en">Stretch Underline</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/nav/underline/index.html" title="のびる下線の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">メニューにマウスを乗せると、下線が左から・真ん中から・太い帯でびよーんと伸びる。CSSだけで動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>ヘッダーのメニュー・文中のリンク</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/nav/underline/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="のびる下線のコード">
+            <button class="g-tab" role="tab" id="code-nav-underline-html-tab" aria-controls="code-nav-underline-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-nav-underline-css-tab" aria-controls="code-nav-underline-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-nav-underline-html" aria-labelledby="code-nav-underline-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-ul-wrap&quot;&gt;
+  &lt;nav class=&quot;fx-ul fx-ul--left&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;HOME&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;LINEUP&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;TICKET&lt;/a&gt;
+  &lt;/nav&gt;
+  &lt;nav class=&quot;fx-ul fx-ul--center&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;HOME&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;LINEUP&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;TICKET&lt;/a&gt;
+  &lt;/nav&gt;
+  &lt;nav class=&quot;fx-ul fx-ul--marker&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;HOME&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;LINEUP&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;TICKET&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-nav-underline-css" aria-labelledby="code-nav-underline-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-ul-wrap { display: grid; gap: 26px; }
+.fx-ul { display: flex; gap: 32px; justify-content: center; }
+.fx-ul a {
+  position: relative;
+  padding: 4px 2px;
+  color: #fff;
+  font-size: clamp(20px, 5vw, 30px);
+  text-decoration: none;
+}
+.fx-ul a::after {
+  content: &quot;&quot;;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  border-radius: 9px;
+  background: #ffd400;
+  transform: scaleX(0);
+  transition: transform .35s cubic-bezier(.2, 1.4, .4, 1);
+}
+.fx-ul a:hover::after,
+.fx-ul a:focus-visible::after { transform: scaleX(1); }
+
+<span class="c">/* 左から伸びる */</span>
+.fx-ul--left a::after { transform-origin: left; }
+<span class="c">/* 真ん中から伸びる */</span>
+.fx-ul--center a::after { transform-origin: center; background: #ff3d7f; }
+<span class="c">/* 太いマーカーが下から上へ */</span>
+.fx-ul--marker a { z-index: 0; }
+.fx-ul--marker a::after {
+  z-index: -1;
+  height: 100%;
+  border-radius: 6px;
+  background: #00c2ff;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.fx-ul--marker a:hover::after,
+.fx-ul--marker a:focus-visible::after { transform: scaleY(.55); }</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/nav/underline/</p>
+        </div>
+      </article>
+      <article class="g-card" id="pill-indicator">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">すべるピル</h2>
+            <p class="g-card__en">Sliding Pill</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/nav/pill-indicator/index.html" title="すべるピルの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">メニューの後ろの丸い色の板が、マウスを乗せた項目へスーッとすべって移動する。</p>
+          <p class="g-card__use"><b>使いどころ</b>タブ切り替え・ヘッダーメニュー・カテゴリー選択</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/nav/pill-indicator/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="すべるピルのコード">
+            <button class="g-tab" role="tab" id="code-nav-pill-indicator-html-tab" aria-controls="code-nav-pill-indicator-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-nav-pill-indicator-css-tab" aria-controls="code-nav-pill-indicator-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-nav-pill-indicator-js-tab" aria-controls="code-nav-pill-indicator-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-nav-pill-indicator-html" aria-labelledby="code-nav-pill-indicator-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;nav class=&quot;fx-pill&quot; data-fx=&quot;pill-indicator&quot;&gt;
+  &lt;span class=&quot;fx-pill__bg&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;a href=&quot;#&quot; class=&quot;is-active&quot;&gt;ALL&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;MUSIC&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;FOOD&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;ART&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-nav-pill-indicator-css" aria-labelledby="code-nav-pill-indicator-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-pill {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  padding: 6px;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-pill a {
+  position: relative;
+  z-index: 1;
+  padding: 10px clamp(12px, 3vw, 22px);
+  color: #111;
+  font-size: clamp(14px, 3.6vw, 20px);
+  text-decoration: none;
+  transition: color .3s;
+}
+.fx-pill a.is-hover { color: #fff; }
+.fx-pill__bg {
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 0;
+  width: 0;
+  border-radius: 999px;
+  background: #ff3d7f;
+  transition: transform .45s cubic-bezier(.2, 1.3, .4, 1), width .45s cubic-bezier(.2, 1.3, .4, 1), background .3s;
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-nav-pill-indicator-js" aria-labelledby="code-nav-pill-indicator-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// マウスを乗せた項目の位置と幅に、後ろの板を合わせる</span>
+(() =&gt; {
+  const colors = [&#x27;#ff3d7f&#x27;, &#x27;#00c2ff&#x27;, &#x27;#ff7a00&#x27;, &#x27;#a259ff&#x27;, &#x27;#7cff4f&#x27;];
+  document.querySelectorAll(&#x27;[data-fx=&quot;pill-indicator&quot;]&#x27;).forEach((nav) =&gt; {
+    const bg = nav.querySelector(&#x27;.fx-pill__bg&#x27;);
+    const links = [...nav.querySelectorAll(&#x27;a&#x27;)];
+    const moveTo = (a) =&gt; {
+      links.forEach((l) =&gt; l.classList.toggle(&#x27;is-hover&#x27;, l === a));
+      bg.style.width = `${a.offsetWidth}px`;
+      bg.style.transform = `translateX(${a.offsetLeft}px)`;
+      bg.style.background = colors[links.indexOf(a) % colors.length];
+    };
+    const home = () =&gt; moveTo(nav.querySelector(&#x27;.is-active&#x27;) || links[0]);
+    links.forEach((a) =&gt; {
+      a.addEventListener(&#x27;mouseenter&#x27;, () =&gt; moveTo(a));
+      a.addEventListener(&#x27;focus&#x27;, () =&gt; moveTo(a));
+      a.addEventListener(&#x27;click&#x27;, (e) =&gt; {
+        e.preventDefault();                       <span class="c">// 見本ではページ移動しない</span>
+        links.forEach((l) =&gt; l.classList.remove(&#x27;is-active&#x27;));
+        a.classList.add(&#x27;is-active&#x27;);
+      });
+    });
+    nav.addEventListener(&#x27;mouseleave&#x27;, home);
+    addEventListener(&#x27;resize&#x27;, home);
+    home();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/nav/pill-indicator/</p>
+        </div>
+      </article>
+      <article class="g-card" id="hide-header">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">かくれるヘッダー</h2>
+            <p class="g-card__en">Hide on Scroll</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/nav/hide-header/index.html" title="かくれるヘッダーの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">下にスクロールするとヘッダーがスッと隠れて、上に戻すとまた出てくる。画面を広く使える。</p>
+          <p class="g-card__use"><b>使いどころ</b>スマホサイト・ブログ・長いページのヘッダー</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/nav/hide-header/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="かくれるヘッダーのコード">
+            <button class="g-tab" role="tab" id="code-nav-hide-header-html-tab" aria-controls="code-nav-hide-header-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-nav-hide-header-css-tab" aria-controls="code-nav-hide-header-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-nav-hide-header-js-tab" aria-controls="code-nav-hide-header-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-nav-hide-header-html" aria-labelledby="code-nav-hide-header-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;header class=&quot;fx-hh&quot; data-fx=&quot;hide-header&quot;&gt;
+  &lt;b class=&quot;fx-hh__logo&quot;&gt;EPIC DAY&lt;/b&gt;
+  &lt;nav class=&quot;fx-hh__nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;LINEUP&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;TICKET&lt;/a&gt;&lt;/nav&gt;
+&lt;/header&gt;
+
+<span class="c">&lt;!-- ↓ スクロールを試すためのダミーの中身 --&gt;</span>
+&lt;section class=&quot;demo-block&quot;&gt;下へスクロール ↓&lt;/section&gt;
+&lt;section class=&quot;demo-block demo-block--pink&quot;&gt;ヘッダーが隠れた！&lt;/section&gt;
+&lt;section class=&quot;demo-block demo-block--yellow&quot;&gt;上へ戻すと…&lt;/section&gt;
+&lt;section class=&quot;demo-block demo-block--cyan&quot;&gt;また出てくる！&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-nav-hide-header-css" aria-labelledby="code-nav-hide-header-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-hh {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #ffd400;
+  color: #111;
+  border-bottom: 4px solid #111;
+  transition: transform .4s cubic-bezier(.2, .9, .3, 1), box-shadow .3s;
+}
+.fx-hh.is-hidden { transform: translateY(-110%); }
+.fx-hh.is-scrolled { box-shadow: 0 8px 0 rgba(0, 0, 0, .25); }
+.fx-hh__logo { font-size: 22px; font-weight: normal; }
+.fx-hh__nav { display: flex; gap: 18px; }
+.fx-hh__nav a { color: #111; text-decoration: none; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-nav-hide-header-js" aria-labelledby="code-nav-hide-header-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 前回のスクロール位置と比べて、下に動いたら隠す・上に動いたら出す</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;hide-header&quot;]&#x27;).forEach((header) =&gt; {
+    let lastY = scrollY;
+    addEventListener(&#x27;scroll&#x27;, () =&gt; {
+      const y = scrollY;
+      const down = y &gt; lastY &amp;&amp; y &gt; header.offsetHeight;   <span class="c">// 一番上では隠さない</span>
+      if (Math.abs(y - lastY) &gt; 4) header.classList.toggle(&#x27;is-hidden&#x27;, down);
+      header.classList.toggle(&#x27;is-scrolled&#x27;, y &gt; 10);
+      lastY = y;
+    }, { passive: true });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/nav/hide-header/</p>
+        </div>
+      </article>
+      <article class="g-card" id="overlay-menu">
+        <header class="g-card__head">
+          <span class="g-card__no">05</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">全画面メニュー</h2>
+            <p class="g-card__en">Fullscreen Menu</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/nav/overlay-menu/index.html" title="全画面メニューの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">ボタンを押すと、丸い色がぶわっと画面いっぱいに広がって、大きなメニューが順番に飛び出す。</p>
+          <p class="g-card__use"><b>使いどころ</b>ブランドサイト・イベントサイトのメニュー</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/nav/overlay-menu/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="全画面メニューのコード">
+            <button class="g-tab" role="tab" id="code-nav-overlay-menu-html-tab" aria-controls="code-nav-overlay-menu-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-nav-overlay-menu-css-tab" aria-controls="code-nav-overlay-menu-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-nav-overlay-menu-js-tab" aria-controls="code-nav-overlay-menu-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-nav-overlay-menu-html" aria-labelledby="code-nav-overlay-menu-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;button class=&quot;fx-om-btn&quot; data-fx=&quot;overlay-menu&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;fx-om&quot;&gt;MENU&lt;/button&gt;
+
+&lt;nav class=&quot;fx-om&quot; id=&quot;fx-om&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;a href=&quot;#&quot; style=&quot;--i: 0&quot;&gt;HOME&lt;/a&gt;
+  &lt;a href=&quot;#&quot; style=&quot;--i: 1&quot;&gt;LINEUP&lt;/a&gt;
+  &lt;a href=&quot;#&quot; style=&quot;--i: 2&quot;&gt;TICKET&lt;/a&gt;
+  &lt;a href=&quot;#&quot; style=&quot;--i: 3&quot;&gt;ACCESS&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-nav-overlay-menu-css" aria-labelledby="code-nav-overlay-menu-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-om-btn {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 20;
+  width: 76px;
+  height: 76px;
+  border: 4px solid #111;
+  border-radius: 50%;
+  background: #ff3d7f;
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #111;
+}
+.fx-om-btn[aria-expanded=&quot;true&quot;] { background: #fff; color: #111; }
+.fx-om {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-content: center;
+  gap: 4px;
+  background: #ff3d7f;
+  text-align: center;
+  clip-path: circle(0 at calc(100% - 56px) 56px);   <span class="c">/* ボタンの位置から広がる */</span>
+  visibility: hidden;
+  transition: clip-path .7s cubic-bezier(.7, 0, .2, 1), visibility 0s .7s;
+}
+.fx-om.is-open {
+  clip-path: circle(150% at calc(100% - 56px) 56px);
+  visibility: visible;
+  transition: clip-path .7s cubic-bezier(.7, 0, .2, 1), visibility 0s;
+}
+.fx-om a {
+  color: #fff;
+  font-size: clamp(36px, 10vw, 64px);
+  line-height: 1.15;
+  text-decoration: none;
+  -webkit-text-stroke: 2px #111;
+  text-shadow: 5px 5px 0 #111;
+  opacity: 0;
+  transform: translateY(40px) rotate(-6deg);
+  transition: opacity .3s, transform .5s cubic-bezier(.2, 1.6, .4, 1), color .2s;
+}
+.fx-om.is-open a {
+  opacity: 1;
+  transform: none;
+  transition-delay: calc(.3s + var(--i) * .07s);
+}
+.fx-om a:hover { color: #ffd400; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-nav-overlay-menu-js" aria-labelledby="code-nav-overlay-menu-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// ボタンでメニューを開け閉め（Esc キーでも閉じる）</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;overlay-menu&quot;]&#x27;).forEach((btn) =&gt; {
+    const menu = document.getElementById(btn.getAttribute(&#x27;aria-controls&#x27;));
+    const set = (open) =&gt; {
+      btn.setAttribute(&#x27;aria-expanded&#x27;, String(open));
+      btn.textContent = open ? &#x27;CLOSE&#x27; : &#x27;MENU&#x27;;
+      menu.classList.toggle(&#x27;is-open&#x27;, open);
+      menu.setAttribute(&#x27;aria-hidden&#x27;, String(!open));
+    };
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; set(btn.getAttribute(&#x27;aria-expanded&#x27;) !== &#x27;true&#x27;));
+    addEventListener(&#x27;keydown&#x27;, (e) =&gt; { if (e.key === &#x27;Escape&#x27;) set(false); });
+    menu.addEventListener(&#x27;click&#x27;, (e) =&gt; { if (e.target.closest(&#x27;a&#x27;)) { e.preventDefault(); set(false); } });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/nav/overlay-menu/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="page.html" style="--cat:#ff2e4d;--on:#fff"><small>← 前の種類</small>ページ演出</a><a class="g-pager__link g-pager__link--next" href="form.html" style="--cat:#ff9ecf;--on:#111"><small>次の種類 →</small>フォーム</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 69 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

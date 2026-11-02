@@ -1,0 +1,18 @@
+.fx-marker-text {
+  max-width: 520px;
+  margin: 0;
+  padding: 0 20px;
+  color: #111;
+  font: 700 clamp(18px, 4.4vw, 26px)/1.9 "Zen Kaku Gothic New", system-ui, sans-serif;
+}
+.fx-marker {
+  padding: 0 .1em;
+  color: inherit;
+  background: linear-gradient(transparent 55%, #ffd400 55%, #ffd400 92%, transparent 92%) no-repeat;
+  background-size: 0% 100%;                 /* 最初は幅 0 */
+  transition: background-size 1s cubic-bezier(.6, 0, .2, 1) var(--d, .2s);
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;      /* 2行にまたがってもきれいに */
+}
+.fx-marker--pink { background-image: linear-gradient(transparent 55%, #ff9ecf 55%, #ff9ecf 92%, transparent 92%); }
+.fx-marker.is-in { background-size: 100% 100%; }

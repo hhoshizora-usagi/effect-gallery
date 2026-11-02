@@ -1,0 +1,27 @@
+.fx-mag-img {
+  position: relative;
+  width: min(90vw, 480px);
+  border: 4px solid #111;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: none;
+  box-shadow: 8px 8px 0 #111;
+  touch-action: none;
+}
+.fx-mag-img img { display: block; width: 100%; }
+.fx-mag-img__lens {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 4px #111, 0 10px 30px rgba(0, 0, 0, .5);
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(.4);
+  transition: opacity .2s, transform .25s cubic-bezier(.2, 1.6, .4, 1);
+}
+.fx-mag-img.is-on .fx-mag-img__lens { opacity: 1; transform: scale(1); }

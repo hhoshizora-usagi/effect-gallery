@@ -1,0 +1,34 @@
+.fx-spin-row { display: flex; gap: 48px; align-items: center; }
+.fx-spin { display: block; width: 70px; height: 70px; }
+
+/* 虹色リング：conic-gradient を円に切り抜いて回す */
+.fx-spin--rainbow {
+  border-radius: 50%;
+  background: conic-gradient(#ff3d7f, #ffd400, #7cff4f, #00c2ff, #a259ff, transparent 80%);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 12px), #000 calc(100% - 11px));
+          mask: radial-gradient(farthest-side, transparent calc(100% - 12px), #000 calc(100% - 11px));
+  animation: fx-spin 1s linear infinite;
+}
+/* 追いかけっこ：上と右だけ色のついた輪 */
+.fx-spin--chase {
+  border: 10px solid rgba(255, 255, 255, .15);
+  border-top-color: #ffd400;
+  border-right-color: #ff3d7f;
+  border-radius: 50%;
+  animation: fx-spin .8s cubic-bezier(.6, .2, .4, .8) infinite;
+}
+/* 四角がパタパタ：縦→横に交互に裏返る */
+.fx-spin--flip {
+  width: 56px;
+  height: 56px;
+  border: 4px solid #111;
+  border-radius: 10px;
+  background: #7cff4f;
+  animation: fx-flip 1.2s ease-in-out infinite;
+}
+@keyframes fx-spin { to { transform: rotate(360deg); } }
+@keyframes fx-flip {
+  0%   { transform: perspective(200px) rotateX(0) rotateY(0); background: #7cff4f; }
+  50%  { transform: perspective(200px) rotateX(-180deg) rotateY(0); background: #00c2ff; }
+  100% { transform: perspective(200px) rotateX(-180deg) rotateY(-180deg); background: #ff3d7f; }
+}

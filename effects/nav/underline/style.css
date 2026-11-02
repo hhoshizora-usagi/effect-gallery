@@ -1,0 +1,40 @@
+.fx-ul-wrap { display: grid; gap: 26px; }
+.fx-ul { display: flex; gap: 32px; justify-content: center; }
+.fx-ul a {
+  position: relative;
+  padding: 4px 2px;
+  color: #fff;
+  font-size: clamp(20px, 5vw, 30px);
+  text-decoration: none;
+}
+.fx-ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  border-radius: 9px;
+  background: #ffd400;
+  transform: scaleX(0);
+  transition: transform .35s cubic-bezier(.2, 1.4, .4, 1);
+}
+.fx-ul a:hover::after,
+.fx-ul a:focus-visible::after { transform: scaleX(1); }
+
+/* 左から伸びる */
+.fx-ul--left a::after { transform-origin: left; }
+/* 真ん中から伸びる */
+.fx-ul--center a::after { transform-origin: center; background: #ff3d7f; }
+/* 太いマーカーが下から上へ */
+.fx-ul--marker a { z-index: 0; }
+.fx-ul--marker a::after {
+  z-index: -1;
+  height: 100%;
+  border-radius: 6px;
+  background: #00c2ff;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.fx-ul--marker a:hover::after,
+.fx-ul--marker a:focus-visible::after { transform: scaleY(.55); }

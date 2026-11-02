@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>通知（TOAST）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="トースト・バッジ・アラート・ベルなど、お知らせをしっかり届けるエフェクト。">
+<meta property="og:title" content="通知（TOAST）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="トースト・バッジ・アラート・ベルなど、お知らせをしっかり届けるエフェクト。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-toast">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill" href="scroll.html" style="--cat:#00c2ff;--on:#111"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill" href="background.html" style="--cat:#7cff4f;--on:#111"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+      <li><a class="g-pill" href="nav.html" style="--cat:#2de2c4;--on:#111"><span>08</span>ナビゲーション</a></li>
+      <li><a class="g-pill" href="form.html" style="--cat:#ff9ecf;--on:#111"><span>09</span>フォーム</a></li>
+      <li><a class="g-pill" href="image.html" style="--cat:#4f7dff;--on:#fff"><span>10</span>画像</a></li>
+      <li><a class="g-pill" href="loading.html" style="--cat:#c6ff00;--on:#111"><span>11</span>読み込み</a></li>
+      <li><a class="g-pill is-current" href="toast.html" style="--cat:#ff6b4a;--on:#111" aria-current="page"><span>12</span>通知</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#ff6b4a;--on:#111">
+    <p class="g-hero__no">12 <span>/ 12</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:5">TOAST</span><span class="g-hero__jp">通知</span></h1>
+    <p class="g-hero__desc">トースト・バッジ・アラート・ベルなど、お知らせをしっかり届けるエフェクト。</p>
+    <p class="g-hero__count" aria-label="4種類"><b>4</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#ff6b4a;--on:#111">
+    <div class="g-tape__track"><span>TOAST STACK ✦ BADGE POP ✦ DROP ALERT ✦ RINGING BELL ✦ TOAST STACK ✦ BADGE POP ✦ DROP ALERT ✦ RINGING BELL ✦ </span><span>TOAST STACK ✦ BADGE POP ✦ DROP ALERT ✦ RINGING BELL ✦ TOAST STACK ✦ BADGE POP ✦ DROP ALERT ✦ RINGING BELL ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#toast">トースト通知</a></li><li><a href="#badge">バッジがポン</a></li><li><a href="#alert">ドロップアラート</a></li><li><a href="#bell">ゆれるベル</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="toast">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">トースト通知</h2>
+            <p class="g-card__en">Toast Stack</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/toast/toast/index.html" title="トースト通知の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">ボタンを押すと、右下に小さな通知がポンッと飛び出して積み重なり、時間がたつと消える。</p>
+          <p class="g-card__use"><b>使いどころ</b>保存しました・送信完了・エラーのお知らせ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/toast/toast/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="トースト通知のコード">
+            <button class="g-tab" role="tab" id="code-toast-toast-html-tab" aria-controls="code-toast-toast-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-toast-toast-css-tab" aria-controls="code-toast-toast-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-toast-toast-js-tab" aria-controls="code-toast-toast-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-toast-toast-html" aria-labelledby="code-toast-toast-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-toast-btns&quot;&gt;
+  &lt;button class=&quot;fx-toast-btn&quot; data-toast=&quot;success&quot; data-msg=&quot;保存しました！&quot;&gt;✓ 成功&lt;/button&gt;
+  &lt;button class=&quot;fx-toast-btn fx-toast-btn--err&quot; data-toast=&quot;error&quot; data-msg=&quot;通信に失敗しました&quot;&gt;✕ エラー&lt;/button&gt;
+  &lt;button class=&quot;fx-toast-btn fx-toast-btn--info&quot; data-toast=&quot;info&quot; data-msg=&quot;新しいお知らせがあります&quot;&gt;i おしらせ&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;fx-toasts&quot; data-fx=&quot;toast&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-toast-toast-css" aria-labelledby="code-toast-toast-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-toast-btns { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.fx-toast-btn {
+  padding: .8em 1.4em;
+  border: 3px solid #111;
+  border-radius: 12px;
+  background: #7cff4f;
+  color: #111;
+  font: inherit;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #111;
+}
+.fx-toast-btn--err  { background: #ff3d7f; color: #fff; }
+.fx-toast-btn--info { background: #00c2ff; }
+.fx-toast-btn:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 #111; }
+
+.fx-toasts {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(320px, calc(100vw - 32px));
+}
+.fx-toast {
+  --c: #7cff4f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px 16px;
+  overflow: hidden;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #fff;
+  color: #111;
+  font: 700 15px &quot;Zen Kaku Gothic New&quot;, system-ui, sans-serif;
+  box-shadow: 5px 5px 0 #111;
+  animation: fx-toast-in .5s cubic-bezier(.2, 1.5, .4, 1);
+}
+.fx-toast--error { --c: #ff3d7f; }
+.fx-toast--info  { --c: #00c2ff; }
+.fx-toast__icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #111;
+  border-radius: 50%;
+  background: var(--c);
+  font-size: 14px;
+}
+.fx-toast__text { flex: 1; }
+.fx-toast__close { border: 0; background: none; font-size: 18px; cursor: pointer; }
+.fx-toast__timer {                       <span class="c">/* 残り時間のバー */</span>
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  background: var(--c);
+  transform-origin: left;
+  animation: fx-toast-timer var(--life, 3s) linear forwards;
+}
+.fx-toast.is-leaving { animation: fx-toast-out .35s ease-in forwards; }
+@keyframes fx-toast-in  { from { transform: translateX(120%) rotate(6deg); } }
+@keyframes fx-toast-out { to { transform: translateX(120%); opacity: 0; } }
+@keyframes fx-toast-timer { to { transform: scaleX(0); } }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-toast-toast-js" aria-labelledby="code-toast-toast-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// showToast(種類, 文章) で通知を出す。3秒たつか ✕ で消える</span>
+(() =&gt; {
+  const box = document.querySelector(&#x27;[data-fx=&quot;toast&quot;]&#x27;);
+  if (!box) return;
+  const icons = { success: &#x27;✓&#x27;, error: &#x27;✕&#x27;, info: &#x27;i&#x27; };
+  const life = 3000;
+
+  window.showToast = (type, msg) =&gt; {
+    const t = document.createElement(&#x27;div&#x27;);
+    t.className = `fx-toast fx-toast--${type}`;
+    t.setAttribute(&#x27;role&#x27;, type === &#x27;error&#x27; ? &#x27;alert&#x27; : &#x27;status&#x27;);
+    t.style.setProperty(&#x27;--life&#x27;, `${life}ms`);
+    t.innerHTML = `&lt;span class=&quot;fx-toast__icon&quot;&gt;${icons[type] || &#x27;!&#x27;}&lt;/span&gt;
+      &lt;span class=&quot;fx-toast__text&quot;&gt;&lt;/span&gt;
+      &lt;button class=&quot;fx-toast__close&quot; aria-label=&quot;閉じる&quot;&gt;✕&lt;/button&gt;
+      &lt;span class=&quot;fx-toast__timer&quot;&gt;&lt;/span&gt;`;
+    t.querySelector(&#x27;.fx-toast__text&#x27;).textContent = msg;   <span class="c">// 文章は textContent で安全に</span>
+    const remove = () =&gt; {
+      if (t.classList.contains(&#x27;is-leaving&#x27;)) return;
+      t.classList.add(&#x27;is-leaving&#x27;);
+      t.addEventListener(&#x27;animationend&#x27;, () =&gt; t.remove(), { once: true });
+    };
+    t.querySelector(&#x27;.fx-toast__close&#x27;).addEventListener(&#x27;click&#x27;, remove);
+    setTimeout(remove, life);
+    box.appendChild(t);
+    if (box.children.length &gt; 4) box.firstElementChild.remove();   <span class="c">// 多すぎたら古いものから消す</span>
+  };
+
+  document.querySelectorAll(&#x27;[data-toast]&#x27;).forEach((btn) =&gt; {
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; showToast(btn.dataset.toast, btn.dataset.msg));
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/toast/toast/</p>
+        </div>
+      </article>
+      <article class="g-card" id="badge">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">バッジがポン</h2>
+            <p class="g-card__en">Badge Pop</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/toast/badge/index.html" title="バッジがポンの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">「カートに入れる」を押すと、カートの数字バッジがポンッとはねて、アイコンがゆれる。</p>
+          <p class="g-card__use"><b>使いどころ</b>ネットショップのカート・お気に入り数・未読数</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/toast/badge/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="バッジがポンのコード">
+            <button class="g-tab" role="tab" id="code-toast-badge-html-tab" aria-controls="code-toast-badge-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-toast-badge-css-tab" aria-controls="code-toast-badge-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-toast-badge-js-tab" aria-controls="code-toast-badge-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-toast-badge-html" aria-labelledby="code-toast-badge-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-badge-demo&quot;&gt;
+  &lt;button class=&quot;fx-cart&quot; aria-label=&quot;カート（0点）&quot;&gt;
+    🛒&lt;span class=&quot;fx-cart__badge&quot; aria-hidden=&quot;true&quot;&gt;0&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;fx-add&quot; data-fx=&quot;badge&quot;&gt;＋ カートに入れる&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-toast-badge-css" aria-labelledby="code-toast-badge-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-badge-demo { display: flex; align-items: center; gap: 36px; flex-wrap: wrap; justify-content: center; }
+.fx-cart {
+  position: relative;
+  width: 86px;
+  height: 86px;
+  border: 4px solid #111;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #111;
+}
+.fx-cart__badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: grid;
+  place-items: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: #ff3d7f;
+  color: #fff;
+  font: 16px &quot;Dela Gothic One&quot;, sans-serif;
+  transform: scale(0);
+  transition: transform .3s cubic-bezier(.2, 1.6, .4, 1);
+}
+.fx-cart.has-items .fx-cart__badge { transform: scale(1); }
+.fx-cart.is-pop .fx-cart__badge { animation: fx-badge-pop .5s cubic-bezier(.2, 1.6, .4, 1); }
+.fx-cart.is-pop { animation: fx-cart-shake .5s; }
+@keyframes fx-badge-pop { 40% { transform: scale(1.7) rotate(-12deg); } }
+@keyframes fx-cart-shake {
+  20% { transform: rotate(-14deg); }
+  40% { transform: rotate(12deg); }
+  60% { transform: rotate(-8deg); }
+  80% { transform: rotate(4deg); }
+}
+.fx-add {
+  padding: 1em 1.6em;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #ffd400;
+  color: #111;
+  font: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #111;
+}
+.fx-add:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 #111; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-toast-badge-js" aria-labelledby="code-toast-badge-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 押すたびに数を +1 して、ポンッのアニメーションを最初から再生</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;badge&quot;]&#x27;).forEach((btn) =&gt; {
+    const cart = document.querySelector(&#x27;.fx-cart&#x27;);
+    const badge = cart.querySelector(&#x27;.fx-cart__badge&#x27;);
+    let count = 0;
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; {
+      count++;
+      badge.textContent = count &gt; 99 ? &#x27;99+&#x27; : count;
+      cart.setAttribute(&#x27;aria-label&#x27;, `カート（${count}点）`);
+      cart.classList.add(&#x27;has-items&#x27;);
+      cart.classList.remove(&#x27;is-pop&#x27;);
+      void cart.offsetWidth;
+      cart.classList.add(&#x27;is-pop&#x27;);
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/toast/badge/</p>
+        </div>
+      </article>
+      <article class="g-card" id="alert">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ドロップアラート</h2>
+            <p class="g-card__en">Drop Alert</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/toast/alert/index.html" title="ドロップアラートの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">上からアラートがドンッと落ちてきて、はずんで止まる。✕で上に戻っていく。</p>
+          <p class="g-card__use"><b>使いどころ</b>大事なお知らせ・メンテナンス予告・キャンペーン告知</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/toast/alert/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ドロップアラートのコード">
+            <button class="g-tab" role="tab" id="code-toast-alert-html-tab" aria-controls="code-toast-alert-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-toast-alert-css-tab" aria-controls="code-toast-alert-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-toast-alert-js-tab" aria-controls="code-toast-alert-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-toast-alert-html" aria-labelledby="code-toast-alert-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;button class=&quot;fx-alert-open&quot; data-fx=&quot;alert&quot; data-target=&quot;fx-alert&quot;&gt;📢 お知らせを出す&lt;/button&gt;
+
+&lt;div class=&quot;fx-alert&quot; id=&quot;fx-alert&quot; role=&quot;alert&quot; hidden&gt;
+  &lt;span class=&quot;fx-alert__icon&quot; aria-hidden=&quot;true&quot;&gt;!&lt;/span&gt;
+  &lt;div class=&quot;fx-alert__body&quot;&gt;
+    &lt;b&gt;チケット残りわずか！&lt;/b&gt;
+    &lt;p&gt;1日券は残り 120 枚です。お早めに。&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;fx-alert__close&quot; aria-label=&quot;閉じる&quot;&gt;✕&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-toast-alert-css" aria-labelledby="code-toast-alert-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-alert-open {
+  padding: 1em 1.6em;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #ff7a00;
+  color: #111;
+  font: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #111;
+}
+.fx-alert {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: min(92vw, 440px);
+  padding: 14px 16px;
+  border: 4px solid #111;
+  border-radius: 16px;
+  background: #ffd400;
+  color: #111;
+  font-family: &quot;Zen Kaku Gothic New&quot;, system-ui, sans-serif;
+  box-shadow: 6px 6px 0 #111;
+  transform: translateX(-50%);
+  animation: fx-alert-drop .8s cubic-bezier(.3, 1.6, .5, 1);
+}
+.fx-alert[hidden] { display: none; }
+.fx-alert.is-leaving { animation: fx-alert-up .35s ease-in forwards; }
+.fx-alert__icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #111;
+  border-radius: 50%;
+  background: #ff3d7f;
+  color: #fff;
+  font: 22px &quot;Dela Gothic One&quot;, sans-serif;
+  animation: fx-alert-ring 1s .7s 2;
+}
+.fx-alert__body { flex: 1; }
+.fx-alert__body b { font-family: &quot;Dela Gothic One&quot;, sans-serif; font-weight: normal; font-size: 17px; }
+.fx-alert__body p { margin: 2px 0 0; font-weight: 700; font-size: 14px; }
+.fx-alert__close { border: 0; background: none; font-size: 20px; cursor: pointer; }
+@keyframes fx-alert-drop { from { transform: translate(-50%, -160%) rotate(-4deg); } }
+@keyframes fx-alert-up   { to   { transform: translate(-50%, -160%); } }
+@keyframes fx-alert-ring {
+  10%, 30% { transform: rotate(-18deg); }
+  20%, 40% { transform: rotate(18deg); }
+  50% { transform: none; }
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-toast-alert-js" aria-labelledby="code-toast-alert-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// hidden を外すと CSS の落下アニメーションが始まる。閉じるときは上に戻してから hidden</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;alert&quot;]&#x27;).forEach((btn) =&gt; {
+    const alert = document.getElementById(btn.dataset.target);
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; {
+      alert.classList.remove(&#x27;is-leaving&#x27;);
+      alert.hidden = true;
+      void alert.offsetWidth;                <span class="c">// 毎回落ちてくるように</span>
+      alert.hidden = false;
+    });
+    alert.querySelector(&#x27;.fx-alert__close&#x27;).addEventListener(&#x27;click&#x27;, () =&gt; {
+      alert.classList.add(&#x27;is-leaving&#x27;);
+      alert.addEventListener(&#x27;animationend&#x27;, () =&gt; { alert.hidden = true; alert.classList.remove(&#x27;is-leaving&#x27;); }, { once: true });
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/toast/alert/</p>
+        </div>
+      </article>
+      <article class="g-card" id="bell">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ゆれるベル</h2>
+            <p class="g-card__en">Ringing Bell</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/toast/bell/index.html" title="ゆれるベルの見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">新しい通知が来るとベルがリンリンゆれて赤い点がつく。押すと通知の一覧がポップアップする。</p>
+          <p class="g-card__use"><b>使いどころ</b>ヘッダーの通知アイコン・マイページ・管理画面</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/toast/bell/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ゆれるベルのコード">
+            <button class="g-tab" role="tab" id="code-toast-bell-html-tab" aria-controls="code-toast-bell-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-toast-bell-css-tab" aria-controls="code-toast-bell-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-toast-bell-js-tab" aria-controls="code-toast-bell-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-toast-bell-html" aria-labelledby="code-toast-bell-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-bell-wrap&quot; data-fx=&quot;bell&quot;&gt;
+  &lt;button class=&quot;fx-bell&quot; aria-label=&quot;通知&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;fx-bell-list&quot;&gt;
+    &lt;span class=&quot;fx-bell__icon&quot; aria-hidden=&quot;true&quot;&gt;🔔&lt;/span&gt;
+    &lt;span class=&quot;fx-bell__dot&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;fx-bell__list&quot; id=&quot;fx-bell-list&quot; hidden&gt;
+    &lt;li&gt;🎫 チケットの発券が完了しました&lt;/li&gt;
+    &lt;li&gt;🎸 タイムテーブルが更新されました&lt;/li&gt;
+    &lt;li&gt;🍔 フードエリアの地図を公開！&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-toast-bell-css" aria-labelledby="code-toast-bell-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-bell-wrap { position: relative; margin-bottom: 150px; }   <span class="c">/* 見本用：下に一覧を出すスペース */</span>
+.fx-bell {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border: 4px solid #111;
+  border-radius: 24px;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #111;
+}
+.fx-bell__icon { display: inline-block; font-size: 44px; transform-origin: 50% 10%; }
+.fx-bell.is-ringing .fx-bell__icon { animation: fx-bell-ring 1.2s ease-in-out; }
+.fx-bell__dot {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #111;
+  border-radius: 50%;
+  background: #ff2e4d;
+  transform: scale(0);
+  transition: transform .3s cubic-bezier(.2, 1.8, .4, 1);
+}
+.fx-bell.has-new .fx-bell__dot { transform: scale(1); }
+.fx-bell.has-new .fx-bell__dot::after {      <span class="c">/* 点のまわりの波紋 */</span>
+  content: &quot;&quot;;
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 3px solid #ff2e4d;
+  animation: fx-bell-wave 1.4s ease-out infinite;
+}
+@keyframes fx-bell-ring {
+  0%, 100% { transform: rotate(0); }
+  10%, 30%, 50% { transform: rotate(22deg); }
+  20%, 40%, 60% { transform: rotate(-22deg); }
+  70% { transform: rotate(10deg); }
+  80% { transform: rotate(-6deg); }
+}
+@keyframes fx-bell-wave { to { transform: scale(2.4); opacity: 0; } }
+.fx-bell__list {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  width: 280px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  border: 3px solid #111;
+  border-radius: 16px;
+  background: #fff;
+  color: #111;
+  font: 700 14px &quot;Zen Kaku Gothic New&quot;, system-ui, sans-serif;
+  box-shadow: 6px 6px 0 #111;
+  transform: translateX(-50%);
+  transform-origin: top center;
+  animation: fx-bell-pop .4s cubic-bezier(.2, 1.5, .4, 1);
+}
+.fx-bell__list[hidden] { display: none; }
+.fx-bell__list li { padding: 10px; border-radius: 10px; }
+.fx-bell__list li:hover { background: #fff4b0; }
+@keyframes fx-bell-pop { from { transform: translateX(-50%) scale(.6); opacity: 0; } }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-toast-bell-js" aria-labelledby="code-toast-bell-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 見本では1秒後に「新しい通知」が来たことにする。本番は通知が届いたら notify() を呼ぶ</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;bell&quot;]&#x27;).forEach((wrap) =&gt; {
+    const bell = wrap.querySelector(&#x27;.fx-bell&#x27;);
+    const list = wrap.querySelector(&#x27;.fx-bell__list&#x27;);
+    const notify = () =&gt; {
+      bell.classList.add(&#x27;has-new&#x27;);
+      bell.setAttribute(&#x27;aria-label&#x27;, &#x27;通知（新着あり）&#x27;);
+      bell.classList.remove(&#x27;is-ringing&#x27;);
+      void bell.offsetWidth;
+      bell.classList.add(&#x27;is-ringing&#x27;);
+    };
+    bell.addEventListener(&#x27;click&#x27;, () =&gt; {
+      const open = list.hidden;
+      list.hidden = !open;
+      bell.setAttribute(&#x27;aria-expanded&#x27;, String(open));
+      if (open) { bell.classList.remove(&#x27;has-new&#x27;); bell.setAttribute(&#x27;aria-label&#x27;, &#x27;通知&#x27;); }
+    });
+    document.addEventListener(&#x27;click&#x27;, (e) =&gt; {
+      if (!wrap.contains(e.target)) { list.hidden = true; bell.setAttribute(&#x27;aria-expanded&#x27;, &#x27;false&#x27;); }
+    });
+    setTimeout(notify, 1000);
+    setInterval(() =&gt; { if (list.hidden) notify(); }, 6000);
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/toast/bell/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="loading.html" style="--cat:#c6ff00;--on:#111"><small>← 前の種類</small>読み込み</a><a class="g-pager__link g-pager__link--next" href="index.html"><small>トップへ →</small>ぜんぶの種類</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 69 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

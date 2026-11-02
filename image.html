@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>画像（IMAGE）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="比べる・拡大する・スライドするなど、写真やイラストを引き立てるエフェクト。">
+<meta property="og:title" content="画像（IMAGE）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="比べる・拡大する・スライドするなど、写真やイラストを引き立てるエフェクト。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-image">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill" href="scroll.html" style="--cat:#00c2ff;--on:#111"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill" href="background.html" style="--cat:#7cff4f;--on:#111"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+      <li><a class="g-pill" href="nav.html" style="--cat:#2de2c4;--on:#111"><span>08</span>ナビゲーション</a></li>
+      <li><a class="g-pill" href="form.html" style="--cat:#ff9ecf;--on:#111"><span>09</span>フォーム</a></li>
+      <li><a class="g-pill is-current" href="image.html" style="--cat:#4f7dff;--on:#fff" aria-current="page"><span>10</span>画像</a></li>
+      <li><a class="g-pill" href="loading.html" style="--cat:#c6ff00;--on:#111"><span>11</span>読み込み</a></li>
+      <li><a class="g-pill" href="toast.html" style="--cat:#ff6b4a;--on:#111"><span>12</span>通知</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#4f7dff;--on:#fff">
+    <p class="g-hero__no">10 <span>/ 12</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:5">IMAGE</span><span class="g-hero__jp">画像</span></h1>
+    <p class="g-hero__desc">比べる・拡大する・スライドするなど、写真やイラストを引き立てるエフェクト。</p>
+    <p class="g-hero__count" aria-label="5種類"><b>5</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#4f7dff;--on:#fff">
+    <div class="g-tape__track"><span>BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ </span><span>BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#before-after">ビフォーアフター</a></li><li><a href="#magnifier">虫めがねズーム</a></li><li><a href="#carousel">くるくるカルーセル</a></li><li><a href="#wipe-reveal">色の幕でリビール</a></li><li><a href="#polaroid">ちらばり写真</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="before-after">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ビフォーアフター</h2>
+            <p class="g-card__en">Before / After</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/image/before-after/index.html" title="ビフォーアフターの見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">つまみを左右に動かすと、2枚の画像を境目で見くらべられる。キーボードの ← → でも動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>リフォーム・写真加工・美容・商品の比較</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/image/before-after/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ビフォーアフターのコード">
+            <button class="g-tab" role="tab" id="code-image-before-after-html-tab" aria-controls="code-image-before-after-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-image-before-after-css-tab" aria-controls="code-image-before-after-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-image-before-after-js-tab" aria-controls="code-image-before-after-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-image-before-after-html" aria-labelledby="code-image-before-after-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-ba&quot; data-fx=&quot;before-after&quot;&gt;
+  <span class="c">&lt;!-- 画像は自分のものに差しかえてね（before と after を同じサイズで） --&gt;</span>
+  &lt;img class=&quot;fx-ba__img&quot; src=&quot;../../_shared/sample-city.svg&quot; alt=&quot;加工後の写真&quot;&gt;
+  &lt;div class=&quot;fx-ba__before&quot;&gt;
+    &lt;img class=&quot;fx-ba__img fx-ba__img--before&quot; src=&quot;../../_shared/sample-city.svg&quot; alt=&quot;加工前の写真&quot;&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;fx-ba__tag fx-ba__tag--l&quot;&gt;BEFORE&lt;/span&gt;
+  &lt;span class=&quot;fx-ba__tag fx-ba__tag--r&quot;&gt;AFTER&lt;/span&gt;
+  &lt;span class=&quot;fx-ba__handle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;input class=&quot;fx-ba__range&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;50&quot; aria-label=&quot;ビフォーとアフターの境目&quot;&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-before-after-css" aria-labelledby="code-image-before-after-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-ba {
+  --pos: 50%;
+  position: relative;
+  width: min(90vw, 480px);
+  aspect-ratio: 8 / 5;
+  overflow: hidden;
+  border: 4px solid #111;
+  border-radius: 18px;
+  box-shadow: 8px 8px 0 #111;
+  user-select: none;
+}
+.fx-ba__img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.fx-ba__before {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 calc(100% - var(--pos)) 0 0);   <span class="c">/* 左から --pos までだけ見せる */</span>
+}
+.fx-ba__img--before { filter: grayscale(1) contrast(.9); }   <span class="c">/* 見本用：白黒にして「加工前」風に */</span>
+.fx-ba__handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos);
+  width: 4px;
+  margin-left: -2px;
+  background: #fff;
+  pointer-events: none;
+}
+.fx-ba__handle::after {
+  content: &quot;◀ ▶&quot;;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border: 3px solid #111;
+  border-radius: 50%;
+  background: #ffd400;
+  color: #111;
+  font-size: 12px;
+  letter-spacing: -2px;
+  transform: translate(-50%, -50%);
+}
+.fx-ba__tag {
+  position: absolute;
+  top: 12px;
+  padding: 2px 10px;
+  border: 2px solid #111;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  font-size: 12px;
+  pointer-events: none;
+}
+.fx-ba__tag--l { left: 12px; }
+.fx-ba__tag--r { right: 12px; background: #ff3d7f; color: #fff; }
+<span class="c">/* 本物のつまみ（input range）は透明にして全面に重ねる */</span>
+.fx-ba__range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+}
+.fx-ba:has(.fx-ba__range:focus-visible) { outline: 4px solid #00c2ff; outline-offset: 4px; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-before-after-js" aria-labelledby="code-image-before-after-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// input range の値（0〜100）を、CSS 変数 --pos に入れるだけ</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;before-after&quot;]&#x27;).forEach((root) =&gt; {
+    const range = root.querySelector(&#x27;.fx-ba__range&#x27;);
+    const update = () =&gt; root.style.setProperty(&#x27;--pos&#x27;, `${range.value}%`);
+    range.addEventListener(&#x27;input&#x27;, update);
+    update();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/image/before-after/</p>
+        </div>
+      </article>
+      <article class="g-card" id="magnifier">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">虫めがねズーム</h2>
+            <p class="g-card__en">Magnifier Lens</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/image/magnifier/index.html" title="虫めがねズームの見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">画像の上にマウスを乗せると、丸いレンズの中だけ大きく拡大して見える。</p>
+          <p class="g-card__use"><b>使いどころ</b>商品の細部・地図・作品の拡大</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/image/magnifier/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="虫めがねズームのコード">
+            <button class="g-tab" role="tab" id="code-image-magnifier-html-tab" aria-controls="code-image-magnifier-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-image-magnifier-css-tab" aria-controls="code-image-magnifier-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-image-magnifier-js-tab" aria-controls="code-image-magnifier-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-image-magnifier-html" aria-labelledby="code-image-magnifier-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-mag-img&quot; data-fx=&quot;magnifier&quot; data-zoom=&quot;2.5&quot;&gt;
+  <span class="c">&lt;!-- 画像は自分のものに差しかえてね --&gt;</span>
+  &lt;img src=&quot;../../_shared/sample-stage.svg&quot; alt=&quot;ライブステージのイラスト&quot;&gt;
+  &lt;span class=&quot;fx-mag-img__lens&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-magnifier-css" aria-labelledby="code-image-magnifier-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-mag-img {
+  position: relative;
+  width: min(90vw, 480px);
+  border: 4px solid #111;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: none;
+  box-shadow: 8px 8px 0 #111;
+  touch-action: none;
+}
+.fx-mag-img img { display: block; width: 100%; }
+.fx-mag-img__lens {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 4px #111, 0 10px 30px rgba(0, 0, 0, .5);
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(.4);
+  transition: opacity .2s, transform .25s cubic-bezier(.2, 1.6, .4, 1);
+}
+.fx-mag-img.is-on .fx-mag-img__lens { opacity: 1; transform: scale(1); }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-magnifier-js" aria-labelledby="code-image-magnifier-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// レンズの背景に同じ画像を拡大して敷き、マウスの位置に合わせてずらす</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;magnifier&quot;]&#x27;).forEach((root) =&gt; {
+    const img = root.querySelector(&#x27;img&#x27;);
+    const lens = root.querySelector(&#x27;.fx-mag-img__lens&#x27;);
+    const zoom = parseFloat(root.dataset.zoom) || 2.5;
+    lens.style.backgroundImage = `url(&quot;${img.src}&quot;)`;
+
+    root.addEventListener(&#x27;pointermove&#x27;, (e) =&gt; {
+      const r = img.getBoundingClientRect();
+      const x = e.clientX - r.left, y = e.clientY - r.top;
+      const half = lens.offsetWidth / 2;
+      lens.style.left = `${x - half}px`;
+      lens.style.top = `${y - half}px`;
+      lens.style.backgroundSize = `${r.width * zoom}px ${r.height * zoom}px`;
+      lens.style.backgroundPosition = `${-(x * zoom - half)}px ${-(y * zoom - half)}px`;
+      root.classList.add(&#x27;is-on&#x27;);
+    });
+    root.addEventListener(&#x27;pointerleave&#x27;, () =&gt; root.classList.remove(&#x27;is-on&#x27;));
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/image/magnifier/</p>
+        </div>
+      </article>
+      <article class="g-card" id="carousel">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">くるくるカルーセル</h2>
+            <p class="g-card__en">Carousel</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/image/carousel/index.html" title="くるくるカルーセルの見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">画像がスライドして切りかわる。矢印・下の丸ボタン・スワイプで動かせて、自動でも進む。</p>
+          <p class="g-card__use"><b>使いどころ</b>トップのメインビジュアル・作品紹介・お客様の声</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/image/carousel/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="くるくるカルーセルのコード">
+            <button class="g-tab" role="tab" id="code-image-carousel-html-tab" aria-controls="code-image-carousel-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-image-carousel-css-tab" aria-controls="code-image-carousel-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-image-carousel-js-tab" aria-controls="code-image-carousel-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-image-carousel-html" aria-labelledby="code-image-carousel-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;section class=&quot;fx-car&quot; data-fx=&quot;carousel&quot; data-interval=&quot;3500&quot; aria-roledescription=&quot;carousel&quot; aria-label=&quot;ギャラリー&quot;&gt;
+  &lt;div class=&quot;fx-car__track&quot;&gt;
+    <span class="c">&lt;!-- 画像は自分のものに差しかえてね（枚数は自由） --&gt;</span>
+    &lt;figure class=&quot;fx-car__slide&quot;&gt;&lt;img src=&quot;../../_shared/sample-city.svg&quot; alt=&quot;夜の街&quot;&gt;&lt;figcaption&gt;NIGHT CITY&lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;figure class=&quot;fx-car__slide&quot;&gt;&lt;img src=&quot;../../_shared/sample-beach.svg&quot; alt=&quot;夕暮れのビーチ&quot;&gt;&lt;figcaption&gt;SUNSET BEACH&lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;figure class=&quot;fx-car__slide&quot;&gt;&lt;img src=&quot;../../_shared/sample-stage.svg&quot; alt=&quot;ライブステージ&quot;&gt;&lt;figcaption&gt;LIVE STAGE&lt;/figcaption&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;fx-car__arrow fx-car__arrow--prev&quot; aria-label=&quot;前の画像&quot;&gt;←&lt;/button&gt;
+  &lt;button class=&quot;fx-car__arrow fx-car__arrow--next&quot; aria-label=&quot;次の画像&quot;&gt;→&lt;/button&gt;
+  &lt;div class=&quot;fx-car__dots&quot;&gt;&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-carousel-css" aria-labelledby="code-image-carousel-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-car {
+  position: relative;
+  width: min(90vw, 480px);
+  border: 4px solid #111;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 8px 8px 0 #111;
+  touch-action: pan-y;
+}
+.fx-car__track {
+  display: flex;
+  transform: translateX(calc(var(--i, 0) * -100%));
+  transition: transform .6s cubic-bezier(.7, 0, .2, 1);
+}
+.fx-car__slide { position: relative; flex: 0 0 100%; margin: 0; }
+.fx-car__slide img { display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; }
+.fx-car__slide figcaption {
+  position: absolute;
+  left: 14px;
+  bottom: 40px;
+  padding: 2px 12px;
+  background: #111;
+  color: #ffd400;
+  font-size: 18px;
+  transform: translateY(20px) rotate(-3deg);
+  opacity: 0;
+  transition: transform .5s cubic-bezier(.2, 1.6, .4, 1) .4s, opacity .3s .4s;
+}
+.fx-car__slide.is-current figcaption { transform: rotate(-3deg); opacity: 1; }
+.fx-car__arrow {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: 3px solid #111;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  font-size: 20px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: transform .2s cubic-bezier(.2, 1.6, .4, 1), background .2s;
+}
+.fx-car__arrow:hover { background: #ffd400; transform: translateY(-50%) scale(1.12); }
+.fx-car__arrow--prev { left: 10px; }
+.fx-car__arrow--next { right: 10px; }
+.fx-car__dots { position: absolute; left: 0; right: 0; bottom: 12px; display: flex; justify-content: center; gap: 8px; }
+.fx-car__dots button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 2px solid #111;
+  border-radius: 99px;
+  background: #fff;
+  cursor: pointer;
+  transition: width .3s, background .3s;
+}
+.fx-car__dots button[aria-current=&quot;true&quot;] { width: 30px; background: #ff3d7f; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-carousel-js" aria-labelledby="code-image-carousel-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// --i（何枚目か）を変えて track を横にずらす。自動再生・スワイプつき</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;carousel&quot;]&#x27;).forEach((root) =&gt; {
+    const track = root.querySelector(&#x27;.fx-car__track&#x27;);
+    const slides = [...root.querySelectorAll(&#x27;.fx-car__slide&#x27;)];
+    const dotsBox = root.querySelector(&#x27;.fx-car__dots&#x27;);
+    const interval = +root.dataset.interval || 4000;
+    let i = 0, timer;
+
+    const dots = slides.map((_, n) =&gt; {
+      const b = document.createElement(&#x27;button&#x27;);
+      b.setAttribute(&#x27;aria-label&#x27;, `${n + 1}枚目へ`);
+      b.addEventListener(&#x27;click&#x27;, () =&gt; go(n));
+      dotsBox.appendChild(b);
+      return b;
+    });
+    const go = (n) =&gt; {
+      i = (n + slides.length) % slides.length;
+      track.style.setProperty(&#x27;--i&#x27;, i);
+      slides.forEach((s, k) =&gt; {
+        s.classList.toggle(&#x27;is-current&#x27;, k === i);
+        s.setAttribute(&#x27;aria-hidden&#x27;, String(k !== i));
+      });
+      dots.forEach((d, k) =&gt; d.setAttribute(&#x27;aria-current&#x27;, String(k === i)));
+      restart();
+    };
+    const restart = () =&gt; { clearInterval(timer); timer = setInterval(() =&gt; go(i + 1), interval); };
+
+    root.querySelector(&#x27;.fx-car__arrow--prev&#x27;).addEventListener(&#x27;click&#x27;, () =&gt; go(i - 1));
+    root.querySelector(&#x27;.fx-car__arrow--next&#x27;).addEventListener(&#x27;click&#x27;, () =&gt; go(i + 1));
+    root.addEventListener(&#x27;mouseenter&#x27;, () =&gt; clearInterval(timer));   <span class="c">// マウスを乗せている間は止める</span>
+    root.addEventListener(&#x27;mouseleave&#x27;, restart);
+
+    let startX = null;                                                 <span class="c">// スワイプ</span>
+    root.addEventListener(&#x27;pointerdown&#x27;, (e) =&gt; { startX = e.clientX; });
+    root.addEventListener(&#x27;pointerup&#x27;, (e) =&gt; {
+      if (startX === null) return;
+      const dx = e.clientX - startX;
+      if (Math.abs(dx) &gt; 40) go(i + (dx &lt; 0 ? 1 : -1));
+      startX = null;
+    });
+    go(0);
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/image/carousel/</p>
+        </div>
+      </article>
+      <article class="g-card" id="wipe-reveal">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">色の幕でリビール</h2>
+            <p class="g-card__en">Wipe Reveal</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/image/wipe-reveal/index.html" title="色の幕でリビールの見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">画面に入ると、カラフルな色の帯がシャッと横切って、その後ろから画像があらわれる。</p>
+          <p class="g-card__use"><b>使いどころ</b>作品紹介・ブログのアイキャッチ・プロフィール写真</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/image/wipe-reveal/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="色の幕でリビールのコード">
+            <button class="g-tab" role="tab" id="code-image-wipe-reveal-html-tab" aria-controls="code-image-wipe-reveal-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-image-wipe-reveal-css-tab" aria-controls="code-image-wipe-reveal-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-image-wipe-reveal-js-tab" aria-controls="code-image-wipe-reveal-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-image-wipe-reveal-html" aria-labelledby="code-image-wipe-reveal-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-wipe-row&quot;&gt;
+  &lt;figure class=&quot;fx-wipe&quot; data-fx=&quot;wipe-reveal&quot; style=&quot;--c: #ff3d7f&quot;&gt;
+    &lt;img src=&quot;../../_shared/sample-beach.svg&quot; alt=&quot;夕暮れのビーチ&quot;&gt;
+  &lt;/figure&gt;
+  &lt;figure class=&quot;fx-wipe&quot; data-fx=&quot;wipe-reveal&quot; style=&quot;--c: #00c2ff; --d: .25s&quot;&gt;
+    &lt;img src=&quot;../../_shared/sample-city.svg&quot; alt=&quot;夜の街&quot;&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-wipe-reveal-css" aria-labelledby="code-image-wipe-reveal-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-wipe-row { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; }
+.fx-wipe {
+  position: relative;
+  width: min(42vw, 230px);
+  margin: 0;
+  overflow: hidden;
+  border: 4px solid #111;
+  border-radius: 14px;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-wipe img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.3);
+}
+.fx-wipe::after {                          <span class="c">/* 色の帯 */</span>
+  content: &quot;&quot;;
+  position: absolute;
+  inset: 0;
+  background: var(--c, #ffd400);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.fx-wipe.is-in::after { animation: fx-wipe-bar 1s cubic-bezier(.8, 0, .2, 1) var(--d, 0s) forwards; }
+.fx-wipe.is-in img {
+  animation: fx-wipe-img .9s cubic-bezier(.2, .8, .2, 1) calc(var(--d, 0s) + .5s) forwards;
+}
+@keyframes fx-wipe-bar {
+  0%   { transform: scaleX(0); transform-origin: left; }
+  50%  { transform: scaleX(1); transform-origin: left; }
+  50.1%{ transform: scaleX(1); transform-origin: right; }
+  100% { transform: scaleX(0); transform-origin: right; }
+}
+@keyframes fx-wipe-img { to { opacity: 1; transform: scale(1); } }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-wipe-reveal-js" aria-labelledby="code-image-wipe-reveal-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 画面に入ったら .is-in をつけて、帯 → 画像 の順にアニメーション</span>
+(() =&gt; {
+  const io = new IntersectionObserver((entries) =&gt; {
+    entries.forEach((en) =&gt; {
+      if (en.isIntersecting) { en.target.classList.add(&#x27;is-in&#x27;); io.unobserve(en.target); }
+    });
+  }, { threshold: .4 });
+  document.querySelectorAll(&#x27;[data-fx=&quot;wipe-reveal&quot;]&#x27;).forEach((el) =&gt; io.observe(el));
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/image/wipe-reveal/</p>
+        </div>
+      </article>
+      <article class="g-card" id="polaroid">
+        <header class="g-card__head">
+          <span class="g-card__no">05</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ちらばり写真</h2>
+            <p class="g-card__en">Scattered Polaroids</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/image/polaroid/index.html" title="ちらばり写真の見本" loading="lazy" style="height:360px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">バラバラに傾いて置かれた写真に、マウスを乗せるとまっすぐ立って手前に飛び出す。CSSだけで動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>思い出アルバム・イベントレポート・スタッフ紹介</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/image/polaroid/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ちらばり写真のコード">
+            <button class="g-tab" role="tab" id="code-image-polaroid-html-tab" aria-controls="code-image-polaroid-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-image-polaroid-css-tab" aria-controls="code-image-polaroid-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-image-polaroid-html" aria-labelledby="code-image-polaroid-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-pola&quot;&gt;
+  &lt;figure style=&quot;--r: -8deg&quot;&gt;&lt;img src=&quot;../../_shared/sample-beach.svg&quot; alt=&quot;ビーチ&quot;&gt;&lt;figcaption&gt;夏の海 🏖&lt;/figcaption&gt;&lt;/figure&gt;
+  &lt;figure style=&quot;--r: 5deg&quot;&gt;&lt;img src=&quot;../../_shared/sample-stage.svg&quot; alt=&quot;ライブ&quot;&gt;&lt;figcaption&gt;ライブ最高！&lt;/figcaption&gt;&lt;/figure&gt;
+  &lt;figure style=&quot;--r: -3deg&quot;&gt;&lt;img src=&quot;../../_shared/sample-city.svg&quot; alt=&quot;夜の街&quot;&gt;&lt;figcaption&gt;帰り道 🌙&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-polaroid-css" aria-labelledby="code-image-polaroid-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-pola { display: flex; justify-content: center; padding: 20px; }
+.fx-pola figure {
+  width: min(30vw, 170px);
+  margin: 0 -14px;
+  padding: 10px 10px 0;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .45);
+  transform: rotate(var(--r));
+  transition: transform .35s cubic-bezier(.2, 1.5, .4, 1), box-shadow .3s;
+  cursor: pointer;
+}
+.fx-pola img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.fx-pola figcaption {
+  padding: 8px 0 12px;
+  color: #333;
+  font: 700 clamp(11px, 2.6vw, 15px) &quot;Zen Kaku Gothic New&quot;, system-ui, sans-serif;
+  text-align: center;
+}
+.fx-pola figure:hover {
+  position: relative;
+  z-index: 2;
+  transform: rotate(0) scale(1.18) translateY(-10px);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, .6);
+}</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/image/polaroid/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="form.html" style="--cat:#ff9ecf;--on:#111"><small>← 前の種類</small>フォーム</a><a class="g-pager__link g-pager__link--next" href="loading.html" style="--cat:#c6ff00;--on:#111"><small>次の種類 →</small>読み込み</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 69 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

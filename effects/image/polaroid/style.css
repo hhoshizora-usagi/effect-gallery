@@ -1,0 +1,24 @@
+.fx-pola { display: flex; justify-content: center; padding: 20px; }
+.fx-pola figure {
+  width: min(30vw, 170px);
+  margin: 0 -14px;
+  padding: 10px 10px 0;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .45);
+  transform: rotate(var(--r));
+  transition: transform .35s cubic-bezier(.2, 1.5, .4, 1), box-shadow .3s;
+  cursor: pointer;
+}
+.fx-pola img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.fx-pola figcaption {
+  padding: 8px 0 12px;
+  color: #333;
+  font: 700 clamp(11px, 2.6vw, 15px) "Zen Kaku Gothic New", system-ui, sans-serif;
+  text-align: center;
+}
+.fx-pola figure:hover {
+  position: relative;
+  z-index: 2;
+  transform: rotate(0) scale(1.18) translateY(-10px);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, .6);
+}

@@ -1,0 +1,56 @@
+.fx-pac { position: relative; width: 260px; height: 140px; }
+.fx-pac__mouth { position: absolute; left: 20px; top: 20px; width: 80px; height: 80px; z-index: 1; }
+/* 上あご・下あごの半円をそれぞれ開け閉め */
+.fx-pac__mouth span {
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 40px;
+  background: #ffd400;
+  border: 3px solid #111;
+}
+.fx-pac__mouth span:nth-child(1) {
+  top: 0;
+  border-bottom: 0;
+  border-radius: 80px 80px 0 0;
+  transform-origin: 50% 100%;
+  animation: fx-pac-top .35s ease-in-out infinite alternate;
+}
+.fx-pac__mouth span:nth-child(2) {
+  bottom: 0;
+  border-top: 0;
+  border-radius: 0 0 80px 80px;
+  transform-origin: 50% 0;
+  animation: fx-pac-bot .35s ease-in-out infinite alternate;
+}
+@keyframes fx-pac-top { from { transform: rotate(0); } to { transform: rotate(-38deg); } }
+@keyframes fx-pac-bot { from { transform: rotate(0); } to { transform: rotate(38deg); } }
+.fx-pac__dots { position: absolute; left: 60px; right: 0; top: 50px; height: 20px; overflow: hidden; }
+.fx-pac__dots i {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: fx-pac-dot 1.75s linear infinite;
+}
+.fx-pac__dots i:nth-child(1) { background: #ff3d7f; }
+.fx-pac__dots i:nth-child(2) { background: #00c2ff; animation-delay: .35s; }
+.fx-pac__dots i:nth-child(3) { background: #7cff4f; animation-delay: .7s; }
+.fx-pac__dots i:nth-child(4) { background: #a259ff; animation-delay: 1.05s; }
+.fx-pac__dots i:nth-child(5) { background: #ff7a00; animation-delay: 1.4s; }
+@keyframes fx-pac-dot { to { left: -20px; } }
+.fx-pac__text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: .2em;
+  text-align: center;
+  animation: fx-pac-blink 1s steps(1) infinite;
+}
+@keyframes fx-pac-blink { 50% { opacity: .3; } }

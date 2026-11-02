@@ -1,0 +1,22 @@
+.fx-ring { position: relative; width: 200px; height: 200px; }
+.fx-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }   /* 12時の位置からスタート */
+.fx-ring circle { fill: none; stroke-width: 14; }
+.fx-ring__bg { stroke: rgba(255, 255, 255, .12); }
+.fx-ring__bar {
+  stroke: url(#fx-ring-grad);
+  stroke-linecap: round;
+  stroke-dasharray: 314.16;                           /* 円周 = 2 × π × 50 */
+  stroke-dashoffset: calc(314.16 * (1 - var(--p, 0)));
+}
+.fx-ring__num {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: normal;
+  font-variant-numeric: tabular-nums;
+}
+.fx-ring.is-done .fx-ring__num { font-size: 30px; color: #7cff4f; animation: fx-ring-pop .5s cubic-bezier(.2, 1.8, .4, 1); }
+@keyframes fx-ring-pop { 50% { transform: scale(1.3); } }

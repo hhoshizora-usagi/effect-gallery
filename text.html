@@ -32,21 +32,26 @@
       <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
       <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
       <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+      <li><a class="g-pill" href="nav.html" style="--cat:#2de2c4;--on:#111"><span>08</span>ナビゲーション</a></li>
+      <li><a class="g-pill" href="form.html" style="--cat:#ff9ecf;--on:#111"><span>09</span>フォーム</a></li>
+      <li><a class="g-pill" href="image.html" style="--cat:#4f7dff;--on:#fff"><span>10</span>画像</a></li>
+      <li><a class="g-pill" href="loading.html" style="--cat:#c6ff00;--on:#111"><span>11</span>読み込み</a></li>
+      <li><a class="g-pill" href="toast.html" style="--cat:#ff6b4a;--on:#111"><span>12</span>通知</a></li>
     </ul>
   </nav>
 </header>
 <main id="main">
   <section class="g-hero" style="--cat:#ff3d7f;--on:#fff">
-    <p class="g-hero__no">01 <span>/ 07</span></p>
+    <p class="g-hero__no">01 <span>/ 12</span></p>
     <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:4">TEXT</span><span class="g-hero__jp">テキスト</span></h1>
     <p class="g-hero__desc">文字そのものを動かして、見出しやキャッチコピーを主役にするエフェクト。</p>
-    <p class="g-hero__count" aria-label="6種類"><b>6</b>EFFECTS</p>
+    <p class="g-hero__count" aria-label="8種類"><b>8</b>EFFECTS</p>
   </section>
   <div class="g-tape" aria-hidden="true" style="--cat:#ff3d7f;--on:#fff">
-    <div class="g-tape__track"><span>WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ </span><span>WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ </span></div>
+    <div class="g-tape__track"><span>WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ </span><span>WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ </span></div>
   </div>
   <nav class="g-jump" aria-label="この種類のエフェクト">
-    <ul><li><a href="#wave">波打つ文字</a></li><li><a href="#typing">タイピング</a></li><li><a href="#scramble">スクランブル</a></li><li><a href="#neon">ネオンサイン</a></li><li><a href="#rainbow">虹色グラデ文字</a></li><li><a href="#glitch">グリッチ</a></li></ul>
+    <ul><li><a href="#wave">波打つ文字</a></li><li><a href="#typing">タイピング</a></li><li><a href="#scramble">スクランブル</a></li><li><a href="#neon">ネオンサイン</a></li><li><a href="#rainbow">虹色グラデ文字</a></li><li><a href="#glitch">グリッチ</a></li><li><a href="#rotate-3d">3D回転ワード</a></li><li><a href="#marker">蛍光マーカー</a></li></ul>
   </nav>
   <div class="g-grid">
       <article class="g-card" id="wave">
@@ -455,12 +460,167 @@
           <p class="g-code__path">📁 effects/text/glitch/</p>
         </div>
       </article>
+      <article class="g-card" id="rotate-3d">
+        <header class="g-card__head">
+          <span class="g-card__no">07</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">3D回転ワード</h2>
+            <p class="g-card__en">3D Word Flip</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/text/rotate-3d/index.html" title="3D回転ワードの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">言葉が立方体の面みたいに、上へくるっと3Dで回転しながら次々に入れかわる。CSSだけで動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>キャッチコピー・「〇〇を、もっと〇〇に」の切りかえ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/text/rotate-3d/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="3D回転ワードのコード">
+            <button class="g-tab" role="tab" id="code-text-rotate-3d-html-tab" aria-controls="code-text-rotate-3d-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-text-rotate-3d-css-tab" aria-controls="code-text-rotate-3d-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-text-rotate-3d-html" aria-labelledby="code-text-rotate-3d-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;h2 class=&quot;fx-r3d&quot;&gt;
+  &lt;span class=&quot;fx-r3d__fixed&quot;&gt;ページを、&lt;/span&gt;
+  &lt;span class=&quot;fx-r3d__box&quot; aria-label=&quot;派手に・楽しく・自由に・EPICに&quot;&gt;
+    &lt;span class=&quot;fx-r3d__cube&quot; aria-hidden=&quot;true&quot;&gt;
+      &lt;span&gt;派手に&lt;/span&gt;&lt;span&gt;楽しく&lt;/span&gt;&lt;span&gt;自由に&lt;/span&gt;&lt;span&gt;EPICに&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+&lt;/h2&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-text-rotate-3d-css" aria-labelledby="code-text-rotate-3d-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-r3d {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .2em;
+  margin: 0;
+  font-size: clamp(30px, 8vw, 60px);
+  font-weight: normal;
+  color: #fff;
+}
+.fx-r3d__box {
+  display: inline-block;
+  width: 5.2em;
+  height: 1.4em;
+  perspective: 600px;
+}
+.fx-r3d__cube {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: fx-r3d 8s cubic-bezier(.7, 0, .2, 1.2) infinite;
+}
+<span class="c">/* 4つの面を、奥行き 0.7em の立方体の上下前後に置く */</span>
+.fx-r3d__cube span {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border: 4px solid #111;
+  border-radius: 12px;
+  color: #111;
+  backface-visibility: hidden;
+}
+.fx-r3d__cube span:nth-child(1) { background: #ffd400; transform: rotateX(0deg)   translateZ(.7em); }
+.fx-r3d__cube span:nth-child(2) { background: #ff3d7f; transform: rotateX(-90deg) translateZ(.7em); color: #fff; }
+.fx-r3d__cube span:nth-child(3) { background: #00c2ff; transform: rotateX(-180deg) translateZ(.7em); }
+.fx-r3d__cube span:nth-child(4) { background: #7cff4f; transform: rotateX(-270deg) translateZ(.7em); }
+@keyframes fx-r3d {
+  0%, 20%   { transform: translateZ(-.7em) rotateX(0deg); }
+  25%, 45%  { transform: translateZ(-.7em) rotateX(90deg); }
+  50%, 70%  { transform: translateZ(-.7em) rotateX(180deg); }
+  75%, 95%  { transform: translateZ(-.7em) rotateX(270deg); }
+  100%      { transform: translateZ(-.7em) rotateX(360deg); }
+}</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/text/rotate-3d/</p>
+        </div>
+      </article>
+      <article class="g-card" id="marker">
+        <header class="g-card__head">
+          <span class="g-card__no">08</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">蛍光マーカー</h2>
+            <p class="g-card__en">Highlighter</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/text/marker/index.html" title="蛍光マーカーの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">文章が画面に入ると、大事なところに蛍光ペンでシャーッと線を引いたように色がつく。</p>
+          <p class="g-card__use"><b>使いどころ</b>ブログ・説明文・料金プランの強調ポイント</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/text/marker/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="蛍光マーカーのコード">
+            <button class="g-tab" role="tab" id="code-text-marker-html-tab" aria-controls="code-text-marker-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-text-marker-css-tab" aria-controls="code-text-marker-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-text-marker-js-tab" aria-controls="code-text-marker-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-text-marker-html" aria-labelledby="code-text-marker-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;p class=&quot;fx-marker-text&quot;&gt;
+  エフェクトをひとつ足すだけで、
+  &lt;mark class=&quot;fx-marker&quot; data-fx=&quot;marker&quot;&gt;ページの印象はガラッと変わる&lt;/mark&gt;。
+  まずは&lt;mark class=&quot;fx-marker fx-marker--pink&quot; data-fx=&quot;marker&quot; style=&quot;--d: .9s&quot;&gt;コピーして試してみよう！&lt;/mark&gt;
+&lt;/p&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-text-marker-css" aria-labelledby="code-text-marker-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-marker-text {
+  max-width: 520px;
+  margin: 0;
+  padding: 0 20px;
+  color: #111;
+  font: 700 clamp(18px, 4.4vw, 26px)/1.9 &quot;Zen Kaku Gothic New&quot;, system-ui, sans-serif;
+}
+.fx-marker {
+  padding: 0 .1em;
+  color: inherit;
+  background: linear-gradient(transparent 55%, #ffd400 55%, #ffd400 92%, transparent 92%) no-repeat;
+  background-size: 0% 100%;                 <span class="c">/* 最初は幅 0 */</span>
+  transition: background-size 1s cubic-bezier(.6, 0, .2, 1) var(--d, .2s);
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;      <span class="c">/* 2行にまたがってもきれいに */</span>
+}
+.fx-marker--pink { background-image: linear-gradient(transparent 55%, #ff9ecf 55%, #ff9ecf 92%, transparent 92%); }
+.fx-marker.is-in { background-size: 100% 100%; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-text-marker-js" aria-labelledby="code-text-marker-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 画面に入ったら .is-in をつけて、マーカーを左から右へ引く</span>
+(() =&gt; {
+  const io = new IntersectionObserver((entries) =&gt; {
+    entries.forEach((en) =&gt; {
+      if (en.isIntersecting) { en.target.classList.add(&#x27;is-in&#x27;); io.unobserve(en.target); }
+    });
+  }, { threshold: .8 });
+  document.querySelectorAll(&#x27;[data-fx=&quot;marker&quot;]&#x27;).forEach((el) =&gt; io.observe(el));
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/text/marker/</p>
+        </div>
+      </article>
   </div>
   <nav class="g-pager" aria-label="ほかの種類"><span></span><a class="g-pager__link g-pager__link--next" href="cursor.html" style="--cat:#ffd400;--on:#111"><small>次の種類 →</small>マウス・カーソル</a></nav>
 </main>
 <footer class="g-footer">
   <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
-  <p>EFFECT GALLERY — 41 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+  <p>EFFECT GALLERY — 69 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
 </footer>
 <script src="assets/js/gallery.js"></script>
 </body>

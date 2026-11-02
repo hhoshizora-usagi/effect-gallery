@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>くるくるカルーセル（Carousel）| EFFECT GALLERY</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<!-- demo.css は見本ページの土台（背景・中央寄せ）だけ。エフェクト本体は style.css / script.js -->
+<link rel="stylesheet" href="../../_shared/demo.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="demo">
+<section class="fx-car" data-fx="carousel" data-interval="3500" aria-roledescription="carousel" aria-label="ギャラリー">
+  <div class="fx-car__track">
+    <!-- 画像は自分のものに差しかえてね（枚数は自由） -->
+    <figure class="fx-car__slide"><img src="../../_shared/sample-city.svg" alt="夜の街"><figcaption>NIGHT CITY</figcaption></figure>
+    <figure class="fx-car__slide"><img src="../../_shared/sample-beach.svg" alt="夕暮れのビーチ"><figcaption>SUNSET BEACH</figcaption></figure>
+    <figure class="fx-car__slide"><img src="../../_shared/sample-stage.svg" alt="ライブステージ"><figcaption>LIVE STAGE</figcaption></figure>
+  </div>
+  <button class="fx-car__arrow fx-car__arrow--prev" aria-label="前の画像">←</button>
+  <button class="fx-car__arrow fx-car__arrow--next" aria-label="次の画像">→</button>
+  <div class="fx-car__dots"></div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

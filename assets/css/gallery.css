@@ -151,7 +151,7 @@ img, iframe { display: block; max-width: 100%; }
 .g-menu[aria-expanded="true"] .g-menu__bars::before { transform: translateY(5px) rotate(45deg); }
 .g-menu[aria-expanded="true"] .g-menu__bars::after  { transform: translateY(-5px) rotate(-45deg); }
 
-@media (max-width: 1080px) {
+@media (max-width: 1720px) {
   .g-menu { display: inline-flex; }
   .g-nav {
     position: absolute;

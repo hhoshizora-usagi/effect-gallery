@@ -1,0 +1,38 @@
+.fx-dots-wrap { display: grid; gap: 34px; justify-items: center; }
+.fx-ldots { display: flex; gap: 12px; }
+.fx-ldots i {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #111;
+  border-radius: 50%;
+  background: #ff3d7f;
+}
+.fx-ldots i:nth-child(2) { background: #ffd400; animation-delay: .15s !important; }
+.fx-ldots i:nth-child(3) { background: #00c2ff; animation-delay: .3s !important; }
+.fx-ldots--jump i  { animation: fx-jump .9s cubic-bezier(.3, 0, .3, 1) infinite; }
+.fx-ldots--pulse i { animation: fx-pulse 1.2s ease-in-out infinite; }
+@keyframes fx-jump {
+  0%, 60%, 100% { transform: translateY(0) scale(1, 1); }
+  20% { transform: translateY(-26px) scale(.9, 1.1); }
+  40% { transform: translateY(0) scale(1.2, .8); }
+}
+@keyframes fx-pulse {
+  0%, 100% { transform: scale(.5); opacity: .4; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+/* チャットの「入力中…」 */
+.fx-chat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border: 3px solid #111;
+  border-radius: 20px 20px 20px 4px;
+  background: #fff;
+  color: #111;
+  font: 700 16px "Zen Kaku Gothic New", system-ui, sans-serif;
+}
+.fx-ldots--mini { gap: 5px; }
+.fx-ldots--mini i { width: 9px; height: 9px; border: 0; background: #888 !important; animation: fx-jump-s 1s infinite; }
+@keyframes fx-jump-s { 0%, 60%, 100% { transform: none; } 30% { transform: translateY(-6px); } }

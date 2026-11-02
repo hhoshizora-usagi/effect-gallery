@@ -1,0 +1,34 @@
+.fx-fl-form { display: grid; gap: 22px; width: min(88vw, 380px); }
+.fx-fl { position: relative; display: block; --c: #00c2ff; }
+.fx-fl--pink { --c: #ff3d7f; }
+.fx-fl input {
+  width: 100%;
+  padding: 26px 18px 10px;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #fff;
+  color: #111;
+  font: 700 18px/1.2 "Zen Kaku Gothic New", system-ui, sans-serif;
+  outline: none;
+  box-shadow: 5px 5px 0 #111;
+  transition: box-shadow .2s, transform .2s;
+}
+.fx-fl input:focus { box-shadow: 5px 5px 0 var(--c); transform: translate(-2px, -2px); }
+.fx-fl span {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #777;
+  font: 700 17px "Zen Kaku Gothic New", system-ui, sans-serif;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transform-origin: left;
+  transition: transform .3s cubic-bezier(.2, 1.4, .4, 1), color .2s, top .3s;
+}
+/* 入力中 or 何か入っているとき（placeholder=" " がポイント） */
+.fx-fl input:focus + span,
+.fx-fl input:not(:placeholder-shown) + span {
+  top: 15px;
+  color: var(--c);
+  transform: translateY(-50%) scale(.72);
+}

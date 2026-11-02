@@ -1,0 +1,20 @@
+.fx-hh {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #ffd400;
+  color: #111;
+  border-bottom: 4px solid #111;
+  transition: transform .4s cubic-bezier(.2, .9, .3, 1), box-shadow .3s;
+}
+.fx-hh.is-hidden { transform: translateY(-110%); }
+.fx-hh.is-scrolled { box-shadow: 0 8px 0 rgba(0, 0, 0, .25); }
+.fx-hh__logo { font-size: 22px; font-weight: normal; }
+.fx-hh__nav { display: flex; gap: 18px; }
+.fx-hh__nav a { color: #111; text-decoration: none; }

@@ -1,0 +1,42 @@
+.fx-val { width: min(90vw, 440px); font-family: "Zen Kaku Gothic New", system-ui, sans-serif; color: #fff; }
+.fx-val label { display: block; margin-bottom: 8px; font-weight: 700; }
+.fx-val__row { display: flex; gap: 8px; }
+.fx-val input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #fff;
+  color: #111;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  outline: none;
+  transition: box-shadow .2s;
+}
+.fx-val input:focus { box-shadow: 0 0 0 4px #00c2ff; }
+.fx-val__btn {
+  width: 92px;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #ffd400;
+  color: #111;
+  font: inherit;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background .3s, border-radius .4s, width .4s, transform .4s cubic-bezier(.2, 1.6, .4, 1);
+}
+.fx-val__msg { min-height: 1.6em; margin: 8px 0 0; font-weight: 700; }
+.fx-val.is-error .fx-val__row { animation: fx-val-shake .45s; }
+.fx-val.is-error input { box-shadow: 0 0 0 4px #ff2e4d; }
+.fx-val.is-error .fx-val__msg { color: #ff8fa3; }
+.fx-val.is-ok .fx-val__btn { width: 54px; border-radius: 50%; background: #7cff4f; transform: rotate(360deg); }
+.fx-val.is-ok .fx-val__msg { color: #7cff4f; }
+@keyframes fx-val-shake {
+  20% { transform: translateX(-12px); }
+  40% { transform: translateX(10px); }
+  60% { transform: translateX(-7px); }
+  80% { transform: translateX(4px); }
+}

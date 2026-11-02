@@ -1,0 +1,36 @@
+.fx-skel {
+  display: flex;
+  gap: 16px;
+  width: min(88vw, 420px);
+  padding: 20px;
+  border: 3px solid #111;
+  border-radius: 18px;
+  background: #fff;
+  color: #111;
+  font-family: "Zen Kaku Gothic New", system-ui, sans-serif;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-skel__avatar {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 34px;
+}
+.fx-skel__body { flex: 1; display: grid; gap: 10px; align-content: center; }
+.fx-skel__line { height: 14px; border-radius: 99px; }
+/* 仮の形：グラデーションを横に流してキラッと光らせる */
+.fx-skel__avatar:not(.is-real),
+.fx-skel__line {
+  background: linear-gradient(90deg, #e6e1f2 0 40%, #f8f6ff 50%, #e6e1f2 60% 100%);
+  background-size: 300% 100%;
+  animation: fx-skel 1.3s linear infinite;
+}
+@keyframes fx-skel { from { background-position: 100% 0; } to { background-position: 0 0; } }
+.fx-skel h3 { margin: 0; font-family: "Dela Gothic One", sans-serif; font-weight: normal; font-size: 18px; }
+.fx-skel p { margin: 0; font-weight: 700; line-height: 1.6; }
+.fx-skel__avatar.is-real { background: #ffd400; border: 3px solid #111; }
+.fx-skel.is-loaded > * { animation: fx-skel-in .5s cubic-bezier(.2, 1.4, .4, 1) both; }
+@keyframes fx-skel-in { from { opacity: 0; transform: translateY(10px); } }

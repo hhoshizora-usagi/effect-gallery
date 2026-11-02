@@ -1,0 +1,64 @@
+.fx-bell-wrap { position: relative; margin-bottom: 150px; }   /* 見本用：下に一覧を出すスペース */
+.fx-bell {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border: 4px solid #111;
+  border-radius: 24px;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #111;
+}
+.fx-bell__icon { display: inline-block; font-size: 44px; transform-origin: 50% 10%; }
+.fx-bell.is-ringing .fx-bell__icon { animation: fx-bell-ring 1.2s ease-in-out; }
+.fx-bell__dot {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #111;
+  border-radius: 50%;
+  background: #ff2e4d;
+  transform: scale(0);
+  transition: transform .3s cubic-bezier(.2, 1.8, .4, 1);
+}
+.fx-bell.has-new .fx-bell__dot { transform: scale(1); }
+.fx-bell.has-new .fx-bell__dot::after {      /* 点のまわりの波紋 */
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 3px solid #ff2e4d;
+  animation: fx-bell-wave 1.4s ease-out infinite;
+}
+@keyframes fx-bell-ring {
+  0%, 100% { transform: rotate(0); }
+  10%, 30%, 50% { transform: rotate(22deg); }
+  20%, 40%, 60% { transform: rotate(-22deg); }
+  70% { transform: rotate(10deg); }
+  80% { transform: rotate(-6deg); }
+}
+@keyframes fx-bell-wave { to { transform: scale(2.4); opacity: 0; } }
+.fx-bell__list {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  width: 280px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  border: 3px solid #111;
+  border-radius: 16px;
+  background: #fff;
+  color: #111;
+  font: 700 14px "Zen Kaku Gothic New", system-ui, sans-serif;
+  box-shadow: 6px 6px 0 #111;
+  transform: translateX(-50%);
+  transform-origin: top center;
+  animation: fx-bell-pop .4s cubic-bezier(.2, 1.5, .4, 1);
+}
+.fx-bell__list[hidden] { display: none; }
+.fx-bell__list li { padding: 10px; border-radius: 10px; }
+.fx-bell__list li:hover { background: #fff4b0; }
+@keyframes fx-bell-pop { from { transform: translateX(-50%) scale(.6); opacity: 0; } }

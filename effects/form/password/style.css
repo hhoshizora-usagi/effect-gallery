@@ -1,0 +1,41 @@
+.fx-pw { width: min(88vw, 380px); font-family: "Zen Kaku Gothic New", system-ui, sans-serif; }
+.fx-pw__label { display: block; margin-bottom: 6px; font-weight: 700; color: #fff; }
+.fx-pw__box { position: relative; }
+.fx-pw__box input {
+  width: 100%;
+  padding: 14px 56px 14px 16px;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #fff;
+  color: #111;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+}
+.fx-pw__box input:focus { box-shadow: 0 0 0 4px #00c2ff; }
+.fx-pw__eye {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 10px;
+  background: #ffd400;
+  font-size: 20px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: transform .3s cubic-bezier(.2, 1.6, .4, 1);
+}
+.fx-pw__eye[aria-pressed="true"] { background: #7cff4f; transform: translateY(-50%) rotate(-12deg) scale(1.08); }
+.fx-pw__meter { height: 10px; margin-top: 12px; border-radius: 99px; background: rgba(255, 255, 255, .15); overflow: hidden; }
+.fx-pw__meter span {
+  display: block;
+  height: 100%;
+  width: calc(var(--lv, 0) * 25%);
+  border-radius: 99px;
+  background: var(--c, #ff2e4d);
+  transition: width .4s cubic-bezier(.2, 1.4, .4, 1), background .3s;
+}
+.fx-pw__text { margin: 8px 0 0; font-size: 14px; font-weight: 700; color: var(--c, #ccc); }

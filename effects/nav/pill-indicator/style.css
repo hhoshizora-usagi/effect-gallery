@@ -1,0 +1,30 @@
+.fx-pill {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  padding: 6px;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-pill a {
+  position: relative;
+  z-index: 1;
+  padding: 10px clamp(12px, 3vw, 22px);
+  color: #111;
+  font-size: clamp(14px, 3.6vw, 20px);
+  text-decoration: none;
+  transition: color .3s;
+}
+.fx-pill a.is-hover { color: #fff; }
+.fx-pill__bg {
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 0;
+  width: 0;
+  border-radius: 999px;
+  background: #ff3d7f;
+  transition: transform .45s cubic-bezier(.2, 1.3, .4, 1), width .45s cubic-bezier(.2, 1.3, .4, 1), background .3s;
+}
