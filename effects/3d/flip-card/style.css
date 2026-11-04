@@ -1,0 +1,34 @@
+.fx-flip {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  perspective: 1000px;
+  background: #0d0b1a;
+}
+.fx-flip__card {
+  position: relative;
+  width: min(300px, 70vw);
+  height: min(400px, 52vh);
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(.2, .7, .2, 1);
+  cursor: pointer;
+}
+.fx-flip__card:hover, .fx-flip__card.is-open { transform: rotateY(180deg); }
+.fx-flip__face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: .4em;
+  padding: 20px;
+  border-radius: 18px;
+  backface-visibility: hidden;
+  color: #fff;
+  text-align: center;
+}
+.fx-flip__front { background: linear-gradient(135deg, #ff3d7f, #a259ff); }
+.fx-flip__back { background: linear-gradient(135deg, #00c2ff, #00e0c6); transform: rotateY(180deg); }
+.fx-flip__face h3 { margin: 0; font-size: 30px; letter-spacing: .08em; }
+.fx-flip__face p { margin: 0; font-size: 14px; opacity: .9; }
+.fx-flip__icon { font-size: 40px; }

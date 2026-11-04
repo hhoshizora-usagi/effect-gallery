@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D（3D）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="奥行きや回転で立体に見せる、３Ｄ表現のエフェクト集。">
+<meta property="og:title" content="3D（3D）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="奥行きや回転で立体に見せる、３Ｄ表現のエフェクト集。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-3d">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill" href="scroll.html" style="--cat:#00c2ff;--on:#111"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill" href="background.html" style="--cat:#7cff4f;--on:#111"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+      <li><a class="g-pill" href="nav.html" style="--cat:#2de2c4;--on:#111"><span>08</span>ナビゲーション</a></li>
+      <li><a class="g-pill" href="form.html" style="--cat:#ff9ecf;--on:#111"><span>09</span>フォーム</a></li>
+      <li><a class="g-pill" href="image.html" style="--cat:#4f7dff;--on:#fff"><span>10</span>画像</a></li>
+      <li><a class="g-pill" href="loading.html" style="--cat:#c6ff00;--on:#111"><span>11</span>読み込み</a></li>
+      <li><a class="g-pill" href="toast.html" style="--cat:#ff6b4a;--on:#111"><span>12</span>通知</a></li>
+      <li><a class="g-pill is-current" href="3d.html" style="--cat:#00e0c6;--on:#111" aria-current="page"><span>13</span>3D</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#00e0c6;--on:#111">
+    <p class="g-hero__no">13 <span>/ 13</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:2">3D</span><span class="g-hero__jp">3D</span></h1>
+    <p class="g-hero__desc">奥行きや回転で立体に見せる、３Ｄ表現のエフェクト集。</p>
+    <p class="g-hero__count" aria-label="6種類"><b>6</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#00e0c6;--on:#111">
+    <div class="g-tape__track"><span>3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ 3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ </span><span>3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ 3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#flip-card">3D回転カード</a></li><li><a href="#cube">立方体回転</a></li><li><a href="#text-3d">3Dテキスト回転</a></li><li><a href="#button">3D立体ボタン</a></li><li><a href="#carousel-3d">3Dカルーセル</a></li><li><a href="#parallax-3d">3Dパララックス</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="flip-card">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">3D回転カード</h2>
+            <p class="g-card__en">3D Flip Card</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/3d/flip-card/index.html" title="3D回転カードの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">ホバー（タップ）でカードがくるっと裏返る、定番の立体カード。</p>
+          <p class="g-card__use"><b>使いどころ</b>サービス紹介・プロフィール・メニュー</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/3d/flip-card/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="3D回転カードのコード">
+            <button class="g-tab" role="tab" id="code-3d-flip-card-html-tab" aria-controls="code-3d-flip-card-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-3d-flip-card-css-tab" aria-controls="code-3d-flip-card-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-3d-flip-card-js-tab" aria-controls="code-3d-flip-card-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-3d-flip-card-html" aria-labelledby="code-3d-flip-card-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-flip&quot;&gt;
+  &lt;div class=&quot;fx-flip__card&quot;&gt;
+    &lt;div class=&quot;fx-flip__face fx-flip__front&quot;&gt;
+      &lt;span class=&quot;fx-flip__icon&quot;&gt;◆&lt;/span&gt;
+      &lt;h3&gt;FRONT&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;fx-flip__face fx-flip__back&quot;&gt;
+      &lt;h3&gt;BACK&lt;/h3&gt;
+      &lt;p&gt;ホバーで裏返る&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-flip-card-css" aria-labelledby="code-3d-flip-card-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-flip {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  perspective: 1000px;
+  background: #0d0b1a;
+}
+.fx-flip__card {
+  position: relative;
+  width: min(300px, 70vw);
+  height: min(400px, 52vh);
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(.2, .7, .2, 1);
+  cursor: pointer;
+}
+.fx-flip__card:hover, .fx-flip__card.is-open { transform: rotateY(180deg); }
+.fx-flip__face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: .4em;
+  padding: 20px;
+  border-radius: 18px;
+  backface-visibility: hidden;
+  color: #fff;
+  text-align: center;
+}
+.fx-flip__front { background: linear-gradient(135deg, #ff3d7f, #a259ff); }
+.fx-flip__back { background: linear-gradient(135deg, #00c2ff, #00e0c6); transform: rotateY(180deg); }
+.fx-flip__face h3 { margin: 0; font-size: 30px; letter-spacing: .08em; }
+.fx-flip__face p { margin: 0; font-size: 14px; opacity: .9; }
+.fx-flip__icon { font-size: 40px; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-flip-card-js" aria-labelledby="code-3d-flip-card-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// タップ（クリック）でも裏返るようにする</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;.fx-flip__card&#x27;).forEach((c) =&gt; {
+    c.addEventListener(&#x27;click&#x27;, () =&gt; c.classList.toggle(&#x27;is-open&#x27;));
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/3d/flip-card/</p>
+        </div>
+      </article>
+      <article class="g-card" id="cube">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">立方体回転</h2>
+            <p class="g-card__en">Rotating Cube</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/3d/cube/index.html" title="立方体回転の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">６面の立方体がくるくる回転する。CSSだけで作れる立体オブジェクト。</p>
+          <p class="g-card__use"><b>使いどころ</b>ローディング・ロゴ・インパクト演出</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/3d/cube/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="立方体回転のコード">
+            <button class="g-tab" role="tab" id="code-3d-cube-html-tab" aria-controls="code-3d-cube-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-3d-cube-css-tab" aria-controls="code-3d-cube-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-3d-cube-html" aria-labelledby="code-3d-cube-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-cube&quot;&gt;
+  &lt;div class=&quot;fx-cube__box&quot;&gt;
+    &lt;div class=&quot;fx-cube__face fx-cube__front&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;fx-cube__face fx-cube__back&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;fx-cube__face fx-cube__right&quot;&gt;3&lt;/div&gt;
+    &lt;div class=&quot;fx-cube__face fx-cube__left&quot;&gt;4&lt;/div&gt;
+    &lt;div class=&quot;fx-cube__face fx-cube__top&quot;&gt;5&lt;/div&gt;
+    &lt;div class=&quot;fx-cube__face fx-cube__bottom&quot;&gt;6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-cube-css" aria-labelledby="code-3d-cube-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-cube {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  perspective: 900px;
+  background: #0a0f18;
+}
+.fx-cube__box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  animation: fx-cube-spin 9s linear infinite;
+}
+.fx-cube__face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font: 700 46px &quot;Dela Gothic One&quot;, sans-serif;
+  color: #06131a;
+  background: rgba(0, 224, 198, .92);
+  border: 2px solid #00e0c6;
+}
+.fx-cube__front  { transform: translateZ(75px); }
+.fx-cube__back   { transform: rotateY(180deg) translateZ(75px); }
+.fx-cube__right  { transform: rotateY(90deg)  translateZ(75px); }
+.fx-cube__left   { transform: rotateY(-90deg) translateZ(75px); }
+.fx-cube__top    { transform: rotateX(90deg)  translateZ(75px); }
+.fx-cube__bottom { transform: rotateX(-90deg) translateZ(75px); }
+@keyframes fx-cube-spin {
+  from { transform: rotateX(-18deg) rotateY(0deg); }
+  to   { transform: rotateX(-18deg) rotateY(360deg); }
+}</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/3d/cube/</p>
+        </div>
+      </article>
+      <article class="g-card" id="text-3d">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">3Dテキスト回転</h2>
+            <p class="g-card__en">3D Spinning Text</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/3d/text-3d/index.html" title="3Dテキスト回転の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">大きな文字がくるっと回転して、奥行きを感じさせる見出し演出。</p>
+          <p class="g-card__use"><b>使いどころ</b>ヒーロー見出し・タイトル</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/3d/text-3d/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="3Dテキスト回転のコード">
+            <button class="g-tab" role="tab" id="code-3d-text-3d-html-tab" aria-controls="code-3d-text-3d-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-3d-text-3d-css-tab" aria-controls="code-3d-text-3d-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-3d-text-3d-html" aria-labelledby="code-3d-text-3d-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-text3d&quot;&gt;
+  &lt;span class=&quot;fx-text3d__word&quot;&gt;3D&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-text-3d-css" aria-labelledby="code-3d-text-3d-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-text3d {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  perspective: 800px;
+  overflow: hidden;
+  background: #07060f;
+}
+.fx-text3d__word {
+  font: 700 clamp(72px, 20vw, 180px) &quot;Dela Gothic One&quot;, sans-serif;
+  color: #eafff8;
+  letter-spacing: .04em;
+  text-shadow: 0 0 24px #00e0c6, 3px 3px 0 #00b39c, 6px 6px 0 #007a6b;
+  animation: fx-text3d-spin 7s ease-in-out infinite;
+}
+@keyframes fx-text3d-spin {
+  0%, 100% { transform: rotateY(-32deg) rotateX(8deg); }
+  50%      { transform: rotateY(32deg)  rotateX(-8deg); }
+}</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/3d/text-3d/</p>
+        </div>
+      </article>
+      <article class="g-card" id="button">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">3D立体ボタン</h2>
+            <p class="g-card__en">3D Button</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/3d/button/index.html" title="3D立体ボタンの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">押したらグッと沈む、立体感のあるボタン。</p>
+          <p class="g-card__use"><b>使いどころ</b>コールトアクション・ゲーム・満足感のあるUI</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/3d/button/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="3D立体ボタンのコード">
+            <button class="g-tab" role="tab" id="code-3d-button-html-tab" aria-controls="code-3d-button-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-3d-button-css-tab" aria-controls="code-3d-button-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-3d-button-html" aria-labelledby="code-3d-button-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-btn3d-wrap&quot;&gt;
+  &lt;button class=&quot;fx-btn3d&quot;&gt;PRESS ME&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-button-css" aria-labelledby="code-3d-button-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-btn3d-wrap {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #0a0714;
+  perspective: 600px;
+}
+.fx-btn3d {
+  position: relative;
+  padding: 22px 46px;
+  border: none;
+  border-radius: 14px;
+  font: 700 26px &quot;Dela Gothic One&quot;, sans-serif;
+  letter-spacing: .1em;
+  color: #06201b;
+  background: linear-gradient(135deg, #00e0c6, #00c2ff);
+  box-shadow: 0 9px 0 #008f7f, 0 16px 24px rgba(0, 224, 198, .35);
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.fx-btn3d:active {
+  transform: translateY(7px);
+  box-shadow: 0 2px 0 #008f7f, 0 6px 12px rgba(0, 224, 198, .25);
+}</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/3d/button/</p>
+        </div>
+      </article>
+      <article class="g-card" id="carousel-3d">
+        <header class="g-card__head">
+          <span class="g-card__no">05</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">3Dカルーセル</h2>
+            <p class="g-card__en">3D Carousel</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/3d/carousel-3d/index.html" title="3Dカルーセルの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">カードが円を描くようにぐるぐる回る、立体ギャラリー。</p>
+          <p class="g-card__use"><b>使いどころ</b>作品ギャラリー・プロダクト紹介</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/3d/carousel-3d/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="3Dカルーセルのコード">
+            <button class="g-tab" role="tab" id="code-3d-carousel-3d-html-tab" aria-controls="code-3d-carousel-3d-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-3d-carousel-3d-css-tab" aria-controls="code-3d-carousel-3d-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-3d-carousel-3d-html" aria-labelledby="code-3d-carousel-3d-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-carousel&quot;&gt;
+  &lt;div class=&quot;fx-carousel__ring&quot;&gt;
+    &lt;div class=&quot;fx-carousel__item&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;fx-carousel__item&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;fx-carousel__item&quot;&gt;3&lt;/div&gt;
+    &lt;div class=&quot;fx-carousel__item&quot;&gt;4&lt;/div&gt;
+    &lt;div class=&quot;fx-carousel__item&quot;&gt;5&lt;/div&gt;
+    &lt;div class=&quot;fx-carousel__item&quot;&gt;6&lt;/div&gt;
+    &lt;div class=&quot;fx-carousel__item&quot;&gt;7&lt;/div&gt;
+    &lt;div class=&quot;fx-carousel__item&quot;&gt;8&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-carousel-3d-css" aria-labelledby="code-3d-carousel-3d-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-carousel {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  perspective: 1000px;
+  overflow: hidden;
+  background: #0a0714;
+}
+.fx-carousel__ring {
+  position: relative;
+  width: 130px;
+  height: 180px;
+  transform-style: preserve-3d;
+  animation: fx-car-spin 18s linear infinite;
+}
+.fx-carousel__item {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font: 700 30px &quot;Dela Gothic One&quot;, sans-serif;
+  color: #06201b;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #00e0c6, #00c2ff);
+  box-shadow: 0 0 20px rgba(0, 224, 198, .5);
+}
+.fx-carousel__item:nth-child(1) { transform: rotateY(0deg)   translateZ(230px); }
+.fx-carousel__item:nth-child(2) { transform: rotateY(45deg)  translateZ(230px); }
+.fx-carousel__item:nth-child(3) { transform: rotateY(90deg)  translateZ(230px); }
+.fx-carousel__item:nth-child(4) { transform: rotateY(135deg) translateZ(230px); }
+.fx-carousel__item:nth-child(5) { transform: rotateY(180deg) translateZ(230px); }
+.fx-carousel__item:nth-child(6) { transform: rotateY(225deg) translateZ(230px); }
+.fx-carousel__item:nth-child(7) { transform: rotateY(270deg) translateZ(230px); }
+.fx-carousel__item:nth-child(8) { transform: rotateY(315deg) translateZ(230px); }
+@keyframes fx-car-spin {
+  from { transform: rotateX(-12deg) rotateY(0deg); }
+  to   { transform: rotateX(-12deg) rotateY(360deg); }
+}</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/3d/carousel-3d/</p>
+        </div>
+      </article>
+      <article class="g-card" id="parallax-3d">
+        <header class="g-card__head">
+          <span class="g-card__no">06</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">3Dパララックス</h2>
+            <p class="g-card__en">Parallax 3D</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/3d/parallax-3d/index.html" title="3Dパララックスの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">マウスの動きに合わせて、奥行きの違う層がずれて立体に見える。</p>
+          <p class="g-card__use"><b>使いどころ</b>ヒーロー・ビジュアル・芸術的な表現</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/3d/parallax-3d/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="3Dパララックスのコード">
+            <button class="g-tab" role="tab" id="code-3d-parallax-3d-html-tab" aria-controls="code-3d-parallax-3d-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-3d-parallax-3d-css-tab" aria-controls="code-3d-parallax-3d-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-3d-parallax-3d-js-tab" aria-controls="code-3d-parallax-3d-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-3d-parallax-3d-html" aria-labelledby="code-3d-parallax-3d-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-para&quot; data-fx=&quot;parallax3d&quot;&gt;
+  &lt;div class=&quot;fx-para__layer fx-para__back&quot; data-depth=&quot;0.25&quot;&gt;BACK&lt;/div&gt;
+  &lt;div class=&quot;fx-para__layer fx-para__mid&quot; data-depth=&quot;0.6&quot;&gt;MID&lt;/div&gt;
+  &lt;div class=&quot;fx-para__layer fx-para__front&quot; data-depth=&quot;1&quot;&gt;FRONT&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-parallax-3d-css" aria-labelledby="code-3d-parallax-3d-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-para {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, #14203a, #06070d 75%);
+}
+.fx-para__layer {
+  position: absolute;
+  font: 700 clamp(36px, 9vw, 84px) &quot;Dela Gothic One&quot;, sans-serif;
+  letter-spacing: .08em;
+  will-change: transform;
+  transition: transform .25s ease-out;
+}
+.fx-para__back  { color: rgba(0, 194, 255, .35); transform: translateZ(0); }
+.fx-para__mid   { color: rgba(255, 61, 127, .6); }
+.fx-para__front { color: #fff; text-shadow: 0 0 24px #00e0c6; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-parallax-3d-js" aria-labelledby="code-3d-parallax-3d-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// マウスの位置に応じて、層ごとに違う量ずらす</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;parallax3d&quot;]&#x27;).forEach((host) =&gt; {
+    const layers = host.querySelectorAll(&#x27;[data-depth]&#x27;);
+    host.addEventListener(&#x27;pointermove&#x27;, (e) =&gt; {
+      const r = host.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5;
+      const y = (e.clientY - r.top) / r.height - .5;
+      layers.forEach((l) =&gt; {
+        const d = parseFloat(l.dataset.depth) || 0.5;
+        l.style.transform = `translate(${-x * d * 60}px, ${-y * d * 60}px)`;
+      });
+    });
+    host.addEventListener(&#x27;pointerleave&#x27;, () =&gt; {
+      layers.forEach((l) =&gt; { l.style.transform = &#x27;&#x27;; });
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/3d/parallax-3d/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="toast.html" style="--cat:#ff6b4a;--on:#111"><small>← 前の種類</small>通知</a><a class="g-pager__link g-pager__link--next" href="index.html"><small>トップへ →</small>ぜんぶの種類</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 87 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.fx-carousel {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  perspective: 1000px;
+  overflow: hidden;
+  background: #0a0714;
+}
+.fx-carousel__ring {
+  position: relative;
+  width: 130px;
+  height: 180px;
+  transform-style: preserve-3d;
+  animation: fx-car-spin 18s linear infinite;
+}
+.fx-carousel__item {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font: 700 30px "Dela Gothic One", sans-serif;
+  color: #06201b;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #00e0c6, #00c2ff);
+  box-shadow: 0 0 20px rgba(0, 224, 198, .5);
+}
+.fx-carousel__item:nth-child(1) { transform: rotateY(0deg)   translateZ(230px); }
+.fx-carousel__item:nth-child(2) { transform: rotateY(45deg)  translateZ(230px); }
+.fx-carousel__item:nth-child(3) { transform: rotateY(90deg)  translateZ(230px); }
+.fx-carousel__item:nth-child(4) { transform: rotateY(135deg) translateZ(230px); }
+.fx-carousel__item:nth-child(5) { transform: rotateY(180deg) translateZ(230px); }
+.fx-carousel__item:nth-child(6) { transform: rotateY(225deg) translateZ(230px); }
+.fx-carousel__item:nth-child(7) { transform: rotateY(270deg) translateZ(230px); }
+.fx-carousel__item:nth-child(8) { transform: rotateY(315deg) translateZ(230px); }
+@keyframes fx-car-spin {
+  from { transform: rotateX(-12deg) rotateY(0deg); }
+  to   { transform: rotateX(-12deg) rotateY(360deg); }
+}

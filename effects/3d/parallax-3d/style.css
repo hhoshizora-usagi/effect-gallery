@@ -1,0 +1,19 @@
+.fx-para {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, #14203a, #06070d 75%);
+}
+.fx-para__layer {
+  position: absolute;
+  font: 700 clamp(36px, 9vw, 84px) "Dela Gothic One", sans-serif;
+  letter-spacing: .08em;
+  will-change: transform;
+  transition: transform .25s ease-out;
+}
+.fx-para__back  { color: rgba(0, 194, 255, .35); transform: translateZ(0); }
+.fx-para__mid   { color: rgba(255, 61, 127, .6); }
+.fx-para__front { color: #fff; text-shadow: 0 0 24px #00e0c6; }

@@ -1,0 +1,35 @@
+.fx-cube {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  perspective: 900px;
+  background: #0a0f18;
+}
+.fx-cube__box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  animation: fx-cube-spin 9s linear infinite;
+}
+.fx-cube__face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font: 700 46px "Dela Gothic One", sans-serif;
+  color: #06131a;
+  background: rgba(0, 224, 198, .92);
+  border: 2px solid #00e0c6;
+}
+.fx-cube__front  { transform: translateZ(75px); }
+.fx-cube__back   { transform: rotateY(180deg) translateZ(75px); }
+.fx-cube__right  { transform: rotateY(90deg)  translateZ(75px); }
+.fx-cube__left   { transform: rotateY(-90deg) translateZ(75px); }
+.fx-cube__top    { transform: rotateX(90deg)  translateZ(75px); }
+.fx-cube__bottom { transform: rotateX(-90deg) translateZ(75px); }
+@keyframes fx-cube-spin {
+  from { transform: rotateX(-18deg) rotateY(0deg); }
+  to   { transform: rotateX(-18deg) rotateY(360deg); }
+}

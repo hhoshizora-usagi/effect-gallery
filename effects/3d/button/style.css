@@ -1,0 +1,25 @@
+.fx-btn3d-wrap {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #0a0714;
+  perspective: 600px;
+}
+.fx-btn3d {
+  position: relative;
+  padding: 22px 46px;
+  border: none;
+  border-radius: 14px;
+  font: 700 26px "Dela Gothic One", sans-serif;
+  letter-spacing: .1em;
+  color: #06201b;
+  background: linear-gradient(135deg, #00e0c6, #00c2ff);
+  box-shadow: 0 9px 0 #008f7f, 0 16px 24px rgba(0, 224, 198, .35);
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.fx-btn3d:active {
+  transform: translateY(7px);
+  box-shadow: 0 2px 0 #008f7f, 0 6px 12px rgba(0, 224, 198, .25);
+}
