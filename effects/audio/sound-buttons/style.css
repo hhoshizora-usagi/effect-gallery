@@ -1,0 +1,26 @@
+.fx-sfx { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; width: min(90vw, 380px); }
+.fx-sfx button {
+  position: relative;
+  padding: 22px 10px;
+  border: 4px solid #111;
+  border-radius: 18px;
+  background: var(--c);
+  color: #111;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 7px 0 #111;
+  transition: transform .1s, box-shadow .1s;
+}
+.fx-sfx button:active { transform: translateY(5px); box-shadow: 0 2px 0 #111; }
+.fx-sfx button.is-play { animation: fx-sfx-boing .4s cubic-bezier(.2, 1.8, .4, 1); }
+.fx-sfx button.is-play::after {         /* 音の輪が広がる */
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 4px solid var(--c);
+  border-radius: 18px;
+  animation: fx-sfx-ring .5s ease-out forwards;
+}
+@keyframes fx-sfx-boing { 40% { transform: scale(1.12) rotate(-3deg); } }
+@keyframes fx-sfx-ring  { to { transform: scale(1.35); opacity: 0; } }

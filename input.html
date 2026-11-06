@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>入力・操作（INPUT）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="ドラッグ・スライダー・星をつけるなど、さわって操作するのが楽しくなるエフェクト。">
+<meta property="og:title" content="入力・操作（INPUT）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="ドラッグ・スライダー・星をつけるなど、さわって操作するのが楽しくなるエフェクト。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-input">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill" href="scroll.html" style="--cat:#00c2ff;--on:#111"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill" href="background.html" style="--cat:#7cff4f;--on:#111"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+      <li><a class="g-pill" href="nav.html" style="--cat:#2de2c4;--on:#111"><span>08</span>ナビゲーション</a></li>
+      <li><a class="g-pill" href="form.html" style="--cat:#ff9ecf;--on:#111"><span>09</span>フォーム</a></li>
+      <li><a class="g-pill" href="image.html" style="--cat:#4f7dff;--on:#fff"><span>10</span>画像</a></li>
+      <li><a class="g-pill" href="loading.html" style="--cat:#c6ff00;--on:#111"><span>11</span>読み込み</a></li>
+      <li><a class="g-pill" href="toast.html" style="--cat:#ff6b4a;--on:#111"><span>12</span>通知</a></li>
+      <li><a class="g-pill" href="3d.html" style="--cat:#00e0c6;--on:#111"><span>13</span>3D</a></li>
+      <li><a class="g-pill" href="audio.html" style="--cat:#ff4fd8;--on:#111"><span>14</span>音・サウンド</a></li>
+      <li><a class="g-pill" href="chart.html" style="--cat:#ffb020;--on:#111"><span>15</span>データ可視化</a></li>
+      <li><a class="g-pill is-current" href="input.html" style="--cat:#8a7dff;--on:#fff" aria-current="page"><span>16</span>入力・操作</a></li>
+      <li><a class="g-pill" href="timer.html" style="--cat:#3ddc84;--on:#111"><span>17</span>時刻・カウント</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#8a7dff;--on:#fff">
+    <p class="g-hero__no">16 <span>/ 17</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:5">INPUT</span><span class="g-hero__jp">入力・操作</span></h1>
+    <p class="g-hero__desc">ドラッグ・スライダー・星をつけるなど、さわって操作するのが楽しくなるエフェクト。</p>
+    <p class="g-hero__count" aria-label="4種類"><b>4</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#8a7dff;--on:#fff">
+    <div class="g-tape__track"><span>DRAG TO SORT ✦ MOOD SLIDER ✦ SPARKLE TYPING ✦ STAR RATING ✦ DRAG TO SORT ✦ MOOD SLIDER ✦ SPARKLE TYPING ✦ STAR RATING ✦ </span><span>DRAG TO SORT ✦ MOOD SLIDER ✦ SPARKLE TYPING ✦ STAR RATING ✦ DRAG TO SORT ✦ MOOD SLIDER ✦ SPARKLE TYPING ✦ STAR RATING ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#drag-sort">ドラッグで並べかえ</a></li><li><a href="#slider">表情スライダー</a></li><li><a href="#glow-type">打つと光る入力欄</a></li><li><a href="#rating">きらきら星評価</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="drag-sort">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ドラッグで並べかえ</h2>
+            <p class="g-card__en">Drag to Sort</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/input/drag-sort/index.html" title="ドラッグで並べかえの見本" loading="lazy" style="height:360px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">リストの項目をつまんで上下にドラッグすると、ほかの項目がスッとよけて順番を入れかえられる。キーボードの↑↓でもOK。</p>
+          <p class="g-card__use"><b>使いどころ</b>TODOリスト・ランキング作り・好きな順に並べるアンケート</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/input/drag-sort/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ドラッグで並べかえのコード">
+            <button class="g-tab" role="tab" id="code-input-drag-sort-html-tab" aria-controls="code-input-drag-sort-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-input-drag-sort-css-tab" aria-controls="code-input-drag-sort-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-input-drag-sort-js-tab" aria-controls="code-input-drag-sort-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-input-drag-sort-html" aria-labelledby="code-input-drag-sort-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;ol class=&quot;fx-sort&quot; data-fx=&quot;drag-sort&quot; aria-label=&quot;好きな順に並べかえてね&quot;&gt;
+  &lt;li tabindex=&quot;0&quot;&gt;&lt;span class=&quot;fx-sort__grip&quot; aria-hidden=&quot;true&quot;&gt;⠿&lt;/span&gt;🍓 いちごパフェ&lt;/li&gt;
+  &lt;li tabindex=&quot;0&quot;&gt;&lt;span class=&quot;fx-sort__grip&quot; aria-hidden=&quot;true&quot;&gt;⠿&lt;/span&gt;🍰 ショートケーキ&lt;/li&gt;
+  &lt;li tabindex=&quot;0&quot;&gt;&lt;span class=&quot;fx-sort__grip&quot; aria-hidden=&quot;true&quot;&gt;⠿&lt;/span&gt;🍡 みたらし団子&lt;/li&gt;
+  &lt;li tabindex=&quot;0&quot;&gt;&lt;span class=&quot;fx-sort__grip&quot; aria-hidden=&quot;true&quot;&gt;⠿&lt;/span&gt;🍩 ドーナツ&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-input-drag-sort-css" aria-labelledby="code-input-drag-sort-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-sort {
+  display: grid;
+  gap: 10px;
+  width: min(88vw, 340px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: rank;
+  touch-action: none;
+}
+.fx-sort li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 3px solid #111;
+  border-radius: 14px;
+  background: #fff;
+  color: #111;
+  font: 700 17px &quot;Zen Kaku Gothic New&quot;, system-ui, sans-serif;
+  box-shadow: 4px 4px 0 #111;
+  cursor: grab;
+  user-select: none;
+  transition: transform .25s cubic-bezier(.2, 1.2, .4, 1), box-shadow .2s;
+}
+.fx-sort li::before {                  <span class="c">/* 順位の数字（並び順で自動で変わる） */</span>
+  counter-increment: rank;
+  content: counter(rank);
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #8a7dff;
+  color: #fff;
+  font: 14px &quot;Dela Gothic One&quot;, sans-serif;
+}
+.fx-sort li:nth-child(1)::before { background: #ffd400; color: #111; }
+.fx-sort__grip { margin-left: auto; order: 2; color: #999; font-size: 20px; }
+.fx-sort li.is-dragging {
+  z-index: 2;
+  cursor: grabbing;
+  box-shadow: 10px 12px 0 rgba(0, 0, 0, .5);
+  transition: box-shadow .2s;           <span class="c">/* つまんでいる間は transform をすぐ反映 */</span>
+}
+.fx-sort li:focus-visible { outline: 4px solid #00c2ff; outline-offset: 2px; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-input-drag-sort-js" aria-labelledby="code-input-drag-sort-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// つまんだ項目を指に合わせて動かし、半分以上かさなったら隣とDOMの順番を入れかえる</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;drag-sort&quot;]&#x27;).forEach((list) =&gt; {
+    list.addEventListener(&#x27;pointerdown&#x27;, (e) =&gt; {
+      const item = e.target.closest(&#x27;li&#x27;);
+      if (!item) return;
+      item.setPointerCapture(e.pointerId);
+      item.classList.add(&#x27;is-dragging&#x27;);
+      let startY = e.clientY;
+      const move = (ev) =&gt; {
+        let dy = ev.clientY - startY;
+        const h = item.offsetHeight + 10;            <span class="c">// 項目の高さ＋すきま</span>
+        const prev = item.previousElementSibling, next = item.nextElementSibling;
+        if (dy &gt; h / 2 &amp;&amp; next) { next.after(item); startY += h; dy -= h; }
+        if (dy &lt; -h / 2 &amp;&amp; prev) { prev.before(item); startY -= h; dy += h; }
+        item.style.transform = `translateY(${dy}px) rotate(${dy / 40}deg) scale(1.04)`;
+      };
+      const up = () =&gt; {
+        item.classList.remove(&#x27;is-dragging&#x27;);
+        item.style.transform = &#x27;&#x27;;
+        item.removeEventListener(&#x27;pointermove&#x27;, move);
+        item.removeEventListener(&#x27;pointerup&#x27;, up);
+        item.removeEventListener(&#x27;pointercancel&#x27;, up);
+      };
+      item.addEventListener(&#x27;pointermove&#x27;, move);
+      item.addEventListener(&#x27;pointerup&#x27;, up);
+      item.addEventListener(&#x27;pointercancel&#x27;, up);
+    });
+    <span class="c">// キーボード：↑↓ で1つずつ移動</span>
+    list.addEventListener(&#x27;keydown&#x27;, (e) =&gt; {
+      const item = e.target.closest(&#x27;li&#x27;);
+      if (!item) return;
+      if (e.key === &#x27;ArrowUp&#x27; &amp;&amp; item.previousElementSibling) { item.previousElementSibling.before(item); }
+      else if (e.key === &#x27;ArrowDown&#x27; &amp;&amp; item.nextElementSibling) { item.nextElementSibling.after(item); }
+      else return;
+      e.preventDefault();
+      item.focus();
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/input/drag-sort/</p>
+        </div>
+      </article>
+      <article class="g-card" id="slider">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">表情スライダー</h2>
+            <p class="g-card__en">Mood Slider</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/input/slider/index.html" title="表情スライダーの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">つまみを動かすと、上の吹き出しの数字と顔文字が変わり、バーの色も赤→黄→緑に変わっていく。</p>
+          <p class="g-card__use"><b>使いどころ</b>満足度アンケート・音量や明るさの設定・予算の入力</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/input/slider/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="表情スライダーのコード">
+            <button class="g-tab" role="tab" id="code-input-slider-html-tab" aria-controls="code-input-slider-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-input-slider-css-tab" aria-controls="code-input-slider-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-input-slider-js-tab" aria-controls="code-input-slider-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-input-slider-html" aria-labelledby="code-input-slider-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-slider&quot; data-fx=&quot;slider&quot;&gt;
+  &lt;label class=&quot;fx-slider__label&quot; for=&quot;fx-slider-input&quot;&gt;今日の満足度は？&lt;/label&gt;
+  &lt;div class=&quot;fx-slider__wrap&quot;&gt;
+    &lt;output class=&quot;fx-slider__bubble&quot; for=&quot;fx-slider-input&quot;&gt;😐 50&lt;/output&gt;
+    &lt;input id=&quot;fx-slider-input&quot; class=&quot;fx-slider__input&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;50&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-input-slider-css" aria-labelledby="code-input-slider-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-slider { width: min(88vw, 400px); color: #fff; font-family: &quot;Zen Kaku Gothic New&quot;, system-ui, sans-serif; }
+.fx-slider__label { display: block; margin-bottom: 52px; font-weight: 700; font-size: 18px; text-align: center; }
+.fx-slider__wrap { --p: 50; --c: hsl(calc(var(--p) * 1.2) 90% 55%); position: relative; }
+.fx-slider__bubble {
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: calc(var(--p) * 1%);
+  padding: 4px 12px;
+  border: 3px solid #111;
+  border-radius: 12px;
+  background: var(--c);
+  color: #111;
+  font: 18px &quot;Dela Gothic One&quot;, sans-serif;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  transition: background .2s;
+}
+.fx-slider__bubble::after {            <span class="c">/* 吹き出しのしっぽ */</span>
+  content: &quot;&quot;;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  border: 8px solid transparent;
+  border-top-color: #111;
+  transform: translateX(-50%);
+}
+<span class="c">/* ブラウザ標準の見た目を消して、自分で作る */</span>
+.fx-slider__input {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 18px;
+  margin: 0;
+  border: 3px solid #111;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--c) calc(var(--p) * 1%), #3a3354 0);
+  cursor: pointer;
+}
+.fx-slider__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 38px;
+  height: 38px;
+  border: 4px solid #111;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 0 #111;
+  transition: transform .2s cubic-bezier(.2, 1.8, .4, 1);
+}
+.fx-slider__input::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #111;
+  border-radius: 50%;
+  background: #fff;
+}
+.fx-slider__input:active::-webkit-slider-thumb { transform: scale(1.25); }
+.fx-slider__input:focus-visible { outline: 4px solid #00c2ff; outline-offset: 4px; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-input-slider-js" aria-labelledby="code-input-slider-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 値（0〜100）を --p に入れて、吹き出しの位置・色・顔文字を変える</span>
+(() =&gt; {
+  const faces = [&#x27;😭&#x27;, &#x27;😢&#x27;, &#x27;😐&#x27;, &#x27;🙂&#x27;, &#x27;😆&#x27;, &#x27;🤩&#x27;];
+  document.querySelectorAll(&#x27;[data-fx=&quot;slider&quot;]&#x27;).forEach((root) =&gt; {
+    const input = root.querySelector(&#x27;input&#x27;);
+    const wrap = root.querySelector(&#x27;.fx-slider__wrap&#x27;);
+    const bubble = root.querySelector(&#x27;output&#x27;);
+    const update = () =&gt; {
+      const p = +input.value;
+      wrap.style.setProperty(&#x27;--p&#x27;, p);
+      bubble.textContent = `${faces[Math.min(faces.length - 1, Math.floor(p / (100 / faces.length)))]} ${p}`;
+    };
+    input.addEventListener(&#x27;input&#x27;, update);
+    update();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/input/slider/</p>
+        </div>
+      </article>
+      <article class="g-card" id="glow-type">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">打つと光る入力欄</h2>
+            <p class="g-card__en">Sparkle Typing</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/input/glow-type/index.html" title="打つと光る入力欄の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">文字を打つたびに、入力欄から光のつぶがはじけて、枠の色もくるくる変わる。</p>
+          <p class="g-card__use"><b>使いどころ</b>メッセージ入力・検索ボックス・ゲストブック</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/input/glow-type/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="打つと光る入力欄のコード">
+            <button class="g-tab" role="tab" id="code-input-glow-type-html-tab" aria-controls="code-input-glow-type-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-input-glow-type-css-tab" aria-controls="code-input-glow-type-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-input-glow-type-js-tab" aria-controls="code-input-glow-type-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-input-glow-type-html" aria-labelledby="code-input-glow-type-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-gtype&quot; data-fx=&quot;glow-type&quot;&gt;
+  &lt;label for=&quot;fx-gtype-input&quot;&gt;ひとことメッセージ&lt;/label&gt;
+  &lt;input id=&quot;fx-gtype-input&quot; type=&quot;text&quot; placeholder=&quot;なにか打ってみてね…&quot; maxlength=&quot;30&quot; autocomplete=&quot;off&quot;&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-input-glow-type-css" aria-labelledby="code-input-glow-type-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-gtype { position: relative; width: min(88vw, 420px); font-family: &quot;Zen Kaku Gothic New&quot;, system-ui, sans-serif; }
+.fx-gtype label { display: block; margin-bottom: 8px; color: #fff; font-weight: 700; }
+.fx-gtype input {
+  --h: 280;
+  width: 100%;
+  padding: 16px 18px;
+  border: 4px solid hsl(var(--h) 100% 65%);
+  border-radius: 16px;
+  background: #1d1830;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: inherit;
+  outline: none;
+  box-shadow: 0 0 0 0 hsl(var(--h) 100% 65% / .6), 0 0 24px hsl(var(--h) 100% 65% / .35);
+  transition: border-color .2s, box-shadow .2s;
+}
+.fx-gtype input.is-pulse { box-shadow: 0 0 0 6px hsl(var(--h) 100% 65% / .35), 0 0 30px hsl(var(--h) 100% 65% / .6); }
+.fx-gtype__spark {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c);
+  box-shadow: 0 0 10px var(--c);
+  pointer-events: none;
+  animation: fx-gtype-spark .7s ease-out forwards;
+}
+@keyframes fx-gtype-spark {
+  to { transform: translate(var(--x), var(--y)) scale(0); opacity: 0; }
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-input-glow-type-js" aria-labelledby="code-input-glow-type-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 1文字打つごとに、カーソルのあたりから光のつぶを飛ばし、枠の色（色相 --h）を少し進める</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;glow-type&quot;]&#x27;).forEach((root) =&gt; {
+    const input = root.querySelector(&#x27;input&#x27;);
+    const measure = document.createElement(&#x27;span&#x27;);          <span class="c">// 文字の幅を測るための見えない箱</span>
+    measure.style.cssText = &#x27;position:absolute;visibility:hidden;white-space:pre;font:700 20px &quot;Zen Kaku Gothic New&quot;,sans-serif&#x27;;
+    root.appendChild(measure);
+    let h = 280;
+    input.addEventListener(&#x27;input&#x27;, () =&gt; {
+      h = (h + 23) % 360;
+      input.style.setProperty(&#x27;--h&#x27;, h);
+      measure.textContent = input.value.slice(0, input.selectionStart || input.value.length);
+      const x = Math.min(input.offsetLeft + 22 + measure.offsetWidth, input.offsetLeft + input.offsetWidth - 20);
+      const y = input.offsetTop + input.offsetHeight / 2;
+      for (let i = 0; i &lt; 8; i++) {
+        const s = document.createElement(&#x27;i&#x27;);
+        s.className = &#x27;fx-gtype__spark&#x27;;
+        const a = Math.random() * Math.PI * 2, d = 20 + Math.random() * 40;
+        s.style.left = `${x}px`;
+        s.style.top = `${y}px`;
+        s.style.setProperty(&#x27;--x&#x27;, `${Math.cos(a) * d}px`);
+        s.style.setProperty(&#x27;--y&#x27;, `${Math.sin(a) * d}px`);
+        s.style.setProperty(&#x27;--c&#x27;, `hsl(${(h + i * 30) % 360} 100% 65%)`);
+        root.appendChild(s);
+        s.addEventListener(&#x27;animationend&#x27;, () =&gt; s.remove());
+      }
+      input.classList.remove(&#x27;is-pulse&#x27;);
+      void input.offsetWidth;
+      input.classList.add(&#x27;is-pulse&#x27;);
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/input/glow-type/</p>
+        </div>
+      </article>
+      <article class="g-card" id="rating">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">きらきら星評価</h2>
+            <p class="g-card__en">Star Rating</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/input/rating/index.html" title="きらきら星評価の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">星にマウスを乗せると光って、押すと星がポンッとはねて評価が決まる。キーボードの ← → でも選べる。</p>
+          <p class="g-card__use"><b>使いどころ</b>レビュー投稿・アンケート・満足度の入力</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/input/rating/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="きらきら星評価のコード">
+            <button class="g-tab" role="tab" id="code-input-rating-html-tab" aria-controls="code-input-rating-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-input-rating-css-tab" aria-controls="code-input-rating-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-input-rating-js-tab" aria-controls="code-input-rating-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-input-rating-html" aria-labelledby="code-input-rating-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;fieldset class=&quot;fx-rate&quot; data-fx=&quot;rating&quot;&gt;
+  &lt;legend&gt;このページの評価&lt;/legend&gt;
+  &lt;div class=&quot;fx-rate__stars&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;fx-rate&quot; id=&quot;fx-rate-1&quot; value=&quot;1&quot;&gt;&lt;label for=&quot;fx-rate-1&quot; aria-label=&quot;星1つ&quot;&gt;★&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;fx-rate&quot; id=&quot;fx-rate-2&quot; value=&quot;2&quot;&gt;&lt;label for=&quot;fx-rate-2&quot; aria-label=&quot;星2つ&quot;&gt;★&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;fx-rate&quot; id=&quot;fx-rate-3&quot; value=&quot;3&quot;&gt;&lt;label for=&quot;fx-rate-3&quot; aria-label=&quot;星3つ&quot;&gt;★&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;fx-rate&quot; id=&quot;fx-rate-4&quot; value=&quot;4&quot;&gt;&lt;label for=&quot;fx-rate-4&quot; aria-label=&quot;星4つ&quot;&gt;★&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;fx-rate&quot; id=&quot;fx-rate-5&quot; value=&quot;5&quot;&gt;&lt;label for=&quot;fx-rate-5&quot; aria-label=&quot;星5つ&quot;&gt;★&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;fx-rate__msg&quot; aria-live=&quot;polite&quot;&gt;星をえらんでね&lt;/p&gt;
+&lt;/fieldset&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-input-rating-css" aria-labelledby="code-input-rating-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-rate {
+  margin: 0;
+  padding: 18px 28px 14px;
+  border: 4px solid #111;
+  border-radius: 20px;
+  background: #fff;
+  color: #111;
+  text-align: center;
+  box-shadow: 8px 8px 0 #8a7dff;
+}
+.fx-rate legend { padding: 2px 14px; border: 3px solid #111; border-radius: 999px; background: #ffd400; font-size: 15px; }
+.fx-rate__stars { display: flex; gap: 6px; justify-content: center; }
+.fx-rate input { position: absolute; opacity: 0; pointer-events: none; }   <span class="c">/* 本物のラジオボタンは隠す */</span>
+.fx-rate label {
+  font-size: 52px;
+  line-height: 1;
+  color: #ddd;
+  -webkit-text-stroke: 2px #111;
+  cursor: pointer;
+  transition: color .15s, transform .25s cubic-bezier(.2, 1.8, .4, 1);
+}
+.fx-rate label.is-on { color: #ffd400; }
+.fx-rate label.is-hover { color: #ffe866; transform: scale(1.15) rotate(-8deg); }
+.fx-rate label.is-pop { animation: fx-rate-pop .5s cubic-bezier(.2, 1.8, .4, 1); }
+.fx-rate input:focus-visible + label { outline: 3px solid #00c2ff; outline-offset: 2px; border-radius: 6px; }
+.fx-rate__msg { margin: 8px 0 0; font: 700 15px &quot;Zen Kaku Gothic New&quot;, system-ui, sans-serif; }
+@keyframes fx-rate-pop { 40% { transform: scale(1.5) rotate(15deg); } }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-input-rating-js" aria-labelledby="code-input-rating-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// ホバー中は「その星まで」を光らせ、選んだら選んだ数まで点灯。中身は本物のラジオボタン</span>
+(() =&gt; {
+  const msgs = [&#x27;&#x27;, &#x27;ざんねん…&#x27;, &#x27;まあまあ&#x27;, &#x27;いい感じ！&#x27;, &#x27;すごくいい！&#x27;, &#x27;さいこう！！🎉&#x27;];
+  document.querySelectorAll(&#x27;[data-fx=&quot;rating&quot;]&#x27;).forEach((root) =&gt; {
+    const labels = [...root.querySelectorAll(&#x27;label&#x27;)];
+    const inputs = [...root.querySelectorAll(&#x27;input&#x27;)];
+    const msg = root.querySelector(&#x27;.fx-rate__msg&#x27;);
+    const paint = (n, cls) =&gt; labels.forEach((l, i) =&gt; l.classList.toggle(cls, i &lt; n));
+    labels.forEach((l, i) =&gt; {
+      l.addEventListener(&#x27;mouseenter&#x27;, () =&gt; paint(i + 1, &#x27;is-hover&#x27;));
+      l.addEventListener(&#x27;mouseleave&#x27;, () =&gt; paint(0, &#x27;is-hover&#x27;));
+    });
+    inputs.forEach((input, i) =&gt; {
+      input.addEventListener(&#x27;change&#x27;, () =&gt; {
+        paint(i + 1, &#x27;is-on&#x27;);
+        msg.textContent = `${i + 1}つ星：${msgs[i + 1]}`;
+        labels.forEach((l, k) =&gt; {
+          l.classList.remove(&#x27;is-pop&#x27;);
+          if (k &lt;= i) { void l.offsetWidth; l.style.animationDelay = `${k * .06}s`; l.classList.add(&#x27;is-pop&#x27;); }
+        });
+      });
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/input/rating/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="chart.html" style="--cat:#ffb020;--on:#111"><small>← 前の種類</small>データ可視化</a><a class="g-pager__link g-pager__link--next" href="timer.html" style="--cat:#3ddc84;--on:#111"><small>次の種類 →</small>時刻・カウント</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 116 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

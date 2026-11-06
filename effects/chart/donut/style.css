@@ -1,0 +1,29 @@
+.fx-donut { position: relative; display: flex; align-items: center; gap: 24px; margin: 0; flex-wrap: wrap; justify-content: center; }
+.fx-donut__svg { width: 200px; height: 200px; transform: rotate(-90deg); overflow: visible; }
+/* 円周が100になる半径（15.915）にすると、% をそのまま線の長さにできる */
+.fx-donut__seg {
+  fill: none;
+  stroke: var(--c);
+  stroke-width: 7;
+  stroke-dasharray: 0 100;
+  stroke-dashoffset: calc(var(--o) * -1);
+  transition: stroke-dasharray .9s cubic-bezier(.6, 0, .3, 1) calc(var(--i, 0) * .5s), stroke-width .25s;
+}
+.fx-donut.is-in .fx-donut__seg { stroke-dasharray: var(--v) calc(100 - var(--v)); }
+.fx-donut__seg.is-hot { stroke-width: 10; }
+.fx-donut__chart { position: relative; }
+.fx-donut__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  justify-items: center;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.fx-donut__center b { font-weight: normal; font-size: 30px; line-height: 1; }
+.fx-donut__center small { font-size: 12px; opacity: .8; }
+.fx-donut__legend { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; color: #fff; font-size: 16px; }
+.fx-donut__legend li { display: flex; align-items: center; gap: 8px; padding: 4px 10px; border-radius: 8px; cursor: default; transition: background .2s; }
+.fx-donut__legend li::before { content: ""; width: 16px; height: 16px; border: 2px solid #111; border-radius: 4px; background: var(--c); }
+.fx-donut__legend li.is-hot { background: rgba(255, 255, 255, .12); }

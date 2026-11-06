@@ -1,0 +1,8 @@
+.fx-globe {
+  display: block;
+  width: min(86vw, 340px);
+  aspect-ratio: 1;
+  cursor: grab;
+  touch-action: none;
+}
+.fx-globe:active { cursor: grabbing; }

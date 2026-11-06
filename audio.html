@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>音・サウンド（AUDIO）のエフェクト | EFFECT GALLERY</title>
+<meta name="description" content="音に合わせて動く・押すと鳴るなど、耳でも楽しめるエフェクト。">
+<meta property="og:title" content="音・サウンド（AUDIO）のエフェクト | EFFECT GALLERY">
+<meta property="og:description" content="音に合わせて動く・押すと鳴るなど、耳でも楽しめるエフェクト。">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body class="is-cat cat-audio">
+<a class="g-skip" href="#main">本文へスキップ</a>
+<header class="g-header">
+  <a class="g-logo" href="index.html" aria-label="EFFECT GALLERY トップへ">
+    <span class="g-logo__mark" aria-hidden="true">✦</span>EFFECT<b>GALLERY</b>
+  </a>
+  <button class="g-menu" aria-expanded="false" aria-controls="g-nav">
+    <span class="g-menu__bars" aria-hidden="true"></span>種類
+  </button>
+  <nav class="g-nav" id="g-nav" aria-label="エフェクトの種類">
+    <ul>
+      <li><a class="g-pill" href="text.html" style="--cat:#ff3d7f;--on:#fff"><span>01</span>テキスト</a></li>
+      <li><a class="g-pill" href="cursor.html" style="--cat:#ffd400;--on:#111"><span>02</span>マウス・カーソル</a></li>
+      <li><a class="g-pill" href="scroll.html" style="--cat:#00c2ff;--on:#111"><span>03</span>スクロール連動</a></li>
+      <li><a class="g-pill" href="background.html" style="--cat:#7cff4f;--on:#111"><span>04</span>背景・図形</a></li>
+      <li><a class="g-pill" href="click.html" style="--cat:#ff7a00;--on:#111"><span>05</span>クリック・ボタン</a></li>
+      <li><a class="g-pill" href="card.html" style="--cat:#a259ff;--on:#fff"><span>06</span>カード・ホバー</a></li>
+      <li><a class="g-pill" href="page.html" style="--cat:#ff2e4d;--on:#fff"><span>07</span>ページ演出</a></li>
+      <li><a class="g-pill" href="nav.html" style="--cat:#2de2c4;--on:#111"><span>08</span>ナビゲーション</a></li>
+      <li><a class="g-pill" href="form.html" style="--cat:#ff9ecf;--on:#111"><span>09</span>フォーム</a></li>
+      <li><a class="g-pill" href="image.html" style="--cat:#4f7dff;--on:#fff"><span>10</span>画像</a></li>
+      <li><a class="g-pill" href="loading.html" style="--cat:#c6ff00;--on:#111"><span>11</span>読み込み</a></li>
+      <li><a class="g-pill" href="toast.html" style="--cat:#ff6b4a;--on:#111"><span>12</span>通知</a></li>
+      <li><a class="g-pill" href="3d.html" style="--cat:#00e0c6;--on:#111"><span>13</span>3D</a></li>
+      <li><a class="g-pill is-current" href="audio.html" style="--cat:#ff4fd8;--on:#111" aria-current="page"><span>14</span>音・サウンド</a></li>
+      <li><a class="g-pill" href="chart.html" style="--cat:#ffb020;--on:#111"><span>15</span>データ可視化</a></li>
+      <li><a class="g-pill" href="input.html" style="--cat:#8a7dff;--on:#fff"><span>16</span>入力・操作</a></li>
+      <li><a class="g-pill" href="timer.html" style="--cat:#3ddc84;--on:#111"><span>17</span>時刻・カウント</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="g-hero" style="--cat:#ff4fd8;--on:#111">
+    <p class="g-hero__no">14 <span>/ 17</span></p>
+    <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:5">AUDIO</span><span class="g-hero__jp">音・サウンド</span></h1>
+    <p class="g-hero__desc">音に合わせて動く・押すと鳴るなど、耳でも楽しめるエフェクト。</p>
+    <p class="g-hero__count" aria-label="4種類"><b>4</b>EFFECTS</p>
+  </section>
+  <div class="g-tape" aria-hidden="true" style="--cat:#ff4fd8;--on:#111">
+    <div class="g-tape__track"><span>EQUALIZER BARS ✦ CIRCLE VISUALIZER ✦ THEREMIN WAVE ✦ SOUND BUTTONS ✦ EQUALIZER BARS ✦ CIRCLE VISUALIZER ✦ THEREMIN WAVE ✦ SOUND BUTTONS ✦ </span><span>EQUALIZER BARS ✦ CIRCLE VISUALIZER ✦ THEREMIN WAVE ✦ SOUND BUTTONS ✦ EQUALIZER BARS ✦ CIRCLE VISUALIZER ✦ THEREMIN WAVE ✦ SOUND BUTTONS ✦ </span></div>
+  </div>
+  <nav class="g-jump" aria-label="この種類のエフェクト">
+    <ul><li><a href="#eq-bars">イコライザー</a></li><li><a href="#visualizer">円形ビジュアライザー</a></li><li><a href="#theremin">テルミン波形</a></li><li><a href="#sound-buttons">ピコピコ効果音</a></li></ul>
+  </nav>
+  <div class="g-grid">
+      <article class="g-card" id="eq-bars">
+        <header class="g-card__head">
+          <span class="g-card__no">01</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">イコライザー</h2>
+            <p class="g-card__en">Equalizer Bars</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/audio/eq-bars/index.html" title="イコライザーの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">音楽プレーヤーのイコライザーみたいに、カラフルな棒がリズムよく上下にはねる。CSSだけで動く（音は出ない）。</p>
+          <p class="g-card__use"><b>使いどころ</b>「再生中」の表示・音楽イベント・ラジオやポッドキャスト</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/audio/eq-bars/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="イコライザーのコード">
+            <button class="g-tab" role="tab" id="code-audio-eq-bars-html-tab" aria-controls="code-audio-eq-bars-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-audio-eq-bars-css-tab" aria-controls="code-audio-eq-bars-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-audio-eq-bars-html" aria-labelledby="code-audio-eq-bars-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-eq-card&quot;&gt;
+  &lt;div class=&quot;fx-eq&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;i style=&quot;--d: .9s&quot;&gt;&lt;/i&gt;&lt;i style=&quot;--d: .6s&quot;&gt;&lt;/i&gt;&lt;i style=&quot;--d: 1.1s&quot;&gt;&lt;/i&gt;&lt;i style=&quot;--d: .7s&quot;&gt;&lt;/i&gt;
+    &lt;i style=&quot;--d: 1s&quot;&gt;&lt;/i&gt;&lt;i style=&quot;--d: .55s&quot;&gt;&lt;/i&gt;&lt;i style=&quot;--d: .8s&quot;&gt;&lt;/i&gt;&lt;i style=&quot;--d: 1.2s&quot;&gt;&lt;/i&gt;
+    &lt;i style=&quot;--d: .65s&quot;&gt;&lt;/i&gt;&lt;i style=&quot;--d: .95s&quot;&gt;&lt;/i&gt;&lt;i style=&quot;--d: .75s&quot;&gt;&lt;/i&gt;&lt;i style=&quot;--d: 1.05s&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;fx-eq-card__title&quot;&gt;&lt;b&gt;NOW PLAYING&lt;/b&gt;EPIC DAY Theme&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-audio-eq-bars-css" aria-labelledby="code-audio-eq-bars-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-eq-card {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  padding: 24px 30px;
+  border: 4px solid #111;
+  border-radius: 22px;
+  background: #241b3a;
+  box-shadow: 8px 8px 0 #ff4fd8;
+}
+.fx-eq { display: flex; align-items: flex-end; gap: 6px; height: 120px; }
+.fx-eq i {
+  display: block;
+  width: 14px;
+  height: 100%;
+  border-radius: 7px 7px 3px 3px;
+  background: linear-gradient(#ff3d7f, #ffd400 50%, #7cff4f);
+  transform-origin: bottom;
+  animation: fx-eq var(--d) ease-in-out infinite alternate;
+}
+.fx-eq i:nth-child(odd) { animation-delay: -.3s; }
+@keyframes fx-eq {
+  0%   { transform: scaleY(.12); }
+  40%  { transform: scaleY(.85); }
+  70%  { transform: scaleY(.4); }
+  100% { transform: scaleY(1); }
+}
+.fx-eq-card__title { display: grid; margin: 0; color: #fff; text-align: center; font-size: 18px; }
+.fx-eq-card__title b { font-weight: normal; font-size: 12px; letter-spacing: .25em; color: #ff4fd8; }</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/audio/eq-bars/</p>
+        </div>
+      </article>
+      <article class="g-card" id="visualizer">
+        <header class="g-card__head">
+          <span class="g-card__no">02</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">円形ビジュアライザー</h2>
+            <p class="g-card__en">Circle Visualizer</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/audio/visualizer/index.html" title="円形ビジュアライザーの見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">再生ボタンを押すと、その場で作った音楽が流れて、音の強さに合わせて円のまわりの棒が光りながら伸び縮みする。</p>
+          <p class="g-card__use"><b>使いどころ</b>音楽アーティストのサイト・ライブ告知・DJイベント</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/audio/visualizer/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="円形ビジュアライザーのコード">
+            <button class="g-tab" role="tab" id="code-audio-visualizer-html-tab" aria-controls="code-audio-visualizer-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-audio-visualizer-css-tab" aria-controls="code-audio-visualizer-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-audio-visualizer-js-tab" aria-controls="code-audio-visualizer-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-audio-visualizer-html" aria-labelledby="code-audio-visualizer-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-viz&quot; data-fx=&quot;visualizer&quot;&gt;
+  &lt;canvas class=&quot;fx-viz__canvas&quot; aria-hidden=&quot;true&quot;&gt;&lt;/canvas&gt;
+  &lt;button class=&quot;fx-viz__btn&quot; aria-pressed=&quot;false&quot; aria-label=&quot;音楽を再生&quot;&gt;▶&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-audio-visualizer-css" aria-labelledby="code-audio-visualizer-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-viz { position: relative; width: min(84vw, 320px); aspect-ratio: 1; }
+.fx-viz__canvas { display: block; width: 100%; height: 100%; }
+.fx-viz__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 84px;
+  height: 84px;
+  border: 4px solid #111;
+  border-radius: 50%;
+  background: #ff4fd8;
+  color: #111;
+  font-size: 30px;
+  cursor: pointer;
+  transform: translate(-50%, -50%) scale(var(--beat, 1));
+  box-shadow: 0 0 0 6px rgba(255, 79, 216, .25);
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-audio-visualizer-js" aria-labelledby="code-audio-visualizer-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// Web Audio API で音楽を「その場で合成」して鳴らし、AnalyserNode で音の強さを読みとって描く</span>
+<span class="c">// （音声ファイルを使うときは、new Audio(&#x27;song.mp3&#x27;) を createMediaElementSource につなげばOK）</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;visualizer&quot;]&#x27;).forEach((root) =&gt; {
+    const cv = root.querySelector(&#x27;canvas&#x27;);
+    const btn = root.querySelector(&#x27;button&#x27;);
+    const ctx = cv.getContext(&#x27;2d&#x27;);
+    let ac, analyser, data, timer, playing = false;
+
+    const note = (freq, time, len, type = &#x27;square&#x27;, vol = .06) =&gt; {
+      const o = ac.createOscillator(), g = ac.createGain();
+      o.type = type; o.frequency.value = freq;
+      g.gain.setValueAtTime(vol, time);
+      g.gain.exponentialRampToValueAtTime(.0001, time + len);
+      o.connect(g).connect(analyser);
+      o.start(time); o.stop(time + len);
+    };
+    const kick = (time) =&gt; {
+      const o = ac.createOscillator(), g = ac.createGain();
+      o.frequency.setValueAtTime(150, time);
+      o.frequency.exponentialRampToValueAtTime(40, time + .2);
+      g.gain.setValueAtTime(.35, time);
+      g.gain.exponentialRampToValueAtTime(.001, time + .25);
+      o.connect(g).connect(analyser);
+      o.start(time); o.stop(time + .25);
+    };
+    <span class="c">// 1小節ぶんのフレーズ（ドミソの分散和音＋キック）を、少し先まで予約しつづける</span>
+    const melody = [523, 659, 784, 1047, 784, 659, 587, 698];
+    let step = 0, nextTime = 0;
+    const schedule = () =&gt; {
+      while (nextTime &lt; ac.currentTime + .2) {
+        if (step % 2 === 0) kick(nextTime);
+        note(melody[step % melody.length], nextTime, .2);
+        if (step % 4 === 0) note(melody[step % melody.length] / 4, nextTime, .45, &#x27;sawtooth&#x27;, .05);
+        nextTime += .18; step++;
+      }
+    };
+    const start = () =&gt; {
+      ac = ac || new (window.AudioContext || window.webkitAudioContext)();
+      if (!analyser) {
+        analyser = ac.createAnalyser();
+        analyser.fftSize = 128;
+        analyser.connect(ac.destination);
+        data = new Uint8Array(analyser.frequencyBinCount);
+      }
+      ac.resume();
+      nextTime = ac.currentTime + .05;
+      timer = setInterval(schedule, 50);
+      playing = true;
+    };
+    const stop = () =&gt; { clearInterval(timer); playing = false; };
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; {
+      playing ? stop() : start();
+      btn.textContent = playing ? &#x27;❚❚&#x27; : &#x27;▶&#x27;;
+      btn.setAttribute(&#x27;aria-pressed&#x27;, String(playing));
+      btn.setAttribute(&#x27;aria-label&#x27;, playing ? &#x27;音楽を止める&#x27; : &#x27;音楽を再生&#x27;);
+    });
+
+    let W, H;
+    const resize = () =&gt; {
+      const d = window.devicePixelRatio || 1;
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * d; cv.height = H * d;
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+    };
+    resize();
+    addEventListener(&#x27;resize&#x27;, resize);
+
+    (function loop(t) {
+      ctx.clearRect(0, 0, W, H);
+      const bars = 48, R = W * .22;
+      let sum = 0;
+      if (analyser) analyser.getByteFrequencyData(data);
+      for (let i = 0; i &lt; bars; i++) {
+        <span class="c">// 音がないときは、ゆるく波うつ待機アニメーション</span>
+        const v = analyser &amp;&amp; playing ? data[i % data.length] / 255 : (Math.sin((t || 0) / 500 + i * .5) + 1) * .08;
+        sum += v;
+        const a = (i / bars) * Math.PI * 2 - Math.PI / 2;
+        const len = 8 + v * W * .25;
+        ctx.strokeStyle = `hsl(${(i / bars) * 360} 100% 62%)`;
+        ctx.lineWidth = 6;
+        ctx.lineCap = &#x27;round&#x27;;
+        ctx.beginPath();
+        ctx.moveTo(W / 2 + Math.cos(a) * R, H / 2 + Math.sin(a) * R);
+        ctx.lineTo(W / 2 + Math.cos(a) * (R + len), H / 2 + Math.sin(a) * (R + len));
+        ctx.stroke();
+      }
+      btn.style.setProperty(&#x27;--beat&#x27;, (1 + (sum / bars) * .25).toFixed(3));   <span class="c">// 音に合わせてボタンもはねる</span>
+      requestAnimationFrame(loop);
+    })();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/audio/visualizer/</p>
+        </div>
+      </article>
+      <article class="g-card" id="theremin">
+        <header class="g-card__head">
+          <span class="g-card__no">03</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">テルミン波形</h2>
+            <p class="g-card__en">Theremin Wave</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/audio/theremin/index.html" title="テルミン波形の見本" loading="lazy" style="height:360px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">パッドの上でマウスを動かすと音が鳴り、左右で音の高さ、上下で音量が変わる。音の波の形がリアルタイムに見える。</p>
+          <p class="g-card__use"><b>使いどころ</b>音楽教室・理科の学習ページ・遊べるおまけコンテンツ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/audio/theremin/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="テルミン波形のコード">
+            <button class="g-tab" role="tab" id="code-audio-theremin-html-tab" aria-controls="code-audio-theremin-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-audio-theremin-css-tab" aria-controls="code-audio-theremin-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-audio-theremin-js-tab" aria-controls="code-audio-theremin-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-audio-theremin-html" aria-labelledby="code-audio-theremin-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-thm&quot; data-fx=&quot;theremin&quot; role=&quot;application&quot; aria-label=&quot;テルミン：パッドの上で動かすと音が鳴ります&quot;&gt;
+  &lt;canvas class=&quot;fx-thm__canvas&quot; aria-hidden=&quot;true&quot;&gt;&lt;/canvas&gt;
+  &lt;p class=&quot;fx-thm__label&quot;&gt;← 低い音　　高い音 →&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-audio-theremin-css" aria-labelledby="code-audio-theremin-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-thm {
+  position: relative;
+  width: min(92vw, 500px);
+  height: 230px;
+  overflow: hidden;
+  border: 4px solid #111;
+  border-radius: 20px;
+  background:
+    linear-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px) 0 0 / 100% 23px,
+    linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px) 0 0 / 25px 100%,
+    #0d1b14;
+  box-shadow: 8px 8px 0 #ff4fd8;
+  cursor: crosshair;
+  touch-action: none;
+}
+.fx-thm__canvas { display: block; width: 100%; height: 100%; }
+.fx-thm__label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  margin: 0;
+  color: rgba(124, 255, 79, .7);
+  font-size: 12px;
+  text-align: center;
+  pointer-events: none;
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-audio-theremin-js" aria-labelledby="code-audio-theremin-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// マウスの x で周波数、y で音量を変える。AnalyserNode の「波形データ」をそのまま線で描く</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;theremin&quot;]&#x27;).forEach((pad) =&gt; {
+    const cv = pad.querySelector(&#x27;canvas&#x27;);
+    const ctx = cv.getContext(&#x27;2d&#x27;);
+    let ac, osc, gain, analyser, wave;
+    const init = () =&gt; {
+      ac = new (window.AudioContext || window.webkitAudioContext)();
+      osc = ac.createOscillator();
+      gain = ac.createGain();
+      analyser = ac.createAnalyser();
+      analyser.fftSize = 1024;
+      wave = new Uint8Array(analyser.fftSize);
+      osc.type = &#x27;triangle&#x27;;
+      gain.gain.value = 0;
+      osc.connect(gain).connect(analyser).connect(ac.destination);
+      osc.start();
+    };
+    const play = (e) =&gt; {
+      if (!ac) init();
+      ac.resume();
+      const r = pad.getBoundingClientRect();
+      const x = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
+      const y = Math.min(1, Math.max(0, (e.clientY - r.top) / r.height));
+      const freq = 130 * Math.pow(2, x * 3);                 <span class="c">// 3オクターブぶん</span>
+      osc.frequency.setTargetAtTime(freq, ac.currentTime, .03);
+      gain.gain.setTargetAtTime((1 - y) * .18, ac.currentTime, .05);
+    };
+    const silence = () =&gt; { if (gain) gain.gain.setTargetAtTime(0, ac.currentTime, .08); };
+    pad.addEventListener(&#x27;pointerdown&#x27;, play);
+    pad.addEventListener(&#x27;pointermove&#x27;, play);
+    pad.addEventListener(&#x27;pointerleave&#x27;, silence);
+    pad.addEventListener(&#x27;pointerup&#x27;, (e) =&gt; { if (e.pointerType === &#x27;touch&#x27;) silence(); });
+
+    let W, H;
+    const resize = () =&gt; {
+      const d = window.devicePixelRatio || 1;
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * d; cv.height = H * d;
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+    };
+    resize();
+    addEventListener(&#x27;resize&#x27;, resize);
+
+    (function loop(t) {
+      ctx.clearRect(0, 0, W, H);
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = &#x27;#7cff4f&#x27;;
+      ctx.shadowColor = &#x27;#7cff4f&#x27;;
+      ctx.shadowBlur = 10;
+      ctx.beginPath();
+      if (analyser) analyser.getByteTimeDomainData(wave);
+      for (let x = 0; x &lt;= W; x += 2) {
+        const i = Math.floor((x / W) * (wave ? wave.length : 1));
+        const v = wave ? (wave[i] - 128) / 128 : Math.sin(x / 30 + (t || 0) / 400) * .03;
+        const y = H / 2 + v * H * .45;
+        x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+      requestAnimationFrame(loop);
+    })();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/audio/theremin/</p>
+        </div>
+      </article>
+      <article class="g-card" id="sound-buttons">
+        <header class="g-card__head">
+          <span class="g-card__no">04</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ピコピコ効果音</h2>
+            <p class="g-card__en">Sound Buttons</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/audio/sound-buttons/index.html" title="ピコピコ効果音の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">押すと「ポンッ」「チャリン」「ピョーン」「ビーム」など、ゲームみたいな効果音が鳴って、ボタンもはねる。</p>
+          <p class="g-card__use"><b>使いどころ</b>ゲーム風サイト・キッズ向け・押して楽しいおまけ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/audio/sound-buttons/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ピコピコ効果音のコード">
+            <button class="g-tab" role="tab" id="code-audio-sound-buttons-html-tab" aria-controls="code-audio-sound-buttons-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-audio-sound-buttons-css-tab" aria-controls="code-audio-sound-buttons-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-audio-sound-buttons-js-tab" aria-controls="code-audio-sound-buttons-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-audio-sound-buttons-html" aria-labelledby="code-audio-sound-buttons-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-sfx&quot; data-fx=&quot;sound-buttons&quot;&gt;
+  &lt;button data-sound=&quot;pop&quot;   style=&quot;--c: #ff3d7f&quot;&gt;ポンッ&lt;/button&gt;
+  &lt;button data-sound=&quot;coin&quot;  style=&quot;--c: #ffd400&quot;&gt;チャリン&lt;/button&gt;
+  &lt;button data-sound=&quot;jump&quot;  style=&quot;--c: #7cff4f&quot;&gt;ピョーン&lt;/button&gt;
+  &lt;button data-sound=&quot;laser&quot; style=&quot;--c: #00c2ff&quot;&gt;ビーム&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-audio-sound-buttons-css" aria-labelledby="code-audio-sound-buttons-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-sfx { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; width: min(90vw, 380px); }
+.fx-sfx button {
+  position: relative;
+  padding: 22px 10px;
+  border: 4px solid #111;
+  border-radius: 18px;
+  background: var(--c);
+  color: #111;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 7px 0 #111;
+  transition: transform .1s, box-shadow .1s;
+}
+.fx-sfx button:active { transform: translateY(5px); box-shadow: 0 2px 0 #111; }
+.fx-sfx button.is-play { animation: fx-sfx-boing .4s cubic-bezier(.2, 1.8, .4, 1); }
+.fx-sfx button.is-play::after {         <span class="c">/* 音の輪が広がる */</span>
+  content: &quot;&quot;;
+  position: absolute;
+  inset: -4px;
+  border: 4px solid var(--c);
+  border-radius: 18px;
+  animation: fx-sfx-ring .5s ease-out forwards;
+}
+@keyframes fx-sfx-boing { 40% { transform: scale(1.12) rotate(-3deg); } }
+@keyframes fx-sfx-ring  { to { transform: scale(1.35); opacity: 0; } }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-audio-sound-buttons-js" aria-labelledby="code-audio-sound-buttons-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// それぞれの効果音を「音の高さの動き」と「音量の消え方」で作る（音声ファイルなし）</span>
+(() =&gt; {
+  let ac;
+  const tone = (type, from, to, len, vol = .2, delay = 0) =&gt; {
+    const t = ac.currentTime + delay;
+    const o = ac.createOscillator(), g = ac.createGain();
+    o.type = type;
+    o.frequency.setValueAtTime(from, t);
+    o.frequency.exponentialRampToValueAtTime(to, t + len);
+    g.gain.setValueAtTime(vol, t);
+    g.gain.exponentialRampToValueAtTime(.0001, t + len);
+    o.connect(g).connect(ac.destination);
+    o.start(t); o.stop(t + len);
+  };
+  const sounds = {
+    pop:   () =&gt; tone(&#x27;sine&#x27;, 900, 200, .12, .3),
+    coin:  () =&gt; { tone(&#x27;square&#x27;, 988, 988, .08, .12); tone(&#x27;square&#x27;, 1319, 1319, .35, .12, .08); },
+    jump:  () =&gt; tone(&#x27;square&#x27;, 220, 880, .25, .12),
+    laser: () =&gt; tone(&#x27;sawtooth&#x27;, 1800, 120, .35, .1),
+  };
+  document.querySelectorAll(&#x27;[data-fx=&quot;sound-buttons&quot;] [data-sound]&#x27;).forEach((btn) =&gt; {
+    btn.addEventListener(&#x27;click&#x27;, () =&gt; {
+      ac = ac || new (window.AudioContext || window.webkitAudioContext)();
+      ac.resume();
+      sounds[btn.dataset.sound]();
+      btn.classList.remove(&#x27;is-play&#x27;);
+      void btn.offsetWidth;
+      btn.classList.add(&#x27;is-play&#x27;);
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/audio/sound-buttons/</p>
+        </div>
+      </article>
+  </div>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="3d.html" style="--cat:#00e0c6;--on:#111"><small>← 前の種類</small>3D</a><a class="g-pager__link g-pager__link--next" href="chart.html" style="--cat:#ffb020;--on:#111"><small>次の種類 →</small>データ可視化</a></nav>
+</main>
+<footer class="g-footer">
+  <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
+  <p>EFFECT GALLERY — 116 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+</footer>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

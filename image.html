@@ -38,21 +38,25 @@
       <li><a class="g-pill" href="loading.html" style="--cat:#c6ff00;--on:#111"><span>11</span>読み込み</a></li>
       <li><a class="g-pill" href="toast.html" style="--cat:#ff6b4a;--on:#111"><span>12</span>通知</a></li>
       <li><a class="g-pill" href="3d.html" style="--cat:#00e0c6;--on:#111"><span>13</span>3D</a></li>
+      <li><a class="g-pill" href="audio.html" style="--cat:#ff4fd8;--on:#111"><span>14</span>音・サウンド</a></li>
+      <li><a class="g-pill" href="chart.html" style="--cat:#ffb020;--on:#111"><span>15</span>データ可視化</a></li>
+      <li><a class="g-pill" href="input.html" style="--cat:#8a7dff;--on:#fff"><span>16</span>入力・操作</a></li>
+      <li><a class="g-pill" href="timer.html" style="--cat:#3ddc84;--on:#111"><span>17</span>時刻・カウント</a></li>
     </ul>
   </nav>
 </header>
 <main id="main">
   <section class="g-hero" style="--cat:#4f7dff;--on:#fff">
-    <p class="g-hero__no">10 <span>/ 13</span></p>
+    <p class="g-hero__no">10 <span>/ 17</span></p>
     <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:5">IMAGE</span><span class="g-hero__jp">画像</span></h1>
     <p class="g-hero__desc">比べる・拡大する・スライドするなど、写真やイラストを引き立てるエフェクト。</p>
-    <p class="g-hero__count" aria-label="5種類"><b>5</b>EFFECTS</p>
+    <p class="g-hero__count" aria-label="8種類"><b>8</b>EFFECTS</p>
   </section>
   <div class="g-tape" aria-hidden="true" style="--cat:#4f7dff;--on:#fff">
-    <div class="g-tape__track"><span>BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ </span><span>BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ </span></div>
+    <div class="g-tape__track"><span>BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ COLOR SPOTLIGHT ✦ FOCUS IN ✦ SPIN &amp; ZOOM ✦ BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ COLOR SPOTLIGHT ✦ FOCUS IN ✦ SPIN &amp; ZOOM ✦ </span><span>BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ COLOR SPOTLIGHT ✦ FOCUS IN ✦ SPIN &amp; ZOOM ✦ BEFORE / AFTER ✦ MAGNIFIER LENS ✦ CAROUSEL ✦ WIPE REVEAL ✦ SCATTERED POLAROIDS ✦ COLOR SPOTLIGHT ✦ FOCUS IN ✦ SPIN &amp; ZOOM ✦ </span></div>
   </div>
   <nav class="g-jump" aria-label="この種類のエフェクト">
-    <ul><li><a href="#before-after">ビフォーアフター</a></li><li><a href="#magnifier">虫めがねズーム</a></li><li><a href="#carousel">くるくるカルーセル</a></li><li><a href="#wipe-reveal">色の幕でリビール</a></li><li><a href="#polaroid">ちらばり写真</a></li></ul>
+    <ul><li><a href="#before-after">ビフォーアフター</a></li><li><a href="#magnifier">虫めがねズーム</a></li><li><a href="#carousel">くるくるカルーセル</a></li><li><a href="#wipe-reveal">色の幕でリビール</a></li><li><a href="#polaroid">ちらばり写真</a></li><li><a href="#color-pop">白黒からカラー</a></li><li><a href="#focus-in">ピントが合う</a></li><li><a href="#spin-zoom">くるっとズーム</a></li></ul>
   </nav>
   <div class="g-grid">
       <article class="g-card" id="before-after">
@@ -566,12 +570,252 @@
           <p class="g-code__path">📁 effects/image/polaroid/</p>
         </div>
       </article>
+      <article class="g-card" id="color-pop">
+        <header class="g-card__head">
+          <span class="g-card__no">06</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">白黒からカラー</h2>
+            <p class="g-card__en">Color Spotlight</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/image/color-pop/index.html" title="白黒からカラーの見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">白黒の写真の上で、マウスのまわりだけ丸くカラーになる。外に出ると全体がふわっとカラーに戻る。</p>
+          <p class="g-card__use"><b>使いどころ</b>作品紹介・ビフォーアフターの演出・ブランド写真</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/image/color-pop/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="白黒からカラーのコード">
+            <button class="g-tab" role="tab" id="code-image-color-pop-html-tab" aria-controls="code-image-color-pop-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-image-color-pop-css-tab" aria-controls="code-image-color-pop-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-image-color-pop-js-tab" aria-controls="code-image-color-pop-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-image-color-pop-html" aria-labelledby="code-image-color-pop-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-cpop&quot; data-fx=&quot;color-pop&quot;&gt;
+  <span class="c">&lt;!-- 画像は自分のものに差しかえてね（2枚とも同じ画像） --&gt;</span>
+  &lt;img class=&quot;fx-cpop__img&quot; src=&quot;../../_shared/sample-beach.svg&quot; alt=&quot;夕暮れのビーチ&quot;&gt;
+  &lt;img class=&quot;fx-cpop__img fx-cpop__img--gray&quot; src=&quot;../../_shared/sample-beach.svg&quot; alt=&quot;&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-color-pop-css" aria-labelledby="code-image-color-pop-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-cpop {
+  --x: 50%;
+  --y: 50%;
+  --r: 0px;
+  position: relative;
+  width: min(90vw, 480px);
+  overflow: hidden;
+  border: 4px solid #111;
+  border-radius: 18px;
+  box-shadow: 8px 8px 0 #111;
+  cursor: crosshair;
+  touch-action: none;
+}
+.fx-cpop__img { display: block; width: 100%; }
+<span class="c">/* 上にかさねた白黒の画像に「穴」をあけて、下のカラーを見せる */</span>
+.fx-cpop__img--gray {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) brightness(.9);
+  -webkit-mask: radial-gradient(circle at var(--x) var(--y), transparent var(--r), #000 calc(var(--r) + 2px));
+          mask: radial-gradient(circle at var(--x) var(--y), transparent var(--r), #000 calc(var(--r) + 2px));
+  transition: opacity .6s;
+}
+.fx-cpop.is-idle .fx-cpop__img--gray { opacity: 0; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-color-pop-js" aria-labelledby="code-image-color-pop-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// マウスの位置を --x / --y に。穴の大きさ --r は、なめらかに広げたり縮めたりする</span>
+(() =&gt; {
+  document.querySelectorAll(&#x27;[data-fx=&quot;color-pop&quot;]&#x27;).forEach((root) =&gt; {
+    let r = 0, target = 0;
+    root.classList.add(&#x27;is-idle&#x27;);
+    root.addEventListener(&#x27;pointermove&#x27;, (e) =&gt; {
+      const b = root.getBoundingClientRect();
+      root.style.setProperty(&#x27;--x&#x27;, `${e.clientX - b.left}px`);
+      root.style.setProperty(&#x27;--y&#x27;, `${e.clientY - b.top}px`);
+      root.classList.remove(&#x27;is-idle&#x27;);
+      target = 80;
+    });
+    root.addEventListener(&#x27;pointerleave&#x27;, () =&gt; { target = 0; root.classList.add(&#x27;is-idle&#x27;); });
+    (function loop() {
+      r += (target - r) * .15;
+      root.style.setProperty(&#x27;--r&#x27;, `${r.toFixed(1)}px`);
+      requestAnimationFrame(loop);
+    })();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/image/color-pop/</p>
+        </div>
+      </article>
+      <article class="g-card" id="focus-in">
+        <header class="g-card__head">
+          <span class="g-card__no">07</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ピントが合う</h2>
+            <p class="g-card__en">Focus In</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/image/focus-in/index.html" title="ピントが合うの見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">画面に入ると、ぼやけて大きめだった写真が、カメラのピントが合うようにスッとくっきりになる。</p>
+          <p class="g-card__use"><b>使いどころ</b>ヒーロー画像・作品一覧・ブログのアイキャッチ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/image/focus-in/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ピントが合うのコード">
+            <button class="g-tab" role="tab" id="code-image-focus-in-html-tab" aria-controls="code-image-focus-in-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-image-focus-in-css-tab" aria-controls="code-image-focus-in-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-image-focus-in-js-tab" aria-controls="code-image-focus-in-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-image-focus-in-html" aria-labelledby="code-image-focus-in-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-focus-row&quot;&gt;
+  &lt;figure class=&quot;fx-focus&quot; data-fx=&quot;focus-in&quot;&gt;&lt;img src=&quot;../../_shared/sample-stage.svg&quot; alt=&quot;ライブステージ&quot;&gt;&lt;/figure&gt;
+  &lt;figure class=&quot;fx-focus&quot; data-fx=&quot;focus-in&quot; style=&quot;--d: .3s&quot;&gt;&lt;img src=&quot;../../_shared/sample-city.svg&quot; alt=&quot;夜の街&quot;&gt;&lt;/figure&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-focus-in-css" aria-labelledby="code-image-focus-in-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-focus-row { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; }
+.fx-focus {
+  width: min(42vw, 230px);
+  margin: 0;
+  overflow: hidden;
+  border: 4px solid #111;
+  border-radius: 14px;
+  box-shadow: 6px 6px 0 #111;
+}
+.fx-focus img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: blur(16px) saturate(.3);
+  transform: scale(1.25);
+  transition: filter 1.4s cubic-bezier(.2, .8, .2, 1) var(--d, 0s), transform 1.6s cubic-bezier(.2, .8, .2, 1) var(--d, 0s);
+}
+.fx-focus.is-in img { filter: blur(0) saturate(1); transform: scale(1); }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-focus-in-js" aria-labelledby="code-image-focus-in-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 画面に入ったら .is-in をつけて、ぼかしを外す</span>
+(() =&gt; {
+  const io = new IntersectionObserver((entries) =&gt; {
+    entries.forEach((en) =&gt; {
+      if (en.isIntersecting) { en.target.classList.add(&#x27;is-in&#x27;); io.unobserve(en.target); }
+    });
+  }, { threshold: .4 });
+  document.querySelectorAll(&#x27;[data-fx=&quot;focus-in&quot;]&#x27;).forEach((el) =&gt; io.observe(el));
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/image/focus-in/</p>
+        </div>
+      </article>
+      <article class="g-card" id="spin-zoom">
+        <header class="g-card__head">
+          <span class="g-card__no">08</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">くるっとズーム</h2>
+            <p class="g-card__en">Spin &amp; Zoom</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/image/spin-zoom/index.html" title="くるっとズームの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">丸く切りぬいた写真にマウスを乗せると、くるっと回りながらズームして、まわりに色のリングが広がる。CSSだけで動く。</p>
+          <p class="g-card__use"><b>使いどころ</b>メンバー紹介・プロフィール・アイコン一覧</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/image/spin-zoom/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="くるっとズームのコード">
+            <button class="g-tab" role="tab" id="code-image-spin-zoom-html-tab" aria-controls="code-image-spin-zoom-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-image-spin-zoom-css-tab" aria-controls="code-image-spin-zoom-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-image-spin-zoom-html" aria-labelledby="code-image-spin-zoom-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-spinz-row&quot;&gt;
+  &lt;a class=&quot;fx-spinz&quot; href=&quot;#&quot; style=&quot;--c: #ff3d7f&quot;&gt;&lt;img src=&quot;../../_shared/sample-stage.svg&quot; alt=&quot;&quot;&gt;&lt;span&gt;LIVE&lt;/span&gt;&lt;/a&gt;
+  &lt;a class=&quot;fx-spinz&quot; href=&quot;#&quot; style=&quot;--c: #ffd400&quot;&gt;&lt;img src=&quot;../../_shared/sample-beach.svg&quot; alt=&quot;&quot;&gt;&lt;span&gt;BEACH&lt;/span&gt;&lt;/a&gt;
+  &lt;a class=&quot;fx-spinz&quot; href=&quot;#&quot; style=&quot;--c: #00c2ff&quot;&gt;&lt;img src=&quot;../../_shared/sample-city.svg&quot; alt=&quot;&quot;&gt;&lt;span&gt;CITY&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-image-spin-zoom-css" aria-labelledby="code-image-spin-zoom-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-spinz-row { display: flex; flex-wrap: wrap; gap: 26px; justify-content: center; }
+.fx-spinz {
+  position: relative;
+  display: block;
+  width: min(26vw, 140px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  isolation: isolate;   <span class="c">/* リング（::before）を写真のうしろに置くため */</span>
+}
+.fx-spinz img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid #111;
+  border-radius: 50%;
+  transition: transform .7s cubic-bezier(.2, 1.3, .4, 1);
+}
+<span class="c">/* 色のリング */</span>
+.fx-spinz::before {
+  content: &quot;&quot;;
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border-radius: 50%;
+  background: var(--c);
+  transition: transform .5s cubic-bezier(.2, 1.6, .4, 1);
+}
+.fx-spinz span {
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  padding: 2px 12px;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: var(--c);
+  color: #111;
+  font-size: 14px;
+  transform: translateX(-50%) scale(0);
+  transition: transform .4s cubic-bezier(.2, 1.8, .4, 1) .1s;
+}
+.fx-spinz:hover img,
+.fx-spinz:focus-visible img { transform: rotate(360deg) scale(1.08); }
+.fx-spinz:hover::before,
+.fx-spinz:focus-visible::before { transform: scale(1.18); }
+.fx-spinz:hover span,
+.fx-spinz:focus-visible span { transform: translateX(-50%) scale(1); }</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/image/spin-zoom/</p>
+        </div>
+      </article>
   </div>
   <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="form.html" style="--cat:#ff9ecf;--on:#111"><small>← 前の種類</small>フォーム</a><a class="g-pager__link g-pager__link--next" href="loading.html" style="--cat:#c6ff00;--on:#111"><small>次の種類 →</small>読み込み</a></nav>
 </main>
 <footer class="g-footer">
   <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
-  <p>EFFECT GALLERY — 87 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+  <p>EFFECT GALLERY — 116 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
 </footer>
 <script src="assets/js/gallery.js"></script>
 </body>

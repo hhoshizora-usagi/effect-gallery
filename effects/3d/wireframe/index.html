@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ワイヤーフレーム（Wireframe Shapes）| EFFECT GALLERY</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<!-- demo.css は見本ページの土台（背景・中央寄せ）だけ。エフェクト本体は style.css / script.js -->
+<link rel="stylesheet" href="../../_shared/demo.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="demo">
+<div class="fx-wire-wrap">
+  <canvas class="fx-wire" data-fx="wireframe" role="img" aria-label="回転するワイヤーフレームの立体"></canvas>
+  <div class="fx-wire-btns">
+    <button data-shape="cube" aria-pressed="true">立方体</button>
+    <button data-shape="octa" aria-pressed="false">八面体</button>
+    <button data-shape="pyramid" aria-pressed="false">ピラミッド</button>
+  </div>
+</div>
+<p class="demo-hint" aria-hidden="true">ドラッグで回せるよ</p>
+<script src="script.js"></script>
+</body>
+</html>

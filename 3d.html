@@ -38,21 +38,25 @@
       <li><a class="g-pill" href="loading.html" style="--cat:#c6ff00;--on:#111"><span>11</span>読み込み</a></li>
       <li><a class="g-pill" href="toast.html" style="--cat:#ff6b4a;--on:#111"><span>12</span>通知</a></li>
       <li><a class="g-pill is-current" href="3d.html" style="--cat:#00e0c6;--on:#111" aria-current="page"><span>13</span>3D</a></li>
+      <li><a class="g-pill" href="audio.html" style="--cat:#ff4fd8;--on:#111"><span>14</span>音・サウンド</a></li>
+      <li><a class="g-pill" href="chart.html" style="--cat:#ffb020;--on:#111"><span>15</span>データ可視化</a></li>
+      <li><a class="g-pill" href="input.html" style="--cat:#8a7dff;--on:#fff"><span>16</span>入力・操作</a></li>
+      <li><a class="g-pill" href="timer.html" style="--cat:#3ddc84;--on:#111"><span>17</span>時刻・カウント</a></li>
     </ul>
   </nav>
 </header>
 <main id="main">
   <section class="g-hero" style="--cat:#00e0c6;--on:#111">
-    <p class="g-hero__no">13 <span>/ 13</span></p>
+    <p class="g-hero__no">13 <span>/ 17</span></p>
     <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:2">3D</span><span class="g-hero__jp">3D</span></h1>
     <p class="g-hero__desc">奥行きや回転で立体に見せる、３Ｄ表現のエフェクト集。</p>
-    <p class="g-hero__count" aria-label="6種類"><b>6</b>EFFECTS</p>
+    <p class="g-hero__count" aria-label="9種類"><b>9</b>EFFECTS</p>
   </section>
   <div class="g-tape" aria-hidden="true" style="--cat:#00e0c6;--on:#111">
-    <div class="g-tape__track"><span>3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ 3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ </span><span>3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ 3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ </span></div>
+    <div class="g-tape__track"><span>3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ DOT SPHERE ✦ WIRE GLOBE ✦ WIREFRAME SHAPES ✦ 3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ DOT SPHERE ✦ WIRE GLOBE ✦ WIREFRAME SHAPES ✦ </span><span>3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ DOT SPHERE ✦ WIRE GLOBE ✦ WIREFRAME SHAPES ✦ 3D FLIP CARD ✦ ROTATING CUBE ✦ 3D SPINNING TEXT ✦ 3D BUTTON ✦ 3D CAROUSEL ✦ PARALLAX 3D ✦ DOT SPHERE ✦ WIRE GLOBE ✦ WIREFRAME SHAPES ✦ </span></div>
   </div>
   <nav class="g-jump" aria-label="この種類のエフェクト">
-    <ul><li><a href="#flip-card">3D回転カード</a></li><li><a href="#cube">立方体回転</a></li><li><a href="#text-3d">3Dテキスト回転</a></li><li><a href="#button">3D立体ボタン</a></li><li><a href="#carousel-3d">3Dカルーセル</a></li><li><a href="#parallax-3d">3Dパララックス</a></li></ul>
+    <ul><li><a href="#flip-card">3D回転カード</a></li><li><a href="#cube">立方体回転</a></li><li><a href="#text-3d">3Dテキスト回転</a></li><li><a href="#button">3D立体ボタン</a></li><li><a href="#carousel-3d">3Dカルーセル</a></li><li><a href="#parallax-3d">3Dパララックス</a></li><li><a href="#sphere">つぶつぶ球体</a></li><li><a href="#globe">ワイヤー地球儀</a></li><li><a href="#wireframe">ワイヤーフレーム</a></li></ul>
   </nav>
   <div class="g-grid">
       <article class="g-card" id="flip-card">
@@ -498,12 +502,393 @@
           <p class="g-code__path">📁 effects/3d/parallax-3d/</p>
         </div>
       </article>
+      <article class="g-card" id="sphere">
+        <header class="g-card__head">
+          <span class="g-card__no">07</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">つぶつぶ球体</h2>
+            <p class="g-card__en">Dot Sphere</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/3d/sphere/index.html" title="つぶつぶ球体の見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">カラフルな点がきれいに並んだ球が、くるくる回る。ドラッグすると好きな向きに回せる。</p>
+          <p class="g-card__use"><b>使いどころ</b>テック系のヒーロー・ブランドロゴの背景・「つながり」の表現</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/3d/sphere/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="つぶつぶ球体のコード">
+            <button class="g-tab" role="tab" id="code-3d-sphere-html-tab" aria-controls="code-3d-sphere-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-3d-sphere-css-tab" aria-controls="code-3d-sphere-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-3d-sphere-js-tab" aria-controls="code-3d-sphere-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-3d-sphere-html" aria-labelledby="code-3d-sphere-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;canvas class=&quot;fx-sphere&quot; data-fx=&quot;sphere&quot; data-count=&quot;420&quot; role=&quot;img&quot; aria-label=&quot;回転する点の球体&quot;&gt;&lt;/canvas&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-sphere-css" aria-labelledby="code-3d-sphere-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-sphere {
+  display: block;
+  width: min(86vw, 340px);
+  aspect-ratio: 1;
+  cursor: grab;
+  touch-action: none;
+}
+.fx-sphere:active { cursor: grabbing; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-sphere-js" aria-labelledby="code-3d-sphere-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 球の表面に点を均等にならべて（フィボナッチ球）、回転させながら描く</span>
+(() =&gt; {
+  <span class="c">// 点 (x, y, z) を Y軸・X軸まわりに回転させてから、遠近法で画面の座標にする</span>
+  const project = (p, ay, ax, size, cx, cy) =&gt; {
+    let { x, y, z } = p;
+    [x, z] = [x * Math.cos(ay) - z * Math.sin(ay), x * Math.sin(ay) + z * Math.cos(ay)];
+    [y, z] = [y * Math.cos(ax) - z * Math.sin(ax), y * Math.sin(ax) + z * Math.cos(ax)];
+    const k = 3 / (3 + z);                 <span class="c">// 奥にあるほど小さく</span>
+    return { x: cx + x * size * k, y: cy + y * size * k, z, k };
+  };
+  <span class="c">// ドラッグで回せるようにする（離すと、勢いが少し残る）</span>
+  const draggable = (el, state) =&gt; {
+    let last = null;
+    el.addEventListener(&#x27;pointerdown&#x27;, (e) =&gt; { last = { x: e.clientX, y: e.clientY }; el.setPointerCapture(e.pointerId); });
+    el.addEventListener(&#x27;pointermove&#x27;, (e) =&gt; {
+      if (!last) return;
+      state.vy = (e.clientX - last.x) * .01;
+      state.vx = (e.clientY - last.y) * .01;
+      last = { x: e.clientX, y: e.clientY };
+    });
+    const up = () =&gt; { last = null; };
+    el.addEventListener(&#x27;pointerup&#x27;, up);
+    el.addEventListener(&#x27;pointercancel&#x27;, up);
+  };
+
+  document.querySelectorAll(&#x27;[data-fx=&quot;sphere&quot;]&#x27;).forEach((cv) =&gt; {
+    const ctx = cv.getContext(&#x27;2d&#x27;);
+    const n = +cv.dataset.count || 400;
+    const golden = Math.PI * (3 - Math.sqrt(5));
+    const pts = Array.from({ length: n }, (_, i) =&gt; {
+      const y = 1 - (i / (n - 1)) * 2, r = Math.sqrt(1 - y * y), t = golden * i;
+      return { x: Math.cos(t) * r, y, z: Math.sin(t) * r, h: (i / n) * 360 };
+    });
+    const state = { ay: 0, ax: -.3, vy: .008, vx: 0 };
+    draggable(cv, state);
+    let W, H;
+    const resize = () =&gt; {
+      const d = window.devicePixelRatio || 1;
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * d; cv.height = H * d;
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+    };
+    resize();
+    addEventListener(&#x27;resize&#x27;, resize);
+
+    (function loop() {
+      state.ay += state.vy; state.ax += state.vx;
+      state.vy += (.008 - state.vy) * .02;   <span class="c">// 少しずつ、いつもの回転に戻る</span>
+      state.vx *= .95;
+      ctx.clearRect(0, 0, W, H);
+      pts.map((p) =&gt; ({ ...project(p, state.ay, state.ax, W * .38, W / 2, H / 2), h: p.h }))
+        .sort((a, b) =&gt; b.z - a.z)            <span class="c">// 奥から順に描く</span>
+        .forEach((p) =&gt; {
+          ctx.globalAlpha = .25 + (1 - (p.z + 1) / 2) * .75;
+          ctx.fillStyle = `hsl(${p.h} 95% 62%)`;
+          ctx.beginPath(); ctx.arc(p.x, p.y, 2.6 * p.k, 0, Math.PI * 2); ctx.fill();
+        });
+      ctx.globalAlpha = 1;
+      requestAnimationFrame(loop);
+    })();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/3d/sphere/</p>
+        </div>
+      </article>
+      <article class="g-card" id="globe">
+        <header class="g-card__head">
+          <span class="g-card__no">08</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ワイヤー地球儀</h2>
+            <p class="g-card__en">Wire Globe</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/3d/globe/index.html" title="ワイヤー地球儀の見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">緯線と経線でできた地球儀がまわり、世界の都市に光る点がピコピコまたたく。ドラッグで回せる。</p>
+          <p class="g-card__use"><b>使いどころ</b>海外向け・グローバル・旅行・「世界とつながる」紹介</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/3d/globe/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ワイヤー地球儀のコード">
+            <button class="g-tab" role="tab" id="code-3d-globe-html-tab" aria-controls="code-3d-globe-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-3d-globe-css-tab" aria-controls="code-3d-globe-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-3d-globe-js-tab" aria-controls="code-3d-globe-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-3d-globe-html" aria-labelledby="code-3d-globe-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;canvas class=&quot;fx-globe&quot; data-fx=&quot;globe&quot; role=&quot;img&quot; aria-label=&quot;回転するワイヤーフレームの地球儀&quot;&gt;&lt;/canvas&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-globe-css" aria-labelledby="code-3d-globe-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-globe {
+  display: block;
+  width: min(86vw, 340px);
+  aspect-ratio: 1;
+  cursor: grab;
+  touch-action: none;
+}
+.fx-globe:active { cursor: grabbing; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-globe-js" aria-labelledby="code-3d-globe-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 緯度・経度の線を点の列として作り、回転させて線でつなぐ。都市は光る点で表す</span>
+(() =&gt; {
+  <span class="c">// 点 (x, y, z) を Y軸・X軸まわりに回転させてから、遠近法で画面の座標にする</span>
+  const project = (p, ay, ax, size, cx, cy) =&gt; {
+    let { x, y, z } = p;
+    [x, z] = [x * Math.cos(ay) - z * Math.sin(ay), x * Math.sin(ay) + z * Math.cos(ay)];
+    [y, z] = [y * Math.cos(ax) - z * Math.sin(ax), y * Math.sin(ax) + z * Math.cos(ax)];
+    const k = 3 / (3 + z);                 <span class="c">// 奥にあるほど小さく</span>
+    return { x: cx + x * size * k, y: cy + y * size * k, z, k };
+  };
+  <span class="c">// ドラッグで回せるようにする（離すと、勢いが少し残る）</span>
+  const draggable = (el, state) =&gt; {
+    let last = null;
+    el.addEventListener(&#x27;pointerdown&#x27;, (e) =&gt; { last = { x: e.clientX, y: e.clientY }; el.setPointerCapture(e.pointerId); });
+    el.addEventListener(&#x27;pointermove&#x27;, (e) =&gt; {
+      if (!last) return;
+      state.vy = (e.clientX - last.x) * .01;
+      state.vx = (e.clientY - last.y) * .01;
+      last = { x: e.clientX, y: e.clientY };
+    });
+    const up = () =&gt; { last = null; };
+    el.addEventListener(&#x27;pointerup&#x27;, up);
+    el.addEventListener(&#x27;pointercancel&#x27;, up);
+  };
+
+  const toXYZ = (lat, lon) =&gt; {
+    const a = lat * Math.PI / 180, b = lon * Math.PI / 180;
+    return { x: Math.cos(a) * Math.sin(b), y: -Math.sin(a), z: Math.cos(a) * Math.cos(b) };
+  };
+  <span class="c">// 見本の都市（緯度, 経度）：東京・シンガポール・ロンドン・ニューヨーク・シドニー・カイロ・サンパウロ</span>
+  const cities = [[35.7, 139.7], [1.35, 103.8], [51.5, -0.1], [40.7, -74], [-33.9, 151.2], [30, 31.2], [-23.5, -46.6]]
+    .map(([la, lo]) =&gt; toXYZ(la, lo));
+  const lines = [];
+  for (let lat = -60; lat &lt;= 60; lat += 30) lines.push(Array.from({ length: 73 }, (_, i) =&gt; toXYZ(lat, i * 5)));
+  for (let lon = 0; lon &lt; 180; lon += 30) lines.push(Array.from({ length: 73 }, (_, i) =&gt; toXYZ(i * 5 - 180, lon)));
+
+  document.querySelectorAll(&#x27;[data-fx=&quot;globe&quot;]&#x27;).forEach((cv) =&gt; {
+    const ctx = cv.getContext(&#x27;2d&#x27;);
+    const state = { ay: 0, ax: -.35, vy: .006, vx: 0 };
+    draggable(cv, state);
+    let W, H;
+    const resize = () =&gt; {
+      const d = window.devicePixelRatio || 1;
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * d; cv.height = H * d;
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+    };
+    resize();
+    addEventListener(&#x27;resize&#x27;, resize);
+
+    (function loop(t) {
+      state.ay += state.vy; state.ax += state.vx;
+      state.vy += (.006 - state.vy) * .02;
+      state.vx *= .95;
+      const R = W * .4;
+      ctx.clearRect(0, 0, W, H);
+      const glow = ctx.createRadialGradient(W / 2, H / 2, R * .2, W / 2, H / 2, R * 1.1);
+      glow.addColorStop(0, &#x27;rgba(0, 194, 255, .25)&#x27;);
+      glow.addColorStop(1, &#x27;rgba(0, 194, 255, 0)&#x27;);
+      ctx.fillStyle = glow;
+      ctx.fillRect(0, 0, W, H);
+      ctx.lineWidth = 1.2;
+      lines.forEach((line) =&gt; {
+        for (let i = 1; i &lt; line.length; i++) {
+          const a = project(line[i - 1], state.ay, state.ax, R, W / 2, H / 2);
+          const b = project(line[i], state.ay, state.ax, R, W / 2, H / 2);
+          const front = (a.z + b.z) / 2 &lt; 0;     <span class="c">// 手前の線は濃く、裏側は薄く</span>
+          ctx.strokeStyle = front ? &#x27;rgba(0, 224, 198, .9)&#x27; : &#x27;rgba(0, 224, 198, .15)&#x27;;
+          ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+        }
+      });
+      cities.forEach((c, i) =&gt; {
+        const p = project(c, state.ay, state.ax, R, W / 2, H / 2);
+        if (p.z &gt; 0) return;                     <span class="c">// 裏側の都市は描かない</span>
+        const pulse = 4 + Math.sin((t || 0) / 300 + i) * 2;
+        ctx.fillStyle = &#x27;#ffd400&#x27;;
+        ctx.beginPath(); ctx.arc(p.x, p.y, pulse, 0, Math.PI * 2); ctx.fill();
+        ctx.strokeStyle = &#x27;rgba(255, 61, 127, .8)&#x27;;
+        ctx.beginPath(); ctx.arc(p.x, p.y, pulse * 2.2, 0, Math.PI * 2); ctx.stroke();
+      });
+      requestAnimationFrame(loop);
+    })();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/3d/globe/</p>
+        </div>
+      </article>
+      <article class="g-card" id="wireframe">
+        <header class="g-card__head">
+          <span class="g-card__no">09</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">ワイヤーフレーム</h2>
+            <p class="g-card__en">Wireframe Shapes</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/3d/wireframe/index.html" title="ワイヤーフレームの見本" loading="lazy" style="height:380px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">線だけでできた立方体・正八面体・ピラミッドが、ネオンみたいに光りながら回る。ボタンで形を切りかえ。</p>
+          <p class="g-card__use"><b>使いどころ</b>SF・ゲーム・テック系のヒーロー、ローディング画面</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/3d/wireframe/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="ワイヤーフレームのコード">
+            <button class="g-tab" role="tab" id="code-3d-wireframe-html-tab" aria-controls="code-3d-wireframe-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-3d-wireframe-css-tab" aria-controls="code-3d-wireframe-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-3d-wireframe-js-tab" aria-controls="code-3d-wireframe-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-3d-wireframe-html" aria-labelledby="code-3d-wireframe-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-wire-wrap&quot;&gt;
+  &lt;canvas class=&quot;fx-wire&quot; data-fx=&quot;wireframe&quot; role=&quot;img&quot; aria-label=&quot;回転するワイヤーフレームの立体&quot;&gt;&lt;/canvas&gt;
+  &lt;div class=&quot;fx-wire-btns&quot;&gt;
+    &lt;button data-shape=&quot;cube&quot; aria-pressed=&quot;true&quot;&gt;立方体&lt;/button&gt;
+    &lt;button data-shape=&quot;octa&quot; aria-pressed=&quot;false&quot;&gt;八面体&lt;/button&gt;
+    &lt;button data-shape=&quot;pyramid&quot; aria-pressed=&quot;false&quot;&gt;ピラミッド&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-wireframe-css" aria-labelledby="code-3d-wireframe-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-wire {
+  display: block;
+  width: min(70vw, 260px);
+  aspect-ratio: 1;
+  cursor: grab;
+  touch-action: none;
+}
+.fx-wire:active { cursor: grabbing; }
+
+.fx-wire-wrap { display: grid; justify-items: center; gap: 10px; }
+.fx-wire-btns { display: flex; gap: 8px; }
+.fx-wire-btns button {
+  padding: .4em 1em;
+  border: 2px solid #ff4fd8;
+  border-radius: 999px;
+  background: transparent;
+  color: #ff4fd8;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.fx-wire-btns button[aria-pressed=&quot;true&quot;] { background: #ff4fd8; color: #111; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-3d-wireframe-js" aria-labelledby="code-3d-wireframe-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 立体を「頂点の座標」と「どの頂点どうしを線でつなぐか」で表して、回転させて描く</span>
+(() =&gt; {
+  <span class="c">// 点 (x, y, z) を Y軸・X軸まわりに回転させてから、遠近法で画面の座標にする</span>
+  const project = (p, ay, ax, size, cx, cy) =&gt; {
+    let { x, y, z } = p;
+    [x, z] = [x * Math.cos(ay) - z * Math.sin(ay), x * Math.sin(ay) + z * Math.cos(ay)];
+    [y, z] = [y * Math.cos(ax) - z * Math.sin(ax), y * Math.sin(ax) + z * Math.cos(ax)];
+    const k = 3 / (3 + z);                 <span class="c">// 奥にあるほど小さく</span>
+    return { x: cx + x * size * k, y: cy + y * size * k, z, k };
+  };
+  <span class="c">// ドラッグで回せるようにする（離すと、勢いが少し残る）</span>
+  const draggable = (el, state) =&gt; {
+    let last = null;
+    el.addEventListener(&#x27;pointerdown&#x27;, (e) =&gt; { last = { x: e.clientX, y: e.clientY }; el.setPointerCapture(e.pointerId); });
+    el.addEventListener(&#x27;pointermove&#x27;, (e) =&gt; {
+      if (!last) return;
+      state.vy = (e.clientX - last.x) * .01;
+      state.vx = (e.clientY - last.y) * .01;
+      last = { x: e.clientX, y: e.clientY };
+    });
+    const up = () =&gt; { last = null; };
+    el.addEventListener(&#x27;pointerup&#x27;, up);
+    el.addEventListener(&#x27;pointercancel&#x27;, up);
+  };
+
+  const shapes = {
+    cube: {
+      v: [[-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1], [-1, -1, 1], [1, -1, 1], [1, 1, 1], [-1, 1, 1]].map((p) =&gt; p.map((n) =&gt; n * .62)),
+      e: [[0, 1], [1, 2], [2, 3], [3, 0], [4, 5], [5, 6], [6, 7], [7, 4], [0, 4], [1, 5], [2, 6], [3, 7]],
+    },
+    octa: {
+      v: [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]],
+      e: [[0, 2], [0, 3], [0, 4], [0, 5], [1, 2], [1, 3], [1, 4], [1, 5], [2, 4], [4, 3], [3, 5], [5, 2]],
+    },
+    pyramid: {
+      v: [[0, -1, 0], [-.85, .6, -.85], [.85, .6, -.85], [.85, .6, .85], [-.85, .6, .85]],
+      e: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [2, 3], [3, 4], [4, 1]],
+    },
+  };
+  document.querySelectorAll(&#x27;[data-fx=&quot;wireframe&quot;]&#x27;).forEach((cv) =&gt; {
+    const ctx = cv.getContext(&#x27;2d&#x27;);
+    const state = { ay: 0, ax: .5, vy: .015, vx: .004 };
+    let shape = shapes.cube;
+    draggable(cv, state);
+    cv.parentElement.querySelectorAll(&#x27;[data-shape]&#x27;).forEach((btn, _, all) =&gt; {
+      btn.addEventListener(&#x27;click&#x27;, () =&gt; {
+        shape = shapes[btn.dataset.shape];
+        all.forEach((b) =&gt; b.setAttribute(&#x27;aria-pressed&#x27;, String(b === btn)));
+      });
+    });
+    let W, H;
+    const resize = () =&gt; {
+      const d = window.devicePixelRatio || 1;
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * d; cv.height = H * d;
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+    };
+    resize();
+    addEventListener(&#x27;resize&#x27;, resize);
+
+    (function loop(t) {
+      state.ay += state.vy; state.ax += state.vx;
+      state.vy += (.015 - state.vy) * .02;
+      state.vx += (.004 - state.vx) * .02;
+      ctx.clearRect(0, 0, W, H);
+      const pts = shape.v.map(([x, y, z]) =&gt; project({ x, y, z }, state.ay, state.ax, W * .36, W / 2, H / 2));
+      ctx.lineWidth = 3;
+      ctx.lineCap = &#x27;round&#x27;;
+      ctx.shadowBlur = 14;
+      shape.e.forEach(([a, b], i) =&gt; {
+        const c = `hsl(${((t || 0) / 20 + i * 25) % 360} 100% 62%)`;
+        ctx.strokeStyle = c;
+        ctx.shadowColor = c;
+        ctx.beginPath(); ctx.moveTo(pts[a].x, pts[a].y); ctx.lineTo(pts[b].x, pts[b].y); ctx.stroke();
+      });
+      ctx.shadowBlur = 0;
+      ctx.fillStyle = &#x27;#fff&#x27;;
+      pts.forEach((p) =&gt; { ctx.beginPath(); ctx.arc(p.x, p.y, 4 * p.k, 0, Math.PI * 2); ctx.fill(); });
+      requestAnimationFrame(loop);
+    })();
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/3d/wireframe/</p>
+        </div>
+      </article>
   </div>
-  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="toast.html" style="--cat:#ff6b4a;--on:#111"><small>← 前の種類</small>通知</a><a class="g-pager__link g-pager__link--next" href="index.html"><small>トップへ →</small>ぜんぶの種類</a></nav>
+  <nav class="g-pager" aria-label="ほかの種類"><a class="g-pager__link" href="toast.html" style="--cat:#ff6b4a;--on:#111"><small>← 前の種類</small>通知</a><a class="g-pager__link g-pager__link--next" href="audio.html" style="--cat:#ff4fd8;--on:#111"><small>次の種類 →</small>音・サウンド</a></nav>
 </main>
 <footer class="g-footer">
   <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
-  <p>EFFECT GALLERY — 87 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+  <p>EFFECT GALLERY — 116 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
 </footer>
 <script src="assets/js/gallery.js"></script>
 </body>

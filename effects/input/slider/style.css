@@ -1,0 +1,57 @@
+.fx-slider { width: min(88vw, 400px); color: #fff; font-family: "Zen Kaku Gothic New", system-ui, sans-serif; }
+.fx-slider__label { display: block; margin-bottom: 52px; font-weight: 700; font-size: 18px; text-align: center; }
+.fx-slider__wrap { --p: 50; --c: hsl(calc(var(--p) * 1.2) 90% 55%); position: relative; }
+.fx-slider__bubble {
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: calc(var(--p) * 1%);
+  padding: 4px 12px;
+  border: 3px solid #111;
+  border-radius: 12px;
+  background: var(--c);
+  color: #111;
+  font: 18px "Dela Gothic One", sans-serif;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  transition: background .2s;
+}
+.fx-slider__bubble::after {            /* 吹き出しのしっぽ */
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  border: 8px solid transparent;
+  border-top-color: #111;
+  transform: translateX(-50%);
+}
+/* ブラウザ標準の見た目を消して、自分で作る */
+.fx-slider__input {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 18px;
+  margin: 0;
+  border: 3px solid #111;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--c) calc(var(--p) * 1%), #3a3354 0);
+  cursor: pointer;
+}
+.fx-slider__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 38px;
+  height: 38px;
+  border: 4px solid #111;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 0 #111;
+  transition: transform .2s cubic-bezier(.2, 1.8, .4, 1);
+}
+.fx-slider__input::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #111;
+  border-radius: 50%;
+  background: #fff;
+}
+.fx-slider__input:active::-webkit-slider-thumb { transform: scale(1.25); }
+.fx-slider__input:focus-visible { outline: 4px solid #00c2ff; outline-offset: 4px; }

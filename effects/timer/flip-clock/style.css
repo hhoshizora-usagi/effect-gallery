@@ -1,0 +1,41 @@
+.fx-flipc { display: flex; align-items: center; gap: 6px; }
+.fx-flipc__card {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: clamp(40px, 11vw, 62px);
+  height: clamp(60px, 16vw, 90px);
+  border-radius: 10px;
+  background: #222;
+  color: #fff;
+  font-size: clamp(36px, 10vw, 58px);
+  line-height: 1;
+  box-shadow: 0 6px 0 #000, inset 0 0 0 2px #333;
+  perspective: 300px;
+}
+.fx-flipc__card::after {                 /* まん中の切れ目 */
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: #111;
+}
+/* めくれる上半分（JS で作って、アニメが終わったら消す） */
+.fx-flipc__leaf {
+  position: absolute;
+  inset: 0 0 50% 0;
+  display: grid;
+  place-items: end center;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  background: #2c2c2c;
+  transform-origin: bottom;
+  animation: fx-flipc .45s cubic-bezier(.5, 0, .7, 1) forwards;
+  backface-visibility: hidden;
+}
+.fx-flipc__leaf span { transform: translateY(50%); }
+.fx-flipc__colon { color: #3ddc84; font-size: clamp(30px, 8vw, 48px); animation: fx-flipc-blink 1s steps(1) infinite; }
+@keyframes fx-flipc { to { transform: rotateX(-180deg); } }
+@keyframes fx-flipc-blink { 50% { opacity: .2; } }

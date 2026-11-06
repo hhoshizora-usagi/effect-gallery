@@ -1,0 +1,22 @@
+.fx-wire {
+  display: block;
+  width: min(70vw, 260px);
+  aspect-ratio: 1;
+  cursor: grab;
+  touch-action: none;
+}
+.fx-wire:active { cursor: grabbing; }
+
+.fx-wire-wrap { display: grid; justify-items: center; gap: 10px; }
+.fx-wire-btns { display: flex; gap: 8px; }
+.fx-wire-btns button {
+  padding: .4em 1em;
+  border: 2px solid #ff4fd8;
+  border-radius: 999px;
+  background: transparent;
+  color: #ff4fd8;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.fx-wire-btns button[aria-pressed="true"] { background: #ff4fd8; color: #111; }

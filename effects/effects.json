@@ -116,6 +116,42 @@
       "color": "#00e0c6",
       "ink": "#111",
       "desc": "奥行きや回転で立体に見せる、３Ｄ表現のエフェクト集。"
+    },
+    {
+      "id": "audio",
+      "no": "14",
+      "name": "音・サウンド",
+      "en": "AUDIO",
+      "color": "#ff4fd8",
+      "ink": "#111",
+      "desc": "音に合わせて動く・押すと鳴るなど、耳でも楽しめるエフェクト。"
+    },
+    {
+      "id": "chart",
+      "no": "15",
+      "name": "データ可視化",
+      "en": "CHART",
+      "color": "#ffb020",
+      "ink": "#111",
+      "desc": "数字をグラフやゲージにして、ひと目で伝わるように動かすエフェクト。"
+    },
+    {
+      "id": "input",
+      "no": "16",
+      "name": "入力・操作",
+      "en": "INPUT",
+      "color": "#8a7dff",
+      "ink": "#fff",
+      "desc": "ドラッグ・スライダー・星をつけるなど、さわって操作するのが楽しくなるエフェクト。"
+    },
+    {
+      "id": "timer",
+      "no": "17",
+      "name": "時刻・カウント",
+      "en": "TIMER",
+      "color": "#3ddc84",
+      "ink": "#111",
+      "desc": "カウントダウンや時計、砂時計など、時間を見せるエフェクト。"
     }
   ],
   "effects": [
@@ -244,6 +280,54 @@
       "hint": "「もう一度」でくり返し見られるよ"
     },
     {
+      "cat": "text",
+      "id": "led-board",
+      "name": "電光掲示板",
+      "en": "LED Ticker",
+      "desc": "光るドットで描いた文字が、駅や球場の電光掲示板みたいに右から左へ流れ続ける。",
+      "use": "お知らせ帯・イベントの開催告知・レトロなデザイン",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "text",
+      "id": "falling-letters",
+      "name": "文字がふってくる",
+      "en": "Falling Letters",
+      "desc": "見出しの文字が1文字ずつ上から落ちてきて、着地でぽよんとはずむ。押すともう一度落ちてくる。",
+      "use": "ページを開いた瞬間のタイトル・セクションの見出し",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "文字を押すと、もう一度ふってくるよ"
+    },
+    {
+      "cat": "text",
+      "id": "explode",
+      "name": "バラバラ文字",
+      "en": "Letter Explode",
+      "desc": "マウスを乗せると文字が1文字ずつバラバラに飛び散って、離すと元の場所へ戻ってくる。",
+      "use": "ロゴ・遊び心のある見出し・404ページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "文字にマウスを乗せてね（スマホはタップ）"
+    },
+    {
       "cat": "cursor",
       "id": "trail",
       "name": "カラフル軌跡",
@@ -322,6 +406,22 @@
       "body": "",
       "height": 340,
       "hint": "図形にマウスを近づけてね"
+    },
+    {
+      "cat": "cursor",
+      "id": "fireworks",
+      "name": "カーソルの花火",
+      "en": "Cursor Fireworks",
+      "desc": "クリックした場所で、パッと花火のような粒子がはじけて四方へ散る。",
+      "use": "ゲーム・イベント・お祝い・誕生日ページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "どこでもクリックしてみてね"
     },
     {
       "cat": "scroll",
@@ -418,6 +518,22 @@
       "body": "scroll",
       "height": 340,
       "hint": ""
+    },
+    {
+      "cat": "scroll",
+      "id": "bg-color-shift",
+      "name": "スクロールで色が変わる背景",
+      "en": "Scroll Color Shift",
+      "desc": "読み進めるにつれて、背景の色がグラデーションでゆっくりと移り変わっていく。",
+      "use": "長い文章・ストーリー・ポートフォリオ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "scroll",
+      "height": 340,
+      "hint": "スクロールしてみてね"
     },
     {
       "cat": "background",
@@ -536,6 +652,228 @@
       "en": "Shooting Stars",
       "desc": "キラキラまたたく星空に、ときどき光のしっぽをひいた流れ星がスーッと流れる。",
       "use": "夜・宇宙・願いごと系のキャンペーン、ロマンチックなページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "light-streaks",
+      "name": "流れる光の線",
+      "en": "Flowing Light Lines",
+      "desc": "暗い夜空を、光の筋がスーッと斜めに走って消えていく。サイバーで幻想的な背景。",
+      "use": "近未来・テック・ゲーム・音楽系ページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "cube-tiles",
+      "name": "3D立方体タイル",
+      "en": "3D Cube Tiles",
+      "desc": "遠くへずらっと並んだ立方体が、ゆっくりと旋回するワイヤーフレームの背景。",
+      "use": "テック・AR/VR風・ゲーム・アプリ紹介",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "particle-vortex",
+      "name": "粒子の渦",
+      "en": "Particle Vortex",
+      "desc": "無数の粒が渦を巻きながら中心へ吸い込まれ、消えるとまた外側から生まれ変わる。",
+      "use": "テック・SF・ダークなヒーローコーナー",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "perspective-grid",
+      "name": "グリッドの遠近",
+      "en": "Perspective Grid",
+      "desc": "地平線に向かって収束するネオンライン。奥行きのあるトロン風の背景。",
+      "use": "レトロSF・ゲーム・80s風・テック",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "water-ripples",
+      "name": "水面のさざなみ",
+      "en": "Water Ripples",
+      "desc": "静かな水面に、波紋が広がっては消えていく。ゆらぐ光の反射もあって、落ち着く背景。",
+      "use": "落ち着いた雰囲気・和風・瞑想・リゾート系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "soft-blobs",
+      "name": "もやもやブロブ",
+      "en": "Soft Blobs",
+      "desc": "大きなぼやけた色のかたまりが、ゆっくり漂っては重なり合う。やわらかい雰囲気の背景。",
+      "use": "やわらかい・夢かわいい・美容・クリエイティブ系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "sakura-petals",
+      "name": "桜の花びら",
+      "en": "Sakura Petals",
+      "desc": "ピンクの花びらが、ゆれながら回ってひらひら舞い落ちる。春らしいやさしい背景。",
+      "use": "春・和風・卒業/入学・イベント告知・やさしい系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "aurora-curtain",
+      "name": "オーロラカーテン",
+      "en": "Aurora Curtain",
+      "desc": "空に揺れる縦の光の帯。オーロラのカーテンがゆらゆらと波打つ幻想的な背景。",
+      "use": "幻想的・冬・宇宙・ファンタジー系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "twinkle-stars",
+      "name": "星がまたたく",
+      "en": "Twinkling Stars",
+      "desc": "たくさんの星がきらめき、近くの星どうしがうっすら線で結ばれて星座のようになる。",
+      "use": "夜・宇宙・幻想的・ロマンチック系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "code-rain",
+      "name": "英字コードの雨",
+      "en": "Code Rain",
+      "desc": "緑の英数字コードが画面を縦に流れ落ちる。ハッカーっぽい定番のマトリックス風。",
+      "use": "ハッカー・セキュリティ・SF・ゲーム系",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "ocean-waves",
+      "name": "重なる波",
+      "en": "Ocean Waves",
+      "desc": "色ちがいの波が3枚重なって、それぞれちがう速さでゆらゆら横に流れる。CSSだけで動く。",
+      "use": "夏のキャンペーン・海のイベント・フッターの飾り",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "clouds",
+      "name": "流れる雲",
+      "en": "Drifting Clouds",
+      "desc": "青空の中を、大きさのちがうふわふわの雲がゆっくり横へ流れていく。CSSだけで動く。",
+      "use": "さわやかなトップページ・旅行・天気・キッズ向け",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "background",
+      "id": "snow",
+      "name": "しんしん雪",
+      "en": "Snowfall",
+      "desc": "大きさのちがう雪がゆらゆら舞いながら降ってくる。マウスを動かすと風が吹いて流れる。",
+      "use": "冬・クリスマス・年末年始のページ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "マウスを左右に動かすと風が吹くよ"
+    },
+    {
+      "cat": "background",
+      "id": "voronoi",
+      "name": "ステンドグラス模様",
+      "en": "Voronoi Cells",
+      "desc": "動く点のまわりに、ステンドグラスみたいなカラフルなマス目ができて、形がゆっくり変わり続ける。",
+      "use": "アート系・音楽イベント・ポスター風のヒーロー",
       "files": [
         "HTML",
         "CSS",
@@ -1064,6 +1402,53 @@
       "hint": "写真にマウスを乗せてね"
     },
     {
+      "cat": "image",
+      "id": "color-pop",
+      "name": "白黒からカラー",
+      "en": "Color Spotlight",
+      "desc": "白黒の写真の上で、マウスのまわりだけ丸くカラーになる。外に出ると全体がふわっとカラーに戻る。",
+      "use": "作品紹介・ビフォーアフターの演出・ブランド写真",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "写真の上でマウスを動かしてね"
+    },
+    {
+      "cat": "image",
+      "id": "focus-in",
+      "name": "ピントが合う",
+      "en": "Focus In",
+      "desc": "画面に入ると、ぼやけて大きめだった写真が、カメラのピントが合うようにスッとくっきりになる。",
+      "use": "ヒーロー画像・作品一覧・ブログのアイキャッチ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "「もう一度」でくり返し見られるよ"
+    },
+    {
+      "cat": "image",
+      "id": "spin-zoom",
+      "name": "くるっとズーム",
+      "en": "Spin & Zoom",
+      "desc": "丸く切りぬいた写真にマウスを乗せると、くるっと回りながらズームして、まわりに色のリングが広がる。CSSだけで動く。",
+      "use": "メンバー紹介・プロフィール・アイコン一覧",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "写真にマウスを乗せてね"
+    },
+    {
       "cat": "loading",
       "id": "spinners",
       "name": "スピナー3種",
@@ -1205,198 +1590,6 @@
       "hint": "ベルを押してね"
     },
     {
-      "cat": "background",
-      "id": "light-streaks",
-      "name": "流れる光の線",
-      "en": "Flowing Light Lines",
-      "desc": "暗い夜空を、光の筋がスーッと斜めに走って消えていく。サイバーで幻想的な背景。",
-      "use": "近未来・テック・ゲーム・音楽系ページ",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": ""
-    },
-    {
-      "cat": "background",
-      "id": "cube-tiles",
-      "name": "3D立方体タイル",
-      "en": "3D Cube Tiles",
-      "desc": "遠くへずらっと並んだ立方体が、ゆっくりと旋回するワイヤーフレームの背景。",
-      "use": "テック・AR/VR風・ゲーム・アプリ紹介",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": ""
-    },
-    {
-      "cat": "background",
-      "id": "particle-vortex",
-      "name": "粒子の渦",
-      "en": "Particle Vortex",
-      "desc": "無数の粒が渦を巻きながら中心へ吸い込まれ、消えるとまた外側から生まれ変わる。",
-      "use": "テック・SF・ダークなヒーローコーナー",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": ""
-    },
-    {
-      "cat": "background",
-      "id": "perspective-grid",
-      "name": "グリッドの遠近",
-      "en": "Perspective Grid",
-      "desc": "地平線に向かって収束するネオンライン。奥行きのあるトロン風の背景。",
-      "use": "レトロSF・ゲーム・80s風・テック",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": ""
-    },
-    {
-      "cat": "cursor",
-      "id": "fireworks",
-      "name": "カーソルの花火",
-      "en": "Cursor Fireworks",
-      "desc": "クリックした場所で、パッと花火のような粒子がはじけて四方へ散る。",
-      "use": "ゲーム・イベント・お祝い・誕生日ページ",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": "どこでもクリックしてみてね"
-    },
-    {
-      "cat": "scroll",
-      "id": "bg-color-shift",
-      "name": "スクロールで色が変わる背景",
-      "en": "Scroll Color Shift",
-      "desc": "読み進めるにつれて、背景の色がグラデーションでゆっくりと移り変わっていく。",
-      "use": "長い文章・ストーリー・ポートフォリオ",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "scroll",
-      "height": 340,
-      "hint": "スクロールしてみてね"
-    },
-    {
-      "cat": "background",
-      "id": "water-ripples",
-      "name": "水面のさざなみ",
-      "en": "Water Ripples",
-      "desc": "静かな水面に、波紋が広がっては消えていく。ゆらぐ光の反射もあって、落ち着く背景。",
-      "use": "落ち着いた雰囲気・和風・瞑想・リゾート系",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": ""
-    },
-    {
-      "cat": "background",
-      "id": "soft-blobs",
-      "name": "もやもやブロブ",
-      "en": "Soft Blobs",
-      "desc": "大きなぼやけた色のかたまりが、ゆっくり漂っては重なり合う。やわらかい雰囲気の背景。",
-      "use": "やわらかい・夢かわいい・美容・クリエイティブ系",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": ""
-    },
-    {
-      "cat": "background",
-      "id": "sakura-petals",
-      "name": "桜の花びら",
-      "en": "Sakura Petals",
-      "desc": "ピンクの花びらが、ゆれながら回ってひらひら舞い落ちる。春らしいやさしい背景。",
-      "use": "春・和風・卒業/入学・イベント告知・やさしい系",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": ""
-    },
-    {
-      "cat": "background",
-      "id": "aurora-curtain",
-      "name": "オーロラカーテン",
-      "en": "Aurora Curtain",
-      "desc": "空に揺れる縦の光の帯。オーロラのカーテンがゆらゆらと波打つ幻想的な背景。",
-      "use": "幻想的・冬・宇宙・ファンタジー系",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": ""
-    },
-    {
-      "cat": "background",
-      "id": "twinkle-stars",
-      "name": "星がまたたく",
-      "en": "Twinkling Stars",
-      "desc": "たくさんの星がきらめき、近くの星どうしがうっすら線で結ばれて星座のようになる。",
-      "use": "夜・宇宙・幻想的・ロマンチック系",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": ""
-    },
-    {
-      "cat": "background",
-      "id": "code-rain",
-      "name": "英字コードの雨",
-      "en": "Code Rain",
-      "desc": "緑の英数字コードが画面を縦に流れ落ちる。ハッカーっぽい定番のマトリックス風。",
-      "use": "ハッカー・セキュリティ・SF・ゲーム系",
-      "files": [
-        "HTML",
-        "CSS",
-        "JS"
-      ],
-      "body": "",
-      "height": 340,
-      "hint": ""
-    },
-    {
       "cat": "3d",
       "id": "flip-card",
       "name": "3D回転カード",
@@ -1487,6 +1680,308 @@
       "body": "",
       "height": 340,
       "hint": "マウスを動かしてみてね"
+    },
+    {
+      "cat": "3d",
+      "id": "sphere",
+      "name": "つぶつぶ球体",
+      "en": "Dot Sphere",
+      "desc": "カラフルな点がきれいに並んだ球が、くるくる回る。ドラッグすると好きな向きに回せる。",
+      "use": "テック系のヒーロー・ブランドロゴの背景・「つながり」の表現",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "ドラッグで回せるよ"
+    },
+    {
+      "cat": "3d",
+      "id": "globe",
+      "name": "ワイヤー地球儀",
+      "en": "Wire Globe",
+      "desc": "緯線と経線でできた地球儀がまわり、世界の都市に光る点がピコピコまたたく。ドラッグで回せる。",
+      "use": "海外向け・グローバル・旅行・「世界とつながる」紹介",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "ドラッグで回せるよ"
+    },
+    {
+      "cat": "3d",
+      "id": "wireframe",
+      "name": "ワイヤーフレーム",
+      "en": "Wireframe Shapes",
+      "desc": "線だけでできた立方体・正八面体・ピラミッドが、ネオンみたいに光りながら回る。ボタンで形を切りかえ。",
+      "use": "SF・ゲーム・テック系のヒーロー、ローディング画面",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "ドラッグで回せるよ"
+    },
+    {
+      "cat": "audio",
+      "id": "eq-bars",
+      "name": "イコライザー",
+      "en": "Equalizer Bars",
+      "desc": "音楽プレーヤーのイコライザーみたいに、カラフルな棒がリズムよく上下にはねる。CSSだけで動く（音は出ない）。",
+      "use": "「再生中」の表示・音楽イベント・ラジオやポッドキャスト",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "audio",
+      "id": "visualizer",
+      "name": "円形ビジュアライザー",
+      "en": "Circle Visualizer",
+      "desc": "再生ボタンを押すと、その場で作った音楽が流れて、音の強さに合わせて円のまわりの棒が光りながら伸び縮みする。",
+      "use": "音楽アーティストのサイト・ライブ告知・DJイベント",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "▶を押すと音が出るよ（音量に注意してね）"
+    },
+    {
+      "cat": "audio",
+      "id": "theremin",
+      "name": "テルミン波形",
+      "en": "Theremin Wave",
+      "desc": "パッドの上でマウスを動かすと音が鳴り、左右で音の高さ、上下で音量が変わる。音の波の形がリアルタイムに見える。",
+      "use": "音楽教室・理科の学習ページ・遊べるおまけコンテンツ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 360,
+      "hint": "パッドの上でマウスを動かしてね（音が出るよ）"
+    },
+    {
+      "cat": "audio",
+      "id": "sound-buttons",
+      "name": "ピコピコ効果音",
+      "en": "Sound Buttons",
+      "desc": "押すと「ポンッ」「チャリン」「ピョーン」「ビーム」など、ゲームみたいな効果音が鳴って、ボタンもはねる。",
+      "use": "ゲーム風サイト・キッズ向け・押して楽しいおまけ",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "ボタンを押すと音が出るよ"
+    },
+    {
+      "cat": "chart",
+      "id": "bar-grow",
+      "name": "のびる棒グラフ",
+      "en": "Growing Bars",
+      "desc": "画面に入ると、棒が下からびよーんと伸びて、上の数字もいっしょに増えていく。",
+      "use": "売上・アンケート結果・ランキング・実績紹介",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "light",
+      "height": 380,
+      "hint": "「もう一度」でくり返し見られるよ"
+    },
+    {
+      "cat": "chart",
+      "id": "donut",
+      "name": "くるっと円グラフ",
+      "en": "Donut Chart",
+      "desc": "色ごとの割合が、時計まわりに順番にぐるっと描かれていくドーナツ型の円グラフ。項目にマウスを乗せると強調される。",
+      "use": "割合の説明・予算の内訳・アンケートの結果",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "項目にマウスを乗せてみてね"
+    },
+    {
+      "cat": "chart",
+      "id": "gauge",
+      "name": "スピードメーター",
+      "en": "Gauge Meter",
+      "desc": "車のスピードメーターみたいな半円のゲージで、針がブルンと振れて目標の数字で止まる。",
+      "use": "達成率・スコア・満足度・目標の進み具合",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "「もう一度」でくり返し見られるよ"
+    },
+    {
+      "cat": "chart",
+      "id": "line-draw",
+      "name": "えがく折れ線",
+      "en": "Line Draw",
+      "desc": "折れ線グラフの線が左から右へスーッと描かれ、点がポンポンあらわれる。下の面もふわっと色づく。",
+      "use": "アクセス数・成長の記録・気温や売上の変化",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 380,
+      "hint": "「もう一度」でくり返し見られるよ"
+    },
+    {
+      "cat": "input",
+      "id": "drag-sort",
+      "name": "ドラッグで並べかえ",
+      "en": "Drag to Sort",
+      "desc": "リストの項目をつまんで上下にドラッグすると、ほかの項目がスッとよけて順番を入れかえられる。キーボードの↑↓でもOK。",
+      "use": "TODOリスト・ランキング作り・好きな順に並べるアンケート",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 360,
+      "hint": "項目をドラッグして並べかえてね"
+    },
+    {
+      "cat": "input",
+      "id": "slider",
+      "name": "表情スライダー",
+      "en": "Mood Slider",
+      "desc": "つまみを動かすと、上の吹き出しの数字と顔文字が変わり、バーの色も赤→黄→緑に変わっていく。",
+      "use": "満足度アンケート・音量や明るさの設定・予算の入力",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "つまみを左右に動かしてね"
+    },
+    {
+      "cat": "input",
+      "id": "glow-type",
+      "name": "打つと光る入力欄",
+      "en": "Sparkle Typing",
+      "desc": "文字を打つたびに、入力欄から光のつぶがはじけて、枠の色もくるくる変わる。",
+      "use": "メッセージ入力・検索ボックス・ゲストブック",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "入力欄に文字を打ってみてね"
+    },
+    {
+      "cat": "input",
+      "id": "rating",
+      "name": "きらきら星評価",
+      "en": "Star Rating",
+      "desc": "星にマウスを乗せると光って、押すと星がポンッとはねて評価が決まる。キーボードの ← → でも選べる。",
+      "use": "レビュー投稿・アンケート・満足度の入力",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": "星をえらんでね"
+    },
+    {
+      "cat": "timer",
+      "id": "countdown",
+      "name": "イベントまでカウントダウン",
+      "en": "Event Countdown",
+      "desc": "イベント当日まで「あと何日・何時間・何分・何秒」かを表示。数字が変わるたびに、ぴょこっとはねる。",
+      "use": "イベント告知・セール開始・発売日・新年のカウントダウン",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "timer",
+      "id": "flip-clock",
+      "name": "パタパタ時計",
+      "en": "Flip Clock",
+      "desc": "駅の案内板みたいに、数字のカードが上からパタンとめくれて、いまの時刻に変わっていくデジタル時計。",
+      "use": "トップページの飾り・営業時間の案内・レトロなデザイン",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "timer",
+      "id": "hourglass",
+      "name": "砂時計",
+      "en": "Hourglass",
+      "desc": "上の砂がさらさら落ちて下にたまり、落ちきると砂時計がくるっと回転して、またくり返す。CSSだけで動く。",
+      "use": "待ち時間の表示・タイマー・「もうすぐ」の演出",
+      "files": [
+        "HTML",
+        "CSS"
+      ],
+      "body": "",
+      "height": 340,
+      "hint": ""
+    },
+    {
+      "cat": "timer",
+      "id": "stopwatch",
+      "name": "ストップウォッチ",
+      "en": "Stopwatch",
+      "desc": "スタートで時間を計りはじめ、まわりのリングが1秒ごとに一周。ラップを押すと記録が下にポンと追加される。",
+      "use": "練習タイマー・クイズの制限時間・料理のタイマー",
+      "files": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "body": "",
+      "height": 400,
+      "hint": "スタートを押してね"
     }
   ]
 }

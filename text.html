@@ -38,21 +38,25 @@
       <li><a class="g-pill" href="loading.html" style="--cat:#c6ff00;--on:#111"><span>11</span>読み込み</a></li>
       <li><a class="g-pill" href="toast.html" style="--cat:#ff6b4a;--on:#111"><span>12</span>通知</a></li>
       <li><a class="g-pill" href="3d.html" style="--cat:#00e0c6;--on:#111"><span>13</span>3D</a></li>
+      <li><a class="g-pill" href="audio.html" style="--cat:#ff4fd8;--on:#111"><span>14</span>音・サウンド</a></li>
+      <li><a class="g-pill" href="chart.html" style="--cat:#ffb020;--on:#111"><span>15</span>データ可視化</a></li>
+      <li><a class="g-pill" href="input.html" style="--cat:#8a7dff;--on:#fff"><span>16</span>入力・操作</a></li>
+      <li><a class="g-pill" href="timer.html" style="--cat:#3ddc84;--on:#111"><span>17</span>時刻・カウント</a></li>
     </ul>
   </nav>
 </header>
 <main id="main">
   <section class="g-hero" style="--cat:#ff3d7f;--on:#fff">
-    <p class="g-hero__no">01 <span>/ 13</span></p>
+    <p class="g-hero__no">01 <span>/ 17</span></p>
     <h1 class="g-hero__title"><span class="g-hero__en" data-split style="--len:4">TEXT</span><span class="g-hero__jp">テキスト</span></h1>
     <p class="g-hero__desc">文字そのものを動かして、見出しやキャッチコピーを主役にするエフェクト。</p>
-    <p class="g-hero__count" aria-label="8種類"><b>8</b>EFFECTS</p>
+    <p class="g-hero__count" aria-label="11種類"><b>11</b>EFFECTS</p>
   </section>
   <div class="g-tape" aria-hidden="true" style="--cat:#ff3d7f;--on:#fff">
-    <div class="g-tape__track"><span>WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ </span><span>WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ </span></div>
+    <div class="g-tape__track"><span>WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ LED TICKER ✦ FALLING LETTERS ✦ LETTER EXPLODE ✦ WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ LED TICKER ✦ FALLING LETTERS ✦ LETTER EXPLODE ✦ </span><span>WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ LED TICKER ✦ FALLING LETTERS ✦ LETTER EXPLODE ✦ WAVE LETTERS ✦ TYPEWRITER ✦ TEXT SCRAMBLE ✦ NEON FLICKER ✦ RAINBOW TEXT ✦ GLITCH ✦ 3D WORD FLIP ✦ HIGHLIGHTER ✦ LED TICKER ✦ FALLING LETTERS ✦ LETTER EXPLODE ✦ </span></div>
   </div>
   <nav class="g-jump" aria-label="この種類のエフェクト">
-    <ul><li><a href="#wave">波打つ文字</a></li><li><a href="#typing">タイピング</a></li><li><a href="#scramble">スクランブル</a></li><li><a href="#neon">ネオンサイン</a></li><li><a href="#rainbow">虹色グラデ文字</a></li><li><a href="#glitch">グリッチ</a></li><li><a href="#rotate-3d">3D回転ワード</a></li><li><a href="#marker">蛍光マーカー</a></li></ul>
+    <ul><li><a href="#wave">波打つ文字</a></li><li><a href="#typing">タイピング</a></li><li><a href="#scramble">スクランブル</a></li><li><a href="#neon">ネオンサイン</a></li><li><a href="#rainbow">虹色グラデ文字</a></li><li><a href="#glitch">グリッチ</a></li><li><a href="#rotate-3d">3D回転ワード</a></li><li><a href="#marker">蛍光マーカー</a></li><li><a href="#led-board">電光掲示板</a></li><li><a href="#falling-letters">文字がふってくる</a></li><li><a href="#explode">バラバラ文字</a></li></ul>
   </nav>
   <div class="g-grid">
       <article class="g-card" id="wave">
@@ -616,12 +620,277 @@
           <p class="g-code__path">📁 effects/text/marker/</p>
         </div>
       </article>
+      <article class="g-card" id="led-board">
+        <header class="g-card__head">
+          <span class="g-card__no">09</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">電光掲示板</h2>
+            <p class="g-card__en">LED Ticker</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/text/led-board/index.html" title="電光掲示板の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">光るドットで描いた文字が、駅や球場の電光掲示板みたいに右から左へ流れ続ける。</p>
+          <p class="g-card__use"><b>使いどころ</b>お知らせ帯・イベントの開催告知・レトロなデザイン</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/text/led-board/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="電光掲示板のコード">
+            <button class="g-tab" role="tab" id="code-text-led-board-html-tab" aria-controls="code-text-led-board-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-text-led-board-css-tab" aria-controls="code-text-led-board-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-text-led-board-js-tab" aria-controls="code-text-led-board-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-text-led-board-html" aria-labelledby="code-text-led-board-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;div class=&quot;fx-led&quot; data-fx=&quot;led-board&quot; data-text=&quot;EPIC DAY 2026 ★ 11.23 SAT ★ TICKET ON SALE ★ &quot; data-speed=&quot;1.4&quot; role=&quot;marquee&quot; aria-label=&quot;EPIC DAY 2026 11月23日土曜 チケット発売中&quot;&gt;
+  &lt;canvas class=&quot;fx-led__canvas&quot; aria-hidden=&quot;true&quot;&gt;&lt;/canvas&gt;
+&lt;/div&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-text-led-board-css" aria-labelledby="code-text-led-board-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-led {
+  width: min(92vw, 520px);
+  padding: 14px;
+  border: 5px solid #333;
+  border-radius: 14px;
+  background: #0a0a0a;
+  box-shadow: inset 0 0 0 3px #000, 0 10px 30px rgba(0, 0, 0, .6);
+}
+.fx-led__canvas { display: block; width: 100%; height: 88px; }</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-text-led-board-js" aria-labelledby="code-text-led-board-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// ① 文字を小さなキャンバスに書いて ② その点をLEDの粒として拡大して描く</span>
+(() =&gt; {
+  const start = () =&gt; document.querySelectorAll(&#x27;[data-fx=&quot;led-board&quot;]&#x27;).forEach((root) =&gt; {
+    const cv = root.querySelector(&#x27;canvas&#x27;);
+    const ctx = cv.getContext(&#x27;2d&#x27;);
+    const text = root.dataset.text || &#x27;HELLO &#x27;;
+    const speed = parseFloat(root.dataset.speed) || 1;
+    const ROWS = 14;                                 <span class="c">// 縦のLEDの数</span>
+    const src = document.createElement(&#x27;canvas&#x27;);    <span class="c">// 文字を書く下書き用</span>
+    const sctx = src.getContext(&#x27;2d&#x27;);
+    sctx.font = `bold ${ROWS}px &quot;Dela Gothic One&quot;, monospace`;
+    const textW = Math.ceil(sctx.measureText(text).width);
+    src.width = textW; src.height = ROWS;
+    sctx.font = `bold ${ROWS - 1}px &quot;Dela Gothic One&quot;, monospace`;
+    sctx.fillStyle = &#x27;#fff&#x27;;
+    sctx.textBaseline = &#x27;middle&#x27;;
+    sctx.fillText(text, 0, ROWS / 2 + 1);
+    const pix = sctx.getImageData(0, 0, textW, ROWS).data;
+
+    let W, H, cell, cols, offset = 0;
+    const resize = () =&gt; {
+      const d = window.devicePixelRatio || 1;
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * d; cv.height = H * d;
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+      cell = H / ROWS;
+      cols = Math.ceil(W / cell);
+    };
+    resize();
+    addEventListener(&#x27;resize&#x27;, resize);
+
+    let last = 0;
+    (function loop(t) {
+      requestAnimationFrame(loop);
+      if (t - last &lt; 40) return;                    <span class="c">// カクカク感を出すため、少しずつ進める</span>
+      last = t;
+      offset = (offset + speed * .5) % textW;
+      ctx.fillStyle = &#x27;#0a0a0a&#x27;;
+      ctx.fillRect(0, 0, W, H);
+      for (let x = 0; x &lt; cols; x++) {
+        const sx = Math.floor(x + offset) % textW;
+        for (let y = 0; y &lt; ROWS; y++) {
+          const on = pix[(y * textW + sx) * 4 + 3] &gt; 100;
+          ctx.fillStyle = on ? `hsl(${(sx * 3) % 360} 100% 60%)` : &#x27;#1f1a14&#x27;;
+          ctx.beginPath();
+          ctx.arc(x * cell + cell / 2, y * cell + cell / 2, cell * .38, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+    })(0);
+  });
+  <span class="c">// フォントの読み込みを待ってから文字の形を写しとる</span>
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(start);
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/text/led-board/</p>
+        </div>
+      </article>
+      <article class="g-card" id="falling-letters">
+        <header class="g-card__head">
+          <span class="g-card__no">10</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">文字がふってくる</h2>
+            <p class="g-card__en">Falling Letters</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/text/falling-letters/index.html" title="文字がふってくるの見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">見出しの文字が1文字ずつ上から落ちてきて、着地でぽよんとはずむ。押すともう一度落ちてくる。</p>
+          <p class="g-card__use"><b>使いどころ</b>ページを開いた瞬間のタイトル・セクションの見出し</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/text/falling-letters/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="文字がふってくるのコード">
+            <button class="g-tab" role="tab" id="code-text-falling-letters-html-tab" aria-controls="code-text-falling-letters-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-text-falling-letters-css-tab" aria-controls="code-text-falling-letters-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-text-falling-letters-js-tab" aria-controls="code-text-falling-letters-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-text-falling-letters-html" aria-labelledby="code-text-falling-letters-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;h2 class=&quot;fx-fall&quot; data-fx=&quot;falling-letters&quot; tabindex=&quot;0&quot;&gt;ドーン！と登場&lt;/h2&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-text-falling-letters-css" aria-labelledby="code-text-falling-letters-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-fall {
+  margin: 0;
+  font-size: clamp(36px, 10vw, 76px);
+  font-weight: normal;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+.fx-fall span {
+  display: inline-block;
+  color: var(--c);
+  text-shadow: 4px 4px 0 #111;
+  animation: fx-fall .9s cubic-bezier(.3, 0, .4, 1) both;
+  animation-delay: calc(var(--i) * .08s);
+}
+@keyframes fx-fall {
+  0%   { transform: translateY(-120vh) rotate(-30deg); }
+  60%  { transform: translateY(0) scale(1.25, .7); }   <span class="c">/* 着地でつぶれる */</span>
+  75%  { transform: translateY(-.25em) scale(.9, 1.1); }
+  90%  { transform: translateY(0) scale(1.05, .95); }
+  100% { transform: none; }
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-text-falling-letters-js" aria-labelledby="code-text-falling-letters-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 1文字ずつ &lt;span&gt; にして、順番に落とす。クリック（Enter）でもう一度</span>
+(() =&gt; {
+  const colors = [&#x27;#ff3d7f&#x27;, &#x27;#ffd400&#x27;, &#x27;#00c2ff&#x27;, &#x27;#7cff4f&#x27;, &#x27;#ff7a00&#x27;, &#x27;#a259ff&#x27;];
+  document.querySelectorAll(&#x27;[data-fx=&quot;falling-letters&quot;]&#x27;).forEach((el) =&gt; {
+    const text = el.textContent.trim();
+    el.setAttribute(&#x27;aria-label&#x27;, text);
+    const build = () =&gt; {
+      el.textContent = &#x27;&#x27;;
+      [...text].forEach((ch, i) =&gt; {
+        const s = document.createElement(&#x27;span&#x27;);
+        s.textContent = ch;
+        s.setAttribute(&#x27;aria-hidden&#x27;, &#x27;true&#x27;);
+        s.style.setProperty(&#x27;--i&#x27;, i);
+        s.style.setProperty(&#x27;--c&#x27;, colors[i % colors.length]);
+        el.appendChild(s);
+      });
+    };
+    build();
+    el.addEventListener(&#x27;click&#x27;, build);
+    el.addEventListener(&#x27;keydown&#x27;, (e) =&gt; { if (e.key === &#x27;Enter&#x27;) build(); });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/text/falling-letters/</p>
+        </div>
+      </article>
+      <article class="g-card" id="explode">
+        <header class="g-card__head">
+          <span class="g-card__no">11</span>
+          <div class="g-card__titles">
+            <h2 class="g-card__title">バラバラ文字</h2>
+            <p class="g-card__en">Letter Explode</p>
+          </div>
+          <ul class="g-chips" aria-label="使っている言語"><li class="g-chip g-chip--html">HTML</li><li class="g-chip g-chip--css">CSS</li><li class="g-chip g-chip--js">JS</li></ul>
+        </header>
+        <div class="g-stage">
+          <iframe src="effects/text/explode/index.html" title="バラバラ文字の見本" loading="lazy" style="height:340px"></iframe>
+        </div>
+        <div class="g-card__body">
+          <p class="g-card__desc">マウスを乗せると文字が1文字ずつバラバラに飛び散って、離すと元の場所へ戻ってくる。</p>
+          <p class="g-card__use"><b>使いどころ</b>ロゴ・遊び心のある見出し・404ページ</p>
+          <div class="g-actions">
+            <button class="g-btn g-btn--replay" type="button" data-replay>↻ もう一度</button>
+            <button class="g-btn g-btn--code" type="button" data-code-toggle aria-expanded="false">〈/〉 コードを見る</button>
+            <a class="g-btn g-btn--open" href="effects/text/explode/index.html" target="_blank" rel="noopener">単体で開く ↗</a>
+          </div>
+        </div>
+        <div class="g-code" hidden>
+          <div class="g-tabs" role="tablist" aria-label="バラバラ文字のコード">
+            <button class="g-tab" role="tab" id="code-text-explode-html-tab" aria-controls="code-text-explode-html" aria-selected="true" tabindex="0">HTML<small>markup.html</small></button><button class="g-tab" role="tab" id="code-text-explode-css-tab" aria-controls="code-text-explode-css" aria-selected="false" tabindex="-1">CSS<small>style.css</small></button><button class="g-tab" role="tab" id="code-text-explode-js-tab" aria-controls="code-text-explode-js" aria-selected="false" tabindex="-1">JS<small>script.js</small></button>
+          </div>
+          <div class="g-panel" role="tabpanel" id="code-text-explode-html" aria-labelledby="code-text-explode-html-tab">
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>&lt;h2 class=&quot;fx-boom&quot; data-fx=&quot;explode&quot; tabindex=&quot;0&quot;&gt;BOOM!!&lt;/h2&gt;</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-text-explode-css" aria-labelledby="code-text-explode-css-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code>.fx-boom {
+  margin: 0;
+  padding: .3em .6em;
+  font-size: clamp(56px, 15vw, 120px);
+  font-weight: normal;
+  color: #ffd400;
+  cursor: pointer;
+}
+.fx-boom span {
+  display: inline-block;
+  text-shadow: 5px 5px 0 #ff3d7f;
+  transition: transform .7s cubic-bezier(.2, 1.4, .4, 1);
+}
+.fx-boom.is-boom span {
+  transform: translate(var(--x), var(--y)) rotate(var(--r)) scale(var(--s));
+  transition: transform .45s cubic-bezier(.1, .9, .2, 1);
+}</code></pre>
+          </div><div class="g-panel" role="tabpanel" id="code-text-explode-js" aria-labelledby="code-text-explode-js-tab" hidden>
+            <button class="g-copy" type="button">コピー</button>
+            <pre tabindex="0"><code><span class="c">// 文字ごとにランダムな飛び先を決めておき、.is-boom がついたらそこへ飛ばす</span>
+(() =&gt; {
+  const rnd = (a, b) =&gt; a + Math.random() * (b - a);
+  document.querySelectorAll(&#x27;[data-fx=&quot;explode&quot;]&#x27;).forEach((el) =&gt; {
+    const text = el.textContent.trim();
+    el.setAttribute(&#x27;aria-label&#x27;, text);
+    el.textContent = &#x27;&#x27;;
+    const spans = [...text].map((ch) =&gt; {
+      const s = document.createElement(&#x27;span&#x27;);
+      s.textContent = ch;
+      s.setAttribute(&#x27;aria-hidden&#x27;, &#x27;true&#x27;);
+      el.appendChild(s);
+      return s;
+    });
+    const scatter = () =&gt; spans.forEach((s) =&gt; {
+      s.style.setProperty(&#x27;--x&#x27;, `${rnd(-140, 140)}px`);
+      s.style.setProperty(&#x27;--y&#x27;, `${rnd(-110, 110)}px`);
+      s.style.setProperty(&#x27;--r&#x27;, `${rnd(-260, 260)}deg`);
+      s.style.setProperty(&#x27;--s&#x27;, rnd(.5, 1.6).toFixed(2));
+    });
+    const on = () =&gt; { scatter(); el.classList.add(&#x27;is-boom&#x27;); };
+    const off = () =&gt; el.classList.remove(&#x27;is-boom&#x27;);
+    el.addEventListener(&#x27;mouseenter&#x27;, on);
+    el.addEventListener(&#x27;mouseleave&#x27;, off);
+    el.addEventListener(&#x27;focus&#x27;, on);
+    el.addEventListener(&#x27;blur&#x27;, off);
+    el.addEventListener(&#x27;pointerup&#x27;, (e) =&gt; {                <span class="c">// スマホはタップで切りかえ</span>
+      if (e.pointerType === &#x27;touch&#x27;) (el.classList.contains(&#x27;is-boom&#x27;) ? off() : on());
+    });
+  });
+})();</code></pre>
+          </div>
+          <p class="g-code__path">📁 effects/text/explode/</p>
+        </div>
+      </article>
   </div>
   <nav class="g-pager" aria-label="ほかの種類"><span></span><a class="g-pager__link g-pager__link--next" href="cursor.html" style="--cat:#ffd400;--on:#111"><small>次の種類 →</small>マウス・カーソル</a></nav>
 </main>
 <footer class="g-footer">
   <p class="g-footer__big" aria-hidden="true">MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ MAKE IT MOVE ✦ </p>
-  <p>EFFECT GALLERY — 87 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
+  <p>EFFECT GALLERY — 116 effects / HTML・CSS・JavaScript だけで動きます（ライブラリ不要）</p>
 </footer>
 <script src="assets/js/gallery.js"></script>
 </body>

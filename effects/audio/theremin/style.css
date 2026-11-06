@@ -1,0 +1,27 @@
+.fx-thm {
+  position: relative;
+  width: min(92vw, 500px);
+  height: 230px;
+  overflow: hidden;
+  border: 4px solid #111;
+  border-radius: 20px;
+  background:
+    linear-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px) 0 0 / 100% 23px,
+    linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px) 0 0 / 25px 100%,
+    #0d1b14;
+  box-shadow: 8px 8px 0 #ff4fd8;
+  cursor: crosshair;
+  touch-action: none;
+}
+.fx-thm__canvas { display: block; width: 100%; height: 100%; }
+.fx-thm__label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  margin: 0;
+  color: rgba(124, 255, 79, .7);
+  font-size: 12px;
+  text-align: center;
+  pointer-events: none;
+}

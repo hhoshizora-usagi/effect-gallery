@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>テルミン波形（Theremin Wave）| EFFECT GALLERY</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+<!-- demo.css は見本ページの土台（背景・中央寄せ）だけ。エフェクト本体は style.css / script.js -->
+<link rel="stylesheet" href="../../_shared/demo.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="demo">
+<div class="fx-thm" data-fx="theremin" role="application" aria-label="テルミン：パッドの上で動かすと音が鳴ります">
+  <canvas class="fx-thm__canvas" aria-hidden="true"></canvas>
+  <p class="fx-thm__label">← 低い音　　高い音 →</p>
+</div>
+<p class="demo-hint" aria-hidden="true">パッドの上でマウスを動かしてね（音が出るよ）</p>
+<script src="script.js"></script>
+</body>
+</html>

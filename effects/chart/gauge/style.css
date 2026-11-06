@@ -1,0 +1,11 @@
+.fx-gauge { width: min(86vw, 340px); margin: 0; text-align: center; color: #fff; }
+.fx-gauge svg { width: 100%; overflow: visible; }
+.fx-gauge path { fill: none; stroke-width: 18; stroke-linecap: round; }
+.fx-gauge__track { stroke: rgba(255, 255, 255, .12); }
+.fx-gauge__fill { stroke: url(#fx-gauge-grad); stroke-dasharray: var(--p, 0) 100; }
+.fx-gauge__needle { transform-origin: 100px 100px; transform: rotate(calc(-90deg + var(--p, 0) * 1.8deg)); }
+.fx-gauge__needle line { stroke: #fff; stroke-width: 5; stroke-linecap: round; }
+.fx-gauge__needle circle { fill: #ff4fd8; stroke: #111; stroke-width: 3; }
+.fx-gauge figcaption { display: grid; margin-top: -6px; }
+.fx-gauge__num { font-weight: normal; font-size: 44px; line-height: 1; font-variant-numeric: tabular-nums; }
+.fx-gauge small { font-size: 13px; opacity: .8; }

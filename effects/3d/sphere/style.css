@@ -1,0 +1,8 @@
+.fx-sphere {
+  display: block;
+  width: min(86vw, 340px);
+  aspect-ratio: 1;
+  cursor: grab;
+  touch-action: none;
+}
+.fx-sphere:active { cursor: grabbing; }

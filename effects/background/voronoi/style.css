@@ -1,0 +1,23 @@
+.fx-voro {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #111;
+}
+/* 小さく描いて引きのばし、image-rendering でカクッとしたマス目にする */
+.fx-voro__canvas { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; }
+.fx-voro__title {
+  position: relative;
+  margin: 0;
+  padding: .15em .45em;
+  border: 4px solid #111;
+  background: #fff;
+  color: #111;
+  font-size: clamp(32px, 9vw, 72px);
+  line-height: 1;
+  text-align: center;
+  box-shadow: 8px 8px 0 #111;
+}

@@ -1,0 +1,17 @@
+.fx-boom {
+  margin: 0;
+  padding: .3em .6em;
+  font-size: clamp(56px, 15vw, 120px);
+  font-weight: normal;
+  color: #ffd400;
+  cursor: pointer;
+}
+.fx-boom span {
+  display: inline-block;
+  text-shadow: 5px 5px 0 #ff3d7f;
+  transition: transform .7s cubic-bezier(.2, 1.4, .4, 1);
+}
+.fx-boom.is-boom span {
+  transform: translate(var(--x), var(--y)) rotate(var(--r)) scale(var(--s));
+  transition: transform .45s cubic-bezier(.1, .9, .2, 1);
+}

@@ -1,0 +1,49 @@
+.fx-spinz-row { display: flex; flex-wrap: wrap; gap: 26px; justify-content: center; }
+.fx-spinz {
+  position: relative;
+  display: block;
+  width: min(26vw, 140px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  isolation: isolate;   /* リング（::before）を写真のうしろに置くため */
+}
+.fx-spinz img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid #111;
+  border-radius: 50%;
+  transition: transform .7s cubic-bezier(.2, 1.3, .4, 1);
+}
+/* 色のリング */
+.fx-spinz::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border-radius: 50%;
+  background: var(--c);
+  transition: transform .5s cubic-bezier(.2, 1.6, .4, 1);
+}
+.fx-spinz span {
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  padding: 2px 12px;
+  border: 3px solid #111;
+  border-radius: 999px;
+  background: var(--c);
+  color: #111;
+  font-size: 14px;
+  transform: translateX(-50%) scale(0);
+  transition: transform .4s cubic-bezier(.2, 1.8, .4, 1) .1s;
+}
+.fx-spinz:hover img,
+.fx-spinz:focus-visible img { transform: rotate(360deg) scale(1.08); }
+.fx-spinz:hover::before,
+.fx-spinz:focus-visible::before { transform: scale(1.18); }
+.fx-spinz:hover span,
+.fx-spinz:focus-visible span { transform: translateX(-50%) scale(1); }
